@@ -1,0 +1,13 @@
+{
+  "projection_cases": 12,
+  "projection_passed": 12,
+  "active_cases": 6,
+  "inactive_cases": 6,
+  "itml_global_cases": 3,
+  "itml_global_passed": 3,
+  "code_sha256": {
+    "metrics.py": "d06803970776d2dfdb2abc0f3b6bbe430e7182b08e404f654d5556a938b5dbc9",
+    "corrected.py": "32ad21c585428a23817ca88b1b93499d3c30e1d6ea31a5d144f568c5a920da6c",
+    "audit_formulas.py": "a2d2a4847702953457060f5ea0b2f84775612a9eb26cf4e50750653247195dff"
+  }
+}

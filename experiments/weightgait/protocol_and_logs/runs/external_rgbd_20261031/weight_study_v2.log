@@ -1,0 +1,67 @@
+extracting_frozen_RGB_crops_and_training_display_depth
+Extracted 10 /90 clips
+Extracted 20 /90 clips
+Extracted 30 /90 clips
+Extracted 40 /90 clips
+Extracted 50 /90 clips
+Extracted 60 /90 clips
+Extracted 70 /90 clips
+Extracted 80 /90 clips
+Extracted 90 /90 clips
+WeightGait crop extraction complete
+training_only_KDES_codebook_and_image_features
+KDES local rgb 100
+KDES local rgb 200
+KDES local rgb 300
+KDES local rgb 400
+KDES local rgb 500
+KDES local rgb 600
+KDES local rgb 700
+KDES local rgb 800
+KDES local rgb 900
+KDES local rgb 1000
+KDES local rgb 1100
+KDES local rgb 1200
+KDES local rgb 1300
+KDES local rgb 1400
+KDES local rgb 1500
+KDES local rgb 1600
+KDES local rgb 1700
+KDES local rgb 1800
+KDES codebook fitted rgb training images 300
+KDES encoded rgb 100
+KDES encoded rgb 200
+KDES encoded rgb 300
+KDES encoded rgb 400
+KDES encoded rgb 500
+KDES encoded rgb 600
+KDES encoded rgb 700
+KDES encoded rgb 800
+KDES encoded rgb 900
+KDES encoded rgb 1000
+KDES encoded rgb 1100
+KDES encoded rgb 1200
+KDES encoded rgb 1300
+KDES encoded rgb 1400
+KDES encoded rgb 1500
+KDES encoded rgb 1600
+KDES encoded rgb 1700
+KDES encoded rgb 1800
+KDES local depth 100
+KDES local depth 200
+KDES local depth 300
+KDES codebook fitted depth training images 300
+KDES encoded depth 100
+KDES encoded depth 200
+KDES encoded depth 300
+seven_method_full_grid_validation_Rank1_training
+round_01 euclidean completed
+round_00 euclidean completed
+round_00 itml completed
+round_01 itml completed
+round_00 lmnn completed
+round_01 lmnn completed
+round_00 svm completed
+round_01 svm completed
+/opt/miniconda3/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

@@ -1,0 +1,22 @@
+{
+  "variants": [
+    "no_PI_matched_gamma",
+    "shuffle_PI_17",
+    "shuffle_PI_29",
+    "shuffle_PI_43",
+    "random_PI_17",
+    "random_PI_29",
+    "random_PI_43",
+    "duplicate_RGB_PI",
+    "extended_100_sweeps"
+  ],
+  "parameters": "fixed main validation-selected ITML+ gamma/lambda; no control tuning",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "main_protocol_sha256": "8c8f6f34403d8fca44fbeac900fc45f89f605782ddc53097762bb9c9fd45a740",
+  "test_evaluated": false,
+  "extended_iterations": "100 sweeps, same formula and norm tolerance; additional diagnostic, not replacement main results"
+}

@@ -1,0 +1,22 @@
+{
+  "candidates": [
+    [
+      "original",
+      "runs/washington_audit_verified_20261026",
+      "runs/washington_validation_grid_20261029"
+    ],
+    [
+      "scale_only",
+      "runs/depth_improvement_20261029/scale_only",
+      "runs/depth_improvement_20261029/scale_search"
+    ],
+    [
+      "shape_augmented",
+      "runs/depth_augmented_20261029/shape_augmented",
+      "runs/depth_augmented_20261029/shape_search"
+    ]
+  ],
+  "selection": "per round and method, maximal validation AP; first on ties",
+  "shuffle": "training depth rows permuted with seed 3329+round; same chosen hyperparameters and 100 sweeps; no shuffle retuning",
+  "limitation": "exploratory reuse of previously inspected Washington test split; requires new holdout for confirmation"
+}

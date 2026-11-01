@@ -1,0 +1,20 @@
+{
+  "python": "3.11.14",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "Pillow": "12.2.0",
+    "matplotlib": "3.10.8",
+    "cvxpy": "1.9.3",
+    "clarabel": "0.11.1",
+    "opencv-python": "4.13.0.92"
+  },
+  "training_environment": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "solver": "CLARABEL; max_iter500 tol_gap_abs/rel1e-8 tol_feas1e-8",
+  "note": "Search elapsed times include memory scheduling pauses; final fit timing measured separately"
+}

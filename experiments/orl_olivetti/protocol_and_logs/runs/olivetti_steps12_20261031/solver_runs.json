@@ -1,0 +1,101 @@
+[
+  {
+    "split": 0,
+    "method": "itml",
+    "gamma": 0.01,
+    "lam": 1.0,
+    "requested_sweeps": 1000,
+    "status": "completed",
+    "stop": "max_sweeps",
+    "completed_sweeps": 1000,
+    "seconds": 1.4880974581465125
+  },
+  {
+    "split": 0,
+    "method": "itml_plus",
+    "gamma": 0.01,
+    "lam": 0.1,
+    "requested_sweeps": 1000,
+    "status": "completed",
+    "stop": "max_sweeps",
+    "completed_sweeps": 1000,
+    "seconds": 2.9978076247498393
+  },
+  {
+    "split": 0,
+    "method": "itml_plus_corrected",
+    "gamma": 0.01,
+    "lam": 0.1,
+    "requested_sweeps": 1000,
+    "status": "completed",
+    "stop": "max_sweeps",
+    "completed_sweeps": 1000,
+    "seconds": 34.22646312508732
+  },
+  {
+    "split": 1,
+    "method": "itml",
+    "gamma": 1.0,
+    "lam": 1.0,
+    "requested_sweeps": 1000,
+    "status": "completed",
+    "stop": "max_sweeps",
+    "completed_sweeps": 1000,
+    "seconds": 1.4242742089554667
+  },
+  {
+    "split": 1,
+    "method": "itml_plus",
+    "gamma": 0.1,
+    "lam": 0.1,
+    "requested_sweeps": 1000,
+    "status": "completed",
+    "stop": "max_sweeps",
+    "completed_sweeps": 1000,
+    "seconds": 2.8368147080764174
+  },
+  {
+    "split": 1,
+    "method": "itml_plus_corrected",
+    "gamma": 0.1,
+    "lam": 0.1,
+    "requested_sweeps": 1000,
+    "status": "completed",
+    "stop": "max_sweeps",
+    "completed_sweeps": 1000,
+    "seconds": 33.23450162494555
+  },
+  {
+    "split": 2,
+    "method": "itml",
+    "gamma": 1.0,
+    "lam": 1.0,
+    "requested_sweeps": 1000,
+    "status": "completed",
+    "stop": "max_sweeps",
+    "completed_sweeps": 1000,
+    "seconds": 1.3653820417821407
+  },
+  {
+    "split": 2,
+    "method": "itml_plus",
+    "gamma": 1.0,
+    "lam": 0.1,
+    "requested_sweeps": 1000,
+    "status": "completed",
+    "stop": "max_sweeps",
+    "completed_sweeps": 1000,
+    "seconds": 2.750558333005756
+  },
+  {
+    "split": 2,
+    "method": "itml_plus_corrected",
+    "gamma": 1.0,
+    "lam": 0.1,
+    "requested_sweeps": 1000,
+    "status": "completed",
+    "stop": "max_sweeps",
+    "completed_sweeps": 1000,
+    "seconds": 49.095977125223726
+  }
+]

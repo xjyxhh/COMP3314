@@ -1,0 +1,162 @@
+{
+  "config": {
+    "methods": [
+      "euclidean",
+      "itml",
+      "lmnn",
+      "svm",
+      "svm_plus",
+      "itml_s",
+      "itml_plus"
+    ],
+    "gamma_grid": [
+      0.0001,
+      0.00031622776601683794,
+      0.001,
+      0.0031622776601683794,
+      0.01,
+      0.03162277660168379,
+      0.1,
+      0.31622776601683794,
+      1.0
+    ],
+    "lambda_grid": [
+      0.01,
+      0.03162277660168379,
+      0.1,
+      0.31622776601683794,
+      1.0,
+      3.1622776601683795,
+      10.0,
+      31.622776601683793,
+      100.0
+    ],
+    "C_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "svm_plus_gamma_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "svm_kernel": "linear",
+    "lmnn_mu_grid": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "lmnn_k": 5,
+    "lmnn_max_triplets": 1000000,
+    "itml_s_filter_rule": "shared_xi0",
+    "max_sweeps": 10,
+    "tolerance": 0.001,
+    "selection_metric": "AP",
+    "lmnn_backend": "projected",
+    "lmnn_max_iterations": 1000,
+    "lmnn_tolerance": 1e-07
+  },
+  "input_sha256": {
+    "features_pca.npz": "aa772a6329e4cf64472f829d212276e2ed8dcf6eeea7e497db402ac82f8a05a0",
+    "round_04/pairs.npz": "8623a575cd976ffc4421d010f767592f8392fc5f0fc697b3f2a41325519466f2",
+    "round_04/xi0.npy": "052483e447c3150585c52573ef0d342d2613fbbce457445e3d8fb1381a4998c3"
+  },
+  "baseline": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/external_rgbd_20261031/face_input_v2/baselines_final",
+  "variants": [
+    {
+      "kind": "partial",
+      "fraction": 0.0,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "partial",
+      "fraction": 0.25,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "partial",
+      "fraction": 0.5,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "partial",
+      "fraction": 0.75,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "partial",
+      "fraction": 1.0,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 0.2,
+      "method": "itml"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 0.2,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 0.4,
+      "method": "itml"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 0.4,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 0.6,
+      "method": "itml"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 0.6,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 0.8,
+      "method": "itml"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 0.8,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 1.0,
+      "method": "itml"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 1.0,
+      "method": "itml_plus"
+    }
+  ],
+  "parameter_policy": "fixed_main",
+  "selection": "main validation-selected parameters fixed for single-factor analyses",
+  "ambiguity": "Xu V-D does not specify whether each fraction retunes parameters; explicit implementation convention",
+  "sample_subset": "nested first floor(f*N) within each label; all images/PCA/bounds retained",
+  "partial_subset": "all pairs retained, nested first fraction per label has privileged information",
+  "cached_endpoints": "0% partial=ITML; 100% partial/all-pairs=original baseline selected models",
+  "source_sha256": "012ba159497752b692141c29ef3818b9fb1c463b4d6e73e1b3dec5021e8cc522",
+  "test_evaluated": false
+}

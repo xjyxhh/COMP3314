@@ -1,0 +1,29 @@
+{
+  "checked_models": 110,
+  "completed_baseline_candidates": 700,
+  "max_metric_error": 2.220446049250313e-16,
+  "frozen_hashes_match": true,
+  "training_core_code_unchanged": true,
+  "all_metrics_match": true,
+  "fixed_analysis_parameters_verified": true,
+  "all_20_serial_timing_models_match": true,
+  "itml_plus_minus_itml_AP_percentage_points_by_round": [
+    0.05818940656796556,
+    1.7980675928338519,
+    0.5379982495291258,
+    1.0127408843813135,
+    0.9383436796639111
+  ],
+  "itml_plus_stop_counts": {
+    "max_sweeps": 5
+  },
+  "itml_plus_equality_residual_range": [
+    0.006952517271500369,
+    0.7671125253888462
+  ],
+  "itml_plus_relative_equality_residual_range": [
+    0.00036493519677338067,
+    0.013139514217275534
+  ],
+  "original_paper_reproduction": false
+}

@@ -1,0 +1,106 @@
+{
+  "input": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/external_rgbd_20261031/face_input_v2",
+  "config": {
+    "methods": [
+      "euclidean",
+      "itml",
+      "lmnn",
+      "svm",
+      "svm_plus",
+      "itml_s",
+      "itml_plus"
+    ],
+    "gamma_grid": [
+      0.0001,
+      0.00031622776601683794,
+      0.001,
+      0.0031622776601683794,
+      0.01,
+      0.03162277660168379,
+      0.1,
+      0.31622776601683794,
+      1.0
+    ],
+    "lambda_grid": [
+      0.01,
+      0.03162277660168379,
+      0.1,
+      0.31622776601683794,
+      1.0,
+      3.1622776601683795,
+      10.0,
+      31.622776601683793,
+      100.0
+    ],
+    "C_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "svm_plus_gamma_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "svm_kernel": "linear",
+    "lmnn_mu_grid": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "lmnn_k": 5,
+    "lmnn_max_triplets": 1000000,
+    "itml_s_filter_rule": "shared_xi0",
+    "max_sweeps": 10,
+    "tolerance": 0.001,
+    "selection_metric": "AP",
+    "lmnn_backend": "projected",
+    "lmnn_max_iterations": 1000,
+    "lmnn_tolerance": 1e-07
+  },
+  "methods": [
+    "euclidean",
+    "itml",
+    "lmnn",
+    "svm",
+    "svm_plus",
+    "itml_s",
+    "itml_plus"
+  ],
+  "input_sha256": {
+    "features_pca.npz": "aa772a6329e4cf64472f829d212276e2ed8dcf6eeea7e497db402ac82f8a05a0",
+    "round_00/pairs.npz": "30c07fc2531136fc90709adc8c56c22a7add831103e613b64a4ee37d51738a70",
+    "round_00/xi0.npy": "8668f464b1266982635d8566cb3278245098effdce0ba3af71d4fe16a02a433c",
+    "train_manifest.csv": "dbe18338fd8287fb780226619e408b9f41371436ab49a08147f7cf2189fb4dde",
+    "split.npz": "ed47a31b95335c956237b5cb79efaab25ea6abacdced204f6d05b9f702fa168e"
+  },
+  "config_sha256": "a175ccfed37611a27adff61292e04461b2d1819211afb1810dfd6494a8e12132",
+  "numpy_version": "2.4.6",
+  "cvxpy_version": "1.9.3",
+  "code_sha256": {
+    "baselines.py": "a9c59235a46366f9cbd5c45796c0f57e9adf9615038b02817ff8981306781ddf",
+    "baseline_compare.py": "5cb06cd93fc04e0d9ff69ae4354e49f4f471335a5e8dda8954036ac9e7d8d378",
+    "metrics.py": "d06803970776d2dfdb2abc0f3b6bbe430e7182b08e404f654d5556a938b5dbc9",
+    "evaluation.py": "1725f7696d1b642008e04015062c995314aad015f15c14eff1f82f9ad6de4e91"
+  },
+  "scope": "Fixed-input formula/backend comparison; not original numerical reproduction",
+  "conventions": {
+    "svm_kernel": "linear",
+    "svm_pair_gate": "standard normal PDF, unscaled pair features",
+    "lmnn": "fixed same-identity Euclidean k neighbors, sum hinge SDP, no triplet sampling",
+    "itml_s": "explicit threshold convention from config; gamma shared between stages"
+  },
+  "selection": "AP on validation only; first candidate on ties",
+  "test_evaluated": false
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "split": 0,
+    "arrays_unchanged": {
+      "M": true,
+      "P": true,
+      "xi": true,
+      "dual": true,
+      "beta": true
+    }
+  },
+  {
+    "split": 1,
+    "arrays_unchanged": {
+      "M": true,
+      "P": true,
+      "xi": true,
+      "dual": true,
+      "beta": true
+    }
+  },
+  {
+    "split": 2,
+    "arrays_unchanged": {
+      "M": true,
+      "P": true,
+      "xi": true,
+      "dual": true,
+      "beta": true
+    }
+  }
+]

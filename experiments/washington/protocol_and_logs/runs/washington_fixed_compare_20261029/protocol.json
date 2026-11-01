@@ -1,0 +1,24 @@
+{
+  "input": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/washington_audit_verified_20261026",
+  "sha256": {
+    "manifest.csv": "a0df1eac391890e957dda6519a3d8007c49e85f1acae613464891d25ff389d4f",
+    "split.npz": "56b497916611dc2f1fb21429e7ef00f1e96c823b5c79b61c852544fb51bcde39",
+    "pca.npz": "667578d692f1407bc7b6784c5ef44b63d134b4bef216773e133588775ddb91a5",
+    "features_pca.npz": "3a87063838c945e12974a016fa58db6ad69449d5fee1c3634cb54e6f341c09ce",
+    "round_00/pairs.npz": "e31694efdb15d70bc0c768108910ee713ec9faaa35936fb1feeaa72b67595ea4",
+    "round_01/pairs.npz": "ebba3577c3e6555ea596ce2e3debf8e44a8f50094996d58ce6a352d35ae48fe8",
+    "round_00/xi0.npy": "30ead58ef18e4e728f10ab107592c056ed7dd857024200e7448c765e184b6f06",
+    "round_01/xi0.npy": "700a54a2625f23ce59ddb08b17c98dd55e910dfb86112162b379361b48cea25a"
+  },
+  "gamma": 0.1,
+  "lam": 1.0,
+  "budgets": [
+    100,
+    500,
+    1000
+  ],
+  "tolerance": 0.0,
+  "selection": "No parameter or budget selection; all predefined budgets reported.",
+  "scope": "Washington diagnostic subset; basic features, not paper GLBP.",
+  "numpy_version": "2.4.6"
+}

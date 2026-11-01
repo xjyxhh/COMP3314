@@ -1,0 +1,231 @@
+[
+  {
+    "round": "round_01",
+    "method": "euclidean",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {},
+      "status": "completed",
+      "validation": {
+        "AP": 0.7381672821397562,
+        "AUC": 0.881146311600857
+      },
+      "diagnostics": {},
+      "stop": "fixed_metric",
+      "final": {},
+      "depth_final": {},
+      "seconds": 0.0014626248739659786
+    }
+  },
+  {
+    "round": "round_01",
+    "method": "itml",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "gamma": 1.0
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 0.8198005235012847,
+        "AUC": 0.9243327211509029
+      },
+      "diagnostics": {},
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 8,
+        "objective": 148.03982991267276,
+        "max_inequality_violation": 0.005636320985354715,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 0.04095015993574092,
+        "dual_norm_change": 0.000725783431046985
+      },
+      "depth_final": {},
+      "seconds": 1.3156483336351812
+    }
+  },
+  {
+    "round": "round_01",
+    "method": "lmnn",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "mu": 1.0
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 0.7652796970794922,
+        "AUC": 0.8968640955004592
+      },
+      "diagnostics": {
+        "objective": 0.0,
+        "iterations": 16,
+        "backend": "exact_loss_projected_subgradient",
+        "min_eigenvalue": 0.517585193099334,
+        "global_optimum_certified": false,
+        "triplets": 190000
+      },
+      "stop": "objective_tolerance",
+      "final": {
+        "iteration": 16,
+        "objective": 0.0,
+        "relative_objective_change": 0.0,
+        "step": 0.00021138392949592214,
+        "projected_step_norm": 2.751770537014648e-14
+      },
+      "depth_final": {},
+      "seconds": 0.12018891563639045
+    }
+  },
+  {
+    "round": "round_01",
+    "method": "svm",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "C": 0.01
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 0.7040819681313685,
+        "AUC": 0.8769329660238752
+      },
+      "diagnostics": {
+        "objective": 13.513919012337997,
+        "primal_violation": 2.818173472363128e-09,
+        "stationarity_w": 9.216480218780165e-08,
+        "stationarity_b": 7.736548740533422e-08,
+        "complementarity": 6.303212648599553e-09,
+        "dual_violation": 0.0,
+        "stationarity_slack": 7.722133522902741e-11,
+        "relative_objective_recheck": 0.0
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "depth_final": {},
+      "seconds": 3.8905426249839365
+    }
+  },
+  {
+    "round": "round_01",
+    "method": "svm_plus",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "C": 0.01,
+        "gamma": 0.01
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 0.6374504283379041,
+        "AUC": 0.8536531986531986
+      },
+      "diagnostics": {
+        "objective": 36.88437169475505,
+        "primal_violation": 0.0,
+        "stationarity_w": 2.7024064319763665e-09,
+        "stationarity_b": 1.264005788925715e-09,
+        "complementarity": 1.1029763742321968e-09,
+        "dual_violation": 0.0,
+        "stationarity_privileged": 6.063981635387674e-09,
+        "stationarity_privileged_bias": 4.869604885993084e-09,
+        "relative_objective_recheck": 0.0
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "depth_final": {},
+      "seconds": 28.767326625064015
+    }
+  },
+  {
+    "round": "round_01",
+    "method": "itml_s",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "gamma": 1.0
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 0.8199597733999392,
+        "AUC": 0.9276201408019589
+      },
+      "diagnostics": {
+        "filter_rule": "shared_xi0",
+        "retained_positive": 584,
+        "retained_negative": 2886,
+        "removed": 334,
+        "depth_stop": "dual_norm_tolerance"
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 7,
+        "objective": 134.67019015731478,
+        "max_inequality_violation": 0.008182750712157016,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 0.057411855661513064,
+        "dual_norm_change": 0.00013201235752644889
+      },
+      "depth_final": {
+        "sweep": 6,
+        "objective": 6.9786764074569625,
+        "max_inequality_violation": 0.1659677082173019,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 0.17250933775350447,
+        "dual_norm_change": 0.0005427687373015137
+      },
+      "seconds": 2.3081712080165744
+    }
+  },
+  {
+    "round": "round_01",
+    "method": "itml_plus",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "gamma": 0.0031622776601683794,
+        "lam": 0.31622776601683794
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 0.8380636753036961,
+        "AUC": 0.929536271808999
+      },
+      "diagnostics": {},
+      "stop": "max_sweeps",
+      "final": {
+        "sweep": 10,
+        "objective": 151.02279196489383,
+        "max_inequality_violation": 0.5370311339189016,
+        "max_equality_residual": 0.7671125253888462,
+        "min_eigenvalue_M": 0.06049107712026211,
+        "dual_norm_change": 0.47843836387003696,
+        "min_eigenvalue_P": 0.09402443528179487,
+        "beta_norm_change": 0.4779209521712854,
+        "max_eigenvalue_M": 3.146043173935894,
+        "trace_M": 81.13610230108975,
+        "condition_number_M": 52.00838410731645,
+        "max_eigenvalue_P": 58.411582939967744,
+        "trace_P": 429.5919344090609,
+        "condition_number_P": 621.2383277273186,
+        "rgb_distance_min": 3.4478079781618893,
+        "rgb_distance_median": 46.309288662376446,
+        "rgb_distance_max": 94.1260297218349,
+        "depth_distance_min": 3.533243364918852,
+        "depth_distance_median": 32.88356880221892,
+        "depth_distance_max": 80.28609946063185,
+        "relative_inequality_violation": 0.007748310375854685,
+        "relative_equality_residual": 0.013139514217275534
+      },
+      "depth_final": {},
+      "seconds": 5.282814499922097
+    }
+  }
+]

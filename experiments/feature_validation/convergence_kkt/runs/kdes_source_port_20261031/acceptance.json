@@ -1,0 +1,17 @@
+{
+  "scope": "Pinned-source port exercised on 2 local grayscale faces, 16-word TOY codebook, not re-ID experiment",
+  "basis_shape": [
+    200,
+    2500
+  ],
+  "local_descriptor_dimension": 200,
+  "patches": [
+    130,
+    130
+  ],
+  "toy_encoded_dimensions": 336,
+  "license_path": "third_party/kdes_matlab/BSDLicense.txt",
+  "code_sha256": "ed28fcba21034a883fa89c33da428cec5d2684381ee2de10862389b339a702f5",
+  "matlab_runtime_parity_verified": false,
+  "original_author_package_version_verified": false
+}

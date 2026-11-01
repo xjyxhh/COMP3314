@@ -1,0 +1,14 @@
+{
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "python": "3.11.14",
+  "cpu_count": 8,
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "Pillow": "12.2.0",
+    "matplotlib": "3.10.8",
+    "cvxpy": "1.9.3",
+    "clarabel": "0.11.1"
+  },
+  "note": "Separate round scheduling, single-thread BLAS requested; final timing is serial. Earlier round_00 wrapper lacks only optional round filtering."
+}

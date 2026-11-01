@@ -1,0 +1,34 @@
+{
+  "source_images": 400,
+  "unique_file_hashes": 400,
+  "source_unchanged": true,
+  "splits": [
+    {
+      "split": "split_00",
+      "identity_disjoint": true,
+      "training_only_pca_recomputed": true,
+      "test_privileged_features_omitted": true,
+      "pairs_verified": true,
+      "witness_max_original_inequality": -8.408843297468265e-05,
+      "witness_min_eigenvalue": 0.0020745520746099405
+    },
+    {
+      "split": "split_01",
+      "identity_disjoint": true,
+      "training_only_pca_recomputed": true,
+      "test_privileged_features_omitted": true,
+      "pairs_verified": true,
+      "witness_max_original_inequality": -0.0003164947766440575,
+      "witness_min_eigenvalue": 0.006176985477297055
+    },
+    {
+      "split": "split_02",
+      "identity_disjoint": true,
+      "training_only_pca_recomputed": true,
+      "test_privileged_features_omitted": true,
+      "pairs_verified": true,
+      "witness_max_original_inequality": -0.00025124980685932614,
+      "witness_min_eigenvalue": 0.004848244888935878
+    }
+  ]
+}

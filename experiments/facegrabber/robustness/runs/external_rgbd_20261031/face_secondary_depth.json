@@ -1,0 +1,1127 @@
+{
+  "primary_raw_features_sha256": "a8b6841c7d5eb91534e73642ee8da8261d0bd278b778c9386431a7f9dc8a6ccf",
+  "source_selection_sha256": "26d877efff5f8459959ac44f74ad22eae229ff288dc2266ddb91ba4636723349",
+  "new_geometry_checks": [
+    {
+      "sample_id": "ID_001_01_HeadScan_000030",
+      "projection_holdout_rms": 0.013999544275033785
+    },
+    {
+      "sample_id": "ID_001_01_HeadScan_000060",
+      "projection_holdout_rms": 0.013402796645534426
+    },
+    {
+      "sample_id": "ID_001_02_Anger_000010",
+      "projection_holdout_rms": 0.011041310083224754
+    },
+    {
+      "sample_id": "ID_001_02_Anger_000020",
+      "projection_holdout_rms": 0.011054563943575716
+    },
+    {
+      "sample_id": "ID_001_03_Disgust_000010",
+      "projection_holdout_rms": 0.010243249815282757
+    },
+    {
+      "sample_id": "ID_001_03_Disgust_000020",
+      "projection_holdout_rms": 0.010123475534587725
+    },
+    {
+      "sample_id": "ID_001_04_Fear_000010",
+      "projection_holdout_rms": 0.009473705049147328
+    },
+    {
+      "sample_id": "ID_001_04_Fear_000020",
+      "projection_holdout_rms": 0.009934557059626313
+    },
+    {
+      "sample_id": "ID_001_05_Happiness_000010",
+      "projection_holdout_rms": 0.010050571505238705
+    },
+    {
+      "sample_id": "ID_001_05_Happiness_000020",
+      "projection_holdout_rms": 0.01047776651145984
+    },
+    {
+      "sample_id": "ID_001_06_Sadness_000010",
+      "projection_holdout_rms": 0.010596198766704246
+    },
+    {
+      "sample_id": "ID_001_06_Sadness_000020",
+      "projection_holdout_rms": 0.010483618459796928
+    },
+    {
+      "sample_id": "ID_001_07_Surprise_000010",
+      "projection_holdout_rms": 0.01005246250311761
+    },
+    {
+      "sample_id": "ID_001_07_Surprise_000020",
+      "projection_holdout_rms": 0.009438312737169975
+    },
+    {
+      "sample_id": "ID_002_01_HeadScan_000030",
+      "projection_holdout_rms": 0.007498985841138235
+    },
+    {
+      "sample_id": "ID_002_01_HeadScan_000060",
+      "projection_holdout_rms": 0.0051546174479943025
+    },
+    {
+      "sample_id": "ID_002_02_Anger_000010",
+      "projection_holdout_rms": 0.007935297663290267
+    },
+    {
+      "sample_id": "ID_002_02_Anger_000020",
+      "projection_holdout_rms": 0.008147171244929153
+    },
+    {
+      "sample_id": "ID_002_03_Disgust_000010",
+      "projection_holdout_rms": 0.008837829698882691
+    },
+    {
+      "sample_id": "ID_002_03_Disgust_000020",
+      "projection_holdout_rms": 0.008039843668681622
+    },
+    {
+      "sample_id": "ID_002_04_Fear_000010",
+      "projection_holdout_rms": 0.005961333093909033
+    },
+    {
+      "sample_id": "ID_002_04_Fear_000020",
+      "projection_holdout_rms": 0.0060361479642653485
+    },
+    {
+      "sample_id": "ID_002_05_Happiness_000010",
+      "projection_holdout_rms": 0.007167042521199971
+    },
+    {
+      "sample_id": "ID_002_05_Happiness_000020",
+      "projection_holdout_rms": 0.007134778577196941
+    },
+    {
+      "sample_id": "ID_002_06_Sadness_000010",
+      "projection_holdout_rms": 0.006744172755529262
+    },
+    {
+      "sample_id": "ID_002_06_Sadness_000020",
+      "projection_holdout_rms": 0.0067294242661423975
+    },
+    {
+      "sample_id": "ID_002_07_Surprise_000010",
+      "projection_holdout_rms": 0.007642839560727667
+    },
+    {
+      "sample_id": "ID_002_07_Surprise_000020",
+      "projection_holdout_rms": 0.007171972210228677
+    },
+    {
+      "sample_id": "ID_003_01_HeadScan_000030",
+      "projection_holdout_rms": 0.0063797949217374765
+    },
+    {
+      "sample_id": "ID_003_01_HeadScan_000060",
+      "projection_holdout_rms": 0.0067957165832060054
+    },
+    {
+      "sample_id": "ID_003_02_Anger_000010",
+      "projection_holdout_rms": 0.005870259468609998
+    },
+    {
+      "sample_id": "ID_003_02_Anger_000020",
+      "projection_holdout_rms": 0.005838494041179034
+    },
+    {
+      "sample_id": "ID_003_03_Disgust_000010",
+      "projection_holdout_rms": 0.006422955245289452
+    },
+    {
+      "sample_id": "ID_003_03_Disgust_000020",
+      "projection_holdout_rms": 0.0064236926421180965
+    },
+    {
+      "sample_id": "ID_003_04_Fear_000010",
+      "projection_holdout_rms": 0.005928561105502588
+    },
+    {
+      "sample_id": "ID_003_04_Fear_000020",
+      "projection_holdout_rms": 0.0057944878720645535
+    },
+    {
+      "sample_id": "ID_003_05_Happiness_000010",
+      "projection_holdout_rms": 0.00684535911413127
+    },
+    {
+      "sample_id": "ID_003_05_Happiness_000020",
+      "projection_holdout_rms": 0.00653580185177114
+    },
+    {
+      "sample_id": "ID_003_06_Sadness_000010",
+      "projection_holdout_rms": 0.005845983845827749
+    },
+    {
+      "sample_id": "ID_003_06_Sadness_000020",
+      "projection_holdout_rms": 0.00593021757537319
+    },
+    {
+      "sample_id": "ID_003_07_Surprise_000010",
+      "projection_holdout_rms": 0.009298291070384202
+    },
+    {
+      "sample_id": "ID_003_07_Surprise_000020",
+      "projection_holdout_rms": 0.008751506266771607
+    },
+    {
+      "sample_id": "ID_005_01_HeadScan_000030",
+      "projection_holdout_rms": 0.018118249411959535
+    },
+    {
+      "sample_id": "ID_005_01_HeadScan_000060",
+      "projection_holdout_rms": 0.020417917649189363
+    },
+    {
+      "sample_id": "ID_005_02_Anger_000010",
+      "projection_holdout_rms": 0.01972665879252701
+    },
+    {
+      "sample_id": "ID_005_02_Anger_000020",
+      "projection_holdout_rms": 0.020008807047592857
+    },
+    {
+      "sample_id": "ID_005_03_Disgust_000010",
+      "projection_holdout_rms": 0.01638384130881948
+    },
+    {
+      "sample_id": "ID_005_03_Disgust_000020",
+      "projection_holdout_rms": 0.016559194685981177
+    },
+    {
+      "sample_id": "ID_005_04_Fear_000010",
+      "projection_holdout_rms": 0.017131269368811274
+    },
+    {
+      "sample_id": "ID_005_04_Fear_000020",
+      "projection_holdout_rms": 0.01752197643367802
+    },
+    {
+      "sample_id": "ID_005_05_Happiness_000010",
+      "projection_holdout_rms": 0.021090118453200295
+    },
+    {
+      "sample_id": "ID_005_05_Happiness_000020",
+      "projection_holdout_rms": 0.022539637981574163
+    },
+    {
+      "sample_id": "ID_005_06_Sadness_000010",
+      "projection_holdout_rms": 0.02199741147920086
+    },
+    {
+      "sample_id": "ID_005_06_Sadness_000020",
+      "projection_holdout_rms": 0.023257183413541143
+    },
+    {
+      "sample_id": "ID_005_07_Surprise_000010",
+      "projection_holdout_rms": 0.02048652973667265
+    },
+    {
+      "sample_id": "ID_005_07_Surprise_000020",
+      "projection_holdout_rms": 0.020574696369817156
+    },
+    {
+      "sample_id": "ID_008_01_HeadScan_000029",
+      "projection_holdout_rms": 0.00419841346170848
+    },
+    {
+      "sample_id": "ID_008_01_HeadScan_000058",
+      "projection_holdout_rms": 0.005787355374801233
+    },
+    {
+      "sample_id": "ID_008_02_Anger_000010",
+      "projection_holdout_rms": 0.004595229746079847
+    },
+    {
+      "sample_id": "ID_008_02_Anger_000020",
+      "projection_holdout_rms": 0.004585068781592825
+    },
+    {
+      "sample_id": "ID_008_03_Disgust_000010",
+      "projection_holdout_rms": 0.0034173896986693622
+    },
+    {
+      "sample_id": "ID_008_03_Disgust_000020",
+      "projection_holdout_rms": 0.003354191745980137
+    },
+    {
+      "sample_id": "ID_008_04_Fear_000010",
+      "projection_holdout_rms": 0.004288203127463164
+    },
+    {
+      "sample_id": "ID_008_04_Fear_000020",
+      "projection_holdout_rms": 0.0042367846490905196
+    },
+    {
+      "sample_id": "ID_008_05_Happiness_000010",
+      "projection_holdout_rms": 0.004463103797437865
+    },
+    {
+      "sample_id": "ID_008_05_Happiness_000020",
+      "projection_holdout_rms": 0.004326307209923653
+    },
+    {
+      "sample_id": "ID_008_06_Sadness_000010",
+      "projection_holdout_rms": 0.004379688208466733
+    },
+    {
+      "sample_id": "ID_008_06_Sadness_000020",
+      "projection_holdout_rms": 0.004474874182210121
+    },
+    {
+      "sample_id": "ID_008_07_Surprise_000010",
+      "projection_holdout_rms": 0.0031502040911759103
+    },
+    {
+      "sample_id": "ID_008_07_Surprise_000020",
+      "projection_holdout_rms": 0.003086260482517788
+    },
+    {
+      "sample_id": "ID_014_01_HeadScan_000030",
+      "projection_holdout_rms": 0.0038232007868002683
+    },
+    {
+      "sample_id": "ID_014_01_HeadScan_000060",
+      "projection_holdout_rms": 0.0038909968545987267
+    },
+    {
+      "sample_id": "ID_014_02_Anger_000010",
+      "projection_holdout_rms": 0.0037747686406326966
+    },
+    {
+      "sample_id": "ID_014_02_Anger_000020",
+      "projection_holdout_rms": 0.0038823245715691487
+    },
+    {
+      "sample_id": "ID_014_03_Disgust_000010",
+      "projection_holdout_rms": 0.0040294992718578285
+    },
+    {
+      "sample_id": "ID_014_03_Disgust_000020",
+      "projection_holdout_rms": 0.004173698243488213
+    },
+    {
+      "sample_id": "ID_014_04_Fear_000010",
+      "projection_holdout_rms": 0.003623335194380465
+    },
+    {
+      "sample_id": "ID_014_04_Fear_000020",
+      "projection_holdout_rms": 0.003633547242723115
+    },
+    {
+      "sample_id": "ID_014_05_Happiness_000010",
+      "projection_holdout_rms": 0.003987442898726355
+    },
+    {
+      "sample_id": "ID_014_05_Happiness_000020",
+      "projection_holdout_rms": 0.003964403235731286
+    },
+    {
+      "sample_id": "ID_014_06_Sadness_000010",
+      "projection_holdout_rms": 0.003911321404460229
+    },
+    {
+      "sample_id": "ID_014_06_Sadness_000020",
+      "projection_holdout_rms": 0.004056327668294114
+    },
+    {
+      "sample_id": "ID_014_07_Surprise_000010",
+      "projection_holdout_rms": 0.0041811716691583034
+    },
+    {
+      "sample_id": "ID_014_07_Surprise_000020",
+      "projection_holdout_rms": 0.004173236099276518
+    },
+    {
+      "sample_id": "ID_015_01_HeadScan_000030",
+      "projection_holdout_rms": 0.005465614420694156
+    },
+    {
+      "sample_id": "ID_015_01_HeadScan_000060",
+      "projection_holdout_rms": 0.0070476718665206765
+    },
+    {
+      "sample_id": "ID_015_02_Anger_000010",
+      "projection_holdout_rms": 0.009395618718209738
+    },
+    {
+      "sample_id": "ID_015_02_Anger_000020",
+      "projection_holdout_rms": 0.009413165295153106
+    },
+    {
+      "sample_id": "ID_015_03_Disgust_000010",
+      "projection_holdout_rms": 0.00932059490003218
+    },
+    {
+      "sample_id": "ID_015_03_Disgust_000020",
+      "projection_holdout_rms": 0.009291142491720507
+    },
+    {
+      "sample_id": "ID_015_04_Fear_000010",
+      "projection_holdout_rms": 0.008705227188459933
+    },
+    {
+      "sample_id": "ID_015_04_Fear_000020",
+      "projection_holdout_rms": 0.008735707970804009
+    },
+    {
+      "sample_id": "ID_015_05_Happiness_000010",
+      "projection_holdout_rms": 0.007321837875932894
+    },
+    {
+      "sample_id": "ID_015_05_Happiness_000020",
+      "projection_holdout_rms": 0.00777231954266173
+    },
+    {
+      "sample_id": "ID_015_06_Sadness_000010",
+      "projection_holdout_rms": 0.0068479126212935785
+    },
+    {
+      "sample_id": "ID_015_06_Sadness_000020",
+      "projection_holdout_rms": 0.006894805117580761
+    },
+    {
+      "sample_id": "ID_015_07_Surprise_000010",
+      "projection_holdout_rms": 0.003147979442971613
+    },
+    {
+      "sample_id": "ID_015_07_Surprise_000020",
+      "projection_holdout_rms": 0.0027610192521068497
+    },
+    {
+      "sample_id": "ID_016_01_HeadScan_000030",
+      "projection_holdout_rms": 0.003340541853884942
+    },
+    {
+      "sample_id": "ID_016_01_HeadScan_000060",
+      "projection_holdout_rms": 0.0038354024710609475
+    },
+    {
+      "sample_id": "ID_016_02_Anger_000010",
+      "projection_holdout_rms": 0.0034668049135718375
+    },
+    {
+      "sample_id": "ID_016_02_Anger_000020",
+      "projection_holdout_rms": 0.0034425355551287026
+    },
+    {
+      "sample_id": "ID_016_03_Disgust_000010",
+      "projection_holdout_rms": 0.002441791343251092
+    },
+    {
+      "sample_id": "ID_016_03_Disgust_000020",
+      "projection_holdout_rms": 0.0026775652766562
+    },
+    {
+      "sample_id": "ID_016_04_Fear_000010",
+      "projection_holdout_rms": 0.002680608874924673
+    },
+    {
+      "sample_id": "ID_016_04_Fear_000020",
+      "projection_holdout_rms": 0.002632974944354539
+    },
+    {
+      "sample_id": "ID_016_05_Happiness_000010",
+      "projection_holdout_rms": 0.0030711648726953456
+    },
+    {
+      "sample_id": "ID_016_05_Happiness_000020",
+      "projection_holdout_rms": 0.0030343649942175714
+    },
+    {
+      "sample_id": "ID_016_06_Sadness_000010",
+      "projection_holdout_rms": 0.0032905588530348115
+    },
+    {
+      "sample_id": "ID_016_06_Sadness_000020",
+      "projection_holdout_rms": 0.003226834256552037
+    },
+    {
+      "sample_id": "ID_016_07_Surprise_000010",
+      "projection_holdout_rms": 0.002507142931985814
+    },
+    {
+      "sample_id": "ID_016_07_Surprise_000020",
+      "projection_holdout_rms": 0.0025431951554162353
+    },
+    {
+      "sample_id": "ID_018_01_HeadScan_000030",
+      "projection_holdout_rms": 0.0068991597929531825
+    },
+    {
+      "sample_id": "ID_018_01_HeadScan_000060",
+      "projection_holdout_rms": 0.00775502830143146
+    },
+    {
+      "sample_id": "ID_018_02_Anger_000010",
+      "projection_holdout_rms": 0.008183799211548376
+    },
+    {
+      "sample_id": "ID_018_02_Anger_000020",
+      "projection_holdout_rms": 0.008175600752936283
+    },
+    {
+      "sample_id": "ID_018_03_Disgust_000010",
+      "projection_holdout_rms": 0.007049320208905262
+    },
+    {
+      "sample_id": "ID_018_03_Disgust_000020",
+      "projection_holdout_rms": 0.0070941804268550976
+    },
+    {
+      "sample_id": "ID_018_04_Fear_000010",
+      "projection_holdout_rms": 0.007369951815615206
+    },
+    {
+      "sample_id": "ID_018_04_Fear_000020",
+      "projection_holdout_rms": 0.0074490372591784065
+    },
+    {
+      "sample_id": "ID_018_05_Happiness_000010",
+      "projection_holdout_rms": 0.008002373452143436
+    },
+    {
+      "sample_id": "ID_018_05_Happiness_000020",
+      "projection_holdout_rms": 0.007978672437005336
+    },
+    {
+      "sample_id": "ID_018_06_Sadness_000010",
+      "projection_holdout_rms": 0.007613943463283829
+    },
+    {
+      "sample_id": "ID_018_06_Sadness_000020",
+      "projection_holdout_rms": 0.00766294213969196
+    },
+    {
+      "sample_id": "ID_018_07_Surprise_000010",
+      "projection_holdout_rms": 0.007555014884169615
+    },
+    {
+      "sample_id": "ID_018_07_Surprise_000020",
+      "projection_holdout_rms": 0.007471851201426897
+    },
+    {
+      "sample_id": "ID_019_01_HeadScan_000030",
+      "projection_holdout_rms": 0.0061077200172478105
+    },
+    {
+      "sample_id": "ID_019_01_HeadScan_000060",
+      "projection_holdout_rms": 0.006035778041460049
+    },
+    {
+      "sample_id": "ID_019_02_Anger_000010",
+      "projection_holdout_rms": 0.006109500580285197
+    },
+    {
+      "sample_id": "ID_019_02_Anger_000020",
+      "projection_holdout_rms": 0.005752447382360301
+    },
+    {
+      "sample_id": "ID_019_03_Disgust_000010",
+      "projection_holdout_rms": 0.005330385782126159
+    },
+    {
+      "sample_id": "ID_019_03_Disgust_000020",
+      "projection_holdout_rms": 0.005262697534398037
+    },
+    {
+      "sample_id": "ID_019_04_Fear_000010",
+      "projection_holdout_rms": 0.005371055242095343
+    },
+    {
+      "sample_id": "ID_019_04_Fear_000020",
+      "projection_holdout_rms": 0.005378041176142084
+    },
+    {
+      "sample_id": "ID_019_05_Happiness_000010",
+      "projection_holdout_rms": 0.006356105611716978
+    },
+    {
+      "sample_id": "ID_019_05_Happiness_000020",
+      "projection_holdout_rms": 0.0063093563284682035
+    },
+    {
+      "sample_id": "ID_019_06_Sadness_000010",
+      "projection_holdout_rms": 0.005709052032410706
+    },
+    {
+      "sample_id": "ID_019_06_Sadness_000020",
+      "projection_holdout_rms": 0.005861052379791543
+    },
+    {
+      "sample_id": "ID_019_07_Surprise_000010",
+      "projection_holdout_rms": 0.005745874077970359
+    },
+    {
+      "sample_id": "ID_019_07_Surprise_000020",
+      "projection_holdout_rms": 0.005882281258167559
+    },
+    {
+      "sample_id": "ID_021_01_HeadScan_000030",
+      "projection_holdout_rms": 0.011357274340622092
+    },
+    {
+      "sample_id": "ID_021_01_HeadScan_000060",
+      "projection_holdout_rms": 0.012366945602995309
+    },
+    {
+      "sample_id": "ID_021_02_Anger_000010",
+      "projection_holdout_rms": 0.012353437481573989
+    },
+    {
+      "sample_id": "ID_021_02_Anger_000020",
+      "projection_holdout_rms": 0.012711945730521831
+    },
+    {
+      "sample_id": "ID_021_03_Disgust_000010",
+      "projection_holdout_rms": 0.011359715765453056
+    },
+    {
+      "sample_id": "ID_021_03_Disgust_000020",
+      "projection_holdout_rms": 0.011019959227335714
+    },
+    {
+      "sample_id": "ID_021_04_Fear_000010",
+      "projection_holdout_rms": 0.010707979053573116
+    },
+    {
+      "sample_id": "ID_021_04_Fear_000020",
+      "projection_holdout_rms": 0.010804033520482217
+    },
+    {
+      "sample_id": "ID_021_05_Happiness_000010",
+      "projection_holdout_rms": 0.012407481167675464
+    },
+    {
+      "sample_id": "ID_021_05_Happiness_000020",
+      "projection_holdout_rms": 0.01248314372855788
+    },
+    {
+      "sample_id": "ID_021_06_Sadness_000010",
+      "projection_holdout_rms": 0.012083252953174304
+    },
+    {
+      "sample_id": "ID_021_06_Sadness_000020",
+      "projection_holdout_rms": 0.011972311709945603
+    },
+    {
+      "sample_id": "ID_021_07_Surprise_000010",
+      "projection_holdout_rms": 0.007598103600789809
+    },
+    {
+      "sample_id": "ID_021_07_Surprise_000020",
+      "projection_holdout_rms": 0.009388397363758424
+    },
+    {
+      "sample_id": "ID_023_01_HeadScan_000030",
+      "projection_holdout_rms": 0.009983501190916764
+    },
+    {
+      "sample_id": "ID_023_01_HeadScan_000060",
+      "projection_holdout_rms": 0.012259305622043009
+    },
+    {
+      "sample_id": "ID_023_02_Anger_000010",
+      "projection_holdout_rms": 0.012993332503479841
+    },
+    {
+      "sample_id": "ID_023_02_Anger_000020",
+      "projection_holdout_rms": 0.012932915668519977
+    },
+    {
+      "sample_id": "ID_023_03_Disgust_000010",
+      "projection_holdout_rms": 0.012349296463224078
+    },
+    {
+      "sample_id": "ID_023_03_Disgust_000020",
+      "projection_holdout_rms": 0.012361659624438106
+    },
+    {
+      "sample_id": "ID_023_04_Fear_000010",
+      "projection_holdout_rms": 0.011696797366935349
+    },
+    {
+      "sample_id": "ID_023_04_Fear_000020",
+      "projection_holdout_rms": 0.01165552806265372
+    },
+    {
+      "sample_id": "ID_023_05_Happiness_000010",
+      "projection_holdout_rms": 0.012251349815858919
+    },
+    {
+      "sample_id": "ID_023_05_Happiness_000020",
+      "projection_holdout_rms": 0.012357075567008068
+    },
+    {
+      "sample_id": "ID_023_06_Sadness_000010",
+      "projection_holdout_rms": 0.012348816439182808
+    },
+    {
+      "sample_id": "ID_023_06_Sadness_000020",
+      "projection_holdout_rms": 0.01236127571605824
+    },
+    {
+      "sample_id": "ID_023_07_Surprise_000010",
+      "projection_holdout_rms": 0.011729979527995102
+    },
+    {
+      "sample_id": "ID_023_07_Surprise_000020",
+      "projection_holdout_rms": 0.011547701449554136
+    },
+    {
+      "sample_id": "ID_024_01_HeadScan_000030",
+      "projection_holdout_rms": 0.004637051224633121
+    },
+    {
+      "sample_id": "ID_024_01_HeadScan_000060",
+      "projection_holdout_rms": 0.004976736910118711
+    },
+    {
+      "sample_id": "ID_024_02_Anger_000010",
+      "projection_holdout_rms": 0.004495056444433875
+    },
+    {
+      "sample_id": "ID_024_02_Anger_000020",
+      "projection_holdout_rms": 0.004465929869729431
+    },
+    {
+      "sample_id": "ID_024_03_Disgust_000010",
+      "projection_holdout_rms": 0.004248618852777958
+    },
+    {
+      "sample_id": "ID_024_03_Disgust_000020",
+      "projection_holdout_rms": 0.004224143645399126
+    },
+    {
+      "sample_id": "ID_024_04_Fear_000010",
+      "projection_holdout_rms": 0.004306142168072339
+    },
+    {
+      "sample_id": "ID_024_04_Fear_000020",
+      "projection_holdout_rms": 0.004355055358225308
+    },
+    {
+      "sample_id": "ID_024_05_Happiness_000010",
+      "projection_holdout_rms": 0.004311833893418005
+    },
+    {
+      "sample_id": "ID_024_05_Happiness_000020",
+      "projection_holdout_rms": 0.00432279236381247
+    },
+    {
+      "sample_id": "ID_024_06_Sadness_000010",
+      "projection_holdout_rms": 0.0047398524057240135
+    },
+    {
+      "sample_id": "ID_024_06_Sadness_000020",
+      "projection_holdout_rms": 0.00469333562338572
+    },
+    {
+      "sample_id": "ID_024_07_Surprise_000010",
+      "projection_holdout_rms": 0.004893498726110399
+    },
+    {
+      "sample_id": "ID_024_07_Surprise_000020",
+      "projection_holdout_rms": 0.004931044883892886
+    },
+    {
+      "sample_id": "ID_027_01_HeadScan_000030",
+      "projection_holdout_rms": 0.0046584710898246815
+    },
+    {
+      "sample_id": "ID_027_01_HeadScan_000060",
+      "projection_holdout_rms": 0.00520011029302318
+    },
+    {
+      "sample_id": "ID_027_02_Anger_000010",
+      "projection_holdout_rms": 0.005236437978078066
+    },
+    {
+      "sample_id": "ID_027_02_Anger_000020",
+      "projection_holdout_rms": 0.005251889624294099
+    },
+    {
+      "sample_id": "ID_027_03_Disgust_000010",
+      "projection_holdout_rms": 0.005194171543243538
+    },
+    {
+      "sample_id": "ID_027_03_Disgust_000020",
+      "projection_holdout_rms": 0.005190065656012915
+    },
+    {
+      "sample_id": "ID_027_04_Fear_000010",
+      "projection_holdout_rms": 0.005171593179050073
+    },
+    {
+      "sample_id": "ID_027_04_Fear_000020",
+      "projection_holdout_rms": 0.005127842431078414
+    },
+    {
+      "sample_id": "ID_027_05_Happiness_000010",
+      "projection_holdout_rms": 0.005323419582068378
+    },
+    {
+      "sample_id": "ID_027_05_Happiness_000020",
+      "projection_holdout_rms": 0.005435721836048511
+    },
+    {
+      "sample_id": "ID_027_06_Sadness_000010",
+      "projection_holdout_rms": 0.005530934282757068
+    },
+    {
+      "sample_id": "ID_027_06_Sadness_000020",
+      "projection_holdout_rms": 0.005586271812613523
+    },
+    {
+      "sample_id": "ID_027_07_Surprise_000010",
+      "projection_holdout_rms": 0.005051442822625938
+    },
+    {
+      "sample_id": "ID_027_07_Surprise_000020",
+      "projection_holdout_rms": 0.005022601087066519
+    },
+    {
+      "sample_id": "ID_029_01_HeadScan_000030",
+      "projection_holdout_rms": 0.0030371320102766065
+    },
+    {
+      "sample_id": "ID_029_01_HeadScan_000060",
+      "projection_holdout_rms": 0.005467783642977381
+    },
+    {
+      "sample_id": "ID_029_02_Anger_000010",
+      "projection_holdout_rms": 0.004413881288165471
+    },
+    {
+      "sample_id": "ID_029_02_Anger_000020",
+      "projection_holdout_rms": 0.004383212337700396
+    },
+    {
+      "sample_id": "ID_029_03_Disgust_000010",
+      "projection_holdout_rms": 0.0053099877382610915
+    },
+    {
+      "sample_id": "ID_029_03_Disgust_000020",
+      "projection_holdout_rms": 0.00528136783602158
+    },
+    {
+      "sample_id": "ID_029_04_Fear_000010",
+      "projection_holdout_rms": 0.006043420409492282
+    },
+    {
+      "sample_id": "ID_029_04_Fear_000020",
+      "projection_holdout_rms": 0.005894522734623007
+    },
+    {
+      "sample_id": "ID_029_05_Happiness_000010",
+      "projection_holdout_rms": 0.005861027496356746
+    },
+    {
+      "sample_id": "ID_029_05_Happiness_000020",
+      "projection_holdout_rms": 0.005823375772455658
+    },
+    {
+      "sample_id": "ID_029_06_Sadness_000010",
+      "projection_holdout_rms": 0.005691220317489407
+    },
+    {
+      "sample_id": "ID_029_06_Sadness_000020",
+      "projection_holdout_rms": 0.005702315506729377
+    },
+    {
+      "sample_id": "ID_029_07_Surprise_000010",
+      "projection_holdout_rms": 0.005557881145097293
+    },
+    {
+      "sample_id": "ID_029_07_Surprise_000020",
+      "projection_holdout_rms": 0.005469408568905632
+    },
+    {
+      "sample_id": "ID_032_01_HeadScan_000030",
+      "projection_holdout_rms": 0.00978532136450464
+    },
+    {
+      "sample_id": "ID_032_01_HeadScan_000060",
+      "projection_holdout_rms": 0.009195227506563767
+    },
+    {
+      "sample_id": "ID_032_02_Anger_000010",
+      "projection_holdout_rms": 0.010955198531281891
+    },
+    {
+      "sample_id": "ID_032_02_Anger_000020",
+      "projection_holdout_rms": 0.010940462266753397
+    },
+    {
+      "sample_id": "ID_032_03_Disgust_000010",
+      "projection_holdout_rms": 0.011335370035813532
+    },
+    {
+      "sample_id": "ID_032_03_Disgust_000020",
+      "projection_holdout_rms": 0.011163248379151869
+    },
+    {
+      "sample_id": "ID_032_04_Fear_000010",
+      "projection_holdout_rms": 0.009613110050555916
+    },
+    {
+      "sample_id": "ID_032_04_Fear_000020",
+      "projection_holdout_rms": 0.009643177341393066
+    },
+    {
+      "sample_id": "ID_032_05_Happiness_000010",
+      "projection_holdout_rms": 0.013228674036847623
+    },
+    {
+      "sample_id": "ID_032_05_Happiness_000020",
+      "projection_holdout_rms": 0.012367809607645833
+    },
+    {
+      "sample_id": "ID_032_06_Sadness_000010",
+      "projection_holdout_rms": 0.013250220493894339
+    },
+    {
+      "sample_id": "ID_032_06_Sadness_000020",
+      "projection_holdout_rms": 0.012931224646782617
+    },
+    {
+      "sample_id": "ID_032_07_Surprise_000010",
+      "projection_holdout_rms": 0.012399700470824768
+    },
+    {
+      "sample_id": "ID_032_07_Surprise_000020",
+      "projection_holdout_rms": 0.012374716126034356
+    },
+    {
+      "sample_id": "ID_033_01_HeadScan_000034",
+      "projection_holdout_rms": 0.0025006546008947794
+    },
+    {
+      "sample_id": "ID_033_01_HeadScan_000067",
+      "projection_holdout_rms": 0.003447145070944834
+    },
+    {
+      "sample_id": "ID_033_02_Anger_000010",
+      "projection_holdout_rms": 0.002992968881641402
+    },
+    {
+      "sample_id": "ID_033_02_Anger_000020",
+      "projection_holdout_rms": 0.0030414567256304634
+    },
+    {
+      "sample_id": "ID_033_03_Disgust_000010",
+      "projection_holdout_rms": 0.0027112056839305263
+    },
+    {
+      "sample_id": "ID_033_03_Disgust_000020",
+      "projection_holdout_rms": 0.00268999419024371
+    },
+    {
+      "sample_id": "ID_033_04_Fear_000010",
+      "projection_holdout_rms": 0.002396838662296796
+    },
+    {
+      "sample_id": "ID_033_04_Fear_000020",
+      "projection_holdout_rms": 0.0019983070857955676
+    },
+    {
+      "sample_id": "ID_033_05_Happiness_000010",
+      "projection_holdout_rms": 0.003176854322782565
+    },
+    {
+      "sample_id": "ID_033_05_Happiness_000020",
+      "projection_holdout_rms": 0.0031452054961033753
+    },
+    {
+      "sample_id": "ID_033_06_Sadness_000010",
+      "projection_holdout_rms": 0.002149942196883774
+    },
+    {
+      "sample_id": "ID_033_06_Sadness_000020",
+      "projection_holdout_rms": 0.002193088933497476
+    },
+    {
+      "sample_id": "ID_033_07_Surprise_000010",
+      "projection_holdout_rms": 0.0025326655472481243
+    },
+    {
+      "sample_id": "ID_033_07_Surprise_000020",
+      "projection_holdout_rms": 0.0025256344757386925
+    },
+    {
+      "sample_id": "ID_035_01_HeadScan_000030",
+      "projection_holdout_rms": 0.00454761591466009
+    },
+    {
+      "sample_id": "ID_035_01_HeadScan_000060",
+      "projection_holdout_rms": 0.0063834661718478476
+    },
+    {
+      "sample_id": "ID_035_02_Anger_000010",
+      "projection_holdout_rms": 0.005665274991367195
+    },
+    {
+      "sample_id": "ID_035_02_Anger_000020",
+      "projection_holdout_rms": 0.0057093089042429485
+    },
+    {
+      "sample_id": "ID_035_03_Disgust_000010",
+      "projection_holdout_rms": 0.004313514818987543
+    },
+    {
+      "sample_id": "ID_035_03_Disgust_000020",
+      "projection_holdout_rms": 0.004180251036003076
+    },
+    {
+      "sample_id": "ID_035_04_Fear_000010",
+      "projection_holdout_rms": 0.0030222084355188998
+    },
+    {
+      "sample_id": "ID_035_04_Fear_000020",
+      "projection_holdout_rms": 0.0031307090809429344
+    },
+    {
+      "sample_id": "ID_035_05_Happiness_000010",
+      "projection_holdout_rms": 0.005334103512278433
+    },
+    {
+      "sample_id": "ID_035_05_Happiness_000020",
+      "projection_holdout_rms": 0.0053943994680070075
+    },
+    {
+      "sample_id": "ID_035_06_Sadness_000010",
+      "projection_holdout_rms": 0.005109833104796872
+    },
+    {
+      "sample_id": "ID_035_06_Sadness_000020",
+      "projection_holdout_rms": 0.005079903524307319
+    },
+    {
+      "sample_id": "ID_035_07_Surprise_000010",
+      "projection_holdout_rms": 0.004684874833876982
+    },
+    {
+      "sample_id": "ID_035_07_Surprise_000020",
+      "projection_holdout_rms": 0.00459716311253819
+    },
+    {
+      "sample_id": "ID_037_01_HeadScan_000030",
+      "projection_holdout_rms": 0.0041449767088255025
+    },
+    {
+      "sample_id": "ID_037_01_HeadScan_000060",
+      "projection_holdout_rms": 0.004548619280643777
+    },
+    {
+      "sample_id": "ID_037_02_Anger_000010",
+      "projection_holdout_rms": 0.004822121031189118
+    },
+    {
+      "sample_id": "ID_037_02_Anger_000020",
+      "projection_holdout_rms": 0.004903325478268457
+    },
+    {
+      "sample_id": "ID_037_03_Disgust_000010",
+      "projection_holdout_rms": 0.004511884143318047
+    },
+    {
+      "sample_id": "ID_037_03_Disgust_000020",
+      "projection_holdout_rms": 0.004491733253785417
+    },
+    {
+      "sample_id": "ID_037_04_Fear_000010",
+      "projection_holdout_rms": 0.004245102250548524
+    },
+    {
+      "sample_id": "ID_037_04_Fear_000020",
+      "projection_holdout_rms": 0.004246461237971784
+    },
+    {
+      "sample_id": "ID_037_05_Happiness_000010",
+      "projection_holdout_rms": 0.004666145514780448
+    },
+    {
+      "sample_id": "ID_037_05_Happiness_000020",
+      "projection_holdout_rms": 0.004548822057222379
+    },
+    {
+      "sample_id": "ID_037_06_Sadness_000010",
+      "projection_holdout_rms": 0.004917271232039717
+    },
+    {
+      "sample_id": "ID_037_06_Sadness_000020",
+      "projection_holdout_rms": 0.004873341505536034
+    },
+    {
+      "sample_id": "ID_037_07_Surprise_000010",
+      "projection_holdout_rms": 0.004861058087649471
+    },
+    {
+      "sample_id": "ID_037_07_Surprise_000020",
+      "projection_holdout_rms": 0.004985367601191828
+    },
+    {
+      "sample_id": "ID_038_01_HeadScan_000030",
+      "projection_holdout_rms": 0.0025963207077606474
+    },
+    {
+      "sample_id": "ID_038_01_HeadScan_000060",
+      "projection_holdout_rms": 0.0048562574698563545
+    },
+    {
+      "sample_id": "ID_038_02_Anger_000010",
+      "projection_holdout_rms": 0.004144379443120752
+    },
+    {
+      "sample_id": "ID_038_02_Anger_000020",
+      "projection_holdout_rms": 0.004136347206683475
+    },
+    {
+      "sample_id": "ID_038_03_Disgust_000010",
+      "projection_holdout_rms": 0.004070648110197975
+    },
+    {
+      "sample_id": "ID_038_03_Disgust_000020",
+      "projection_holdout_rms": 0.004143379770353194
+    },
+    {
+      "sample_id": "ID_038_04_Fear_000010",
+      "projection_holdout_rms": 0.0038700711502639624
+    },
+    {
+      "sample_id": "ID_038_04_Fear_000020",
+      "projection_holdout_rms": 0.0038414842539381553
+    },
+    {
+      "sample_id": "ID_038_05_Happiness_000010",
+      "projection_holdout_rms": 0.0042788809616948805
+    },
+    {
+      "sample_id": "ID_038_05_Happiness_000020",
+      "projection_holdout_rms": 0.004196046600961765
+    },
+    {
+      "sample_id": "ID_038_06_Sadness_000010",
+      "projection_holdout_rms": 0.005387446607903825
+    },
+    {
+      "sample_id": "ID_038_06_Sadness_000020",
+      "projection_holdout_rms": 0.004991499448576501
+    },
+    {
+      "sample_id": "ID_038_07_Surprise_000010",
+      "projection_holdout_rms": 0.005506646101814785
+    },
+    {
+      "sample_id": "ID_038_07_Surprise_000020",
+      "projection_holdout_rms": 0.005517204373952214
+    }
+  ],
+  "scope": "For secondary repeated partitions only; every partition fits/uses depth on training identities only"
+}

@@ -1,0 +1,10 @@
+{
+  "test_RGB_samples": 1280,
+  "frozen_models": 35,
+  "within_condition_evaluations": 70,
+  "cross_action_evaluations": 140,
+  "scope": "Additional frozen-model cross-action retrieval; not BIWI Still or cross-day clothing",
+  "new_training": false,
+  "new_parameter_selection": false,
+  "extra_test_depth_used": false
+}

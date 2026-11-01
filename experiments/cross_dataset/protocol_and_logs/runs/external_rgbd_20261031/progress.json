@@ -1,0 +1,22 @@
+{
+  "updated_unix": 1793516959.376184,
+  "status": "complete",
+  "searches": {
+    "face": {
+      "attempted": 700,
+      "completed": 700,
+      "failed": 0
+    },
+    "body": {
+      "attempted": 700,
+      "completed": 699,
+      "failed": 1
+    },
+    "robustness": {
+      "attempted": 900,
+      "completed": 900,
+      "failed": 0
+    }
+  },
+  "final_report": "EXTERNAL_RGBD_RESULTS.md"
+}

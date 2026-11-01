@@ -1,0 +1,27 @@
+[
+  {
+    "path": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/external_rgbd_20261031/face_input_v2/baseline_shards/round_00",
+    "protocol_sha256": "e738736c8202c0fe6a24826544e5ca1b2a9167cfb8d024ee47502aae1187dc6e",
+    "results_sha256": "493d5aa6b451279af14e839166a5bb43ec18782bb974bfddca0bfaaa5d98ca0c"
+  },
+  {
+    "path": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/external_rgbd_20261031/face_input_v2/baseline_shards/round_01",
+    "protocol_sha256": "a2867dae44b08519854b2b1812a92a9fc51261f4adf59ad939bc84b6693267f0",
+    "results_sha256": "b17bb870dc79e31b753a042e3c85a18d61ecbccd396f71a4466b7601cbfbb5cf"
+  },
+  {
+    "path": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/external_rgbd_20261031/face_input_v2/baseline_shards/round_02",
+    "protocol_sha256": "8abb41dae983e4ea46d96652e6d6050fdd92e49bb0b1d2b26610134c02437f3a",
+    "results_sha256": "84147289b49b5db1a521d85b602db99390e3da7374e6e26405feba63e86dd207"
+  },
+  {
+    "path": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/external_rgbd_20261031/face_input_v2/baseline_shards/round_03",
+    "protocol_sha256": "9c2b0c23be66b2c7ae35b2c2a735b60af5e2524c0d21dd78b8838438705afbda",
+    "results_sha256": "880bd8e10605e9023b66fdfae1c62f6ac30f23152d3dc81692a7ba40b7239eaf"
+  },
+  {
+    "path": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/external_rgbd_20261031/face_input_v2/baseline_shards/round_04",
+    "protocol_sha256": "76820a6eb89f0992ad049aeb07328cc8ce29543ec530abbd6ab4c24fd1229a1d",
+    "results_sha256": "0becaef73187d806d9bf1c5aa728376d295817507b746de32c546713df157729"
+  }
+]

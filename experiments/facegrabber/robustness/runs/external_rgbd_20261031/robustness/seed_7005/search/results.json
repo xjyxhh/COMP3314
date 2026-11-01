@@ -1,0 +1,75 @@
+[
+  {
+    "round": "round_00",
+    "method": "itml",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "gamma": 1.0
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 0.8966662987164444,
+        "AUC": 0.9512897865077701
+      },
+      "diagnostics": {},
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 8,
+        "objective": 67.74424457496399,
+        "max_inequality_violation": 0.22577853695930727,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 0.013899465274945504,
+        "dual_norm_change": 0.0002777705207551142
+      },
+      "depth_final": {},
+      "seconds": 6.964876499958336
+    }
+  },
+  {
+    "round": "round_00",
+    "method": "itml_plus",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "gamma": 1.0,
+        "lam": 0.01
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 0.9002194757827973,
+        "AUC": 0.9537402311584873
+      },
+      "diagnostics": {},
+      "stop": "max_sweeps",
+      "final": {
+        "sweep": 10,
+        "objective": 122.05751591367999,
+        "max_inequality_violation": 1.8331714120532148,
+        "max_equality_residual": 3.294249582479874,
+        "min_eigenvalue_M": 0.010911878412178347,
+        "dual_norm_change": 0.027824050654502292,
+        "min_eigenvalue_P": 0.0012940981156405705,
+        "beta_norm_change": 0.026740808366280434,
+        "max_eigenvalue_M": 2.6668291211234245,
+        "trace_M": 79.25736766908378,
+        "condition_number_M": 244.3968875374449,
+        "max_eigenvalue_P": 7.920636273594026,
+        "trace_P": 116.6616659060196,
+        "condition_number_P": 6120.584040626131,
+        "rgb_distance_min": 0.1257682365091531,
+        "rgb_distance_median": 9.872213080608486,
+        "rgb_distance_max": 21.560324636858912,
+        "depth_distance_min": 0.8632161214726244,
+        "depth_distance_median": 7.245506205416744,
+        "depth_distance_max": 10.782939549660881,
+        "relative_inequality_violation": 0.1953660101715595,
+        "relative_equality_residual": 0.6353117831611154
+      },
+      "depth_final": {},
+      "seconds": 17.227614792063832
+    }
+  }
+]

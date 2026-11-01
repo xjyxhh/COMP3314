@@ -1,0 +1,310 @@
+[
+  {
+    "kind": "main",
+    "method": "euclidean",
+    "fraction": 1.0,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "main",
+    "method": "itml",
+    "fraction": 1.0,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "main",
+    "method": "lmnn",
+    "fraction": 1.0,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "main",
+    "method": "svm",
+    "fraction": 1.0,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "main",
+    "method": "svm_plus",
+    "fraction": 1.0,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "main",
+    "method": "itml_s",
+    "fraction": 1.0,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "main",
+    "method": "itml_plus",
+    "fraction": 1.0,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "partial",
+    "method": "itml_plus",
+    "fraction": 0.0,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "partial",
+    "method": "itml_plus",
+    "fraction": 0.25,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "partial",
+    "method": "itml_plus",
+    "fraction": 0.5,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "partial",
+    "method": "itml_plus",
+    "fraction": 0.75,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "partial",
+    "method": "itml_plus",
+    "fraction": 1.0,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "sample_count",
+    "method": "itml",
+    "fraction": 0.2,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "sample_count",
+    "method": "itml",
+    "fraction": 0.4,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "sample_count",
+    "method": "itml",
+    "fraction": 0.6,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "sample_count",
+    "method": "itml",
+    "fraction": 0.8,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "sample_count",
+    "method": "itml",
+    "fraction": 1.0,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "sample_count",
+    "method": "itml_plus",
+    "fraction": 0.2,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "sample_count",
+    "method": "itml_plus",
+    "fraction": 0.4,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "sample_count",
+    "method": "itml_plus",
+    "fraction": 0.6,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "sample_count",
+    "method": "itml_plus",
+    "fraction": 0.8,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  },
+  {
+    "kind": "sample_count",
+    "method": "itml_plus",
+    "fraction": 1.0,
+    "rounds": 1,
+    "AP": {
+      "mean": 1.0,
+      "std": 0.0
+    },
+    "AUC": {
+      "mean": 1.0,
+      "std": 0.0
+    }
+  }
+]

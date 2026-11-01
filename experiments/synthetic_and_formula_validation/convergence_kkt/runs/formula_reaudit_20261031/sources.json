@@ -1,0 +1,15 @@
+{
+  "papers": {
+    "Distance Metric Learning using Privileged Information (T-NNLS 2015).pdf": "b339d49c0f28b5d14a35c748cb694b64a1700c5770d1a82117bb06762b5afd04",
+    "Informationtheoretic metric learning.pdf": "e79ca1feda0910a8837b29a0763fbaa2f6551054de0e5857086ef6eb6bdbc88c"
+  },
+  "code_sha256": {
+    "metrics.py": "ae8120b7d2cafee8f6e5fbc00ff9fa566495b9dfd712668652f20b10f058c4ce",
+    "corrected.py": "32ad21c585428a23817ca88b1b93499d3c30e1d6ea31a5d144f568c5a920da6c",
+    "evaluation.py": "e1d7f495d4af944569501d8c918eb38fadb910906bfb517ca45083f9d14ac065",
+    "pca.py": "074690f01e65bfb999682e7a31ac7d9d41669f109ab6547f241c90e4b479178f",
+    "data.py": "8e0e2f6ca06de97eea0da1ab89f23de4fe2ef4f40999d8e6b9f782924b175368",
+    "run.py": "186de3c7019820b0657935c945354d158ea444ddea5f6c7f347c7ac6615172ee",
+    "audit_formulas.py": "a2d2a4847702953457060f5ea0b2f84775612a9eb26cf4e50750653247195dff"
+  }
+}

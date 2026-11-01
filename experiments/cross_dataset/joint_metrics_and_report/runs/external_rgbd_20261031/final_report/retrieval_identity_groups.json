@@ -1,0 +1,635 @@
+{
+  "records": [
+    {
+      "round": "round_00",
+      "method": "euclidean",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.4375
+    },
+    {
+      "round": "round_00",
+      "method": "euclidean",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.375,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_00",
+      "method": "itml",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_00",
+      "method": "itml",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.3125,
+      "untrained_identity_rank1": 0.3125
+    },
+    {
+      "round": "round_00",
+      "method": "lmnn",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.75,
+      "untrained_identity_rank1": 0.6875
+    },
+    {
+      "round": "round_00",
+      "method": "lmnn",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.6875,
+      "untrained_identity_rank1": 0.625
+    },
+    {
+      "round": "round_00",
+      "method": "svm",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.0625,
+      "untrained_identity_rank1": 0.1875
+    },
+    {
+      "round": "round_00",
+      "method": "svm",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.1875,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_00",
+      "method": "svm_plus",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.3125,
+      "untrained_identity_rank1": 0.4375
+    },
+    {
+      "round": "round_00",
+      "method": "svm_plus",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.4375,
+      "untrained_identity_rank1": 0.6875
+    },
+    {
+      "round": "round_00",
+      "method": "itml_s",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_00",
+      "method": "itml_s",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.3125
+    },
+    {
+      "round": "round_00",
+      "method": "itml_plus",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.625,
+      "untrained_identity_rank1": 0.5625
+    },
+    {
+      "round": "round_00",
+      "method": "itml_plus",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.875,
+      "untrained_identity_rank1": 0.625
+    },
+    {
+      "round": "round_01",
+      "method": "euclidean",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.4375
+    },
+    {
+      "round": "round_01",
+      "method": "euclidean",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.375,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_01",
+      "method": "itml",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_01",
+      "method": "itml",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.3125,
+      "untrained_identity_rank1": 0.3125
+    },
+    {
+      "round": "round_01",
+      "method": "lmnn",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.75,
+      "untrained_identity_rank1": 0.6875
+    },
+    {
+      "round": "round_01",
+      "method": "lmnn",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.6875,
+      "untrained_identity_rank1": 0.625
+    },
+    {
+      "round": "round_01",
+      "method": "svm",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.3125,
+      "untrained_identity_rank1": 0.4375
+    },
+    {
+      "round": "round_01",
+      "method": "svm",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.3125,
+      "untrained_identity_rank1": 0.1875
+    },
+    {
+      "round": "round_01",
+      "method": "svm_plus",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.5
+    },
+    {
+      "round": "round_01",
+      "method": "svm_plus",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.5625,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_01",
+      "method": "itml_s",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_01",
+      "method": "itml_s",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.3125,
+      "untrained_identity_rank1": 0.3125
+    },
+    {
+      "round": "round_01",
+      "method": "itml_plus",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.4375,
+      "untrained_identity_rank1": 0.75
+    },
+    {
+      "round": "round_01",
+      "method": "itml_plus",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.6875,
+      "untrained_identity_rank1": 0.75
+    },
+    {
+      "round": "round_02",
+      "method": "euclidean",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.4375
+    },
+    {
+      "round": "round_02",
+      "method": "euclidean",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.375,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_02",
+      "method": "itml",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_02",
+      "method": "itml",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.375,
+      "untrained_identity_rank1": 0.3125
+    },
+    {
+      "round": "round_02",
+      "method": "lmnn",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.75,
+      "untrained_identity_rank1": 0.6875
+    },
+    {
+      "round": "round_02",
+      "method": "lmnn",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.6875,
+      "untrained_identity_rank1": 0.625
+    },
+    {
+      "round": "round_02",
+      "method": "svm",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.125,
+      "untrained_identity_rank1": 0.0625
+    },
+    {
+      "round": "round_02",
+      "method": "svm",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.125,
+      "untrained_identity_rank1": 0.1875
+    },
+    {
+      "round": "round_02",
+      "method": "svm_plus",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.5,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_02",
+      "method": "svm_plus",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.3125,
+      "untrained_identity_rank1": 0.5
+    },
+    {
+      "round": "round_02",
+      "method": "itml_s",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_02",
+      "method": "itml_s",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.3125
+    },
+    {
+      "round": "round_02",
+      "method": "itml_plus",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.5,
+      "untrained_identity_rank1": 0.625
+    },
+    {
+      "round": "round_02",
+      "method": "itml_plus",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.75,
+      "untrained_identity_rank1": 0.625
+    },
+    {
+      "round": "round_03",
+      "method": "euclidean",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.4375
+    },
+    {
+      "round": "round_03",
+      "method": "euclidean",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.375,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_03",
+      "method": "itml",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_03",
+      "method": "itml",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.375,
+      "untrained_identity_rank1": 0.3125
+    },
+    {
+      "round": "round_03",
+      "method": "lmnn",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.75,
+      "untrained_identity_rank1": 0.6875
+    },
+    {
+      "round": "round_03",
+      "method": "lmnn",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.6875,
+      "untrained_identity_rank1": 0.625
+    },
+    {
+      "round": "round_03",
+      "method": "svm",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.1875,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_03",
+      "method": "svm",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.3125,
+      "untrained_identity_rank1": 0.1875
+    },
+    {
+      "round": "round_03",
+      "method": "svm_plus",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.4375,
+      "untrained_identity_rank1": 0.4375
+    },
+    {
+      "round": "round_03",
+      "method": "svm_plus",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.375,
+      "untrained_identity_rank1": 0.5
+    },
+    {
+      "round": "round_03",
+      "method": "itml_s",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_03",
+      "method": "itml_s",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.3125,
+      "untrained_identity_rank1": 0.3125
+    },
+    {
+      "round": "round_03",
+      "method": "itml_plus",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.6875,
+      "untrained_identity_rank1": 0.5
+    },
+    {
+      "round": "round_03",
+      "method": "itml_plus",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.875,
+      "untrained_identity_rank1": 0.5625
+    },
+    {
+      "round": "round_04",
+      "method": "euclidean",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.4375
+    },
+    {
+      "round": "round_04",
+      "method": "euclidean",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.375,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_04",
+      "method": "itml",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_04",
+      "method": "itml",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.375,
+      "untrained_identity_rank1": 0.3125
+    },
+    {
+      "round": "round_04",
+      "method": "lmnn",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.75,
+      "untrained_identity_rank1": 0.6875
+    },
+    {
+      "round": "round_04",
+      "method": "lmnn",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.6875,
+      "untrained_identity_rank1": 0.625
+    },
+    {
+      "round": "round_04",
+      "method": "svm",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.1875,
+      "untrained_identity_rank1": 0.4375
+    },
+    {
+      "round": "round_04",
+      "method": "svm",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.375,
+      "untrained_identity_rank1": 0.1875
+    },
+    {
+      "round": "round_04",
+      "method": "svm_plus",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.4375,
+      "untrained_identity_rank1": 0.5
+    },
+    {
+      "round": "round_04",
+      "method": "svm_plus",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.375,
+      "untrained_identity_rank1": 0.625
+    },
+    {
+      "round": "round_04",
+      "method": "itml_s",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_04",
+      "method": "itml_s",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.25,
+      "untrained_identity_rank1": 0.375
+    },
+    {
+      "round": "round_04",
+      "method": "itml_plus",
+      "setting": "normal_A",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.5,
+      "untrained_identity_rank1": 0.75
+    },
+    {
+      "round": "round_04",
+      "method": "itml_plus",
+      "setting": "normal_B",
+      "trained_identity_queries": 16,
+      "untrained_identity_queries": 16,
+      "trained_identity_rank1": 0.6875,
+      "untrained_identity_rank1": 0.5625
+    }
+  ],
+  "scope": "Same full gallery for both query groups. Untrained means absent from model training, but these identities appeared in validation; not never-seen confirmation."
+}

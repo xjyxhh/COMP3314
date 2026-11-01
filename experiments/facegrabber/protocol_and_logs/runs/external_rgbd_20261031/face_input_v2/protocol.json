@@ -1,0 +1,20 @@
+{
+  "scope": "FaceGrabber real sensor-depth alternative face verification; not EURECOM/Curtin reproduction",
+  "seed": 2026,
+  "rounds": 5,
+  "identity_split": [
+    20,
+    10,
+    10
+  ],
+  "shots": 14,
+  "pca_dimensions": 150,
+  "ordinary": "Native JPEG grayscale, RGB-only pretrained YuNet2023mar eye points; target [30,42],[75,42]; no HD2D/3D/depth access for val/test",
+  "privileged": "Recorded FaceRaw sensor z in meters converted to millimeters; per-frame DLT from HD3D/HD2D, linear face-hull raster at120x105; not model z",
+  "feature": "G-LBP6888 histogram_l1, train-only PCA150 independently per modality",
+  "depth_conversion_deviation": "point-cloud projection and interpolation rather than native depth PNG; original target eyes/conventions unavailable",
+  "source_selection_sha256": "bc91d0079d7b87b0defbcaed68472237e429472764af92bc7502c1d0aeb0da87",
+  "primary_metric": "validation AP; frozen test AP/AUC",
+  "prior_test_exposure": false,
+  "test_evaluated": false
+}

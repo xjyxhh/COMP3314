@@ -1,0 +1,12 @@
+{
+  "variant": "shape_augmented",
+  "training_rms_scale": 1.5124338886995012,
+  "rgb": "exactly unchanged from source",
+  "source": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/washington_audit_verified_20261026",
+  "source_features_sha256": "3a87063838c945e12974a016fa58db6ad69449d5fee1c3634cb54e6f341c09ce",
+  "shape_block_scale": 0.05560323273823337,
+  "depth": "4x4 robust relative-depth mean/std/q10/q50/q90, mask and valid occupancy; aspect/fill/coverage; 115 raw dimensions; train-only PCA 8D",
+  "augmentation": "original 8D plus shape 8D, each block same training RMS",
+  "missing": "zero depth excluded; empty cell statistics zero; no sample removed",
+  "not_glbp": true
+}

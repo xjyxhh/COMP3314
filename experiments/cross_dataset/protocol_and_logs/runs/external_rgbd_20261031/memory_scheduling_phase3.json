@@ -1,0 +1,10 @@
+{
+  "active_limits": {
+    "face": 4,
+    "body": 2,
+    "robustness": 2
+  },
+  "suspended": [],
+  "events": [],
+  "note": "Search elapsed times include explicit scheduling pauses. Model settings unchanged. Final training times measured after all work."
+}

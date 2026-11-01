@@ -1,0 +1,23 @@
+{
+  "file": "facegrabber/Preview.zip",
+  "url": "https://webdisk.ads.mwn.de/Handlers/AnonymousDownload.ashx?folder=18e2eac4&path=Datenbanken%5CPreview.zip",
+  "started_unix": 1793449960.986801,
+  "status_code": 200,
+  "final_url": "https://webdisk.ads.mwn.de/Handlers/AnonymousDownload.ashx?folder=00a74ddc&path=Datenbanken%5CPreview.zip",
+  "headers": {
+    "Cache-Control": "public, must-revalidate",
+    "Content-Length": "178569455",
+    "Content-Type": "application/zip; charset=utf-8",
+    "Last-Modified": "Tue, 19 Jan 2016 11:11:58 GMT",
+    "Accept-Ranges": "bytes",
+    "ETag": "\"#635887987182730738\"",
+    "Content-Disposition": "attachment; filename=\"Preview.zip\"",
+    "Content-Security-Policy": "default-src 'self';",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Strict-Transport-Security": "max-age=86400; includeSubDomains",
+    "Date": "Sat, 31 Oct 2026 12:32:44 GMT"
+  },
+  "bytes": 178569455,
+  "sha256": "2c6ab7dc37880a0ef4d26befb41c7d0e0705fdd3268779b31fba80d6afa47233",
+  "status": "downloaded"
+}

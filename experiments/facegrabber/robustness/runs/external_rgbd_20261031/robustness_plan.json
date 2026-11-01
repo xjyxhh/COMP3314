@@ -1,0 +1,30 @@
+{
+  "recorded_unix": 1793451640.903423,
+  "dataset": "FaceGrabber same40people as primary; overlapping repeated partitions, not independent confirmation",
+  "identity_split": [
+    20,
+    10,
+    10
+  ],
+  "partition_seeds": [
+    7001,
+    7002,
+    7003,
+    7004,
+    7005,
+    7006,
+    7007,
+    7008,
+    7009,
+    7010
+  ],
+  "rounds_per_partition": 1,
+  "methods": [
+    "itml",
+    "itml_plus"
+  ],
+  "feature": "same raw RGB G-LBP; depth only training identities per split; independent train-only PCA150 per split",
+  "parameter_policy": "full original9 gamma x9lambda validation AP search per partition; evaluate only after all20 model selections complete",
+  "iterations": "original10sweeps/tolerance1e-3",
+  "exposure": "Primary and repeated partitions share people; no naive independent-run t-test"
+}

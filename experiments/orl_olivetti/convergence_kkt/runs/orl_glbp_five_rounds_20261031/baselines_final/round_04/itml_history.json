@@ -1,0 +1,69 @@
+{
+  "history": [
+    {
+      "sweep": 1,
+      "objective": 204.6109704242386,
+      "max_inequality_violation": 0.1753078946060711,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.030629903015643636,
+      "dual_norm_change": 3702314895309198.5
+    },
+    {
+      "sweep": 2,
+      "objective": 163.30200740740588,
+      "max_inequality_violation": 0.9101689883882615,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.03687840121562691,
+      "dual_norm_change": 0.3401892846465939
+    },
+    {
+      "sweep": 3,
+      "objective": 151.20783537245546,
+      "max_inequality_violation": 1.0112201696203513,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.04021593413405966,
+      "dual_norm_change": 0.11608387468707228
+    },
+    {
+      "sweep": 4,
+      "objective": 146.52063541340507,
+      "max_inequality_violation": 0.5964968936780757,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.04151178358259483,
+      "dual_norm_change": 0.04794369257981057
+    },
+    {
+      "sweep": 5,
+      "objective": 146.3669111629831,
+      "max_inequality_violation": 0.31633950196594185,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.04144191433176957,
+      "dual_norm_change": 0.004249328707841685
+    },
+    {
+      "sweep": 6,
+      "objective": 147.36071540848562,
+      "max_inequality_violation": 0.12374604722220184,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.04112411973118774,
+      "dual_norm_change": 0.00836537800511276
+    },
+    {
+      "sweep": 7,
+      "objective": 147.94892423063126,
+      "max_inequality_violation": 0.04027704896639506,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.04096717893754898,
+      "dual_norm_change": 0.0048681391743620505
+    },
+    {
+      "sweep": 8,
+      "objective": 148.0442446051137,
+      "max_inequality_violation": 0.006679454525331252,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.04095327440496475,
+      "dual_norm_change": 0.0006189230437985488
+    }
+  ],
+  "depth_history": []
+}

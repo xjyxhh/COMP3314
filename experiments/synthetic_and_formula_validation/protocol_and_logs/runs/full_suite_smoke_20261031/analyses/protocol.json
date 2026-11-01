@@ -1,0 +1,125 @@
+{
+  "config": {
+    "methods": [
+      "euclidean",
+      "itml",
+      "lmnn",
+      "svm",
+      "svm_plus",
+      "itml_s",
+      "itml_plus"
+    ],
+    "gamma_grid": [
+      0.1
+    ],
+    "lambda_grid": [
+      1.0
+    ],
+    "C_grid": [
+      1.0
+    ],
+    "svm_plus_gamma_grid": [
+      1.0
+    ],
+    "svm_kernel": "linear",
+    "lmnn_mu_grid": [
+      0.5
+    ],
+    "lmnn_k": 5,
+    "lmnn_backend": "projected",
+    "lmnn_max_iterations": 100,
+    "itml_s_filter_rule": "shared_xi0",
+    "max_sweeps": 2,
+    "tolerance": 0.0,
+    "selection_metric": "AP"
+  },
+  "input_sha256": {
+    "features_pca.npz": "d64391ac49c6ed48385fe10a639eb015ec70e2e5e72565ae8a5a437f95d7e8af",
+    "round_00/pairs.npz": "7cae0a57aba8faa5a189fbe030594b1fc6c5eac32cec0c072557b3604649a0d1",
+    "round_00/xi0.npy": "c0772a0cde073f8e633495eb470ec14711312762f33054b8c972ece3833dd2dc"
+  },
+  "baseline": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/full_suite_smoke_20261031/baselines",
+  "variants": [
+    {
+      "kind": "partial",
+      "fraction": 0.0,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "partial",
+      "fraction": 0.25,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "partial",
+      "fraction": 0.5,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "partial",
+      "fraction": 0.75,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "partial",
+      "fraction": 1.0,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 0.2,
+      "method": "itml"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 0.2,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 0.4,
+      "method": "itml"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 0.4,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 0.6,
+      "method": "itml"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 0.6,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 0.8,
+      "method": "itml"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 0.8,
+      "method": "itml_plus"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 1.0,
+      "method": "itml"
+    },
+    {
+      "kind": "sample_count",
+      "fraction": 1.0,
+      "method": "itml_plus"
+    }
+  ],
+  "selection": "validation AP per variant; no test evaluation",
+  "sample_subset": "nested first floor(f*N) within each label; all images/PCA/bounds retained",
+  "partial_subset": "all pairs retained, nested first fraction per label has privileged information",
+  "cached_endpoints": "0% partial=ITML; 100% partial/all-pairs=original baseline selected models",
+  "source_sha256": "654f87c36927397b7bad000c67d4cb40e7eb2a93a72e6f9c6d16739cd1f24b9e",
+  "test_evaluated": false
+}

@@ -1,0 +1,285 @@
+{
+  "records": [
+    {
+      "round": "round_00",
+      "method": "svm",
+      "setting": "normal_A",
+      "rank1": {
+        "raw": 0.125,
+        "rounded6": 0.125,
+        "rounded9": 0.125,
+        "relative_rounded9": 0.125
+      },
+      "w_norm": 159.56962288288426,
+      "score_abs_max": 3.137987474944299,
+      "score_range": 5.626704404694589
+    },
+    {
+      "round": "round_00",
+      "method": "svm",
+      "setting": "normal_B",
+      "rank1": {
+        "raw": 0.28125,
+        "rounded6": 0.28125,
+        "rounded9": 0.28125,
+        "relative_rounded9": 0.28125
+      },
+      "w_norm": 159.56962288288426,
+      "score_abs_max": 3.9427434127585803,
+      "score_range": 6.034795015671602
+    },
+    {
+      "round": "round_00",
+      "method": "svm_plus",
+      "setting": "normal_A",
+      "rank1": {
+        "raw": 0.375,
+        "rounded6": 0.03125,
+        "rounded9": 0.34375,
+        "relative_rounded9": 0.375
+      },
+      "w_norm": 4.240181083274712e-05,
+      "score_abs_max": 6.210690113378346e-09,
+      "score_range": 1.1052908835471834e-08
+    },
+    {
+      "round": "round_00",
+      "method": "svm_plus",
+      "setting": "normal_B",
+      "rank1": {
+        "raw": 0.5625,
+        "rounded6": 0.03125,
+        "rounded9": 0.46875,
+        "relative_rounded9": 0.5625
+      },
+      "w_norm": 4.240181083274712e-05,
+      "score_abs_max": 9.444870566499655e-09,
+      "score_range": 1.5822405995028073e-08
+    },
+    {
+      "round": "round_01",
+      "method": "svm",
+      "setting": "normal_A",
+      "rank1": {
+        "raw": 0.375,
+        "rounded6": 0.375,
+        "rounded9": 0.375,
+        "relative_rounded9": 0.375
+      },
+      "w_norm": 67.1898760043554,
+      "score_abs_max": 2.306858083216221,
+      "score_range": 4.1645410983940145
+    },
+    {
+      "round": "round_01",
+      "method": "svm",
+      "setting": "normal_B",
+      "rank1": {
+        "raw": 0.25,
+        "rounded6": 0.25,
+        "rounded9": 0.25,
+        "relative_rounded9": 0.25
+      },
+      "w_norm": 67.1898760043554,
+      "score_abs_max": 3.2417805665245534,
+      "score_range": 4.800167330772307
+    },
+    {
+      "round": "round_01",
+      "method": "svm_plus",
+      "setting": "normal_A",
+      "rank1": {
+        "raw": 0.375,
+        "rounded6": 0.03125,
+        "rounded9": 0.375,
+        "relative_rounded9": 0.375
+      },
+      "w_norm": 4.1220707561441284e-05,
+      "score_abs_max": 5.248870898288521e-09,
+      "score_range": 9.807050203827531e-09
+    },
+    {
+      "round": "round_01",
+      "method": "svm_plus",
+      "setting": "normal_B",
+      "rank1": {
+        "raw": 0.46875,
+        "rounded6": 0.03125,
+        "rounded9": 0.4375,
+        "relative_rounded9": 0.46875
+      },
+      "w_norm": 4.1220707561441284e-05,
+      "score_abs_max": 8.891106412009687e-09,
+      "score_range": 1.4570669004792242e-08
+    },
+    {
+      "round": "round_02",
+      "method": "svm",
+      "setting": "normal_A",
+      "rank1": {
+        "raw": 0.09375,
+        "rounded6": 0.09375,
+        "rounded9": 0.09375,
+        "relative_rounded9": 0.09375
+      },
+      "w_norm": 159.28222120831518,
+      "score_abs_max": 3.4237625889390655,
+      "score_range": 5.659979511310801
+    },
+    {
+      "round": "round_02",
+      "method": "svm",
+      "setting": "normal_B",
+      "rank1": {
+        "raw": 0.15625,
+        "rounded6": 0.15625,
+        "rounded9": 0.15625,
+        "relative_rounded9": 0.15625
+      },
+      "w_norm": 159.28222120831518,
+      "score_abs_max": 4.374253657136259,
+      "score_range": 6.584738579979868
+    },
+    {
+      "round": "round_02",
+      "method": "svm_plus",
+      "setting": "normal_A",
+      "rank1": {
+        "raw": 0.4375,
+        "rounded6": 0.03125,
+        "rounded9": 0.34375,
+        "relative_rounded9": 0.4375
+      },
+      "w_norm": 3.181372280089442e-05,
+      "score_abs_max": 3.962978230031609e-09,
+      "score_range": 6.705697231252463e-09
+    },
+    {
+      "round": "round_02",
+      "method": "svm_plus",
+      "setting": "normal_B",
+      "rank1": {
+        "raw": 0.40625,
+        "rounded6": 0.03125,
+        "rounded9": 0.21875,
+        "relative_rounded9": 0.40625
+      },
+      "w_norm": 3.181372280089442e-05,
+      "score_abs_max": 6.052463895093357e-09,
+      "score_range": 9.368852185436425e-09
+    },
+    {
+      "round": "round_03",
+      "method": "svm",
+      "setting": "normal_A",
+      "rank1": {
+        "raw": 0.28125,
+        "rounded6": 0.28125,
+        "rounded9": 0.28125,
+        "relative_rounded9": 0.28125
+      },
+      "w_norm": 67.01123110930821,
+      "score_abs_max": 2.3984866869299077,
+      "score_range": 4.337243308465767
+    },
+    {
+      "round": "round_03",
+      "method": "svm",
+      "setting": "normal_B",
+      "rank1": {
+        "raw": 0.25,
+        "rounded6": 0.25,
+        "rounded9": 0.25,
+        "relative_rounded9": 0.25
+      },
+      "w_norm": 67.01123110930821,
+      "score_abs_max": 3.349863328676342,
+      "score_range": 4.974868903138697
+    },
+    {
+      "round": "round_03",
+      "method": "svm_plus",
+      "setting": "normal_A",
+      "rank1": {
+        "raw": 0.4375,
+        "rounded6": 0.03125,
+        "rounded9": 0.40625,
+        "relative_rounded9": 0.4375
+      },
+      "w_norm": 4.9641567911083206e-05,
+      "score_abs_max": 7.015357837063834e-09,
+      "score_range": 1.2367135644989289e-08
+    },
+    {
+      "round": "round_03",
+      "method": "svm_plus",
+      "setting": "normal_B",
+      "rank1": {
+        "raw": 0.4375,
+        "rounded6": 0.03125,
+        "rounded9": 0.375,
+        "relative_rounded9": 0.4375
+      },
+      "w_norm": 4.9641567911083206e-05,
+      "score_abs_max": 9.884383028998926e-09,
+      "score_range": 1.6824310063837854e-08
+    },
+    {
+      "round": "round_04",
+      "method": "svm",
+      "setting": "normal_A",
+      "rank1": {
+        "raw": 0.3125,
+        "rounded6": 0.3125,
+        "rounded9": 0.3125,
+        "relative_rounded9": 0.3125
+      },
+      "w_norm": 66.55523889700886,
+      "score_abs_max": 2.495463568338102,
+      "score_range": 4.357264153779056
+    },
+    {
+      "round": "round_04",
+      "method": "svm",
+      "setting": "normal_B",
+      "rank1": {
+        "raw": 0.28125,
+        "rounded6": 0.28125,
+        "rounded9": 0.28125,
+        "relative_rounded9": 0.28125
+      },
+      "w_norm": 66.55523889700886,
+      "score_abs_max": 3.313262474116608,
+      "score_range": 4.849189503391456
+    },
+    {
+      "round": "round_04",
+      "method": "svm_plus",
+      "setting": "normal_A",
+      "rank1": {
+        "raw": 0.46875,
+        "rounded6": 0.03125,
+        "rounded9": 0.28125,
+        "relative_rounded9": 0.46875
+      },
+      "w_norm": 1.715666965684636e-05,
+      "score_abs_max": 1.8207571115529458e-09,
+      "score_range": 2.987250270379163e-09
+    },
+    {
+      "round": "round_04",
+      "method": "svm_plus",
+      "setting": "normal_B",
+      "rank1": {
+        "raw": 0.5,
+        "rounded6": 0.03125,
+        "rounded9": 0.15625,
+        "relative_rounded9": 0.5
+      },
+      "w_norm": 1.715666965684636e-05,
+      "score_abs_max": 2.41805390256942e-09,
+      "score_range": 3.870651350966259e-09
+    }
+  ],
+  "scope": "Additional numerical diagnostic, not a replacement scoring rule; six/nine decimal rounding never selects parameters"
+}

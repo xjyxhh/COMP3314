@@ -1,0 +1,340 @@
+[
+  {
+    "round": "round_00",
+    "method": "euclidean",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {},
+      "status": "completed",
+      "validation": {
+        "AP": 1.0,
+        "AUC": 1.0
+      },
+      "diagnostics": {},
+      "stop": "fixed_metric",
+      "seconds": 0.000337124802172184
+    }
+  },
+  {
+    "round": "round_00",
+    "method": "itml",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "gamma": 0.1
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 1.0,
+        "AUC": 1.0
+      },
+      "diagnostics": {},
+      "stop": "dual_norm_tolerance",
+      "seconds": 0.0009212088771164417
+    }
+  },
+  {
+    "round": "round_00",
+    "method": "lmnn",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "mu": 0.1
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 1.0,
+        "AUC": 1.0
+      },
+      "diagnostics": {
+        "objective": 0.27666904906382755,
+        "pull": 0.30734805131396226,
+        "push": 0.0005580288126152411,
+        "triplets": 1080,
+        "min_eigenvalue": 0.2160824549472234,
+        "primal_violation": 4.315992008230296e-12,
+        "stationarity_M": 2.8842149321130353e-08,
+        "stationarity_slack": 2.507753305946857e-11,
+        "complementarity": 4.629747399640879e-11,
+        "relative_objective_recheck": 7.655465150691043e-11
+      },
+      "stop": "convex_optimal",
+      "seconds": 0.11297645792365074
+    }
+  },
+  {
+    "round": "round_00",
+    "method": "svm",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "C": 0.1
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 1.0,
+        "AUC": 1.0
+      },
+      "diagnostics": {
+        "objective": 1.8960855634437912,
+        "primal_violation": 3.1128921662570974e-10,
+        "stationarity_w": 3.16955080461103e-10,
+        "stationarity_b": 9.335510142705061e-11,
+        "complementarity": 3.112892136501085e-11,
+        "dual_violation": 0.0,
+        "stationarity_slack": 4.6677642750559735e-11,
+        "relative_objective_recheck": 1.171068485547349e-16
+      },
+      "stop": "convex_optimal",
+      "seconds": 0.003831250127404928
+    }
+  },
+  {
+    "round": "round_00",
+    "method": "svm_plus",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "C": 0.1,
+        "gamma": 0.1
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 1.0,
+        "AUC": 1.0
+      },
+      "diagnostics": {
+        "objective": 2.015641031055842,
+        "primal_violation": 0.0,
+        "stationarity_w": 4.01265475240911e-11,
+        "stationarity_b": 1.2909007196526545e-11,
+        "complementarity": 1.1474643060501372e-10,
+        "dual_violation": 0.0,
+        "stationarity_privileged": 7.893481581526951e-11,
+        "stationarity_privileged_bias": 1.804163346497134e-10,
+        "relative_objective_recheck": 0.0
+      },
+      "stop": "convex_optimal",
+      "seconds": 0.003421999979764223
+    }
+  },
+  {
+    "round": "round_00",
+    "method": "itml_s",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "gamma": 0.1
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 1.0,
+        "AUC": 1.0
+      },
+      "diagnostics": {
+        "filter_rule": "shared_xi0",
+        "retained_positive": 12,
+        "retained_negative": 16,
+        "removed": 0,
+        "depth_stop": "dual_norm_tolerance"
+      },
+      "stop": "dual_norm_tolerance",
+      "seconds": 0.0011533326469361782
+    }
+  },
+  {
+    "round": "round_00",
+    "method": "itml_plus",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "gamma": 0.1,
+        "lam": 0.1
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 1.0,
+        "AUC": 1.0
+      },
+      "diagnostics": {},
+      "stop": "max_sweeps",
+      "seconds": 0.004395249765366316
+    }
+  },
+  {
+    "round": "round_01",
+    "method": "euclidean",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {},
+      "status": "completed",
+      "validation": {
+        "AP": 1.0,
+        "AUC": 1.0
+      },
+      "diagnostics": {},
+      "stop": "fixed_metric",
+      "seconds": 8.983304724097252e-05
+    }
+  },
+  {
+    "round": "round_01",
+    "method": "itml",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "gamma": 0.1
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 1.0,
+        "AUC": 1.0
+      },
+      "diagnostics": {},
+      "stop": "dual_norm_tolerance",
+      "seconds": 0.000504541676491499
+    }
+  },
+  {
+    "round": "round_01",
+    "method": "lmnn",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "mu": 0.1
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 1.0,
+        "AUC": 1.0
+      },
+      "diagnostics": {
+        "objective": 0.27666904906382755,
+        "pull": 0.30734805131396226,
+        "push": 0.0005580288126152411,
+        "triplets": 1080,
+        "min_eigenvalue": 0.2160824549472234,
+        "primal_violation": 4.315992008230296e-12,
+        "stationarity_M": 2.8842149321130353e-08,
+        "stationarity_slack": 2.507753305946857e-11,
+        "complementarity": 4.629747399640879e-11,
+        "relative_objective_recheck": 7.655465150691043e-11
+      },
+      "stop": "convex_optimal",
+      "seconds": 0.08820562483742833
+    }
+  },
+  {
+    "round": "round_01",
+    "method": "svm",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "C": 0.1
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 1.0,
+        "AUC": 1.0
+      },
+      "diagnostics": {
+        "objective": 1.9221470906588842,
+        "primal_violation": 8.090726977272311e-10,
+        "stationarity_w": 1.0331615192822549e-09,
+        "stationarity_b": 3.1256519594791143e-10,
+        "complementarity": 1.2060475979972467e-10,
+        "dual_violation": 0.0,
+        "stationarity_slack": 1.562825800269992e-10,
+        "relative_objective_recheck": 0.0
+      },
+      "stop": "convex_optimal",
+      "seconds": 0.002716208342462778
+    }
+  },
+  {
+    "round": "round_01",
+    "method": "svm_plus",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "C": 0.1,
+        "gamma": 0.1
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 1.0,
+        "AUC": 1.0
+      },
+      "diagnostics": {
+        "objective": 2.1362556397095194,
+        "primal_violation": 0.0,
+        "stationarity_w": 4.3053104785116156e-15,
+        "stationarity_b": 8.326672684688674e-16,
+        "complementarity": 2.628578146693365e-09,
+        "dual_violation": 0.0,
+        "stationarity_privileged": 9.509804092676017e-15,
+        "stationarity_privileged_bias": 2.375877272697835e-14,
+        "relative_objective_recheck": 0.0
+      },
+      "stop": "convex_optimal",
+      "seconds": 0.0030929171480238438
+    }
+  },
+  {
+    "round": "round_01",
+    "method": "itml_s",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "gamma": 0.1
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 1.0,
+        "AUC": 1.0
+      },
+      "diagnostics": {
+        "filter_rule": "shared_xi0",
+        "retained_positive": 12,
+        "retained_negative": 16,
+        "removed": 0,
+        "depth_stop": "dual_norm_tolerance"
+      },
+      "stop": "dual_norm_tolerance",
+      "seconds": 0.00098762521520257
+    }
+  },
+  {
+    "round": "round_01",
+    "method": "itml_plus",
+    "failed_candidates": 0,
+    "status": "completed",
+    "selected": {
+      "parameters": {
+        "gamma": 0.1,
+        "lam": 0.1
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 1.0,
+        "AUC": 1.0
+      },
+      "diagnostics": {},
+      "stop": "max_sweeps",
+      "seconds": 0.00395616702735424
+    }
+  }
+]

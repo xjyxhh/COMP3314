@@ -1,0 +1,13 @@
+{
+  "seed": 3314,
+  "scope": "Synthetic workflow only, no test input",
+  "identities": 3,
+  "training_samples": 18,
+  "validation_samples": 18,
+  "rounds": 2,
+  "feature_dimensions": 2,
+  "xi0_positive": 0.2,
+  "xi0_negative": 2.5,
+  "centers_shared_across_train_validation": true,
+  "note": "Not a face/RGB-D dataset; fixed illustrative bounds, no PCA fitting or original sample counts"
+}

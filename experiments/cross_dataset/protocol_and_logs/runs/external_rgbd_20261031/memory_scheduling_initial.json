@@ -1,0 +1,76 @@
+{
+  "active_limits": {
+    "face": 2,
+    "body": 1,
+    "robustness": 1
+  },
+  "suspended": [
+    64014,
+    64015,
+    71239,
+    71534
+  ],
+  "events": [
+    {
+      "unix": 1793453814.25124,
+      "pid": 71240,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793453814.251262,
+      "pid": 64016,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793453814.2512681,
+      "pid": 64017,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793453814.251331,
+      "pid": 71535,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793453935.415085,
+      "pid": 71239,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793453935.4151309,
+      "pid": 71240,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793453935.4151769,
+      "pid": 64014,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793453935.4152231,
+      "pid": 64015,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793453935.415242,
+      "pid": 64016,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793453935.415257,
+      "pid": 64017,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793453935.415892,
+      "pid": 71534,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793453935.415905,
+      "pid": 71535,
+      "action": "resume_own_worker"
+    }
+  ],
+  "note": "Search elapsed times include explicit scheduling pauses. Model settings unchanged. Final training times measured after all work."
+}

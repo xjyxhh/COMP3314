@@ -1,0 +1,31 @@
+{
+  "repository": "flyfj/RGBDMaze",
+  "commit": "7973cb37319449c1dc76593a2973412d72ce5bc2",
+  "package": "KernelDescriptor",
+  "copyright": "Liefeng Bo / Xiaofeng Ren; BSD notice retained",
+  "independent_mirror": {
+    "repository": "Buzz-Beater/Watch-n-Patch-Feature-Extraction",
+    "commit": "e5898c06d409382c89227ae14f6c1ea843dae622",
+    "file": "feature/visual/KernelDescriptor/kdes/gradkdes_dense.m",
+    "normalized_text_matches": true
+  },
+  "source_files_sha256": {
+    "BSDLicense.txt": "7590d915f234f06915b6a9c91681f7fa73e68ffd3e4d842d026f874ca91b6701",
+    "README.txt": "45bfdbb41c8983c37031d49627de269e4986bb5eb05ad07e8f6d2c46ad510e9c",
+    "demo_rgbd/rgbd_rgb_gradkdes.m": "05dd7d4e609f8916a464aff9b3f0cf12b3707bc6065bd9f6c1e59ff23c88ffbc",
+    "kdes/gradkdes_basis.m": "337eb9f94bf04377fe196945aa067c50bd757f59fd4a0f4150ae5245b0165788",
+    "kdes/eval_kernel.m": "5ba3dbdc4a7b7f3dbe84e93d62032b5ab10ca914df0ec3b74b0b7a5fcd9d3df7",
+    "kdes/kpca.m": "011437b792132c65d847f3d62d3d40c7b747c75891242ba9aacbca917ca58555",
+    "kdes/gen_kdes_batch.m": "473f50a20a9212f23d3fba18b9790f952a17b9709e01c22667af83ddad78fe0b",
+    "kdes/gen_basis.m": "88ae0e7c0b3376f8faecd164913e26612de4e4a002c2bfd56ec2f413217ea09a",
+    "kdes/gradkdes_dense.m": "18110104049a48c1c962f7ae1dca94c83a69271a6fd4d8ab8b221f5a29503a31",
+    "emk/visualwords.m": "590ca4174d02a7ba385b1a0ec8eceef34c0e1683bf33d838a17277a1183ddb5e",
+    "emk/cksvd_emk_nips.m": "fdf9420c34d0d482e0a9bc6a46d5cf037286811274ab2ff6b157d3ace8af93c7",
+    "emk/sample_kdes.m": "56f6a3b524a8a7a42510ea4941662d2368850292e9d71750cd7d824aa5fdaea4",
+    "emk/cksvd_emk.m": "b8cab7518af24c1a9c54d566956bcd753a27528a8074a03f7c5186ef74826357",
+    "emk/visualwords_nips.m": "262e8b93263785f914e0bcb3c2c25642805b984ad9460328471c2c8848eb630f",
+    "emk/cksvd_emk_batch.m": "dfb86a18c4745da906e6f9a9270bd5421281bb81f86bf9ca2fdc90b2abf702e7",
+    "helpfun/kmeans_bo.m": "4ad7d0db9d13a6a75e90211615ae05daeb2e3144527fbe388e430e4af8976d73"
+  },
+  "note": "Third-party mirrors; not proof of exact 2015 ITML+ author package version"
+}

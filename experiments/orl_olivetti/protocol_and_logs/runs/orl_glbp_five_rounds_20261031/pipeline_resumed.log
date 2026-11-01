@@ -1,0 +1,9 @@
+Matplotlib is building the font cache; this may take a moment.
+waiting_for_baseline_shards
+training_partial_and_sample_count_analyses
+round_02 partial_000_itml_plus completed
+round_00 partial_000_itml_plus completed
+round_03 partial_000_itml_plus completed
+round_01 partial_000_itml_plus completed
+/opt/miniconda3/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

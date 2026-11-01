@@ -1,0 +1,23 @@
+[
+  {
+    "parameters": {
+      "gamma": 1.0,
+      "lam": 1.0
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 0.8835681573981551,
+      "AUC": 0.9482539599365212
+    },
+    "final": {
+      "sweep": 7,
+      "objective": 67.08638420162936,
+      "max_inequality_violation": 0.18040978688774523,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.014044845052065177,
+      "dual_norm_change": 0.00029119486222036996
+    },
+    "stop": "dual_norm_tolerance",
+    "seconds": 6.354640583042055
+  }
+]

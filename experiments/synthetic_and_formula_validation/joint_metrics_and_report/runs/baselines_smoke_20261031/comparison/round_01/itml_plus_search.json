@@ -1,0 +1,58 @@
+[
+  {
+    "parameters": {
+      "gamma": 0.1,
+      "lam": 0.1
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 1.0,
+      "AUC": 1.0
+    },
+    "diagnostics": {},
+    "stop": "max_sweeps",
+    "seconds": 0.00395616702735424
+  },
+  {
+    "parameters": {
+      "gamma": 0.1,
+      "lam": 1.0
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 1.0,
+      "AUC": 1.0
+    },
+    "diagnostics": {},
+    "stop": "max_sweeps",
+    "seconds": 0.004018167033791542
+  },
+  {
+    "parameters": {
+      "gamma": 1.0,
+      "lam": 0.1
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 1.0,
+      "AUC": 1.0
+    },
+    "diagnostics": {},
+    "stop": "max_sweeps",
+    "seconds": 0.003955333027988672
+  },
+  {
+    "parameters": {
+      "gamma": 1.0,
+      "lam": 1.0
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 1.0,
+      "AUC": 1.0
+    },
+    "diagnostics": {},
+    "stop": "max_sweeps",
+    "seconds": 0.00384341599419713
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "parameters": {
+      "gamma": 0.1
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 1.0,
+      "AUC": 1.0
+    },
+    "diagnostics": {},
+    "stop": "dual_norm_tolerance",
+    "seconds": 0.0009212088771164417
+  },
+  {
+    "parameters": {
+      "gamma": 1.0
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 1.0,
+      "AUC": 1.0
+    },
+    "diagnostics": {},
+    "stop": "dual_norm_tolerance",
+    "seconds": 0.0006324169225990772
+  }
+]

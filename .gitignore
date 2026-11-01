@@ -1,0 +1,18 @@
+# Local Python and OS files
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.DS_Store
+.pytest_cache/
+
+# Research inputs and generated experiments stay local by default.
+/itml_reproduction/data/
+/itml_reproduction/runs/
+/orl_faces/
+/att_faces.tar.Z
+
+# Local credentials
+.env
+.env.*
+!.env.example

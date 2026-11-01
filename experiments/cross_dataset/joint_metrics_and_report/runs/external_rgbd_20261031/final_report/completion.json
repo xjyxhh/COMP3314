@@ -1,0 +1,16 @@
+{
+  "status": "completed_available_alternative_studies",
+  "original_paper_numerical_reproduction": false,
+  "face_main_candidates": 700,
+  "body_main_candidates": 700,
+  "robustness_candidates": 900,
+  "face_frozen_models": 110,
+  "body_main_models": 35,
+  "cross_clip_evaluations": 70,
+  "control_fits": 90,
+  "quiet_timing_fits": 40,
+  "previous_results_unchanged": true,
+  "extra_action_within_condition_evaluations": 70,
+  "extra_cross_action_evaluations": 140,
+  "finalizer_sha256": "13965df989676a71876964ac81708313e22be1606597cffeb7b3de3e12af2caa"
+}

@@ -1,0 +1,93 @@
+{
+  "checks": [
+    {
+      "split": 0,
+      "identity_disjoint": true,
+      "training_only_pca": true,
+      "pairs_valid": true,
+      "input_hashes_match": true,
+      "validation_selection_matches": true,
+      "test_and_shuffle_metrics_match": true
+    },
+    {
+      "split": 1,
+      "identity_disjoint": true,
+      "training_only_pca": true,
+      "pairs_valid": true,
+      "input_hashes_match": true,
+      "validation_selection_matches": true,
+      "test_and_shuffle_metrics_match": true
+    },
+    {
+      "split": 2,
+      "identity_disjoint": true,
+      "training_only_pca": true,
+      "pairs_valid": true,
+      "input_hashes_match": true,
+      "validation_selection_matches": true,
+      "test_and_shuffle_metrics_match": true
+    }
+  ],
+  "mean_test_scores": {
+    "euclidean": {
+      "AP": 0.9070854870789695,
+      "AUC": 0.9452263374485597
+    },
+    "itml": {
+      "AP": 0.89342700262885,
+      "AUC": 0.9359259259259258
+    },
+    "itml_plus": {
+      "AP": 0.884059934928063,
+      "AUC": 0.9247119341563786
+    },
+    "itml_plus_corrected": {
+      "AP": 0.8892986387802982,
+      "AUC": 0.9296296296296296
+    }
+  },
+  "checkpoints_1000": [
+    {
+      "split": 0,
+      "method": "itml_plus",
+      "relative_violation": 1.3804973964875796e-15,
+      "relative_equality": 1.6443810045615256e-15
+    },
+    {
+      "split": 0,
+      "method": "itml_plus_corrected",
+      "relative_violation": 9.857605479819851e-08,
+      "relative_equality": 9.90728171405654e-08,
+      "stationarity_max": 1.928899124277209e-13,
+      "complementarity": 9.728873911995467e-08
+    },
+    {
+      "split": 1,
+      "method": "itml_plus",
+      "relative_violation": 0.0,
+      "relative_equality": 6.461880060869565e-16
+    },
+    {
+      "split": 1,
+      "method": "itml_plus_corrected",
+      "relative_violation": 9.076860962657745e-08,
+      "relative_equality": 9.935199983040368e-08,
+      "stationarity_max": 7.5024295992616e-14,
+      "complementarity": 4.2085949342750496e-08
+    },
+    {
+      "split": 2,
+      "method": "itml_plus",
+      "relative_violation": 0.0,
+      "relative_equality": 0.0014011520870861873
+    },
+    {
+      "split": 2,
+      "method": "itml_plus_corrected",
+      "relative_violation": 0.0001773299397076348,
+      "relative_equality": 0.00017136710537148762,
+      "stationarity_max": 1.8744885716170406e-13,
+      "complementarity": 0.0003108021598704166
+    }
+  ]
+}

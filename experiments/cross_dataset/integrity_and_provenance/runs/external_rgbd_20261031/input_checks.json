@@ -1,0 +1,24 @@
+{
+  "previous_result_artifacts_unchanged": 11,
+  "previous_frozen_model_records_unchanged": 110,
+  "face_samples": 560,
+  "face_identity_split": [
+    20,
+    10,
+    10
+  ],
+  "face_primary_train_depth_only": true,
+  "face_projection_holdout_RMS_max": 0.01786848715027558,
+  "weight_QC_version": 3,
+  "weight_people": 32,
+  "weight_identity_split": [
+    16,
+    16
+  ],
+  "weight_RGB_samples": 1920,
+  "weight_RGB_unique_contents": 1920,
+  "weight_training_depth_samples": 320,
+  "weight_test_clip_groups_disjoint": true,
+  "weight_depth_is_colorized_uint8_not_metric": true,
+  "weight_earlier_attempt_archived": true
+}

@@ -1,0 +1,30 @@
+{
+  "result": {
+    "round": 0,
+    "method": "euclidean",
+    "selected": {
+      "gamma": null,
+      "lam": null,
+      "validation": {
+        "AP": 0.6897527472527472,
+        "AUC": 0.71
+      }
+    },
+    "test": {
+      "AP": 0.9587412587412587,
+      "AUC": 0.9500000000000001
+    },
+    "stop": "fixed_metric"
+  },
+  "search": [
+    {
+      "gamma": null,
+      "lam": null,
+      "validation": {
+        "AP": 0.6897527472527472,
+        "AUC": 0.71
+      }
+    }
+  ],
+  "history": []
+}

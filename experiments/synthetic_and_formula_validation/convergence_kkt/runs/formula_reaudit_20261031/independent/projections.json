@@ -1,0 +1,254 @@
+[
+  {
+    "case": 0,
+    "gamma": 0.1,
+    "lam": 0.2,
+    "y": -1,
+    "xi0": 0.1,
+    "active": false,
+    "objective": 0.18562979903656235,
+    "reference_objective": 0.1856297999740743,
+    "relative_objective_gap": 9.375119569554613e-10,
+    "residuals": {
+      "eq17": 0.0,
+      "eq18": 2.055957342772302e-17,
+      "eq21_22": 1.1102230246251565e-16,
+      "eq25_26": 1.1102230246251565e-16,
+      "inequality": 0.0,
+      "complementarity": 0.0
+    },
+    "min_eigenvalue": 1.013074159955215,
+    "passed": true
+  },
+  {
+    "case": 1,
+    "gamma": 0.1,
+    "lam": 0.2,
+    "y": -1,
+    "xi0": 10.0,
+    "active": true,
+    "objective": 0.1369914329829103,
+    "reference_objective": 0.13699143338267894,
+    "relative_objective_gap": 3.997686348622409e-10,
+    "residuals": {
+      "eq17": 6.765421556309548e-17,
+      "eq18": 2.4165659201596844e-17,
+      "eq21_22": 2.220446049250313e-16,
+      "eq25_26": 5.204170427930421e-18,
+      "inequality": 0.0,
+      "complementarity": 0.0
+    },
+    "min_eigenvalue": 1.141683803761101,
+    "passed": true
+  },
+  {
+    "case": 2,
+    "gamma": 0.1,
+    "lam": 0.2,
+    "y": 1,
+    "xi0": 0.1,
+    "active": true,
+    "objective": 0.4536625153664078,
+    "reference_objective": 0.4536625157963651,
+    "relative_objective_gap": 4.2995729199191146e-10,
+    "residuals": {
+      "eq17": 5.238750013840908e-17,
+      "eq18": 7.426207145488051e-17,
+      "eq21_22": 1.1102230246251565e-16,
+      "eq25_26": 2.7755575615628914e-17,
+      "inequality": 2.220446049250313e-16,
+      "complementarity": 1.5372318802502165e-16
+    },
+    "min_eigenvalue": 0.9390476965520347,
+    "passed": true
+  },
+  {
+    "case": 3,
+    "gamma": 0.1,
+    "lam": 0.2,
+    "y": 1,
+    "xi0": 10.0,
+    "active": false,
+    "objective": 0.12325602611778473,
+    "reference_objective": 0.12325602682634731,
+    "relative_objective_gap": 7.085625836067422e-10,
+    "residuals": {
+      "eq17": 0.0,
+      "eq18": 5.4119217897292056e-17,
+      "eq21_22": 0.0,
+      "eq25_26": 6.938893903907228e-18,
+      "inequality": 0.0,
+      "complementarity": 0.0
+    },
+    "min_eigenvalue": 1.037539636274845,
+    "passed": true
+  },
+  {
+    "case": 4,
+    "gamma": 0.7,
+    "lam": 2.0,
+    "y": -1,
+    "xi0": 0.1,
+    "active": false,
+    "objective": 1.6389170065841947,
+    "reference_objective": 1.6389170086952287,
+    "relative_objective_gap": 1.2880664506272626e-09,
+    "residuals": {
+      "eq17": 0.0,
+      "eq18": 1.6055706868781315e-15,
+      "eq21_22": 1.6653345369377348e-16,
+      "eq25_26": 8.881784197001252e-16,
+      "inequality": 0.0,
+      "complementarity": 0.0
+    },
+    "min_eigenvalue": 0.542333162171433,
+    "passed": true
+  },
+  {
+    "case": 5,
+    "gamma": 0.7,
+    "lam": 2.0,
+    "y": -1,
+    "xi0": 10.0,
+    "active": true,
+    "objective": 0.9211851103068612,
+    "reference_objective": 0.921185112638358,
+    "relative_objective_gap": 2.331496773422259e-09,
+    "residuals": {
+      "eq17": 1.3392525872101447e-16,
+      "eq18": 2.2130948788035272e-16,
+      "eq21_22": 6.661338147750939e-16,
+      "eq25_26": 5.551115123125783e-17,
+      "inequality": 0.0,
+      "complementarity": 0.0
+    },
+    "min_eigenvalue": 1.0140284494459642,
+    "passed": true
+  },
+  {
+    "case": 6,
+    "gamma": 0.7,
+    "lam": 2.0,
+    "y": 1,
+    "xi0": 0.1,
+    "active": true,
+    "objective": 2.066923846276475,
+    "reference_objective": 2.066923847618944,
+    "relative_objective_gap": 6.495008533266242e-10,
+    "residuals": {
+      "eq17": 1.4731690527047049e-16,
+      "eq18": 5.475244587285811e-16,
+      "eq21_22": 1.1102230246251565e-16,
+      "eq25_26": 8.881784197001252e-16,
+      "inequality": 0.0,
+      "complementarity": 0.0
+    },
+    "min_eigenvalue": 0.6021568443902136,
+    "passed": true
+  },
+  {
+    "case": 7,
+    "gamma": 0.7,
+    "lam": 2.0,
+    "y": 1,
+    "xi0": 10.0,
+    "active": false,
+    "objective": 0.8944110176167166,
+    "reference_objective": 0.8944110188319575,
+    "relative_objective_gap": 1.215240907903592e-09,
+    "residuals": {
+      "eq17": 0.0,
+      "eq18": 1.0179123144134617e-16,
+      "eq21_22": 2.220446049250313e-16,
+      "eq25_26": 0.0,
+      "inequality": 0.0,
+      "complementarity": 0.0
+    },
+    "min_eigenvalue": 1.0169860756063787,
+    "passed": true
+  },
+  {
+    "case": 8,
+    "gamma": 1.8,
+    "lam": 0.4,
+    "y": -1,
+    "xi0": 0.1,
+    "active": false,
+    "objective": 0.5279121019621917,
+    "reference_objective": 0.5279121022833112,
+    "relative_objective_gap": 3.2111946435264827e-10,
+    "residuals": {
+      "eq17": 0.0,
+      "eq18": 1.0522567217262453e-15,
+      "eq21_22": 2.0816681711721685e-16,
+      "eq25_26": 1.7763568394002505e-15,
+      "inequality": 0.0,
+      "complementarity": 0.0
+    },
+    "min_eigenvalue": 0.5980915166231608,
+    "passed": true
+  },
+  {
+    "case": 9,
+    "gamma": 1.8,
+    "lam": 0.4,
+    "y": -1,
+    "xi0": 10.0,
+    "active": true,
+    "objective": 1.886330086535505,
+    "reference_objective": 1.8863300889019905,
+    "relative_objective_gap": 1.2545447193819735e-09,
+    "residuals": {
+      "eq17": 1.215792429782816e-16,
+      "eq18": 5.40713700515551e-17,
+      "eq21_22": 4.440892098500626e-16,
+      "eq25_26": 8.326672684688674e-17,
+      "inequality": 4.440892098500626e-16,
+      "complementarity": 2.248201624865942e-16
+    },
+    "min_eigenvalue": 1.007212318608249,
+    "passed": true
+  },
+  {
+    "case": 10,
+    "gamma": 1.8,
+    "lam": 0.4,
+    "y": 1,
+    "xi0": 0.1,
+    "active": true,
+    "objective": 1.6221380526542437,
+    "reference_objective": 1.6221380543647395,
+    "relative_objective_gap": 1.0544698957291217e-09,
+    "residuals": {
+      "eq17": 2.0955000055363631e-16,
+      "eq18": 9.486336557610775e-16,
+      "eq21_22": 2.498001805406602e-16,
+      "eq25_26": 3.1086244689504383e-15,
+      "inequality": 0.0,
+      "complementarity": 1.4051260155412135e-16
+    },
+    "min_eigenvalue": 0.5734937046828935,
+    "passed": true
+  },
+  {
+    "case": 11,
+    "gamma": 1.8,
+    "lam": 0.4,
+    "y": 1,
+    "xi0": 10.0,
+    "active": false,
+    "objective": 1.2116471886162095,
+    "reference_objective": 1.2116471930526658,
+    "relative_objective_gap": 3.6615083490192202e-09,
+    "residuals": {
+      "eq17": 0.0,
+      "eq18": 5.204170427930421e-17,
+      "eq21_22": 1.3322676295501878e-15,
+      "eq25_26": 5.551115123125783e-17,
+      "inequality": 0.0,
+      "complementarity": 0.0
+    },
+    "min_eigenvalue": 1.0815623667138667,
+    "passed": true
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "scope": "ORL G-LBP clean-image privilege EXTENSION, not RGB-D numerical reproduction",
+  "source": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/orl_faces",
+  "seed": 2026,
+  "identity_split": [
+    20,
+    10,
+    10
+  ],
+  "rounds": 5,
+  "pca_dimensions": 150,
+  "pair_counts": {
+    "train": [
+      900,
+      2904
+    ],
+    "val": [
+      450,
+      1452
+    ],
+    "test": [
+      450,
+      1452
+    ]
+  },
+  "pairs": "all positive pairs fixed, new negative samples each round, no replacement",
+  "ordinary": "8x8 grayscale BOX + fixed noise 0.05, round to uint8 and resize bilinear to 120x105",
+  "privileged": "original grayscale resized bilinear to 120x105, not physical depth",
+  "glbp": "123 bins/block, 56 blocks, grid neighbors, valid block centers, histogram_l1",
+  "alignment": "resize only: eye landmarks unavailable; extra deviation from paper",
+  "bounds": "training ordinary L2 q03 for u, q97 for l; ambiguity disclosed",
+  "primary_metric": "mean AP and AUC across five rounds; population std",
+  "prior_test_exposure": "same 40 people appeared in earlier experiments; exploratory evaluation",
+  "feature_code_sha256": "6a3ef7f329bbf195614ac3e35ba122aa93ecfc34ff2bec8f2a24cc1dcf662fab",
+  "test_evaluated": false
+}

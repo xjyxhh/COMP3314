@@ -1,0 +1,24 @@
+{
+  "previous_result_artifacts_unchanged": 11,
+  "face_samples": 560,
+  "face_identity_split": [
+    20,
+    10,
+    10
+  ],
+  "face_train_depth_only": true,
+  "face_projection_holdout_RMS_max": 0.01786848715027558,
+  "face_min_depth_pixel_coverage": 0.568968253968254,
+  "weight_people": 30,
+  "weight_distinct_clips": 90,
+  "weight_RGB_samples": 1800,
+  "weight_training_depth_samples": 300,
+  "weight_depth_is_colorized_uint8_not_metric": true,
+  "weight_excluded_people": {
+    "22": 2,
+    "28": 1
+  },
+  "data_archives_verified": true,
+  "weight_RGB_unique_file_contents": 1800,
+  "weight_RGB_duplicate_excess": 0
+}

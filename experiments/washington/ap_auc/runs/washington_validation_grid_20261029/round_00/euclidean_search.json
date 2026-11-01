@@ -1,0 +1,14 @@
+[
+  {
+    "gamma": null,
+    "lam": 1.0,
+    "status": "completed",
+    "validation": {
+      "AP": 0.787679221690314,
+      "AUC": 0.859375
+    },
+    "final": {},
+    "stop": "fixed_metric",
+    "seconds": 0.00018420908600091934
+  }
+]

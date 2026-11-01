@@ -1,0 +1,34 @@
+[
+  {
+    "sweep": 1,
+    "objective": 115.52155319369561,
+    "max_inequality_violation": 0.0,
+    "max_equality_residual": 0.0,
+    "min_eigenvalue_M": 0.05212945237507072,
+    "dual_norm_change": 2956612841758829.5
+  },
+  {
+    "sweep": 2,
+    "objective": 96.31523462024325,
+    "max_inequality_violation": 0.9598889219560505,
+    "max_equality_residual": 0.0,
+    "min_eigenvalue_M": 0.06366605656106573,
+    "dual_norm_change": 0.15643787274748017
+  },
+  {
+    "sweep": 3,
+    "objective": 96.93210968710306,
+    "max_inequality_violation": 0.10782418293651475,
+    "max_equality_residual": 0.0,
+    "min_eigenvalue_M": 0.06309985536717863,
+    "dual_norm_change": 0.005859628281868993
+  },
+  {
+    "sweep": 4,
+    "objective": 96.98974323738416,
+    "max_inequality_violation": 0.0072233054806005725,
+    "max_equality_residual": 0.0,
+    "min_eigenvalue_M": 0.06306915504747772,
+    "dual_norm_change": 0.0005412677062793564
+  }
+]

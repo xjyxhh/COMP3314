@@ -1,0 +1,98 @@
+training_fixed_parameter_analyses
+round_00 partial_000_itml_plus completed
+round_01 partial_000_itml_plus completed
+round_02 partial_000_itml_plus completed
+round_03 partial_000_itml_plus completed
+round_02 partial_025_itml_plus completed
+round_01 partial_025_itml_plus completed
+round_00 partial_025_itml_plus completed
+round_03 partial_025_itml_plus completed
+round_01 partial_050_itml_plus completed
+round_02 partial_050_itml_plus completed
+round_03 partial_050_itml_plus completed
+round_00 partial_050_itml_plus completed
+round_01 partial_075_itml_plus completed
+round_02 partial_075_itml_plus completed
+round_01 partial_100_itml_plus completed
+round_02 partial_100_itml_plus completed
+round_02 sample_count_020_itml completed
+round_01 sample_count_020_itml completed
+round_00 partial_075_itml_plus completed
+round_00 partial_100_itml_plus completed
+round_03 partial_075_itml_plus completed
+round_03 partial_100_itml_plus completed
+round_00 sample_count_020_itml completed
+round_03 sample_count_020_itml completed
+round_02 sample_count_020_itml_plus completed
+round_01 sample_count_020_itml_plus completed
+round_00 sample_count_020_itml_plus completed
+round_03 sample_count_020_itml_plus completed
+round_02 sample_count_040_itml completed
+round_03 sample_count_040_itml completed
+round_01 sample_count_040_itml completed
+round_00 sample_count_040_itml completed
+round_02 sample_count_040_itml_plus completed
+round_01 sample_count_040_itml_plus completed
+round_03 sample_count_040_itml_plus completed
+round_00 sample_count_040_itml_plus completed
+round_02 sample_count_060_itml completed
+round_03 sample_count_060_itml completed
+round_01 sample_count_060_itml completed
+round_00 sample_count_060_itml completed
+round_02 sample_count_060_itml_plus completed
+round_03 sample_count_060_itml_plus completed
+round_01 sample_count_060_itml_plus completed
+round_00 sample_count_060_itml_plus completed
+round_02 sample_count_080_itml completed
+round_03 sample_count_080_itml completed
+round_01 sample_count_080_itml completed
+round_00 sample_count_080_itml completed
+round_02 sample_count_080_itml_plus completed
+round_02 sample_count_100_itml completed
+round_02 sample_count_100_itml_plus completed
+round_04 partial_000_itml_plus completed
+round_03 sample_count_080_itml_plus completed
+round_03 sample_count_100_itml completed
+round_03 sample_count_100_itml_plus completed
+round_01 sample_count_080_itml_plus completed
+round_01 sample_count_100_itml completed
+round_01 sample_count_100_itml_plus completed
+round_00 sample_count_080_itml_plus completed
+round_00 sample_count_100_itml completed
+round_00 sample_count_100_itml_plus completed
+round_04 partial_025_itml_plus completed
+round_04 partial_050_itml_plus completed
+round_04 partial_075_itml_plus completed
+round_04 partial_100_itml_plus completed
+round_04 sample_count_020_itml completed
+round_04 sample_count_020_itml_plus completed
+round_04 sample_count_040_itml completed
+round_04 sample_count_040_itml_plus completed
+round_04 sample_count_060_itml completed
+round_04 sample_count_060_itml_plus completed
+round_04 sample_count_080_itml completed
+round_04 sample_count_080_itml_plus completed
+round_04 sample_count_100_itml completed
+round_04 sample_count_100_itml_plus completed
+all_validation_searches_finished_evaluating_frozen_models
+timing round_00 itml 1.331
+timing round_00 lmnn 0.081
+timing round_00 itml_s 2.11
+timing round_00 itml_plus 3.057
+timing round_01 itml 1.161
+timing round_01 lmnn 0.106
+timing round_01 itml_s 1.896
+timing round_01 itml_plus 2.6
+timing round_02 itml 1.174
+timing round_02 lmnn 0.081
+timing round_02 itml_s 1.785
+timing round_02 itml_plus 2.929
+timing round_03 itml 0.925
+timing round_03 lmnn 0.084
+timing round_03 itml_s 1.889
+timing round_03 itml_plus 2.911
+timing round_04 itml 0.909
+timing round_04 lmnn 0.08
+timing round_04 itml_s 1.894
+timing round_04 itml_plus 3.306
+completed_available_data_extension

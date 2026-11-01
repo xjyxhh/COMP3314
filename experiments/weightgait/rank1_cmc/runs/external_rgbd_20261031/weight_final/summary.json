@@ -1,0 +1,86 @@
+[
+  {
+    "method": "euclidean",
+    "setting": "normal_A",
+    "mean_rank1": 0.34375,
+    "std_rank1": 0.0
+  },
+  {
+    "method": "euclidean",
+    "setting": "normal_B",
+    "mean_rank1": 0.375,
+    "std_rank1": 0.0
+  },
+  {
+    "method": "itml",
+    "setting": "normal_A",
+    "mean_rank1": 0.3125,
+    "std_rank1": 0.0
+  },
+  {
+    "method": "itml",
+    "setting": "normal_B",
+    "mean_rank1": 0.33125,
+    "std_rank1": 0.015309310892394864
+  },
+  {
+    "method": "lmnn",
+    "setting": "normal_A",
+    "mean_rank1": 0.71875,
+    "std_rank1": 0.0
+  },
+  {
+    "method": "lmnn",
+    "setting": "normal_B",
+    "mean_rank1": 0.65625,
+    "std_rank1": 0.0
+  },
+  {
+    "method": "svm",
+    "setting": "normal_A",
+    "mean_rank1": 0.2375,
+    "std_rank1": 0.10933034802834939
+  },
+  {
+    "method": "svm",
+    "setting": "normal_B",
+    "mean_rank1": 0.24375,
+    "std_rank1": 0.04592793267718459
+  },
+  {
+    "method": "svm_plus",
+    "setting": "normal_A",
+    "mean_rank1": 0.41875,
+    "std_rank1": 0.0375
+  },
+  {
+    "method": "svm_plus",
+    "setting": "normal_B",
+    "mean_rank1": 0.475,
+    "std_rank1": 0.053764532919016415
+  },
+  {
+    "method": "itml_s",
+    "setting": "normal_A",
+    "mean_rank1": 0.3125,
+    "std_rank1": 0.0
+  },
+  {
+    "method": "itml_s",
+    "setting": "normal_B",
+    "mean_rank1": 0.3,
+    "std_rank1": 0.015309310892394864
+  },
+  {
+    "method": "itml_plus",
+    "setting": "normal_A",
+    "mean_rank1": 0.59375,
+    "std_rank1": 0.01976423537605237
+  },
+  {
+    "method": "itml_plus",
+    "setting": "normal_B",
+    "mean_rank1": 0.7,
+    "std_rank1": 0.042389562394532926
+  }
+]

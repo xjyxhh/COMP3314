@@ -1,0 +1,578 @@
+ An Eﬃcient LBP-based Descriptor for Facial
+ Depth Images applied to Gender Recognition
+            using RGB-D Face Data
+
+
+                    Tri Huynh, Rui Min, Jean-Luc Dugelay
+
+ Department of Multimedia Communications, EURECOM, Sophia Antipolis, France
+                        {huynhq, min, jld}@eurecom.fr
+
+
+
+      Abstract. RGB-D is a powerful source of data providing the aligned
+      depth information which has great potentials in improving the perfor-
+      mance of various problems in image understanding, while Local Binary
+       Patterns (LBP) have shown excellent results in representing faces. In
+        this paper, we propose a novel eﬃcient LBP-based descriptor, namely
+      Gradient-LBP (G-LBP), specialized to encode the facial depth infor-
+      mation inspired by 3DLBP, yet resolves its inherent drawbacks. The
+      proposed descriptor is applied to gender recognition task and shows its
+       superiority to 3DLBP in all the experimental setups on both Kinect and
+      range scanner databases. Furthermore, a weighted combination scheme of
+       the proposed descriptor for depth images and the state-of-the-art LBP U2
+        for grayscale images applied in gender recognition is proposed and eval-
+       uated. The result reinforces the eﬀectiveness of the proposed descriptor
+       in complementing the source of information from the luminous intensity.
+       All the experiments are carried out on both the high quality 3D range
+       scanner database - Texas 3DFR and images of lower quality obtained
+      from Kinect - EURECOM Kinect Face Dataset to show the consistency
+        of the performance on diﬀerent sources of RGB-D data.
+
+
+1  Introduction
+
+Originally proposed by Ojala et al. [1] for texture analysis, Local Binary Patterns
+(LBP) has now shown its leading performance in a wide range of applications,
+especially in facial image processing. A large number of works demonstrating
+excellent results in applying LBP variants to various tasks ranging from face
+recognition [2], facial expression analysis [3] to age estimation [4], gender and
+ethnicity classiﬁcation [5][6], etc. could be widely found in literature recently.
+   Due to its simplicity yet very powerful discriminative capability, many LBP
+variants have been developed since its ﬁrst introduction. Most of them focus
+solely on luminous intensity [7][8]. Some other methods also extend the LBP
+approach to 3D data [9] or spatio-temporal signals [10]. However, there are very
+few eﬀorts in customizing the technique for depth images and RGB-D data.
+Meanwhile, the explosive development of 3D content and devices recently has
+made the depth information widely available and successfully exploited in many
+applications. The access to the RGB-D source of information of home customers
+2       Tri Huynh, Rui Min, Jean-Luc Dugelay
+
+
+has never been as easy with the introduction of Kinect-like devices. Depth data
+is a special source of information that could characterize the object shape while
+being fully invariant to textures and lighting condition, which has been proved to
+be consistently improving the performance of various tasks in computer vision
+[11][12]. In [13], Huang et al. put a pioneering eﬀort in developing an LBP-
+based descriptor, namely 3DLBP, specialized for facial depth images utilizing
+a special characteristics of the smoothness of facial depth images comparing to
+grayscale images. This work can be seen as the current state-of-the-art LBP-
+based feature specially developed for human facial depth images. However, the
+method suﬀers from some shortcomings as the feature length is much larger
+while the performance gain compared to LBP U2 is not signiﬁcant. The encoding
+method is unstable when separating and encoding each digit of the binary form
+of the depth diﬀerences individually. Furthermore, the encoding scheme only uses
+the absolute value of the depth diﬀerence and ignores its true signed measure.
+These shortcomings should potentially reduce the performance of the approach.
+   With the above analysis, in this paper we introduce a novel eﬃcient LBP-
+based descriptor, namely Gradient-LBP, for facial depth images which is proven
+to be superior to 3DLBP and resolves its inherent drawbacks. The proposed de-
+scriptor is applied to the gender recognition task and demonstrate its eﬃciency
+in outperforming 3DLBP in all the experimental setups on both the Kinect and
+range scanner images. Furthermore, we propose and evaluate a weighted com-
+bination scheme of the proposed descriptor for depth images and LBP U2 for
+grayscale images in gender recognition using diﬀerent RGB-D sources of infor-
+mation. Experimental results reinforce the eﬀectiveness of the proposed descrip-
+tor in complementing the result on grayscale images and conﬁrm the eﬃciency
+of the combination of LBP-based approaches on RGB-D data for facial analysis.
+   In short, the contributions of the paper are as follow:
+
+ • Proposition of an eﬃcient descriptor for facial depth images: the descriptor is
+   much more compact and outperforms 3DLBP in all the experimental setups
+   on both Kinect and range scanner images in gender recognition task.
+ • Proposition and analysis of a weighted combination scheme of the proposed
+    descriptor for facial depth images and the state-of-the-art LBP U2 feature
+    for grayscale images in gender recognition using diﬀerent sources of RGB-
+  D data: the experimentation is carried out on both high quality 3D range
+    scanner database and images of lower quality from Kinect device. The ex-
+    perimental results reinforce the eﬀectiveness of the proposed descriptor in
+   complementing the information from grayscale images and conﬁrm the eﬃ-
+    ciency of the combination of LBP-based approaches on RGB-D data.
+
+   The rest of the paper is organized as follows. Section 2 brieﬂy reviews the
+related works in literature. The deﬁnition of LBP and 3DLBP is recapulated in
+section 3. Section 4 presents our proposed descriptor for human facial depth im-
+ages. Section 5 introduces the proposed weighted combination scheme on RGB-
+D data. The experimental setups and results are given in section 6. Finally, the
+conclusion and future works are presented in section 7.
+                                     Title Suppressed Due to Excessive Length      3
+
+2  Related Work
+
+
+
+LBP is originally proposed as a simple yet eﬃcient operator that encodes the sign
+of the diﬀerences between the central pixel and its eight surrounding neighbors.
+Since then, the method has been continuously improved and now there are many
+variants applied in a vast domain of applications. In [14], Jin et al. proposed an
+improved LBP (ILBP) which compares all the pixels with the mean intensity of
+the patch to enhance its discriminative capability. Since LBP only encode the
+signs of the gray-value diﬀerences (GDs), Guo et al. proposed a complete LBP
+(CLBP) [7] to partly encode all the information from the sign, the GDs and
+also the gray values of the central pixels. Also to compensate the information of
+the gray values of neighboring pixels in the patch, Ylioinas et al. introduced the
+combination of LBP and the variance of the gray values of surrounding pixels in
+LBP/VAR [15] and showed consistent improvement. A complete survey of these
+methods could be found in [16].
+   Most of the variants are solely introduced for grayscale images. Some other
+eﬀorts tried to extend the approach to 3D and spatio-temporal data. In [9], Fehr
+exploited the spherical harmonic transform to compute LBP for 3D volume
+data in frequency domain. Whereas Zhao and Pietik¨ainen successfully extended
+the approach to spatio-temporal data with the introduction of volumn LBP
+(VLBP) [10], in which it combines motion and appearance information in image
+sequences. However, very few variants are found in the domain of depth images
+and RGB-D data. In [13], Huang et al. made a pioneering attempt to extend
+the LBP approach to facial depth images with the introduction of 3DLBP. The
+method utilizes the special characteristics of the smoothness of the facial depth
+images comparing to grayscale images, where most of the depth diﬀerences (DDs)
+of neighboring pixels are very small. Therefore, 3DLBP uses a limited number of
+bits to represent the DDs and encodes them in an LBP-like way. This approach
+shows its eﬃciency when encoding most of the depth diﬀerence information into
+the feature, besides the original LBP. However, it suﬀers from some drawbacks
+as the feature length is large, the encoding scheme is unstable when transforming
+the DDs into the binary form and encoding each digit separately, breaking the
+integrity of the values, causing a very little change of the DDs would create a
+big diﬀerence in the coded values. Furthermore, the method only uses the abso-
+lute values of the DDs, ignoring their signed nature with positive and negative
+entities. These shortcomings should potentially aﬀect the performance of the
+approach.
+
+
+
+3  Face Representation Using LBP and 3DLBP
+
+
+
+In this section, LBP and 3DLBP are reviewed as the background for the com-
+prehension of our proposed approach in section 4.
+4       Tri Huynh, Rui Min, Jean-Luc Dugelay
+
+
+3.1  LBP
+
+LBP operator performs by thresholding the diﬀerences of the center value and
+the neighborhood in the 3x3 grid surrounding one pixel. The resulting values are
+then considered as an 8-bit binary number represented for that pixel (Fig. 1).
+The histogram of these binary numbers in the whole image can be used as a
+descriptor for the image.
+
+
+
+
+
+              Fig. 1. An example of the original LBP operator [15].
+
+
+   The operator was then extended and generalized for any radius and number
+of points in the neighborhood. The notation (P, R) is used to indicate the use
+of P sample points in the neighborhood on the circle of radius R. The value of
+the LBP code at the pixel (xc, yc) is given by:
+
+                                P −1
+                    LBPP,R = X s(gp −gc)2p                        (1)
+                                  p=0
+
+where gc is the gray value of the center pixel (xc, yc), gp are the gray values of
+P pixels at the radius R, s deﬁnes the thresholding function as follow:
+
+                                 1    if x ≥0
+                           s(x) =                                           (2)
+                                 0   otherwise
+
+   Another remarkable improvement of LBP is the so called uniform pattern
+[1]. LBP codes are not uniformly distributed, some codes appear much more
+frequently than the others. These frequent codes have at most two transitions
+from 0 to 1 or vice versa when the pattern is traversed circularly, and are called
+uniform patterns. When computing the histogram, every uniform pattern is la-
+beled with one distinguished value while all the non-uniform patterns are group
+into one category. The uniform LBP is denoted as LBPP,R.U2  The LBP8,1U2 has 59
+bins and was proven as much more eﬃcient than the original LBP.
+
+
+3.2  3DLBP
+
+LBP is a powerful approach to analyze and discriminate textures. However, it
+just considers the sign of diﬀerences and ignores the diﬀerence values, which can
+be an important source of information. By just keeping the sign of the diﬀerences,
+two diﬀerent textures could be misclassiﬁed as the same by LBP.
+   In [13], Huang et al. extended the LBP approach to encode the extra informa-
+tion of the values of depth diﬀerences (DD) specialized for facial depth images.
+                                     Title Suppressed Due to Excessive Length      5
+
+
+
+
+
+          Fig. 2. An example of 3DLBP and its comparison to LBP [13].
+
+
+
+From a statistical point of view, the authors observe that more than 93% of the
+DD between points in R = 2 are smaller than 7. This is due to the smoothness
+in depth transitions of human faces, which is not true for grayscale images in
+general, where the neighboring points could be arbitrarily diﬀerent depending
+on the texture and environmental conditions. Hence, the authors then use just
+three bits to represent the DD. Three binary units can characterize the absolute
+value of DD from 0 to 7. All the |DD| > 7 are assigned to 7. The DD is then
+binarized. Therefore, combining with one bit representing the sign of the DD,
+for each pixel surrounding the center point, there are four bits representing that
+position {i1i2i3i4}, where i2i3i4 represents the absolute value of the DD and i1
+represents the sign (encoded as the original LBP). Formally speaking, we have:
+
+                               1    if DD ≥0
+                                  i1 =                                            (3)
+                               0   otherwise
+
+                  |DD| = i2 ∗22 + i3 ∗21 + i4 ∗20                     (4)
+
+   The four bits are then separated into four layers. Then, for each layer, the
+corresponding bits of all the DD from the surrounding pixels are concatenated
+and generate one LBP code. In total, there are four LBP codes {P1, P2, P3,
+P4}, where the ﬁrst LBP code is the same as the original LBP. They are called
+3D Local Binary Patterns (3DLBP) (see Fig. 2). For matching, the histogram of
+each LBP code is computed, then the four histograms are concatenated to form
+a unique descriptor for the image.
+6       Tri Huynh, Rui Min, Jean-Luc Dugelay
+
+4  Gradient-LBP for Facial Depth Description
+
+
+3DLBP is a good descriptor that incorporates depth diﬀerences into the feature
+besides the original LBP. This feature works especially well for depth images
+thanks to the smoothness of facial depth images, where most of the depth dif-
+ferences are smaller than 7 levels. However, this approach suﬀers from several
+limitations:
+
+ • The feature length is large. At each pixel, there are four LBP codes. For
+    the creation of the descriptor, each LBP code will then contribute to a his-
+    togram. With the standard LBP8,1, each histogram is of size 256 bins. Four
+    histograms would correspond to a feature length of 256 x 4 = 1024.
+ • The encoding scheme is unstable. A very small change of the depth diﬀerence
+   (DD) in a position could lead to a big diﬀerence in the coded values. For
+    example, when the DD of 3 (binary representation 011) increases into 4
+    (binary representation 100), the whole three last LBP codes will change.
+   This problem is caused by the unconventional way of transforming the DD
+    into binary form and forcefully encoding each binary digit separately in an
+    LBP-like way.
+ • The DD are encoded on the basic of their absolute values, losing the informa-
+    tion of the full range DD including negative and positive entities. Although
+    this is compensated by the inclusion of the LBP from the signs of DD in the
+    ﬁrst LBP code, the separate encoding of this information into an LBP code
+   and transforming into the histogram loosens the intrinsic connection of the
+    sign and the absolute value parts of the DD.
+
+
+
+
+
+         Fig. 3. The eight orientations in computing the standard LBP8,1.
+
+
+
+
+
+Fig. 4. The eight LBP8,1-based orientations of the depth diﬀerences. The example
+demonstrates the separated depth diﬀerence images in each orientation of the sample
+image patch of size 4x4.
+                                     Title Suppressed Due to Excessive Length      7
+
+
+   With the above observations, we propose a novel eﬃcient approach to incor-
+porate the DD into the original LBP that overcomes all the mentioned short-
+comings of 3DLBP. The proposed method has been proved to be superior to the
+3DLBP approach in all the experimental setups carried out.
+   The proposed approach is based on a diﬀerent orientation-based view towards
+the LBP operator. For the standard LBP8,1, we can view the LBP operator
+under a diﬀerent perspective where eight surrounding pixels are compared to
+the center value following eight orientations as shown in Fig. 3. The values of
+DD are indeed calculated through these eight orientations. As illustrated in
+Fig. 4, we consider each orientation in the computation of LBP separately for
+the whole image, which leads to the creation of eight depth diﬀerence images
+corresponding to eight orientations used by LBP8,1 (Fig. 3). This notion of
+orientations and the oriented depth diﬀerence images can be generalized with
+the use of LBPP,R of any number of sample points and radius. P sample points
+used correspond to P orientations and would generate P oriented depth diﬀerence
+images, when we consider each orientation separately in the computing of DD of
+neighboring pixels. Each oriented depth diﬀerence image contains the DD values
+of neighboring pixels in one corresponding orientation. At each position (xc, yc)
+where the LBPP,R code is computed as in equation (1), the P oriented depth
+diﬀerences corresponding to that central pixel are provided as follow:
+
+              ODDP,R,pp=0...P −1 = max(min(gp −gc, 7), −8)                (5)
+
+where ODDP,R,p is the Oriented Depth Diﬀerence at pixel (xc, yc) in the depth
+diﬀerence image corresponding to the orientation p (the orientation formed by
+the point (xp, yp) and (xc, yc)), gp is the depth value at position (xp, yp) on the
+circle of radius R surrounding the center pixel, gc is the depth value at the center
+pixel, min(x,y) and max(x,y) are two functions that take the min and max value
+between two variables (x,y) respectively. This means that we clip the DD to be
+in the range -8 to 7, anything greater than 7 is set to be 7 and anything less than
+-8 is set to -8. The DD thus has sixteen possible values. This threshold is based
+on the statistical observation of 3DLBP that most of the DD of neighboring
+pixels are no more than 7. Notice that we use the true values of DD, not taking
+their absolute part.
+   After having P oriented depth diﬀerence images obtained as stated above,
+we can build the histogram of each depth diﬀerence image in each orientation,
+resulting in P histograms. Each histogram has 16 bins from -8 to 7. The infor-
+mation from P histograms is then combined by concatenation to form a unique
+oriented histogram of depth diﬀerences. For the creation of the image descrip-
+tor, the histogram of LBP U2 is also extracted from the original depth image.
+The descriptor is then the concatenation of the histogram of LBP U2 and the
+oriented histogram of depth diﬀerences. It should be noticed that, the P depth
+diﬀerence images corresponding to P orientations in computing LBP are pair-
+wise symmetric (see Fig. 4), they are pairwise minus sign of the other. Thus,
+using all P depth diﬀerence images would be redundant. We propose to use only
+half of the P depth diﬀerence images in the computation of the ﬁnal descriptor
+8       Tri Huynh, Rui Min, Jean-Luc Dugelay
+
+
+and call this Gradient-LBP (G-LBP). For the standard LBP of 8 sample points,
+the proposed descriptor has the length of 59 + 16*4 = 123 (the histogram of
+LBP U2 with 59 bins concatenated with four histograms of four oriented depth
+diﬀerence images, each has 16 bins) which is much more compact compared to
+3DLBP.
+
+5  Weighted Combination of LBP and Gradient-LBP on
+  RGB-D Face Data for Gender Recognition
+
+Although the problem of Gender Recognition has been explored extensively in
+the scope of grayscale face images [6][5], there are very few works on Depth or
+RGB-D source of information. In [11], Lu et al. experimented the combination
+of range and luminous intensity data in gender and ethnicity classiﬁcation and
+showed the improvement by this approach. However, the authors just use the
+simple pixel-based feature and the basic averaging fusion of the depth and lumi-
+nous intensity information and demonstrate moderate results. Furthermore, the
+experiments are carried out only on range scanner data. The analysis on lower
+quality RGB-D data obtained from other widely used devices such as Kinect has
+not been examined.
+   Here, we apply a weighted combination scheme based on our proposed de-
+scriptor for depth images and the state-of-the-art LBP U2 feature for grayscale
+images, since the contribution of each part is unbalanced, usually grayscale im-
+ages are more discriminative than depth images. The method is then evaluated
+on both professional 3D range scanner images and a Kinect database to evalu-
+ate the behavior of the approach on diﬀerent sources of RGB-D data. Support
+Vector Machines is chosen to perform the classiﬁcation task due to its superior
+eﬃciency in demographic classiﬁcation as has been proven in [17]. More specif-
+ically, the classiﬁcation is ﬁrst performed separately for grayscale and depth
+images using SVM, which returns the probabilities of belonging to classes of
+male or female for each subject. The combination scheme of the results on two
+sources of information is formulated as follow:
+                    wg ∗p(male|sgray) + wd ∗p(male|sdepth)
+            p(male|s) =                                                     (6)
+                                 wg + wd
+                   wg ∗p(female|sgray) + wd ∗p(female|sdepth)
+        p(female|s) =                                                      (7)
+                                  wg + wd
+where s is the subject to be classiﬁed, p(male|s) and p(female|s) are the ﬁ-
+nal probabilities that the subject belongs to male or female class respectively,
+p(male|sgray) and p(female|sgray) are the resulting posterior probabilities re-
+turned by SVM for grayscale images while p(male|sdepth) and p(female|sdepth)
+are the results from depth images, wg and wd are the weighting factor for the
+grayscale and depth information respectively, they are the free parameters and
+could be adjusted according to the contribution of each part to the ﬁnal decision.
+In our experimentation, we propose to use these parameters as the resulting ac-
+curacy returned by SVM when using each source of information (grayscale or
+depth) separately for training and validating.
+                                     Title Suppressed Due to Excessive Length      9
+
+6  Experimental Analysis
+
+6.1  Experimental Data
+
+The EURECOM Kinect Face Dataset [19] and Texas 3DFR Dataset [18] are
+used for experimentation, both having color and depth images where the former
+is obtained using Kinect device while the latter is captured by range scanner.
+   The EURECOM Kinect Face dataset contains face images of 52 people (14
+females, 38 males) taken in two sessions. In each session, the people are captured
+with nine states (neutral, smile, open mouth, left proﬁle, right proﬁle, occlusion
+eyes, occlusion mouth, occlusion paper, light on), besides the depth image, the
+raw depth level sensed by Kinect is also provided in a .txt ﬁle for better precision.
+The dataset also includes 6 manually located landmark points on the face (left
+eye, right eye, tip of the nose, left and right side of the mouth, the chin).
+   The Texas 3DFR dataset provides 1149 images (366 females, 783 males). The
+data includes both the raw images and the preprocessed data where the images
+underwent Gaussian smoothing, median ﬁltering and hole ﬁlling steps. The 25
+manually located anthropometric facial ﬁducial points are also provided.
+
+
+6.2  Preprocessing
+
+Based on the manual landmark points on the face, the images are ﬁrst cropped
+into a square centered by the nose with the width and height two times the
+distance between the left and right eye centers.
+
+
+
+
+
+   Fig. 5. The sample preprocessed images from EURECOM Kinect Face Dataset.
+
+   For the depth information of EURECOM Kinect Face Dataset, we use raw
+depth levels in .txt ﬁles to have better representation. To ﬁll holes, the closing
+operation is further applied to depth images. An illustration of the preprocessed
+images is shown in Fig. 5. For the Texas 3DFR dataset, we use the preprocessed
+images provided by the database. The cropped images in the EURECOM Kinect
+Face Dataset are then scaled to 96x96 pixels and the ones in Texas 3DFR dataset
+are scaled to 256x256 due to their higher resolution.
+
+
+6.3  Settings
+
+The images are divided into 8x8 blocks. The LBP U2, 3DLBP and Gradient-LBP
+are extracted for each block and then concatenated to form a spatially enhanced
+feature for evaluation. Diﬀerent conﬁguration of (P,R) = (8,1) and (P,R) = (8,2)
+for all the three descriptors are experimented to obtain the in-depth evaluations.
+10      Tri Huynh, Rui Min, Jean-Luc Dugelay
+
+
+   For the classiﬁcation task, we use SVM with non-linear RBF kernel as it
+has been proven to be a prominent technique in gender classiﬁcation. We use 3
+states in the EURECOM Kinect Face Dataset (Neutral, Smile and Light On)
+which cover diﬀerent expressions and lighting conditions. For all the investigated
+methods, we carry out three experimental setups. In the ﬁrst experiment (Kinect
+1), we use the ﬁrst session of EURECOM Kinect Face Dataset as the training
+set, the second session is the testing set. The second experiment (Kinect 2) is
+carried out by using ﬁrst half number of males and females in both sessions of
+EURECOM Kinect Face Dataset as training set, the remaining are for testing.
+The third experiment (Range Scanner) is executed on the Texas 3DFR Dataset,
+where ﬁrst half number of males and females are used as training and the re-
+maining are used for testing, as in Kinect 2 setup.
+
+
+6.4  Results and Analysis
+
+Table 1. The detailed comparison of the accuracy (in %) of the three investigated
+descriptors on depth images.
+
+                      Kinect 1            Kinect 2       Range Scanner
+               Male Female Overall Male Female Overal Male Female Overal
+   LBP 8,1U2     96.49  83.33  92.95 80.70  73.81  78.85 95.15  59.02  83.65
+   LBP 8,2U2     98.25  78.57  92.95 83.33  71.43  80.13 96.17  59.19  83.13
+   3DLBP8,1    95.61  90.48  94.23 83.33  83.33  83.33 95.66  60.11  84.35
+   3DLBP8,2    96.49  88.10  94.23 84.21  90.48  85.90 97.96  63.39  86.96
+Gradient-LBP8,1 96.49  92.86  95.51 86.84  88.10  87.18 99.74  62.30  87.83
+Gradient-LBP8,2 96.49  92.86  95.51 85.09  88.10  85.90  100  68.31  89.91
+
+
+Table 2. The accuracy (in %) of the combination scheme compared to using LBP-based
+descriptors on depth and grayscale images for the conﬁguration of (P,R) = (8,1).
+
+                       Kinect 1            Kinect 2       Range Scanner
+                Male Female Overall Male Female Overal Male Female Overal
+G-LBP8,1 (Depth) 96.49  92.86  95.51 86.84  88.10  87.18 99.74  62.30  87.83
+  LBPU28,1 (Gray)  98.25  97.62  98.08 94.74  69.05  87.82 95.15  92.90  94.43
+   Combination   99.12  100   99.36 95.61  76.19  90.38 98.98  91.80  96.70
+
+To evaluate the performance of the proposed Gradient-LBP for depth images,
+the comparison between Gradient-LBP, 3DLBP and LBP U2 on depth images in
+three experimental setups as stated in section (6.3) are carried out. The detail
+results are shown in Table 1. From the experiments, we can draw two conclusions
+regarding the performance of the features specialized for depth images:
+
+ • LBPU2 alone is not a good descriptor for depth images, the extra depth
+    diﬀerence information included in 3DLBP does improve the recognition per-
+   formance for depth images.
+ • For the depth images, the Gradient-LBP outperforms the 3DLBP and LBP U2
+    approaches in all the experimental setups on both Kinect data and range
+    scanner images, and for both radius of 1 and 2, this proves the consistent
+    superiority of the proposed descriptor on facial depth data.
+                                     Title Suppressed Due to Excessive Length     11
+
+
+Table 3. The accuracy (in %) of the combination scheme compared to using LBP-based
+descriptors on depth and grayscale images for the conﬁguration of (P,R) = (8,2).
+
+                       Kinect 1            Kinect 2       Range Scanner
+                Male Female Overall Male Female Overal Male Female Overal
+G-LBP8,2 (Depth) 96.49  92.86  95.51 85.09  88.10  85.90  100  68.31  89.91
+  LBPU28,2 (Gray)  95.61  97.62  96.15 92.98  71.43  87.18 93.62  90.16  92.52
+   Combination   98.25  97.62  98.08 93.86  80.95  90.38 97.96  89.62  95.30
+
+   The evaluated eﬀectiveness of the combination scheme of Gradient-LBP for
+depth images and LBP U2 for grayscale images comparing to the use of these
+methods alone on both Kinect and range scanner data are given in Table 2
+and Table 3. The results demonstrate that, although LBP U2 is very robust and
+eﬃcient in representing grayscale images in gender classiﬁcation, the addition
+of Gradient-LBP source of information from depth images always improve the
+ﬁnal performance. The results are very consistent in both the range scanner data
+and images of lower quality from home devices like Kinect. This result reinforces
+the eﬀectiveness of the proposed feature for depth images in complementing the
+luminous intensity information and the eﬃciency of the combination of LBP-
+based approaches on RGB-D data.
+    It can also be noticed that, all the experimental results follow the same
+trend in which the experimental setup with the ﬁrst session of the EURECOM
+Kinect Face Dataset used as training produces the highest accuracy, followed by
+the setup where half the images in Texas 3DFR are trained, the lowest result
+corresponds to using half the images in both sessions of the EURECOM Kinect
+Face Dataset as training. This can be explained since in Kinect 1 setup, all the
+people presented in the testing set also appear in the training set, which helps
+the classiﬁer easily recognize the features. The result of the experimental setup
+Kinect 2 in overall is worse than Range Scanner because the resolution and
+quality of images in the Texas 3DFR database are better than Kinect data.
+
+
+7  Conclusion and Future Works
+
+In this paper, a novel feature descriptor specialized for facial depth images in-
+spired by 3DLBP is introduced. The proposed descriptor is much more compact
+yet consistently outperforms 3DLBP in all the experimental setups carried out
+on both sets of images from Kinect device and range scanner. We further propose
+a weighted combination scheme and reinforce the eﬀectiveness of the proposed
+descriptor by its eﬃcient combination with the result from LBP U2 on grayscale
+images. Although LBP U2 is already an excellent descriptor for grayscale im-
+ages, the combined scheme consistently shows the improvement across diﬀerent
+experimental setups and RGB-D sources.
+   In the scope of this work, experimentations have been performed on a simple
+two-class problem, that is to say gender recognition, in order to validate the
+eﬃciency of the proposed approach. Next step would consist in extending our
+tests on multiple-class problems, e.g. age, ethnicity, identity classiﬁcation.
+12      Tri Huynh, Rui Min, Jean-Luc Dugelay
+
+References
+
+1. Ojala, T., Pietk¨ainen, M., M¨aenp¨a¨a, T.: Multiresolution Gray-Scale and Rotation
+   Invariant Texture Classiﬁcation with Local Binary Patterns. IEEE Trans. Pattern
+   Analysis and Machine Intelligence 24(7), 971987 (2002)
+2. Ahonen, T., Hadid, A., Pietik¨ainen, M.: Face description with local binary patterns:
+   Application to face recognition. PAMI 28(12), 20372041 (2006)
+3. Shan, C., Gong, S., McOwan, P.: Facial expression recognition based on Local Binary
+   Patterns: A comprehensive study. Image and Vision Computing 27(6), 803816 (2009)
+4. Gunay, A., Nabiyev, V.V.: Automatic age classiﬁcation with LBP. International
+  Symposium on Computer and Information Sciences - ISCIS (2008)
+5. Lian, H.C., Lu, B.L.: Multi-view Gender Classiﬁcation Using Local Binary Patterns
+  and Support Vector Machines. ISNN (2) 202-209 (2006)
+6. Farinella, G., Dugelay, J-L.: Demographic classiﬁcation: Do gender and ethnicity
+   aﬀect each other? ICIEV 2012, IAPR International Conference on Informatics, Elec-
+   tronics & Vision, Dhaka, Bangladesh (2012)
+7. Guo, Z., Zhang, L., Zhang, D.: A completed modeling of local binary pattern oper-
+   ator for texture classiﬁcation. IEEE Trans Image Process 19(6):16571663 (2010)
+8. Yang, H., Wang, Y.: A LBP-based face recognition method with Hamming distance
+   constraint. In: Proc. International Conference on Image and Graphics, pp. 645649
+   (2007)
+9. Fehr, J.: Rotational Invariant Uniform Local Binary Patterns For Full 3D Volume
+   Texture Analysis. FINSIG (2007)
+10. Zhao, G., Pietik¨ainen, M.: Dynamic texture recognition using volume local binary
+   patterns. In: ECCV, Workshop on Dynamical Vision, pp. 1223 (2006)
+11. Lu, X., Chen, H., Jain, A.: Multimodal Facial Gender and Ethnicity Identiﬁcation.
+   International Conference on Biometrics, LNCS 3832, pp. 554-561, Hong Kong (2006)
+12. Zhu, Y., Dariush, B., Fujimura, K.: Controlled human pose estimation from depth
+   image streams. In: CVPR time-of-ﬂight workshop (2008)
+13. Huang, Y., Wang, Y., Tan, T.: Combining statistics of geometrical and correla-
+   tive features for 3D face recognition. In Proceedings of the British Machine Vision
+   Conference, pp. 879-888 (2006)
+14. Jin, H., Liu, Q., Lu, H., Tong, X.: Face detection using improved lbp under Bayesian
+   framework. In: Proceedings of the Third International Conference on Image and
+   Graphics, pp. 306309 (2004)
+15. Ylioinas, J., Hadid, A., Pietik¨ainen, M.: Combining contrast and local binary pat-
+   terns for gender classiﬁcation. 17th Scandinavian Conference on Image Analysis
+   (2011)
+16. Huang, D., Shan, C., Ardabilian, M., Wang, Y., Chen, L.: Local Binary Patterns
+  and Its Application to Facial Image Analysis: A Survey. IEEE Transactions on
+   Systems, Man, and Cybernetics, Part C 41(6): 765-781 (2011)
+17. M¨akinen, E., Raisamo, R.: Evaluation of Gender Classiﬁcation Methods with Au-
+   tomatically Detected and Aligned Faces. IEEE Trans. Pattern Anal. Mach. Intell.
+   30(3): 541-547 (2008)
+18. Gupta, S., Castleman, K. R., Markey, M. K., Bovik, A. C.: Texas 3D Face Recogni-
+   tion Database. IEEE Southwest Symposium on Image Analysis and Interpretation,
+  p 97-100, Austin, TX (2010)
+19. EURECOM Kinect Face Dataset. http://RGB-D.eurecom.fr

@@ -1,0 +1,272 @@
+[
+  {
+    "round": "round_00",
+    "variant": "no_PI_matched_gamma",
+    "AP": 0.9001805785442195,
+    "AUC": 0.9508376500883312
+  },
+  {
+    "round": "round_00",
+    "variant": "shuffle_PI_17",
+    "AP": 0.9039172584116124,
+    "AUC": 0.9539056651795073
+  },
+  {
+    "round": "round_00",
+    "variant": "shuffle_PI_29",
+    "AP": 0.9085719828610402,
+    "AUC": 0.957318771147109
+  },
+  {
+    "round": "round_00",
+    "variant": "shuffle_PI_43",
+    "AP": 0.9062891153666388,
+    "AUC": 0.9554166541904962
+  },
+  {
+    "round": "round_00",
+    "variant": "random_PI_17",
+    "AP": 0.9085578823359121,
+    "AUC": 0.9569676917088361
+  },
+  {
+    "round": "round_00",
+    "variant": "random_PI_29",
+    "AP": 0.9074468433541909,
+    "AUC": 0.9569624517172202
+  },
+  {
+    "round": "round_00",
+    "variant": "random_PI_43",
+    "AP": 0.906741065363326,
+    "AUC": 0.9562786328113304
+  },
+  {
+    "round": "round_00",
+    "variant": "duplicate_RGB_PI",
+    "AP": 0.9073881512182538,
+    "AUC": 0.9561805701110879
+  },
+  {
+    "round": "round_00",
+    "variant": "extended_100_sweeps",
+    "AP": 0.9099433506758221,
+    "AUC": 0.9580748270802767
+  },
+  {
+    "round": "round_01",
+    "variant": "no_PI_matched_gamma",
+    "AP": 0.901599633562396,
+    "AUC": 0.9509604156061922
+  },
+  {
+    "round": "round_01",
+    "variant": "shuffle_PI_17",
+    "AP": 0.8998050560104897,
+    "AUC": 0.9501635625954427
+  },
+  {
+    "round": "round_01",
+    "variant": "shuffle_PI_29",
+    "AP": 0.9030266893428025,
+    "AUC": 0.9534471659131061
+  },
+  {
+    "round": "round_01",
+    "variant": "shuffle_PI_43",
+    "AP": 0.9013142067693094,
+    "AUC": 0.9525267988142647
+  },
+  {
+    "round": "round_01",
+    "variant": "random_PI_17",
+    "AP": 0.9015878988422079,
+    "AUC": 0.9527285384914812
+  },
+  {
+    "round": "round_01",
+    "variant": "random_PI_29",
+    "AP": 0.9012480941987681,
+    "AUC": 0.9529388867263526
+  },
+  {
+    "round": "round_01",
+    "variant": "random_PI_43",
+    "AP": 0.9015158300106441,
+    "AUC": 0.952228119292152
+  },
+  {
+    "round": "round_01",
+    "variant": "duplicate_RGB_PI",
+    "AP": 0.9011636832539808,
+    "AUC": 0.9513526664071623
+  },
+  {
+    "round": "round_01",
+    "variant": "extended_100_sweeps",
+    "AP": 0.9070657539723125,
+    "AUC": 0.9547938437584214
+  },
+  {
+    "round": "round_02",
+    "variant": "no_PI_matched_gamma",
+    "AP": 0.8994759445063947,
+    "AUC": 0.9511599095727161
+  },
+  {
+    "round": "round_02",
+    "variant": "shuffle_PI_17",
+    "AP": 0.9127855462847855,
+    "AUC": 0.9598785070515315
+  },
+  {
+    "round": "round_02",
+    "variant": "shuffle_PI_29",
+    "AP": 0.912783754981083,
+    "AUC": 0.9599361469593076
+  },
+  {
+    "round": "round_02",
+    "variant": "shuffle_PI_43",
+    "AP": 0.9128111418499006,
+    "AUC": 0.959907701290535
+  },
+  {
+    "round": "round_02",
+    "variant": "random_PI_17",
+    "AP": 0.912749931389713,
+    "AUC": 0.9598871156091864
+  },
+  {
+    "round": "round_02",
+    "variant": "random_PI_29",
+    "AP": 0.9128195935458479,
+    "AUC": 0.9599357726741922
+  },
+  {
+    "round": "round_02",
+    "variant": "random_PI_43",
+    "AP": 0.912550873799133,
+    "AUC": 0.959783812917328
+  },
+  {
+    "round": "round_02",
+    "variant": "duplicate_RGB_PI",
+    "AP": 0.9128340922822312,
+    "AUC": 0.9599619726322723
+  },
+  {
+    "round": "round_02",
+    "variant": "extended_100_sweeps",
+    "AP": 0.9132676195466556,
+    "AUC": 0.9602284636344582
+  },
+  {
+    "round": "round_03",
+    "variant": "no_PI_matched_gamma",
+    "AP": 0.9041799394910042,
+    "AUC": 0.9527008413929395
+  },
+  {
+    "round": "round_03",
+    "variant": "shuffle_PI_17",
+    "AP": 0.9154634370840395,
+    "AUC": 0.9598429499655656
+  },
+  {
+    "round": "round_03",
+    "variant": "shuffle_PI_29",
+    "AP": 0.9157061406997561,
+    "AUC": 0.9599960325777763
+  },
+  {
+    "round": "round_03",
+    "variant": "shuffle_PI_43",
+    "AP": 0.9156206697629224,
+    "AUC": 0.9599406383806928
+  },
+  {
+    "round": "round_03",
+    "variant": "random_PI_17",
+    "AP": 0.915604878990534,
+    "AUC": 0.9599473755127705
+  },
+  {
+    "round": "round_03",
+    "variant": "random_PI_29",
+    "AP": 0.9156183516075898,
+    "AUC": 0.9599196784142288
+  },
+  {
+    "round": "round_03",
+    "variant": "random_PI_43",
+    "AP": 0.9156919902039702,
+    "AUC": 0.9599855525945444
+  },
+  {
+    "round": "round_03",
+    "variant": "duplicate_RGB_PI",
+    "AP": 0.9157044831476925,
+    "AUC": 0.9599971554331227
+  },
+  {
+    "round": "round_03",
+    "variant": "extended_100_sweeps",
+    "AP": 0.9161630815820663,
+    "AUC": 0.9603590891397431
+  },
+  {
+    "round": "round_04",
+    "variant": "no_PI_matched_gamma",
+    "AP": 0.9054733647805469,
+    "AUC": 0.9535560828816958
+  },
+  {
+    "round": "round_04",
+    "variant": "shuffle_PI_17",
+    "AP": 0.9099758879969544,
+    "AUC": 0.9563564841153398
+  },
+  {
+    "round": "round_04",
+    "variant": "shuffle_PI_29",
+    "AP": 0.9123630006359299,
+    "AUC": 0.958630266191574
+  },
+  {
+    "round": "round_04",
+    "variant": "shuffle_PI_43",
+    "AP": 0.9118445159980381,
+    "AUC": 0.9580516214031201
+  },
+  {
+    "round": "round_04",
+    "variant": "random_PI_17",
+    "AP": 0.9132645734045188,
+    "AUC": 0.9595502590052998
+  },
+  {
+    "round": "round_04",
+    "variant": "random_PI_29",
+    "AP": 0.9125821810567034,
+    "AUC": 0.9588503458394466
+  },
+  {
+    "round": "round_04",
+    "variant": "random_PI_43",
+    "AP": 0.9093575665404823,
+    "AUC": 0.9568640147318621
+  },
+  {
+    "round": "round_04",
+    "variant": "duplicate_RGB_PI",
+    "AP": 0.9114172871818229,
+    "AUC": 0.9575433422163668
+  },
+  {
+    "round": "round_04",
+    "variant": "extended_100_sweeps",
+    "AP": 0.9145350506690804,
+    "AUC": 0.9598362128334881
+  }
+]

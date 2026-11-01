@@ -1,0 +1,11 @@
+{
+  "partitions": 10,
+  "models": 20,
+  "AP_difference_mean": 0.5464155450088781,
+  "AP_difference_median": 0.5106768304806719,
+  "AP_difference_min": 0.08618737426043799,
+  "AP_difference_max": 0.859094780237668,
+  "positive_partitions": 10,
+  "scope": "FaceGrabber same40people as primary; overlapping repeated partitions, not independent confirmation",
+  "independent_confirmation": false
+}

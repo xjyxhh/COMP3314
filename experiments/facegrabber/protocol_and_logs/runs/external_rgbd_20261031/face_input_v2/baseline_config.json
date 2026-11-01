@@ -1,0 +1,69 @@
+{
+  "methods": [
+    "euclidean",
+    "itml",
+    "lmnn",
+    "svm",
+    "svm_plus",
+    "itml_s",
+    "itml_plus"
+  ],
+  "gamma_grid": [
+    0.0001,
+    0.00031622776601683794,
+    0.001,
+    0.0031622776601683794,
+    0.01,
+    0.03162277660168379,
+    0.1,
+    0.31622776601683794,
+    1.0
+  ],
+  "lambda_grid": [
+    0.01,
+    0.03162277660168379,
+    0.1,
+    0.31622776601683794,
+    1.0,
+    3.1622776601683795,
+    10.0,
+    31.622776601683793,
+    100.0
+  ],
+  "C_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "svm_plus_gamma_grid": [
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "svm_kernel": "linear",
+  "lmnn_mu_grid": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9,
+    1.0
+  ],
+  "lmnn_k": 5,
+  "lmnn_max_triplets": 1000000,
+  "itml_s_filter_rule": "shared_xi0",
+  "max_sweeps": 10,
+  "tolerance": 0.001,
+  "selection_metric": "AP",
+  "lmnn_backend": "projected",
+  "lmnn_max_iterations": 1000,
+  "lmnn_tolerance": 1e-07
+}

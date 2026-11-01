@@ -1,0 +1,95 @@
+{
+  "input": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/external_rgbd_20261031/robustness/seed_7010",
+  "config": {
+    "methods": [
+      "itml",
+      "itml_plus"
+    ],
+    "gamma_grid": [
+      0.0001,
+      0.00031622776601683794,
+      0.001,
+      0.0031622776601683794,
+      0.01,
+      0.03162277660168379,
+      0.1,
+      0.31622776601683794,
+      1.0
+    ],
+    "lambda_grid": [
+      0.01,
+      0.03162277660168379,
+      0.1,
+      0.31622776601683794,
+      1.0,
+      3.1622776601683795,
+      10.0,
+      31.622776601683793,
+      100.0
+    ],
+    "C_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "svm_plus_gamma_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "svm_kernel": "linear",
+    "lmnn_mu_grid": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "lmnn_k": 5,
+    "lmnn_max_triplets": 1000000,
+    "itml_s_filter_rule": "shared_xi0",
+    "max_sweeps": 10,
+    "tolerance": 0.001,
+    "selection_metric": "AP",
+    "lmnn_backend": "projected",
+    "lmnn_max_iterations": 1000,
+    "lmnn_tolerance": 1e-07
+  },
+  "methods": [
+    "itml",
+    "itml_plus"
+  ],
+  "input_sha256": {
+    "features_pca.npz": "cb2d5f87949755f7b4be2494756ca67ca02466f73c5442e7ed9d6039d3b5712c",
+    "round_00/pairs.npz": "96282fa5af43d650f5f7d497ca145215bfbbbe4df6fb88d7400c9041922c8ab6",
+    "round_00/xi0.npy": "6c6754aa7be62a9df4d1d685b481cb2fb53a0d223677b2fec3d07c6a04b7efe6",
+    "split.npz": "6faf1c29d8e85d02464227c0442976cf48742582bd5d1715c9c8795b08cf6f93"
+  },
+  "config_sha256": "5f753c863c050855d6f30282b8a35551017e8dea7d7690bb59fe5e27bbf0adf4",
+  "numpy_version": "2.4.6",
+  "cvxpy_version": "1.9.3",
+  "code_sha256": {
+    "baselines.py": "a9c59235a46366f9cbd5c45796c0f57e9adf9615038b02817ff8981306781ddf",
+    "baseline_compare.py": "5cb06cd93fc04e0d9ff69ae4354e49f4f471335a5e8dda8954036ac9e7d8d378",
+    "metrics.py": "d06803970776d2dfdb2abc0f3b6bbe430e7182b08e404f654d5556a938b5dbc9",
+    "evaluation.py": "1725f7696d1b642008e04015062c995314aad015f15c14eff1f82f9ad6de4e91"
+  },
+  "scope": "Fixed-input formula/backend comparison; not original numerical reproduction",
+  "conventions": {
+    "svm_kernel": "linear",
+    "svm_pair_gate": "standard normal PDF, unscaled pair features",
+    "lmnn": "fixed same-identity Euclidean k neighbors, sum hinge SDP, no triplet sampling",
+    "itml_s": "explicit threshold convention from config; gamma shared between stages"
+  },
+  "selection": "AP on validation only; first candidate on ties",
+  "test_evaluated": false
+}

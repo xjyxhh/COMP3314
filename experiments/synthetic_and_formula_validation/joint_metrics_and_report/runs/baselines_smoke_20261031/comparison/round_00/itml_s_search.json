@@ -1,0 +1,40 @@
+[
+  {
+    "parameters": {
+      "gamma": 0.1
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 1.0,
+      "AUC": 1.0
+    },
+    "diagnostics": {
+      "filter_rule": "shared_xi0",
+      "retained_positive": 12,
+      "retained_negative": 16,
+      "removed": 0,
+      "depth_stop": "dual_norm_tolerance"
+    },
+    "stop": "dual_norm_tolerance",
+    "seconds": 0.0011533326469361782
+  },
+  {
+    "parameters": {
+      "gamma": 1.0
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 1.0,
+      "AUC": 1.0
+    },
+    "diagnostics": {
+      "filter_rule": "shared_xi0",
+      "retained_positive": 12,
+      "retained_negative": 16,
+      "removed": 0,
+      "depth_stop": "dual_norm_tolerance"
+    },
+    "stop": "dual_norm_tolerance",
+    "seconds": 0.0009305421262979507
+  }
+]

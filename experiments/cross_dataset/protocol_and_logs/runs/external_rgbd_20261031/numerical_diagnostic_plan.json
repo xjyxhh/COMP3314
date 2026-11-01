@@ -1,0 +1,10 @@
+{
+  "recorded_unix": 1793453411.694401,
+  "reason": "Observed near-constant validation SVM+ candidates; numerical diagnostics fixed before new test evaluation",
+  "score_rounding": [
+    6,
+    9
+  ],
+  "main_ranking_unchanged": true,
+  "other_analysis": "Report train/validation/test AP together; no model changes"
+}

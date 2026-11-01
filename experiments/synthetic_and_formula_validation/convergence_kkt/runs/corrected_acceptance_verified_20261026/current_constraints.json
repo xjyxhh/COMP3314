@@ -1,0 +1,56 @@
+[
+  {
+    "round": 0,
+    "status": "optimal",
+    "normalized_spd_margin": -0.22644641736558208,
+    "solver_dual_gap": null,
+    "solver_error": "Block 612/8: Singular matrix E in LSQ subproblem"
+  },
+  {
+    "round": 1,
+    "status": "optimal",
+    "normalized_spd_margin": -0.001623338054530588,
+    "solver_dual_gap": null,
+    "checkpoints": [
+      {
+        "sweep": 100,
+        "objective": 15.864474403517434,
+        "relative_violation": 0.18002398176411014,
+        "relative_equality": 0.09213366241920562,
+        "complementarity": 2.1738189935702352,
+        "min_eigenvalue_M": 0.0011496307583983303,
+        "min_eigenvalue_P": 0.0023103848446796088,
+        "stationarity_M": 1.0551345477475062e-14,
+        "stationarity_P": 4.687470686819889e-14,
+        "stationarity_xi": 2.9125023607362235e-14,
+        "dual_nonnegative_violation": 0.0
+      },
+      {
+        "sweep": 500,
+        "objective": 35.92358221350643,
+        "relative_violation": 0.1624206362323501,
+        "relative_equality": 0.08378039281231357,
+        "complementarity": 3.0483340413961866,
+        "min_eigenvalue_M": 5.0855513546936936e-05,
+        "min_eigenvalue_P": 9.445102309722684e-05,
+        "stationarity_M": 7.611852102698078e-16,
+        "stationarity_P": 5.220284488256654e-13,
+        "stationarity_xi": 1.6032241552873824e-14,
+        "dual_nonnegative_violation": 0.0
+      },
+      {
+        "sweep": 1000,
+        "objective": 61.59334494006718,
+        "relative_violation": 0.16148678100041122,
+        "relative_equality": 0.08322428225544003,
+        "complementarity": 3.1234209120062215,
+        "min_eigenvalue_M": 1.967561305829058e-06,
+        "min_eigenvalue_P": 3.6390243390141045e-06,
+        "stationarity_M": 1.3069308227021595e-14,
+        "stationarity_P": 3.4935118100300434e-13,
+        "stationarity_xi": 5.793878449289275e-14,
+        "dual_nonnegative_violation": 0.0
+      }
+    ]
+  }
+]

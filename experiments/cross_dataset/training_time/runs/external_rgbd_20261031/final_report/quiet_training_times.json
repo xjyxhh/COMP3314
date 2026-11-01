@@ -1,0 +1,286 @@
+{
+  "records": [
+    {
+      "dataset": "face",
+      "round": "round_00",
+      "method": "itml",
+      "fit_seconds": 3.5607061246410012,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_00",
+      "method": "lmnn",
+      "fit_seconds": 0.7698893332853913,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_00",
+      "method": "itml_s",
+      "fit_seconds": 4.582304500043392,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_00",
+      "method": "itml_plus",
+      "fit_seconds": 7.357361124828458,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_01",
+      "method": "itml",
+      "fit_seconds": 2.5811707503162324,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_01",
+      "method": "lmnn",
+      "fit_seconds": 0.775386624969542,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_01",
+      "method": "itml_s",
+      "fit_seconds": 4.864668959286064,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_01",
+      "method": "itml_plus",
+      "fit_seconds": 6.871810750104487,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_02",
+      "method": "itml",
+      "fit_seconds": 2.194793874863535,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_02",
+      "method": "lmnn",
+      "fit_seconds": 0.983144958037883,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_02",
+      "method": "itml_s",
+      "fit_seconds": 4.59355774987489,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_02",
+      "method": "itml_plus",
+      "fit_seconds": 7.632175958715379,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_03",
+      "method": "itml",
+      "fit_seconds": 2.5871547907590866,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_03",
+      "method": "lmnn",
+      "fit_seconds": 0.7902074581943452,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_03",
+      "method": "itml_s",
+      "fit_seconds": 4.054540167097002,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_03",
+      "method": "itml_plus",
+      "fit_seconds": 8.18588100001216,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_04",
+      "method": "itml",
+      "fit_seconds": 2.9635498337447643,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_04",
+      "method": "lmnn",
+      "fit_seconds": 1.0209215418435633,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_04",
+      "method": "itml_s",
+      "fit_seconds": 4.611483083106577,
+      "model_matches": true
+    },
+    {
+      "dataset": "face",
+      "round": "round_04",
+      "method": "itml_plus",
+      "fit_seconds": 7.623551583848894,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_00",
+      "method": "itml",
+      "fit_seconds": 1.0788752078078687,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_00",
+      "method": "lmnn",
+      "fit_seconds": 10.191070458851755,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_00",
+      "method": "itml_s",
+      "fit_seconds": 1.4232261250726879,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_00",
+      "method": "itml_plus",
+      "fit_seconds": 5.531625042203814,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_01",
+      "method": "itml",
+      "fit_seconds": 1.3937654998153448,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_01",
+      "method": "lmnn",
+      "fit_seconds": 9.651266708038747,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_01",
+      "method": "itml_s",
+      "fit_seconds": 2.7931369580328465,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_01",
+      "method": "itml_plus",
+      "fit_seconds": 5.544626334216446,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_02",
+      "method": "itml",
+      "fit_seconds": 1.2532402500510216,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_02",
+      "method": "lmnn",
+      "fit_seconds": 9.80049162497744,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_02",
+      "method": "itml_s",
+      "fit_seconds": 1.5322145419195294,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_02",
+      "method": "itml_plus",
+      "fit_seconds": 5.882275708951056,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_03",
+      "method": "itml",
+      "fit_seconds": 1.1549931252375245,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_03",
+      "method": "lmnn",
+      "fit_seconds": 9.864877375308424,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_03",
+      "method": "itml_s",
+      "fit_seconds": 1.6770732500590384,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_03",
+      "method": "itml_plus",
+      "fit_seconds": 5.922755334060639,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_04",
+      "method": "itml",
+      "fit_seconds": 1.2295385831966996,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_04",
+      "method": "lmnn",
+      "fit_seconds": 9.949753458146006,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_04",
+      "method": "itml_s",
+      "fit_seconds": 2.0449443752877414,
+      "model_matches": true
+    },
+    {
+      "dataset": "body",
+      "round": "round_04",
+      "method": "itml_plus",
+      "fit_seconds": 5.596018000040203,
+      "model_matches": true
+    }
+  ],
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "scope": "Sequential refits after all our main/robustness/control training completed; other user/system load not controlled; original author hardware/backend not reproduced"
+}

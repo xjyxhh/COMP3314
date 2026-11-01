@@ -1,0 +1,67 @@
+{
+  "input": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/smoke_verified",
+  "config": {
+    "seed": 2026,
+    "split_counts": [
+      4,
+      2,
+      2
+    ],
+    "pca_dimension": 3,
+    "rounds": 2,
+    "pair_counts": {
+      "train": [
+        10,
+        10
+      ],
+      "val": [
+        10,
+        10
+      ],
+      "test": [
+        10,
+        10
+      ]
+    },
+    "gamma_grid": [
+      0.1,
+      1.0
+    ],
+    "lambda_grid": [
+      0.1,
+      1.0
+    ],
+    "max_sweeps": 10,
+    "tolerance": 0.001,
+    "bound_distance": "euclidean",
+    "bound_assignment": "constraint_consistent",
+    "selection_metric": "AP",
+    "std_ddof": 0
+  },
+  "fractions": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "input_sha256": {
+    "features_pca.npz": "63ad4887aea26c2fe00baaa480ac31a3adcfc6ddbe0c4d8b94eab9d760f4d1e4",
+    "round_00/pairs.npz": "7358e244f9ecf3db25cf70a65c6c5d9e35c646f817ca67c13c229e8f3aa0c138",
+    "round_00/xi0.npy": "e0fa051058f2e05170ffbab4c2a598373510ce6a50c2d4be1d301ef5189b6f4a",
+    "round_01/pairs.npz": "87f20afbc26d03f3982975f0acc7b196aa145b1778b8a8a01d80d75ccabaefe8",
+    "round_01/xi0.npy": "6093b32c476b9f392fe7faa039e109749992d063b2dcb1b8051a46457d006928"
+  },
+  "config_sha256": "aa288706a3916bfef539b4b4619185055045649ea58e461954e36b8fa5552ed3",
+  "code_sha256": {
+    "metrics.py": "d06803970776d2dfdb2abc0f3b6bbe430e7182b08e404f654d5556a938b5dbc9",
+    "partial.py": "7f398020660fcf9bb2a8185a3bcadd88fd123a63f22faa25210fc71b5f462622",
+    "evaluation.py": "e1d7f495d4af944569501d8c918eb38fadb910906bfb517ca45083f9d14ac065"
+  },
+  "scope": "Partial ITML+ formula/protocol extension on supplied fixed features; not original benchmark",
+  "mask": "first floor(fraction*N) pairs within each label, saved order, nested masks",
+  "selection": "validation AP only; first candidate on ties; no test evaluation",
+  "zero_percent": "ordinary ITML; lambda irrelevant, P implicitly I",
+  "stopping": "norm check per sweep, original implemented convention; budget from config",
+  "test_evaluated": false
+}

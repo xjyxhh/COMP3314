@@ -1,0 +1,30 @@
+[
+  {
+    "round": "round_00",
+    "result": {
+      "status": "optimal_inaccurate",
+      "classification": "numerically_certified_spd_infeasible",
+      "normalized_spd_margin": -0.003770376493702182,
+      "conservative_dual_upper_bound": -0.0037703748402032364,
+      "dual_psd_min": 1.0000001455459973e-10,
+      "primal_min_eigenvalue": -0.003770376577220267,
+      "normalized_pair_violation": 5.486314600864316e-11,
+      "trace_error": 1.1102230246251565e-16,
+      "strict_witness_pair_slack": null
+    }
+  },
+  {
+    "round": "round_01",
+    "result": {
+      "status": "optimal_inaccurate",
+      "classification": "numerically_certified_spd_infeasible",
+      "normalized_spd_margin": -0.006611209633875062,
+      "conservative_dual_upper_bound": -0.006611206157991967,
+      "dual_psd_min": 9.999999022630033e-11,
+      "primal_min_eigenvalue": -0.006611209774067926,
+      "normalized_pair_violation": 1.1290443626137299e-10,
+      "trace_error": 1.1102230246251565e-16,
+      "strict_witness_pair_slack": null
+    }
+  }
+]

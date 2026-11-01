@@ -1,0 +1,135 @@
+{
+  "seed": 2026,
+  "scope": "Washington diagnostic subset; basic spatial features, NOT GLBP",
+  "full_manifest": {
+    "samples": 41877,
+    "categories": 51,
+    "instances": 300,
+    "missing_files": 0,
+    "path_label_issues": []
+  },
+  "selected": {
+    "samples": 288,
+    "split_identities": {
+      "train": [
+        "apple_5",
+        "ball_7",
+        "banana_2",
+        "bell_pepper_5",
+        "binder_1",
+        "bowl_4",
+        "calculator_5",
+        "camera_2"
+      ],
+      "val": [
+        "apple_3",
+        "ball_3",
+        "banana_3",
+        "bell_pepper_4",
+        "binder_2",
+        "bowl_2",
+        "calculator_2",
+        "camera_3"
+      ],
+      "test": [
+        "apple_1",
+        "ball_1",
+        "banana_4",
+        "bell_pepper_1",
+        "binder_3",
+        "bowl_6",
+        "calculator_3",
+        "camera_1"
+      ]
+    },
+    "features_rgb": 64,
+    "features_depth": 32,
+    "pca_dimension": 8,
+    "min_valid_depth_fraction": 0.05193855157278712
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "pair_checks": {
+        "train": {
+          "positive": 48,
+          "negative": 96,
+          "cross_sequence_positives": 48,
+          "same_category_negatives": 0,
+          "min_rgb_distance": 0.06594489141215965,
+          "min_depth_distance": 0.007914364784526826
+        },
+        "val": {
+          "positive": 48,
+          "negative": 96,
+          "cross_sequence_positives": 48,
+          "same_category_negatives": 0,
+          "min_rgb_distance": 0.0709121557537013,
+          "min_depth_distance": 0.010119994568988893
+        },
+        "test": {
+          "positive": 48,
+          "negative": 96,
+          "cross_sequence_positives": 48,
+          "same_category_negatives": 0,
+          "min_rgb_distance": 0.04972135087427855,
+          "min_depth_distance": 0.025357423474069815
+        }
+      },
+      "feasibility": {
+        "status": "optimal",
+        "classification": "numerically_spd_feasible",
+        "normalized_spd_margin": 0.0013412370190439735,
+        "conservative_dual_upper_bound": 0.001341237456849664,
+        "dual_psd_min": 1.0000006686269723e-10,
+        "primal_min_eigenvalue": 0.0013412370009701837,
+        "normalized_pair_violation": 7.64696942920362e-12,
+        "trace_error": 0.0
+      }
+    },
+    {
+      "round": 1,
+      "pair_checks": {
+        "train": {
+          "positive": 48,
+          "negative": 96,
+          "cross_sequence_positives": 48,
+          "same_category_negatives": 0,
+          "min_rgb_distance": 0.10409392461633003,
+          "min_depth_distance": 0.017149343022469735
+        },
+        "val": {
+          "positive": 48,
+          "negative": 96,
+          "cross_sequence_positives": 48,
+          "same_category_negatives": 0,
+          "min_rgb_distance": 0.06722777294532387,
+          "min_depth_distance": 0.012685080855087285
+        },
+        "test": {
+          "positive": 48,
+          "negative": 96,
+          "cross_sequence_positives": 48,
+          "same_category_negatives": 0,
+          "min_rgb_distance": 0.09120933235694048,
+          "min_depth_distance": 0.02074884174116576
+        }
+      },
+      "feasibility": {
+        "status": "optimal_inaccurate",
+        "classification": "undetermined",
+        "normalized_spd_margin": 0.003926357785207011,
+        "conservative_dual_upper_bound": 0.003926366186328905,
+        "dual_psd_min": 9.999996815825533e-11,
+        "primal_min_eigenvalue": 0.0039263573242886715,
+        "normalized_pair_violation": 2.3022116331372633e-10,
+        "trace_error": 4.440892098500626e-16
+      }
+    }
+  ],
+  "manifest_sha256": "80c09a0ee61d37e9ffeaaa7b8e206c0bcd4a8c004e01b5f91b2de5331d39ef17",
+  "versions": {
+    "numpy": "2.4.6",
+    "cvxpy": "1.9.3"
+  }
+}

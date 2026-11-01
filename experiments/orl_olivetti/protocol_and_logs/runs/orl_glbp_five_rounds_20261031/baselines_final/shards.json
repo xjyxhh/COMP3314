@@ -1,0 +1,21 @@
+{
+  "serial_snapshot_sha256": "1da59ba1bc355999dcccde77049b5b699009320278668a8cdf78ae46c44dc17f",
+  "shards": [
+    {
+      "path": "runs/orl_glbp_five_rounds_20261031/shard_01",
+      "protocol_sha256": "cd4162cfc1325f22baece2036d062064dfbf002db85f24f7fd5b8755811ab297",
+      "results_sha256": "b90937cd0b7da6bd2ba4a2ee63f4261a538c4fad34dbe7d040f9edd778015d93"
+    },
+    {
+      "path": "runs/orl_glbp_five_rounds_20261031/shard_02",
+      "protocol_sha256": "f5f8651d751ad0e450c80807c042e89339336d7205b8f2d3b08f491129818c76",
+      "results_sha256": "520685e432fbf19cce24a8c8c71eabdf8497a83efdb95c307fd62bf6a7ad82e7"
+    },
+    {
+      "path": "runs/orl_glbp_five_rounds_20261031/shard_03_04",
+      "protocol_sha256": "8c1a8e076cb70357fb2d3aea22070a7f8e45d23d84b7d54f002b7f0191bcae79",
+      "results_sha256": "67775aed248b5ec6b88888261d5d1198f4c2418e9a1b916b39037a579c0c51de"
+    }
+  ],
+  "note": "Independent round scheduling; numerical fit settings identical; timing measured separately"
+}

@@ -1,0 +1,15 @@
+{
+  "selection_sha256": "810bb16f414510919c5c352f11f6ce9fd1abfb10d376859da927463369fd338a",
+  "source_archives_sha256": {
+    "All RGB Videos.zip": "b620ee104d18e85d78b49cbe767ed792010e08e60bb1f970e883dcc5f28f3603",
+    "All Depth Videos.zip": "a2e0b3ad2fb88777bcfab392d327c49b715d88736a5842a0faedabee5e7321d4"
+  },
+  "scope": "WeightGait alternative retrieval using20 valid frames pooled from disjoint clip groups; display-depth privilege, not metric-depth BIWI",
+  "depth": "Released MPEG4 uint8 BGR display, converted via PIL L; no claim to recover raw depth units",
+  "pose_reference": "ChrisLochhead/GaitMonitor Code/Programs/Data_Processing/Image_Processor.py blob 67342fea5605954ea11e6121d93d66a47d1be071",
+  "samples": 1920,
+  "training_depth_samples": 320,
+  "grouping": "first4 normal clips train/validation, next3 normal_A, last3 normal_B; uniform sample20 across good frames in each group; not one-video20-shot BIWI",
+  "resizing": "preserve aspect, cap longest side at300; increase rare minimum side to16 for KDES patch support",
+  "test_evaluated": false
+}

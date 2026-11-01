@@ -1,0 +1,10 @@
+{
+  "variant": "scale_only",
+  "training_rms_scale": 2.1389045175915147,
+  "rgb": "exactly unchanged from source",
+  "source": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/washington_audit_verified_20261026",
+  "source_features_sha256": "3a87063838c945e12974a016fa58db6ad69449d5fee1c3634cb54e6f341c09ce",
+  "depth": "original features with training RMS scale matching",
+  "missing": "zero depth excluded; empty cell statistics zero; no sample removed",
+  "not_glbp": true
+}

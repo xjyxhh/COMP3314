@@ -1,0 +1,23 @@
+{
+  "file": "facegrabber/Misc.zip",
+  "url": "https://webdisk.ads.mwn.de/Handlers/AnonymousDownload.ashx?folder=18e2eac4&path=Datenbanken%5CMisc.zip",
+  "started_unix": 1793449960.986708,
+  "status_code": 200,
+  "final_url": "https://webdisk.ads.mwn.de/Handlers/AnonymousDownload.ashx?folder=00a74ddc&path=Datenbanken%5CMisc.zip",
+  "headers": {
+    "Cache-Control": "public, must-revalidate",
+    "Content-Length": "4306",
+    "Content-Type": "application/zip; charset=utf-8",
+    "Last-Modified": "Tue, 26 Jan 2016 10:12:00 GMT",
+    "Accept-Ranges": "bytes",
+    "ETag": "\"#635893999200000000\"",
+    "Content-Disposition": "attachment; filename=\"Misc.zip\"",
+    "Content-Security-Policy": "default-src 'self';",
+    "X-Frame-Options": "SAMEORIGIN",
+    "Strict-Transport-Security": "max-age=86400; includeSubDomains",
+    "Date": "Sat, 31 Oct 2026 12:32:44 GMT"
+  },
+  "bytes": 4306,
+  "sha256": "a2edac09e709b50f4c2a4e951317c926fc3bf14e32a5e53b92f28d65ce944c81",
+  "status": "downloaded"
+}

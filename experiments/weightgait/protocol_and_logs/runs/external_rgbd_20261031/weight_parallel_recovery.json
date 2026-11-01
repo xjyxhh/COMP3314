@@ -1,0 +1,27 @@
+{
+  "action": "merged_four_original_shards_and_concurrent_fifth",
+  "stopped_own_controller": 1310,
+  "stopped_own_workers": [
+    5480,
+    5481
+  ],
+  "previous_four_shards_unchanged": true,
+  "original_redundant_fifth_preserved": true,
+  "parameters_or_formulas_changed": false,
+  "all_validation_selections_finished": true,
+  "test_evaluated": false,
+  "input_sha256": {
+    "features_pca.npz": "d07d30af9a49015d4bf357e4ce786c806ebc463a810d4ee742a886fb41ad1add",
+    "protocol.json": "a87fa2e0d6d2d0a4379ee0e521f8a0b6f4d4791cae522aafd44df2809382ca46",
+    "round_00/pairs.npz": "f7130a5c78d3544b8126b80b5c2cb3aea4c51ebab733e141f4738011ca2dbd98",
+    "round_00/xi0.npy": "f57f4c41298610bbe795d15125e416197fa67394d827bbeb3397a82050256fa9",
+    "round_01/pairs.npz": "da58799898fc1000f1404aca8138898d03ab8274455ad93d2703971823a6bb54",
+    "round_01/xi0.npy": "a186985e7ba084ffd2c127d0cec4c1eca2a434728d66395e90e9fbec030574ee",
+    "round_02/pairs.npz": "81ae05bf4deb8a1d819ad023e84d5cff6f183a489544c4e65fad4628c9adc78a",
+    "round_02/xi0.npy": "30d5dabf1a69fd6fd0155226a38315b8cf92c29864df26b9d7a3e12f6d91059c",
+    "round_03/pairs.npz": "5143a9119a956abb9251b20f676fddaf15fb7a4c7bfa1dc7b6b59935dd0b60ff",
+    "round_03/xi0.npy": "59b725f0f88ac990685883af57ef083a8eeea24fc082be9d84c749118ea0c26d",
+    "round_04/pairs.npz": "c120b900a3155c78b305dfa06c6d94a8f37c5f063c872ce8cce33cacd4e417f1",
+    "round_04/xi0.npy": "629a94aa6f35ad7fcee31a360a9575c82b3389716dec93c73a9acb17c4d55b14"
+  }
+}

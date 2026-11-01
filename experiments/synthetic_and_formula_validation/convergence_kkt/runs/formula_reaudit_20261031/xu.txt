@@ -1,0 +1,906 @@
+
+===== PDF PAGE 1 =====
+3150                                      IEEE TRANSACTIONS ON NEURAL NETWORKS AND LEARNING SYSTEMS, VOL. 26, NO. 12, DECEMBER 2015
+
+     Distance Metric Learning Using Privileged
+       Information for Face Veriﬁcation and
+             Person Re-Identiﬁcation
+
+                 Xinxing Xu, Wen Li, Member, IEEE, and Dong Xu, Senior Member, IEEE
+
+  Abstract—In  this  paper, we propose a new approach  to  names of those subjects in the images). Therefore, we propose
+improve face veriﬁcation and person  re-identiﬁcation in the   to use the same learning approach to solve the two tasks in
+RGB images by leveraging a set of RGB-D data, in which we                                                                         this paper.
+have additional depth images in the training data captured using
+                                                         Given only side information, a common way is to learn adepth cameras such as Kinect. In particular, we extract visual
+features and depth features from the RGB images and depth   Mahalanobis distance metric for face veriﬁcation or person
+images, respectively. As the depth features are available only   re-identiﬁcation. After that, the distance between a pair of
+in the training data, we treat the depth features as privileged   testing images is used to decide whether they are from the
+information, and we formulate this task as a distance metric                                                    same subject or different subjects [4], [5]. However, most
+learning with privileged information problem. Unlike the tradi-
+                                                               of those existing works for face veriﬁcation and person re-tional face veriﬁcation and person re-identiﬁcation tasks that only
+use visual features, we further employ the extra depth features   identiﬁcation are based on the RGB images only. On the
+in the training data to improve the learning of distance metric in   other hand, with the advancement of new depth cameras,
+the training process. Based on the information-theoretic metric   such as Kinect, one can easily capture depth information
+learning (ITML) method, we propose a new formulation called                                                                together with RGB images when collecting training data for
+ITML with privileged information (ITML+) for this task. We also
+                                                        computer vision tasks [6]. A few labeled RGB-D data setspresent an efﬁcient algorithm based on the cyclic projection
+method for solving the proposed ITML+ formulation. Extensive  were recently released to the public [7]–[9]. Compared with
+experiments on the challenging faces data sets EUROCOM and  RGB images, depth information is more robust to illumination
+CurtinFaces for face veriﬁcation as well as the BIWI RGBD-ID   changes, complex background, and so forth, and thus it can
+data set for person re-identiﬁcation demonstrate the effectiveness                                                             provide useful information for many vision tasks, such as face
+of our proposed approach.
+                                                                recognition [8], gender classiﬁcation [9], and object recogni-
+   Index Terms—Distance  metric  learning,  face  veriﬁcation,   tion [7]. Moreover, for the face veriﬁcation task, the location
+learning   using   privileged   information   (LUPI),   person                                                               of interested foreground regions, such as nose, mouth and eyes
+re-identiﬁcation.
+                                                                    in the face image, can be well encoded in the depth images.
+                            I. INTRODUCTION                     However, those works require depth information and RGB
+                                                             information in both the training and the test stages, so those   ACE veriﬁcation and person re-identiﬁcation are two
+                                                      methods cannot be used in a broader range of applications,     important problems  in computer  vision, which haveF                                                  where the testing images do not contain depth information,attracted increasing attentions from many researchers in the
+                                                          such as the images captured by the conventional surveillancelast two decades [1]–[4]. The face veriﬁcation task is to verify
+                                                            cameras.whether two face images are from the same subject or not,
+                                                                  In this paper, we propose a new scheme for recognizingwhile the person re-identiﬁcation task aims to identify the
+                                       RGB images by learning from a set of RGB-D training datasubject in the probe image by comparing this probe image
+                                                            with side information, and our method can be used for facewith a set of gallery images. Although the two applications are
+                                                                veriﬁcation and person re-identiﬁcation. In  this paper, thedifferent, in both tasks, the training data set usually consists of
+                                                                    training data consist of a few pairs of RGB images and thea number of pairs of training images (i.e., face images or the
+                                                            corresponding depth images together with side information,images containing the whole head and body areas) together
+                                                       and our goal is to decide whether a pair of RGB testing imageswith side information (i.e., we only know whether each pair
+                                                    comes from the same subject or not. In the training process,of images is from the same or different subjects instead of the
+                                             we ﬁrst extract the visual features and the depth features from
+  Manuscript  received  June  21,  2014;  revised  October  26, 2014  and   the RGB images and the depth images, respectively. Then,
+January 10, 2015; accepted January 24, 2015. Date of publication March 12,  we learn a robust Mahalanobis distance metric in the visual
+2015; date of current version November 16, 2015.
+  X. Xu and W. Li are with the School of Computer Engineering, Nanyang   feature space using both the visual and the depth features.
+Technological University, Singapore 639798 (e-mail: xuxi0006@ntu.edu.sg;   In the testing process, we use the learned Mahalanobis distance
+wli1@ntu.edu.sg).                                                metric to determine whether a pair of RGB images is from the
+  D. Xu was with the School of Computer Engineering, Nanyang Technolog-
+ical University, Singapore 639798. He is now with the School of Electrical  same subject or not by using only their visual features.
+and Information Engineering, The University of Sydney, Sydney, NSW 2006,    To  learn  the  Mahalanobis  distance  metric  under  the
+Australia. (e-mail: dongxudongxu@gmail.com).                    new learning scheme, we propose a novel distance-metric
+  Color versions of one or more of the ﬁgures in this paper are available
+online at http://ieeexplore.ieee.org.                                     learning method called information-theoretic metric learning
+   Digital Object Identiﬁer 10.1109/TNNLS.2015.2405574                 with privileged information (ITML+) by formulating a new
+
+                   2162-237X © 2015 IEEE. Personal use is permitted, but republication/redistribution requires IEEE permission.
+                         See http://www.ieee.org/publications_standards/publications/rights/index.html for more information.
+
+Authorized licensed use limited to: The University of Hong Kong Libraries. Downloaded on September 16,2026 at 08:09:09 UTC from IEEE Xplore. Restrictions apply.
+
+===== PDF PAGE 2 =====
+XU et al.: DISTANCE METRIC LUPI FOR FACE VERIFICATION AND PERSON RE-IDENTIFICATION                                                      3151
+
+
+objective function based on the existing work ITML [10].   other classes should be kept away by a margin. The constraints
+This paper is inspired by the recent work on learning using   are thus given in a  triplet form that requires two samples
+privileged information (LUPI) [11], in which a binary classiﬁ-  from the same class and one additional sample from the other
+cation method called Support Vector Machine using Privileged   class. Thus, the explicit class label information  is usually
+Information (SVM+) was proposed to utilize privileged infor-   required for each sample in the training set to obtain such
+mation in the training data. To effectively utilize the additional   constraints. The ITML method [10] is based on the pairwise
+depth features in the training data, we model the loss term   constraints, which assumes that the positive pairs are from the
+for each pair of visual training samples  (i.e., the training  same class and the negative pairs are from different classes
+samples with visual features) using the corresponding pair of   without knowing the class label for each sample in the training
+depth training samples (i.e., the training samples with depth   set. Moreover, instead of learning a global distance metric,
+features). In this way, the distance between two visual training  some works [14], [15] were proposed to learn local distance
+samples can be affected by their corresponding depth training   metrics for the nearest neighbor search. The unsupervised
+samples. An efﬁcient cyclic projection method with analytical   metric learning method [18] was also developed in which
+solution is also proposed to solve the new optimization prob-   supervised information is not employed.
+lem. Considering that some training samples may not be asso-     Different from the existing distance-metric learning meth-
+ciated with depth information in the real-world applications,   ods [4], [10], [12]–[15], our proposed ITML+ method for
+we further extend our ITML+ method to handle the scenario   distance metric learning aims to learn a robust distance metric
+where only a part of training data contains depth information,  by further exploiting additional privileged information (i.e.,
+and we refer to our method as partial ITML+ in this case. Our   the depth features) in the training data. There are also several
+partial ITML+ method can be optimized in a similar way as   multimodal distance-metric learning methods [19]–[21], where
+in ITML+. We conduct extensive experiments on the real-   multiple types of features are assumed to be available for both
+world EUROCOM and CurtinFaces data sets as well as the   training and testing data. In these methods, the ﬁnal decision
+BIWI RGBD-ID data set. The results clearly demonstrate the    is made based on all types of features. Therefore, their setting
+effectiveness of our proposed ITML+ algorithm for improving    is still different from the learning setting in this paper.
+the face veriﬁcation and person re-identiﬁcation performances
+in the RGB images by utilizing the additional depth images.                                                             B. Learning Using Privileged Information
+   This paper is organized as follows. In Section II, we brieﬂy
+                                                     The recently proposed LUPI method [11], [22] used privi-review the related works. The proposed ITML+ algorithm
+                                                             leged information to improve SVM for the supervised binaryis presented in Section  III and  its solution  is provided in
+                                                                  classiﬁcation tasks. In SVM+ [11], privileged information isSection IV. In Section V, we report the experimental results.
+                                                          used to construct the correcting function to control the lossesFinally, the conclusion is drawn in Section VI.
+                                                                    in the objective function. Given a set of n training data {xi}|ni=1
+                                                            with xi ∈Rh, where h is the feature dimension of each sample.                        II. RELATED WORKS
+                                                   The additional privileged feature {zi}|ni=1 with zi ∈Rg is only
+   This paper is related to the distance-metric learning meth-                                                                   available for the training set, but  it is not available for the
+ods and the recent works on LUPI, as well as the existing                                                                            test set. Note that the LUPI problem is different from the
+works on face veriﬁcation and person re-identiﬁcation.                                                                       traditional multiview learning problem, where multiple types
+                                                               of features are available for both the training and the test
+A. Distance Metric Learning                                   data [23].
+                                                                  In LUPI  [11],  the  task  is  to  utilize  the  training  data   This  paper  is  related  to  the  distance-metric  learning
+works [4], [10], [12]–[17]. The early work for the Mahalanobis   {xi, zi}|ni=1 as well as their labels {yi}|ni=1 to train a classi-
+distance metric  learning  in  [12] formulates  the  distance-   ﬁer for classifying the test data {xi}|n+mi=n+1 under the SVM
+metric learning problem as a convex optimization problem  framework for the supervised binary classiﬁcation problem.
+that maximizes the sum of distances between dissimilar pairs   In particular, the linear target classiﬁer  f (x) = w′x + b is
+while minimizing the sum of distances between similar pairs.   learned in order to classify the test data. At the same time,
+A projected gradient descent method was proposed to solve the   another function ξ = v′z+ρ is learned by exploiting privileged
+proposed objective function, but the SVD operation on the   information in the loss function. The objective function of
+distance metric M makes the algorithm only applicable to  SVM+ is proposed as follows:
+the small-scale problems. Following [12], a large number of                                              n
+                                                                 1
+methods were proposed in the literature (see [16] and [17]        min      + λ||v||2) + C     (v′zi + ρ)                                                                                w,v,b,ρ  2(||w||2for the comprehensive reviews of different metric learning                                         i=1
+methods). The two representative works for distance metric            s.t. yi(w′xi + b) ≥1 −(v′zi + ρ)  ∀i = 1, . . . , n
+learning are: 1) the large margin nearest neighbors (LMNNs)                   v′zi + ρ ≥0  ∀i = 1, . . . , n.
+method [13] and 2) the ITML [10] method.
+  The LMNN [13] method was proposed for the nearest  The above formulation can be reformulated in the dual form as
+neighbor classiﬁer by constraining the data in a local way, i.e.,   a standard quadratic programming (QP) problem, which can be
+the k-nearest neighbors of any training instance from the same   solved efﬁciently using the existing QP solvers. Following the
+class should be closer to each other, while the instances from  LUPI method [11], the recent work in [24] extended SVM+
+
+Authorized licensed use limited to: The University of Hong Kong Libraries. Downloaded on September 16,2026 at 08:09:09 UTC from IEEE Xplore. Restrictions apply.
+
+===== PDF PAGE 3 =====
+3152                                      IEEE TRANSACTIONS ON NEURAL NETWORKS AND LEARNING SYSTEMS, VOL. 26, NO. 12, DECEMBER 2015
+
+
+for the weakly supervised learning and domain adaptation.     Person re-identiﬁcation  is another related task using the
+Another SVM based method for object recognition in RGB   images containing the whole head and body areas. Recently,
+images by learning from RGB-D data was also proposed  many benchmark data sets have been released for the person
+in [25]. Nevertheless, those works were proposed for the   re-identiﬁcation  task, such as CAVIAR4REID [32]. Many
+classiﬁcation problem.                                   methods  for person  re-identiﬁcation have been proposed,
+   Recently, Fouad et al. [26] proposed a two-stage method  which include feature-based methods [33]–[36] as well as
+to utilize privileged information for distance metric learning.   learning-based methods [37]–[39]. The feature-based methods
+In particular, their work ﬁrst learns a distance metric using the  aim to develop better descriptors for the human body areas
+ITML algorithm based on privileged information. Then, they   using spatial temporal appearances [36], salience learning [35],
+remove some outlier pairs, whose distances are larger (resp.,  and so on. The learning-based methods aim to develop more
+smaller) than a threshold if they are similar (resp., dissimilar)   effective learning algorithms for the person re-identiﬁcation
+pairs. In the second stage, they use the remaining training pairs   task, such as probabilistic relative distance comparison [37],
+to train another distance metric using the ITML method based   rank SVM [38], and KISSME [39].
+on the main feature. However, the two-stage method proposed                                                                                      III. DISTANCE METRIC LEARNING WITH
+in [26] can achieve only slightly better or even worse results                                                               PRIVILEGED INFORMATION
+than ITML in our experiments.
+                                                                  In this section, we ﬁrst introduce the problem setting of our
+   In contrast, in this paper, we design a slack function to
+                                                                face veriﬁcation and person re-identiﬁcation tasks. Then, we
+incorporate privileged information for metric learning, which
+                                                           review the objective function of ITML. After that, we propose
+is motivated by SVM+. Using the slack function to replace
+                                                                 the objective function of our new method ITML+. We also
+the slack variables in ITML, we arrive at a uniﬁed convex
+                                                               introduce a variant of our ITML+ called partial ITML+ for
+objective function that can be readily solved using the cyclic
+                                                                 the case that only a part of training data was associated with
+projection method as in ITML. In contrast to the work in [26],
+                                                                  privileged information.
+which explicitly removes the outlier pairs based on the depth
+features, and learns the two metrics in two steps separately, in
+                                                             A. Problem Statementour ITML+, we jointly learn two metrics in a uniﬁed objective
+function. In our experiments, we show that our newly proposed     In our task, the training data are a few pairs of RGB-D
+ITML+ method is consistently better than ITML for different  images together with side information describing whether each
+tasks, which demonstrates  it is effective to utilize the slack   pair belongs to the same subject or not. In the training process,
+function for modeling privileged information (see Section V  we extract the visual features and depth features from the
+for the details).                             RGB images and depth images, respectively. Formally, let us
+                                                           denote the visual features as {xi}|ni=1, where xi ∈Rh  is the
+C. Face Veriﬁcation and Person Re-Identiﬁcation                                                                  visual feature vector extracted from the RGB image of the
+   This paper is related to the face veriﬁcation works. In gen-   ith training sample, and n is the number of training samples.
+eral, the existing face veriﬁcation methods can be categorized   Similarly, we denote the depth features as {zi}|ni=1, where
+into feature-based methods and learning-based methods. The    zi ∈Rg is the depth feature vector extracted from the depth
+feature-based methods [1], [27], [28] developed better face  image of the ith sample. We also use (xi, zi) to denote the
+descriptors. For example, in  [1], an unsupervised learning   ith training sample.
+approach  is proposed  to encode the microstructures of a   We also have side information for the training data, namely,
+face image. In [28], the outputs of the attributes and simile  we have a  set of similar pairs S and a  set of dissimilar
+classiﬁers are used as the midlevel features to represent a face   pairs D. For each similar pair (i, j) ∈S  (resp., dissimilar
+image for the face veriﬁcation task. In contrast, the learning-   pair  (i, j) ∈D), the two corresponding training samples
+based works [4], [5] developed new learning methods such as   (xi, zi) and (x j, z j) are from the same subject (resp., different
+the metric learning methods for the face veriﬁcation task. In   subjects). Our goal is to learn a distance metric M ∈Rh×h that
+particular, two face images from the same person are regarded   can be used to classify a pair of test data that only contain the
+as a similar pair, while two face images from different persons  RGB images. In other words, based on the RGB-D training
+are regarded as a dissimilar  pair. Based on the extracted  images {(xi, zi)}|ni=1 together with side information, we aim
+low-level visual features  (i.e., SIFT  [29], HOG [30], and   to learn a Mahalanobis distance dM(·, ·) deﬁned as
+LBP [2]) for each face image, the Mahalanobis distance metric
+                                                                  d2M(xi, x j) = (xi −x j)′M(xi −x j)            (1)is learned using these low-level visual features on the training
+samples, and the learned distance metric is applied to a pair of  where we use the squared distance for the ease of repre-
+test samples with the same type of low-level visual features.   sentation in  this paper.  Intuitively, we expect the learned
+The distance-metric learning methods have been successfully   Mahalanobis distance d2M(xi, x j) can output a large value
+applied to the face veriﬁcation task on the benchmark data sets,    if  (i, j) ∈D, and a small value  if  (i, j) ∈S. In the
+such as labeled faces in the wild [31]. The ITML method [10]   testing process, we use the learned metric to calculate the
+was proposed for distance metric learning by considering the   Mahalanobis distance  for each  pair  of  test samples, and
+pairwise constraints as side information, while the work in [4]   determine whether the two corresponding RGB images are
+proposed a discriminant metric learning method that takes  from the same subject or different subjects based on their
+advantages of all pairs of samples in the data set.             Mahalanobis distance.
+
+Authorized licensed use limited to: The University of Hong Kong Libraries. Downloaded on September 16,2026 at 08:09:09 UTC from IEEE Xplore. Restrictions apply.
+
+===== PDF PAGE 4 =====
+XU et al.: DISTANCE METRIC LUPI FOR FACE VERIFICATION AND PERSON RE-IDENTIFICATION                                                      3153
+
+
+B. Information-Theoretic Metric Learning
+
+  The key idea of ITML is to learn the distance metric M
+by enforcing that the learned distance dM  is large for the
+dissimilar pairs of samples and small for the similar pairs
+of samples. In particular, they expect d2M(xi, x j) ≤u for a
+relatively small value u  if (i, j) ∈S, and d2M(xi, x j) ≥l
+for a sufﬁciently large l if (i, j) ∈D. However, for the real-
+world applications, a feasible solution may not exist after using
+those strict constraints. Thus, a slack variable ξij is introduced
+for each constraint. Let us deﬁne ξ ∈R|D|+|S| as the vector
+                                                                                    Fig.  1.   Two similar  pairs of training images in the EUROCOM data
+of slack variables, where each entry ξij corresponds to one    set.  First row: RGB images captured under  different  lighting  conditions.
+training pair (i, j). Then, the objective function of ITML [10]   Second row: corresponding depth images.
+is formulated as follows:
+                                                                   Inspired by SVM+  [11], we use  the  additional depth
+          min  Dld(M, M0) + γL(ξ, ξ0)                     features to correct the loss of each pair of training samples             M⪰0,ξij
+                                                                    in the visual feature space. In particular, we replace the slack
+                        s.t. d2M(xi, x j) ≤ξij ,   (i, j) ∈S               variable ξij in (2) using a slack function in the depth feature
+                  d2M(xi, x j) ≥ξij ,   (i, j) ∈D         (2)   space,  i.e., ξij = d2P(zi, z j) = (zi −z j)′P(zi −z j), where
+                                                                                                                                              j are the depth features of training samples from thewhere ξ0 ∈R|D|+|S| is the ideal distance vector with each    zi and z
+                                                                    pair (i, j), and P ∈Rg×g is a Mahalanobis distance metric inentry as,
+                                                                 the depth feature space. In this way, the distance between the
+                         u,  (i, j) ∈S                          training samples from the pair (i, j) in the depth feature space
+                 ξ0ij =                                l,   (i, j) ∈D                     can serve as the correcting guidance for the distance calculated
+                                                             using the visual features. Accordingly, the objective function
+L(ξ, ξ0) is the loss term that measures the difference between   for our ITML+ is formulated as follows:
+ξ and ξ0, M0 ∈Rh×h is a predeﬁned matrix, and Dld(M, M0)
+                                                         min    (M, P) + γ         ℓ(d2P(zi, z j), ξ0ij )is a regularizer based on LogDet divergence to avoid the trivial       M⪰0,P⪰0
+solution.                                                                                                                                           (i, j)∈S∪D
+  Following [10] and [40], given any strictly convex differen-                  s.t. d2M(xi, x j) ≤d2P(zi, z j),   (i, j) ∈S
+tiable function ϕ(.) over a convex set, the Bregman divergence              d2M(xi, x j) ≥d2P(zi, z j),   (i, j) ∈D         (4)
+over two matrices M and M0 is deﬁned as
+                                                      where  (M, P) = Dld(M, M0) + λDld(P, P0)  is the reg-
+  Dφ(M, M0) = φ(M) −φ(M0) −tr(∇φ(M)′(M −M0)).       ularization term by summing the LogDet divergence-based
+By using the Burg entropy function φ(M) = −log det(M), the   regularization terms related to M and P, γ and λ are two
+LogDet divergence (or the Burg matrix divergence) can be   tradeoff parameters, M0 and P0 are two predeﬁned matri-
+deﬁned as:                                                    ces (we use the identity matrices), and ℓ(d2P(zi, z j), ξ0ij ) =
+                                                           Dld(d2P(zi, z j), ξ0ij )   is  the  LogDet  divergence  between
+                                                       d2P(zi, z j) and ξ0ij . Dld(M, M0) = tr(M(M0)−1) −log det(M(M0)−1) −h    (3)
+                                                     Compared with the objective function of ITML in (2), the
+where h  is  the dimension  of M and M0  ∈  Rh×h  is   objective function of our ITML+ in (4) additionally learns
+a predeﬁned matrix  that  is  often  set  to be  the  identity   a Mahalanobis distance metric P in the depth feature space.
+matrix  I. Moreover, the loss term L(ξ, ξ0) can be deﬁned  We  also  replace  the  original  slack  variable  ξij  in  (2)
+as L(ξ, ξ0) = Dld(diag(ξ), diag(ξ0)), which is the LogDet   with d2P(zi, z j) for each pair  (i, j). Accordingly, the con-
+divergence between two diagonal matrices. Thus, ITML aims   straints become d2M(xi, x j) ≤d2P(zi, z j), ∀(i, j) ∈S, and
+to minimize the difference between the slack variable vector ξ   d2M(xi, x j) ≥d2P(zi, z j) otherwise.
+and the ideal distance vector ξ0 as well as enforce the learned   We give some examples in Fig. 1 to explain how our
+Mahalanobis metric M close to the identity matrix to avoid  ITML+  can  beneﬁt from  depth  information. As shown
+the trivial solution.                                                in Fig. 1, the RGB images from the same subject may have
+                                                                     different visual appearances when they are captured under
+C. Information-Theoretic Metric Learning                                                                     different lighting conditions. However,  their depth images
+With Privileged Information                                                                                         still look almost the same. In other words, given a training
+   Recall in our task, we additionally have the depth features   pair(i, j), their visual features xi and x j may be different
+in the training data. As ITML only considers one type of  due to some noises (e.g., illumination changes), whereas their
+features when learning the Mahalanobis distance metric, we   depth features zi and z j are relatively robust to these noises.
+thus propose a new distance-metric learning method called   In this case, the distance in the visual feature space d2M(xi, x j)
+ITML+ to learn a more robust Mahalanobis distance metric  may not be good (i.e., the distance may be large if (i, j) ∈S
+in the visual feature space by further utilizing the additional   or small if (i, j) ∈D). However, the distance in the depth
+depth features in the training data.                               feature space d2P(zi, z j) can be more accurate (i.e., the distance
+
+Authorized licensed use limited to: The University of Hong Kong Libraries. Downloaded on September 16,2026 at 08:09:09 UTC from IEEE Xplore. Restrictions apply.
+
+===== PDF PAGE 5 =====
+3154                                      IEEE TRANSACTIONS ON NEURAL NETWORKS AND LEARNING SYSTEMS, VOL. 26, NO. 12, DECEMBER 2015
+
+
+is small  if  (i, j) ∈S or large  if  (i, j) ∈D). Using the   A. ITML+ With Explicit Correcting Function
+constraints in (4), the learned Mahalanobis distance metric M                                                     The cyclic projection method cannot be directly applied to
+in the visual feature space can be corrected using the distance                                                               solve the new objective function in (4) for ITML+, because we
+metric P in the depth feature space. Therefore, our ITML+ can                                                         have two variables M and P in the constraints. Let us introduce
+enforce similar (resp., dissimilar) pairs become more similar                                                        an intermediate variable ξij for each constraint related to one
+(resp., dissimilar) using the distances in the depth feature                                                                    pair (i, j), we then rewrite our ITML+ formulation in (4) as
+space as the correcting guidance. The detailed analyses of the                                                        an equivalent form as follows:
+learned distances using both ITML and ITML+ are given in
+Fig. 4(a) and (b) in our experiments (Section V-D).              min    Dld(M, M0) + λDld(P, P0) + γ L(ξ, ξ0)
+                                                              M⪰0,P⪰0,ξ
+D. Partial ITML+
+                                                                                                   s.t. d2M(xi, x j) ≤ξij ,        (i, j) ∈S
+   In real-world applications, some training samples may not
+                                                               d2M(xi, x j) ≥ξij ,        (i, j) ∈Dbe always associated with depth information. To handle the
+situation where only a part of training data contains depth                 ξij = d2P(zi, z j),        (i, j) ∈S ∪D            (6)
+information, we further formulate a variant of our ITML+                                                      where L(ξ, ξ0) = Dld(diag(ξ), diag(ξ0)) is the LogDet diver-
+method called partial ITML+. In particular, let us denote the                                                         gence between ξ and ξ0 deﬁned similarly as in  (2). The
+training set as the similar pair set Sp and dissimilar pair set Dp                                                             equivalence between (6) and (4) can be easily veriﬁed by
+which only contain RGB information. Then, we can formulate
+                                                                    substituting the correcting function ξij = d2P(zi, z j) back intoour partial ITML+ as follows:
+                                                                 the objective function in (6).
+         min     (M, P) + γ L(ξ, ξ0)                   Now, we apply the cyclic projection method similarly as
+        M⪰0,P⪰0,ξij                                                                    in [10]. For the ease of presentation, we further unify the
+           s.t. d2M(xi, x j) ≤d2P(zi, z j),   (i, j) ∈S −Sp         two inequality constraints in (6), and write the new objective
+          d2M(xi, x j) ≥d2P(zi, z j),   (i, j) ∈D −Dp          function as follows:
+          d2M(xi, x j) ≤ξij ,   (i, j) ∈Sp                         min    Dld(M, M0) + λDld(P, P0) + γ L(ξ, ξ0)
+          d2M(xi, x j) ≥ξij ,   (i, j) ∈Dp                 (5)        M⪰0,P⪰0,ξ
+                                                                                                    s.t.  yij d2M(xi, x j) ≤yij ξij ,   (i, j) ∈S ∪D
+where L(ξ, ξ0) =      (i, j)∈(S−Sp)∪(D−Dp) ℓ(d2P(zi, z j), ξ0ij ) +                                                                                                    ξij = d2P(zi, z j),   (i, j) ∈S ∪D               (7)
+     (i, j)∈Sp∪Dp ℓ(ξij , ξ0ij ) is the loss term with ℓ(d2P(zi, z j), ξ0ij )
+(resp.,  ℓ(ξij , ξ0ij ))  being  the LogDet  divergence between  where
+d2P(zi, z j) (resp., ξij ) and ξ0ij , and  (M, P) = Dld(M, M0) +                            1,     (i, j) ∈S
+λDld(P, P0) is deﬁned similarly as in (4), and γ and λ are                           yij =                                                                     −1,  (i, j) ∈D
+two tradeoff parameters.
+   In other words, we use the constraints from ITML+ for the  and other terms are the same as in (6).
+pairs of training samples with privileged information, while we       It can be observed that the objective function in (7)  is
+still utilize the constraints from ITML for the pairs of training   convex. Following the cyclic projection method [10], [41],
+samples that do not have privileged information. We observe  we ﬁrst initialize the solution to (7) as (P0, M0). Then, we
+that the formulation in (5) reduces to the ITML+ formulation   iteratively pickup a pair of training samples (i, j), and update
+in (4) if Sp = ∅, Dp = ∅, while the formulation in (5) reduces   the current solution with Bregman projection such that the
+to the ITML formulation in (2) if Sp = S, Dp = D. In this   objective is minimized and the constraints with respect to this
+way, the proposed partial ITML+ in (5) can naturally bridge   pair are also satisﬁed. The above process is repeated until all
+ITML and ITML+ by varying the number of pairs of training   constraints are satisﬁed. We will give the details on Bregman
+samples with privileged information.                            projection in Section IV-B.
+  Moreover, our  partial ITML+ method can be  readily
+extended to handle the scenario that different samples are asso-
+                                                             B. Bregman Projection
+ciated with different types of privileged information. In partic-
+ular, suppose there are K types of privileged information, we     Let us denote the solution at the tth iteration as (Mt, Pt).
+can correspondingly deﬁne K distance metrics P1, . . . , PK.  At the  (t + 1)th  iteration, we pickup a  pair of  training
+If a training pair  (i, j)  is associated with the kth type of   samples  (i, j);  then  the new  solution (Mt+1, Pt+1)  can
+privileged information, we model the slack variable for this   be  obtained with Bregman  projection by  optimizing  the
+training pair as ξij = d2Pk(zi, z j). The regularizer Dld(P, P0)   following subproblem:
+is accordingly replaced by   k=1K  Dld(Pk, P0k), where P0k can        min    Dld(M, Mt) + γ ℓ(ξij , ξtij ) + λDld(P, Pt)   (8)
+be an identity matrix in the implementation.                        M⪰0,P⪰0,ξij
+                                                                                                                    s.t. yij d2M(xi, x j) ≤yijξij                (9)
+                 IV. SOLUTION TO ITML+
+                                                                                                                    ξij = d2P(zi, z j).                 (10)
+   In this section, we develop a new optimization algorithm to
+solve our ITML+ problem in (4) using the cyclic projection    As shown in the following proposition, the above problem
+method [41].                                               has analytical solutions for M, P, and ξij .
+
+Authorized licensed use limited to: The University of Hong Kong Libraries. Downloaded on September 16,2026 at 08:09:09 UTC from IEEE Xplore. Restrictions apply.
+
+===== PDF PAGE 6 =====
+XU et al.: DISTANCE METRIC LUPI FOR FACE VERIFICATION AND PERSON RE-IDENTIFICATION                                                      3155
+
+
+   Proposition 1: The optimal solution (M, P, and ξij ) to the     Moreover, according to the equality constraint in (10), we
+problem in (8) can be obtained in closed form as follows:     have
+
+                                            = (zi −z j)′Pt+1(zi −z j).           (21)      Mt+1 = Mt −yijαij Mt(xi −x j)(xi −x j)′Mt    (11)                ξt+1ij
+                           1 + yijαijr
+                                                                  Substituting (20) in (21), we arrive at
+                         βij Pt(zi −z j)(zi −z j)′Pt
+       Pt+1 = Pt +                                   (12)                                           λs
+                       λ −βij s                               ξt+1ij  = (zi −z j)′Pt+1(zi −z j) =               (22)                                                                                 λ −sβij                  λs
+        ξt+1ij  =                                         (13)
+             λ −sβij                                 which is exactly the solution for ξt+1ij   as in (13). Thus, we
+                                                          complete the proof.where r = (xi −x j)′Mt(xi −x j), s = (zi −z j)′Pt(zi −z j),
+and αij and βij are the dual variables that can be obtained
+analytically in Lemma 2.                                   C. Solutions for αij and βij
+    Proof: By introducing the Lagrangian multipliers αij ≥0                                                     The remaining problem is to solve the two dual variables
+and βij for the constraints in (9) and (10), respectively, we                                                                          αij and βij in the updating rules in Proposition 1. Based on
+obtain the Lagrangian of (8) as follows:                                                                 the KKT condition, we give the analytical solution to those
+                                                     two dual variables in the following.  L(M, P, ξij ) = Dld(M, Mt) + γ ℓ ξij , ξtij + λDld(P, Pt)
+                                               Lemma 2: The dual variables αij and βij can be obtained
+          + αij  yij d2M(xi, x j) −yij ξij                   in closed form as follows:
+                                             ⎧           ⎫          + βij  ξij −d2P(zi, z j) .                (14)                                     γ    λ                                                    +                                                                    −λ+γ                                                                                           ⎪⎨                                                                                                                                             s                                                                                                                                                     r    ⎪⎬                                                                                                                                         ξtij
+By setting the derivatives of L with respect to M and P to                 αij = max  0,                              (23)
+                                                                                           ⎪⎩      yij(λ + γ + 1)  ⎪⎭zeros and denoting φ(M) = −log(det(M)), we have
+
+                                                                λ    γ         ∇φ(M) −∇φ(Mt) + yijαij Aij = 0        (15)                                                                                       βij =     −γ + yijαij             (24)
+           λ∇φ(P) −λ∇φ(Pt) −βij Bij = 0        (16)                λ + γ   s    ξtij
+where Aij = (xi −x j)(xi −x j)′, and Bij = (zi −z j)(zi −z j)′.  where r = (xi −x j)′Mt(xi −x j), and s = (zi −z j)′Pt(zi −z j).
+                                                                 Proof: By setting the derivative of L in (14) with respect  Given a matrix M, we have ∂det(M)/∂M = det(M)(M−1)′,
+which gives ∇φ(M) = ∂φ(M)/∂M = −(M−1)′. Thus, we   to ξij to zero, we have
+derive the updating rules for the solution at the  (t + 1)th                                                             γ ∇φ(ξij ) −γ ∇φ ξtij  −yijαij + βij = 0.     (25)
+iteration from (15) and (16) as follows:
+                                                               Similar to the derivations of (17) and (18), we derive the
+            (Mt+1)−1 = (Mt)−1 + yij αij Aij          (17)   solution of ξt+1ij   at the (t + 1)th iteration as follows:
+             λ(Pt+1)−1 = λ(Pt)−1 −βij Bij .           (18)
+                                                                       −1        −1
+                                                              γ ξt+1ij   = γ  ξtij   −αij yij + βij .       (26)
+   Next,  we   further   simply   the   above   equations
+by   eliminating   the   matrix   inverse   operator.  Using     Substituting (13) in  (26), we have γ (λ −sβij )/(λs) =
+Sherman–Morrison inverse formula  (i.e., (A + uv′)−1 =   γ/ξtij −αij yij + βij , which further gives the solution for βij
+A−1 −A−1uv′A−1/(1 + v′A−1u)  [42],  we  derive  the   as shown in (24).
+equation in (17) as follows:                             As αij  is nonnegative, the ﬁnal solution for αij  is either
+                                                                  greater than or equal to zero. In particular, according to the
+    Mt+1 = ((Mt)−1 + yij αij Aij )−1                KKT conditions, for the inequality constraints of (9), we have
+      = ((Mt)−1 + yij αij (xi −x j)(xi −x j)′)−1
+                                                                                   αij > 0 : yij [(xi −x j)′Mt+1(xi −x j)] = yij ξt+1ij                           αij Mt(xi −x j)(xi −x j)′Mt                αij  :      = Mt −yij                                 (19)            αij = 0.                 1 + yijαij (xi −x j)′Mt(xi −x j)
+which is exactly the solution for Mt+1 as in (11) by denoting     Thus,  if  αij >  0, we must have ξt+1ij  =  (xi −x j)′
+r = (xi −x j)′Mt(xi −x j).                                Mt+1(xi −x j). Together with (11), we further obtain
+   Similarly, we apply the Sherman–Morrison inverse formula                                                                                           yijαijr2           r
+to (18) and we arrive at                                              ξt+1ij  = r −       =                  .        (27)                                                                       1 + yij αijr   1 + ryij αij
+                           βij Pt(zi −z j)(zi −z j)′Pt        Pt+1 = Pt +                                                        (20)  Combining (27) with (13), we eliminate ξt+1ij   and arrive at                 λ −βij (zi −z j)′Pt(zi −z j)
+                                                        λs/(λ −sβij ) = r/(1 + ryij αij ), which also gives the solution
+which  is  the  solution  for Pt+1  as  in  (12) by  denoting   βij =  λ(r −s(1 + ryij αij ))/(sr). Using  (24), we  further
+s =  (zi −z j)′Pt(zi −z j). Note that the updating rules in   obtain the closed-form solution for αij as αij = (γ/ξtij +λ/s−
+(19) and (20) guarantee that the updated matrices Mt+1 and   (λ + γ )/r)/(yij(λ + γ + 1)). As αij > 0, we can obtain the
+Pt+1 automatically satisfy the semipositive deﬁnite constraints   closed form solution for αij , as shown in (23). This completes
+as similarly discussed in [10].                                  the proof.
+
+Authorized licensed use limited to: The University of Hong Kong Libraries. Downloaded on September 16,2026 at 08:09:09 UTC from IEEE Xplore. Restrictions apply.
+
+===== PDF PAGE 7 =====
+3156                                      IEEE TRANSACTIONS ON NEURAL NETWORKS AND LEARNING SYSTEMS, VOL. 26, NO. 12, DECEMBER 2015
+
+
+Algorithm 1 Optimization Procedure for ITML+               projection method, we update our solution by picking one
+                                                                    training pair at each iteration. Therefore, the subproblem at 1: Set t = 0, M0 = I, P0 = I and initialize ξ0.
+                                                          each iteration can be solved in two ways. For the training
+ 2: repeat
+                                                                    pair  associated with  privileged information,  i.e.,  (i, j) ∈
+ 3:   Pick a training pair (i, j) ∈S ∪D.
+                                                      (S −Sp) ∪(D −Dp), the corresponding subproblem is as 4:   Calculate r = (xi −x j)′Mt(xi −x j) and s =  (zi −
+                                                                 the same as in (8), and we update the variables M, P, and ξij     z j)′Pt(zi −z j), ∀t.
+                                                            according to Proposition 1. For the training pair without having
+ 5:   Obtain αij using (23) with r, s, and ξtij .                                                                  privileged information, i.e., (i, j) ∈Sp ∪Dp, the subproblem
+ 6:   Obtain βij using (24) with s, αij and ξtij .                                                            reduces to the same form as the subproblem in ITML [10],
+ 7:  Update Mt+1 using (11) with r, αij and Mt.                                                            so we update M and  ξij according to the solution for the
+ 8:  Update Pt+1 using (12) with s, βij and Pt.                                                        subproblem in ITML and keep P unchanged.
+ 9:   Calculate ξt+1ij   using (13) with s and βij .
+10:   Set t ←t + 1.
+                                                                         F. Computational Complexity
+11: until The stop criterion is reached.
+                                          We now analyze the complexity of our proposed ITML+
+                                                     method in Algorithm 1. In the 4th step, the time complexity for
+                                                                  calculating r and s are O(h2) and O(g2), respectively. Only
+D. Overall Optimization Procedure
+                                                    O(1) time complexity is required for updating αij and βij in
+  The detailed optimization procedure is given in Algorithm 1.   the ﬁfth step and sixth step. In the seventh step, the projection
+We ﬁrst initialize t = 0 and initialize the matrices M0 and P0   of M for each constraint requires O(h2) time complexity using
+to I, and also set                                               the closed-form updating solution (11), while the projection
+                                                               of P using (12) requires O(g2) time complexity in the eighth
+                         u,  (i, j) ∈S
+                 ξ0ij =                                             step. As we have a total number of |S|+|D| training pairs, the
+                                l,   (i, j) ∈D.                                                            time complexity for passing the whole training pairs once is
+                                                                 (|S| + |D|)O(h2 + g2). Compared with ITML, which has theThen, we iteratively pick up a training pair (i, j) and update
+Mt+1, Pt+1, and ξt+1ij   according to Proposition 1. This process   time complexity of (|S| + |D|)O(h2) for scanning the whole
+                                                                    training pairs once, our ITML+ is slightly more expensive,is repeated until the relative changes of the vector norms
+                                                          because we need to additionally optimize another distancefrom the dual variables αij ’s and βij ’s between two successive
+                                                              metric P. In practice, our ITML+ runs reasonably fast. Wheniterations are smaller than 10−3 or the maximum number of
+                                                                 the  feature dimensions h and g are comparable,  it takesiterations is reached, which is set as ten times of the number
+                                                           about two times of running time when compared with ITMLof training pairs.
+                                                                  (see Section V-D4 for the details).  Note  that  the  semipositive deﬁnite  properties  for both
+M and P are automatically satisﬁed during the updating pro-
+                                                                                V. EXPERIMENTScedure at each iteration of Algorithm 1. We also observe that
+all the variables have closed-form solutions at each iteration.     In this section, we compare our proposed ITML+ algorithm
+Thus, our optimization process  is  efﬁcient. Moreover, the   with several baseline algorithms for the face veriﬁcation and
+objective function in (4)  is convex with linear constraints,   person re-identiﬁcation tasks. We use two real-world face data
+so our optimization algorithm shares the similar convergence   sets (i.e., the EUROCOM Face data set [9] and the CurtinFaces
+Property as ITML. While the convergence rate of  cyclic   data set [8]) for the face veriﬁcation task, and use the BIWI
+projection method was also discussed in [43], it is still a non-  RGBD-ID data set for the person re-identiﬁcation task.
+trivial task to analyze the convergence rate for our optimization
+method, which will be studied in the future.                   A. Baseline Approaches
+                                                     To the best of our knowledge, we are the ﬁrst to study
+E. Solution to Partial ITML+                                   the face veriﬁcation and person re-identiﬁcation tasks in the
+                                       RGB images by learning distance metric from RGB-D data.
+   Similarly as  in ITML+, we introduce the intermediate
+                                         We compare our ITML+ with the following baselines.
+variables ξij ’s, and rewrite the objective function of partial
+                                                                  1) L2 distance, we directly use the Euclidian distance inITML+ in (5) as follows:
+                                                                       the testing stage without learning the distance metric
+    min    Dld(M, M0) + γ L(ξ, ξ0) + λDld(P, P0)                       (i.e., M = I).
+   M⪰0,P⪰0,ξ
+                                                                  2) ITML [10], the distance metric is learned based on only
+    s.t. d2M(xi, x j) ≤ξij ,   (i, j) ∈S                                   the visual features from the RGB images together with
+     d2M(xi, x j) ≥ξij ,   (i, j) ∈D                                    side information from the training pairs.
+                                                                  3) LMNN [13], the distance metric is learned only based        ξij = d2P(zi, z j),   (i, j) ∈(S −Sp) ∪(D −Dp).  (28)
+                                                          on  the  visual  features from  the RGB images  but
+  Note that, for the partial ITML+ formulation in (28), part         together with  explicit label information to construct
+of the training pairs is associated with the correcting function         the  triplets. Note  that LMNN  utilizes stronger label
+based on privileged information, while the other pairs are not         information, because the other methods only employ
+associated with the correcting function. When using the cyclic         side information.
+
+Authorized licensed use limited to: The University of Hong Kong Libraries. Downloaded on September 16,2026 at 08:09:09 UTC from IEEE Xplore. Restrictions apply.
+
+===== PDF PAGE 8 =====
+XU et al.: DISTANCE METRIC LUPI FOR FACE VERIFICATION AND PERSON RE-IDENTIFICATION                                                      3157
+
+
+   4) SVM  [44],  it  is  difﬁcult to  directly apply SVM  to   (resp., 15000) negative/dissimilar pairs are randomly sampled
+      our tasks, as the training data  is given in the form  from the pairs generated from different subjects in the training
+      of  similar and  dissimilar  pairs. Following  [28], we    set. Therefore, the total numbers of training pairs are 10000
+      convert each similar (resp., dissimilar) pair as a pos-  and 30000 on the EUROCOM and CurtinFaces data  sets,
+       itive (resp., negative) training sample for learning the   respectively. For the  test  set, the same strategy  is utilized
+    SVM classiﬁer. The converting function is deﬁned as   to generate a  total number of 5000  (resp., 30000)  pairs,
+      z =  [(|xi −x j| ◦g)′, (xi ◦x j ◦g)′]′, where (xi, x j)   including 1183 (resp., 15000) positive and 3817 (resp., 15000)
+        is a  training  pair,  | · |  is the elementwise absolute   negative pairs for performance evaluation on the EUROCOM
+      function, ◦is the element-wise product operation, and   (resp., CurtinFaces) data set. For the validation set, we also
+     g =  f (0.5(xi + x j)) with  f (·) being an element-wise   apply the same strategy to generate 5000 (resp., 30000) pairs,
+      Gaussian function with zero mean and unit variance.   including 1183 (resp., 15000) positive and 3817 (resp., 15000)
+      In this way, we obtain a 2h-dimensional visual feature   negative pairs on the EUROCOM (resp., CurtinFaces) data
+      vector for each training pair (xi, x j) for learning the   set. For each method, we perform ﬁve rounds of experiments
+    SVM classiﬁer.                                         using randomly generated negative pairs. For performance
+   5) SVM+ [11], similarly as in SVM, we convert each sim-   evaluation, we calculate the average precision (AP) and area
+        ilar (resp., dissimilar) pair as a positive (resp., negative)   under curve (AUC) for each method at each round, and report
+       training sample based on the visual feature or the depth   the mean of AP (MAP) and the mean of AUC (MAUC) as well
+       feature, respectively. The training samples based on the   as the standard deviations over ﬁve rounds of experiments.
+      depth features are used as privileged information for     2) Feature Extraction: We extract the gradient-LBP features
+       training SVM+.                                      based on the methods in [9] and [45]. In particular, we ﬁrst
+   6) ITML-S [26], a two-step approach to utilize privileged   convert the RGB images into the grayscale images. For all
+      information for distance metric learning. Following [26],   the images in the data set, we crop each face into a ﬁxed
+    we ﬁrst learn a distance metric using ITML based on   size of 120 × 105 pixels based on the positions of two eyes.
+      the depth features, and then remove the pairs that are   Then, each face image is divided into 8 × 7 nonoverlapping
+      identiﬁed as the outliers. Finally, we train a distance   subregions with the  size of 15 × 15  pixels. We  extract
+      metric using ITML again based on the visual features   the gradient-LBP feature from each subregion. Finally, the
+     from the remaining pairs of training images.            gradient-LBP features from all the 56 subregions in each face
+                                                      image are concatenated to form a single 6888-dimensionalB. Face Veriﬁcation
+                                                                   feature vector. We also use the same strategy to extract a
+  We perform face veriﬁcation on two data sets EUROCOM1
+                                                          6888-dimensional  feature  vector  for  each  depth  image.
+and CurtinFaces2, which are collected using the Microsoft
+                                         We  refer to the gradient-LBP features extracted from the
+Kinect. For the EUROCOM data set, the subjects are captured
+                                       RGB images and the depth images as GLBP-RGB and GLBP-
+with different facial expressions and under different lighting
+                                              DEPTH, respectively. Recall that the training set contains both
+and occlusion conditions. There are 14 RGB-D face images
+                                       RGB images and depth images. Therefore, we extract both
+(i.e., 14 RGB images and 14 corresponding depth images) for
+                                                               types of features, and use the GLBP-RGB features (resp.,
+each of the 52 subjects, including 38 males and 14 females.
+                                           GLBP-DEPTH features) as the main features (resp., privileged
+Therefore, a total number of 728 RGB-D images are used
+                                                                 information). For the test set and the validation set, we only
+for the experiments. The CurtinFaces data  set consists of
+                                                                    extract the GLBP-RGB features from the RGB images as the
+52 persons, and each person has 95 RGB-D face images. Thus,
+                                                           depth images are not available. Moreover, we perform PCA
+in total, we have 4940 RGB-D face images in the data set.
+                                                                    for both types of features as it is computationally expensive
+These images are with the variations in facial expressions,
+                                                                    to learn the distance metric with the original high-dimensional
+illuminations, and poses.
+                                                                     features. We ﬁx the PCA dimension for both GLBP-RGB and
+   1) Experimental Setup: To evaluate our proposed ITML+
+                                           GLBP-DEPTH features to 150 in our experiments.
+algorithm for the face veriﬁcation task in the RGB images,
+                                                                  3) Parameter Setting: For fair comparisons, we train the
+we  partition the data  set into a training  set, a validation
+                                                       models based on the training set, and use the validation set
+set, and a  test  set, which contains the images from 26,
+                                                                    to select the optimal parameters for each method. In par-
+13, and 13 subjects, respectively. We use the training set
+                                                                            ticular, we set the common parameter γ  for ITML, ITML-
+to learn the models, employ the validation set to select the                                                S and ITML+ in the range of {10−4, 10−3.5, 10−3, . . . , 100}.
+optimal parameters for each method, and ﬁnally evaluate the
+                                         We also set the regularization parameter λ for ITML+ in the
+performances of all methods on the test set. We assume that                                                           range of {10−2, 10−1.5, . . . , 102}. Following [10], the prede-
+the training set contains both the RGB images and their cor-
+                                                     ﬁned values l and u are set to be the 3rd and 97th percentages
+responding depth images, while the test set and the validation
+                                                               of the distances according to the L2 distances between all
+set only contain the RGB images. For the EUROCOM (resp.,
+                                                                    pairs of samples within the training data set. Moreover, we
+CurtinFaces) data set, a total number of 2366 (resp., 15000)
+                                                                        set the tradeoff parameter C  in SVM and SVM+ as well
+positive/similar pairs are constructed using the samples from
+                                                               as  the  tradeoff parameter γ  in SVM+  in  the range  of
+the same subjects in the training  set, while another 7634                                                          {10−2, 10−1, . . . , 102}. For LMNN, the tradeoff parameter is
+  1Downloaded from http://rgb-d.eurecom.fr/.                               set in the range of {0.1, 0.2, . . . , 1}, while the parameter for
+  2Downloaded from http://impca.curtin.edu.au/downloads/datasets.cfm.    KNN is set to 5.
+
+Authorized licensed use limited to: The University of Hong Kong Libraries. Downloaded on September 16,2026 at 08:09:09 UTC from IEEE Xplore. Restrictions apply.
+
+===== PDF PAGE 9 =====
+3158                                      IEEE TRANSACTIONS ON NEURAL NETWORKS AND LEARNING SYSTEMS, VOL. 26, NO. 12, DECEMBER 2015
+
+
+                                                 TABLE I
+          PERFORMANCE EVALUATION FOR DIFFERENT ALGORITHMS ON THE EUROCOM FACE DATA SET. THE MAP (PERCENTAGE)
+
+          AND MAUC (PERCENTAGE), AS WELL AS THE STANDARD DEVIATIONS ARE REPORTED. THE RESULTS IN BOLDFACE ARE
+                  SIGNIFICANTLY BETTER THAN THE OTHERS, JUDGED BY THE t-TEST WITH A SIGNIFICANCE LEVEL AT 0.05
+
+
+
+
+
+                                                TABLE II
+
+         PERFORMANCE EVALUATION FOR DIFFERENT ALGORITHMS ON THE CURTINFACES DATA SET. THE MAP (PERCENTAGE) AND
+
+         MAUC (PERCENTAGE), AS WELL AS THE STANDARD DEVIATIONS ARE REPORTED. THE RESULTS IN BOLDFACE ARE
+                  SIGNIFICANTLY BETTER THAN THE OTHERS, JUDGED BY THE t-TEST WITH A SIGNIFICANCE LEVEL AT 0.05
+
+
+
+
+
+                                                TABLE III
+
+   PERFORMANCE EVALUATION FOR DIFFERENT ALGORITHMS ON THE BIWI RGBD-ID DATA SET. THE MEAN OF RANK-1 RECOGNITION RATES
+         (PERCENTAGE) AS WELL AS THE STANDARD DEVIATIONS ON THE TWO TEST SETS ARE REPORTED. THE RESULTS IN BOLDFACE
+             ARE SIGNIFICANTLY BETTER THAN THE OTHERS, JUDGED BY THE t-TEST WITH A SIGNIFICANCE LEVEL AT 0.05
+
+
+
+
+
+   4) Experimental Results on the EUROCOM Data Set: The  from Table II that ITML+ achieves the best results and it also
+detailed experimental results are shown as in Table I. From   outperforms ITML, which again demonstrates it is beneﬁcial
+the results, we observe that ITML and LMNN outperform the   to utilize extra privileged information from the training data
+L2 distance method in terms of both AP and AUC, which   set to improve distance metric learning for the face veriﬁca-
+demonstrates that  it  is useful to learn the distance metrics   tion task in the RGB images. Moreover, our ITML+ again
+for the face veriﬁcation problem. We also observe that the   outperforms the two-step approach ITML-S in terms of both
+classiﬁcation methods SVM and SVM+ achieve better results  AP and AUC, which demonstrates the effectiveness of our
+than the baseline L2 distance method. However, they are still   proposed ITML+ method for utilizing privileged information
+worse than the distance-metric learning methods ITML and   in a uniﬁed framework.
+LMNN, which indicates the classiﬁcation methods may not
+be good choices for face veriﬁcation. Moreover, our ITML+   C. Person Re-Identiﬁcation on the BIWI RGBD-ID Data Set
+is better than ITML, which demonstrates it is beneﬁcial to use                                                                  In this section, we conduct the experiments on the BIWI
+the depth features GLBP-DEPTH as privileged information to                                             RGBD-ID data set3 for the person re-identiﬁcation task.
+learn a more robust distance metric for the face veriﬁcation                                                     The BIWI RGBD-ID data set [46] was collected using the
+task in the RGB images.
+                                                            Microsoft Kinect, and the data set consists of a training set
+  The recently proposed ITML-S [26] method  is  slightly
+                                                       and two testing sets  (i.e., Walking and  Still). The training
+worse than ITML. A possible explanation is that the two stage                                                                        set records 50 video sequences from 50 different subjects
+approach based on the pair removal strategy is not so effective
+                                                          performing certain actions (e.g., rotation, head movements,
+for utilizing privileged information. This also indicates that it                                                       and walking) in front of a Kinect sensor. Each video sequence
+is critical to utilize privileged information in a more effective                                                            corresponds to one subject. The test set  is collected from
+way. In contrast, our ITML+ algorithm learns the correcting
+                                                     28 subjects that appear in the training set, but on a different
+distance metric and the decision distance metric in a uniﬁed                                                       day and with a different dress. In the Walking setting, each
+framework, and it directly models the relationship between the
+                                                               of the 28 subjects performs the action walking in front of
+main feature GLBP-RGB from RGB images and the privileged
+                                                                 the Kinect, while all subjects in the Still setting stand still in
+feature GLBP-DEPTH from depth images, thus  it  is more                                                                    front of the Kinect with little movement. Both the RGB and
+effective than the two-step approach in [26].
+                                                                 the depth video sequences are recorded simultaneously.
+   5) Experimental Results on the CurtinFaces Data Set: The                                                                  1) Experimental Setup:  In our experiments, we use the
+results of all methods on the CurtinFaces data set are reported                                                                    training set of the BIWI RGBD-ID data set to construct our
+in Table II. Again, all the distance-metric learning methods                                                                    training set and validation set, and use the two test sets for
+are better than the L2 distance method. The classiﬁcation                                                         performance evaluation. For the person re-identiﬁcation task,
+methods SVM and SVM+ are better than the L2 distance
+method, but they are still worse than ITML. We can observe      3http://robotics.dei.unipd.it/reid/index.php/downloads.
+
+Authorized licensed use limited to: The University of Hong Kong Libraries. Downloaded on September 16,2026 at 08:09:09 UTC from IEEE Xplore. Restrictions apply.
+
+===== PDF PAGE 10 =====
+XU et al.: DISTANCE METRIC LUPI FOR FACE VERIFICATION AND PERSON RE-IDENTIFICATION                                                      3159
+
+
+we uniformly sample 20 shots of images from the video   depth images in the training set, while we only extract the
+sequence of each subject. Similarly as in the face veriﬁcation  KDES features from the RGB images in the validation set
+task, we assume our training set contains both RGB images  and two test sets. Similarly as in the face veriﬁcation task,
+and depth images, and the validation and test sets only contain  we perform PCA on both RGB features and depth features to
+RGB images. The 500 RGB images and 500 depth images   reduce the feature dimensions as 150, respectively.
+from the ﬁrst 25 subjects in the training set are used as our     3) Experimental Results: From the  results in Table  III,
+training set, and the 500 RGB images from the remaining  we observe that the distance-metric learning algorithms are
+25 subjects are used as our validation  set. The 560 RGB   generally better than the baseline method (i.e., L2 distance) in
+images from the Walking (resp., Still) test set are used as our   terms of the mean Rank-1 recognition rate. The classiﬁcation
+ﬁrst (resp., second) test set. For our training set, we construct  methods SVM and SVM+ are worse than the L2 distance-
+4750 similar pairs using the images from the same person,   based method, which indicates that the classiﬁcation methods
+and randomly generate another 4750 dissimilar pairs using the   are not effective for person re-identiﬁcation. Our proposed
+images from different persons.                     ITML+ method is better than ITML as well as other baseline
+   In the test (resp., the validation) stage, we use the ﬁrst   methods, which again show the effectiveness of our proposed
+image of each subject as a probe image that leads to a set  ITML+ method to utilize additional depth information in the
+of 28 probe images for each test set (resp., 25 probe images   training set. We observe that the recognition rates for the Still
+for the validation  set). The remaining 19 × 28 images in   case are much better than those for the Walking case, because
+each test set (resp., 19 × 25 images in the validation set)   there are more variations in the test set walking.
+are used as the gallery images. For each probe image, we
+calculate the distance between this probe image and all the
+                                                       D. Experimental Analysisgallery images using the learned distance metric, and then
+sort the gallery images according to their distances to this     In  this section, we conduct the experiments to analyze
+probe image in the ascending  order. We use the Rank-1   our proposed ITML+ algorithm. We ﬁrst investigate partial
+recognition rate as the evaluation criterion that  is the ﬁrst  ITML+ using different percentages of training pairs with
+point in the so-called cumulative matching characteristic curve.   privileged information, and study the performance change of
+Intuitively, it measures the mean person recognition rate when   our ITML+ method using different numbers of training pairs.
+ﬁnding the correct person in the top-1 match. We repeat the  We also analyze the learned distance metrics, and compare the
+experiments for ﬁve rounds using different randomly sampled   running time of our method with other baseline methods.
+pairs. The mean of Rank-1 recognition rates and the standard     1) Evaluating    Partial   ITML+    Using    Different
+deviation over ﬁve rounds of experiments are reported for all   Percentages of Training Pairs With Privileged Information:
+methods. The optimal parameters for all methods are selected   In real-world  applications, privileged information may be
+according to their performances on the validation set, where   hard  to be  obtained.  Therefore,  it  is  also  possible  that
+the parameter ranges are the same as in the EUROCOM  some  training samples are not associated with  privileged
+data set.                                                       information. We  evaluate  our  partial ITML+  method
+   2) Feature Extraction: For each image, we manually crop   discussed  in Section III-D using  different percentages of
+out the person using a rectangle containing the whole head,   training pairs with privileged information.
+arms, legs, and body areas of the person. We extract the   We take the CurtinFaces data set as an examples and use
+RGB-D  kernel  descriptors (KDESs)  [47] as  the  features,   the partial ITML+ formulation to learn the distance metric
+which have shown promising results for a broad range of  by varying the percentage of the training pairs with privileged
+applications using the RGB-D images [47]. Following [47],   information. We use the ﬁrst 0%, 25%, 50%, 75%, and 100%
+we  ﬁrst transform the RGB images or the depth images   of positive training pairs and negative training pairs with priv-
+into the gray scale images, and resize the images to be no   ileged information and the remaining 100%, 75%, 50%, 25%,
+larger  than  300 ×  300  pixels  while  keeping   their  and 0% training samples are not associated with privileged
+Aspect  ratios. Then, we  extract  the  gradient KDES  fea-   information. Then, we train our partial ITML+ model to learn
+tures  for  each  image  using  the  code4  from  [47]. We   a distance metric on the main features, which is used on the
+use  the  default  setting  in  their  code,  in  which  we   testing set for performance evaluation.
+extract  the  low-level KDESs  on  the  16 ×  16  image   We report AP and AUC on the CurtinFaces data set in
+patches using a step of eight pixels. Then, the extracted KDESs   Fig. 2(a) and (b), respectively. We can observe that the results
+are quantized into a feature vector using a codebook with   are the same with those of ITML (resp., ITML+) when the
+1000 codewords. We also employ three levels of pyramids   ratio  is set to 0% (resp., 100%). Note our partial ITML+
+(i.e., 1 × 1, 2 × 2, and 4 × 4 for the RGB images and 1 × 1,   incorporates ITML and ITML+ as two special cases according
+2 × 2, and 3 × 3 for the depth images) for spatial pooling.   to the formulation in (5). By varying the ratio in the range
+Finally, the feature vectors from each region of the pyramids   of {0%, 25%, 50%, 75%, and 100%}, we observe that the
+are concatenated into a  single  feature vector (21000-dim   performances are improved when more training pairs are with
+for the RGB images and 14000-dim for the depth images).   privileged information.
+We extract the KDES features from both RGB images and     2) Evaluating ITML+  Using  Different  Percentages  of
+                                                              Training Pairs: We take the EUROCOM Face data set as an
+  4http://mobilerobotics.cs.washington.edu/projects/kdes/.                example to study the performance changes of our proposed
+
+Authorized licensed use limited to: The University of Hong Kong Libraries. Downloaded on September 16,2026 at 08:09:09 UTC from IEEE Xplore. Restrictions apply.
+
+===== PDF PAGE 11 =====
+3160                                      IEEE TRANSACTIONS ON NEURAL NETWORKS AND LEARNING SYSTEMS, VOL. 26, NO. 12, DECEMBER 2015
+
+
+
+
+
+Fig. 2.  Performances on the CurtinFaces data set using different percentages
+of training pairs with privileged information. (a) AP. (b) AUC.
+
+
+
+
+
+Fig.  3.    Performance comparison between ITML+ and ITML on  the
+EUROCOM data set using different percentages of training pairs. (a) AP.
+(b) AUC.
+
+
+ITML+ algorithm with respect to the number of training pairs.    Fig. 4.   Distances between 200 positive pairs of images and 200 negative
+We compare ITML+ with the baseline method ITML using    pairs of images based on the distance metrics learned using ITML and our
+                                                         ITML+. Red star: one positive pair. Blue circle: one negative pair. (a) ITML.
+20%, 40%, 60%, 80%, and 100% of the 10000 training pairs                                                                                      (b) ITML+.
+used in Section V-B. The APs and AUCs of ITML+ and ITML
+when using different numbers of training pairs are reported in                                                                          TABLE IV
+Fig. 3(a) and (b), respectively. We observe the AP and AUC                                                                TRAINING TIME (SECONDS) OF DIFFERENT DISTANCE-METRIC
+of each method generally become higher when the number                                                                LEARNING ALGORITHMS ON THE EUROCOM DATA SET
+of training pairs increases, which shows that both methods
+can be beneﬁted by using more training pairs. Moreover, we
+also observe that the performance improvement of our ITML+
+method over the baseline ITML method is larger when using
+less training pairs.
+   3) Analyzing the Learned Distance Metric: We take the   the metric from ITML+. Thus, we conclude that the distance
+BIWI RGBD-ID data set as an example to analyze the learned   metric learned using ITML+ is better than ITML by exploiting
+distance metric. In particular, we analyze the distance metrics   the additional depth features in the training stage. In our new
+learned using ITML and ITML+ for classifying the ﬁrst   constraints [see (4) and (6)], the slack variables in ITML+ are
+200 positive training pairs as well as the ﬁrst 200 negative  deﬁned based on the distances using privileged information.
+training pairs.                                                  In contrast, there are no such constraints for the slack variables
+  Note the KEDS-RGB features are used as the main fea-   in ITML. Therefore, ITML+ could reduce the overﬁtting
+tures  in the  testing processes. We show the distances of   problem by imposing new constraints based on the distances
+these 400 pairs of RGB images based on the learned dis-   using privileged information.
+tance metrics from ITML and ITML+ in Fig. 4(a) and (b),     4) Comparison of Training Time Between ITML+ and Other
+respectively. In the two ﬁgures, each red star indicates one   Baselines: We use the EUROCOM data set as an example to
+positive pair, while each blue circle indicates one negative   report the training time of our proposed ITML+ algorithm as
+pair. The two horizontal lines are the predeﬁned parameters l   well as the related distance-metric learning methods LMNN,
+(i.e.,  l = 1.5 × 10−3) and u  (i.e., u = 5.6 × 10−2). As  ITML, and ITML-S. All the experiments are conducted on
+shown in Fig. 4(b), we observe that there are less points in the   an IBM workstation (2.79-GHz CPU with 32-GB RAM).
+area between the two dashed lines when compared with the  We report the average training times and standard devia-
+results in Fig. 4(a). Note in Fig. 4(a) and (b), the top dash line   tions from ﬁve rounds of experiments in Table IV.  It can
+denotes the maximum distance from the positive pairs, while   be observed that the LMNN method  is the most efﬁcient
+the bottom dashed line denotes the minimum distance from the  one among the four methods. Our proposed ITML+ method
+negative pairs. The results show the positive and negative pairs   takes about two times the training time when compared with
+are better separated if the distances are calculated based on  ITML, because we need to learn an additional metric P for
+
+Authorized licensed use limited to: The University of Hong Kong Libraries. Downloaded on September 16,2026 at 08:09:09 UTC from IEEE Xplore. Restrictions apply.
+
+===== PDF PAGE 12 =====
+XU et al.: DISTANCE METRIC LUPI FOR FACE VERIFICATION AND PERSON RE-IDENTIFICATION                                                      3161
+
+
+privileged information. This is also consistent with our analy-    [11]  V. Vapnik and A. Vashist, “A new learning paradigm: Learning using
+sis on computational complexity (Section IV-F). Moreover, the          privileged information,” Neural Netw., vol. 22, nos. 5–6, pp. 544–557,
+                                                                               2009.
+computational time of our ITML+ method is comparable with                                                                                [12] E. P. Xing, A. Y. Ng, M. I. Jordan, and S. J. Russell, “Distance metric
+that of ITML-S, which uses ITML twice.                                   learning with application to clustering with side-information,” in Proc.
+                                                                                  Adv. Neural  Inf. Process.  Syst., Lake Tahoe, NV, USA, Dec. 2002,
+                                                                                      pp. 505–512.
+                   VI. CONCLUSION                              [13] K. Q. Weinberger and L. K. Saul, “Distance metric learning for large
+                                                                            margin nearest neighbor classiﬁcation,” J. Mach. Learn. Res., vol. 10,
+   In this paper, we have studied the face veriﬁcation and         pp. 207–244, Feb. 2009.
+person re-identiﬁcation tasks in the RGB images using the    [14]  J. Wang, A. Kalousis, and A. Woznica, “Parametric local metric learning
+                                                                                            for nearest neighbor classiﬁcation,” in Proc. Adv. Neural Inf. Process.
+RGB-D data with side information. We formulate a new                                                                                                     Syst., Lake Tahoe, NV, USA, Dec. 2012, pp. 1610–1618.
+problem called distance metric learning with privileged infor-    [15] Y.-K. Noh, B.-T. Zhang, and D. D. Lee, “Generative local metric learning
+mation, where  the  distance  metric  is  learned with  extra          for nearest neighbor classiﬁcation,” in Proc. Adv. Neural Inf. Process.
+                                                                                                     Syst., Vancouver, BC, Canada, Dec. 2010, pp. 1822–1830.
+information that  is available only in the training data but
+                                                                                [16] L.  Yang,  “Distance  metric  learning: A  comprehensive  survey,”
+unavailable  in  the  test  data. We  take  the ITML method         Dept. Comput. Sci. Eng., Michigan State Univ., East Lansing, MI, USA,
+as an example, and propose a new method called ITML+         Tech. Rep., May 2006.
+for distance metric learning by additionally using privileged    [17] B. Kulis, “Metric learning: A survey,” Found. Trends Mach. Learn.,
+                                                                                              vol. 5, no. 4, pp. 287–364, 2013.
+information. An efﬁcient cyclic projection method based on                                                                                [18] G. Lebanon, “Metric learning for text documents,” IEEE Trans. Pattern
+the analytical solutions for updating all the variables is also         Anal. Mach. Intell., vol. 28, no. 4, pp. 497–508, Apr. 2006.
+developed to solve the new objective function in our proposed    [19]  P. Xie and E.  P. Xing, “Multi-modal  distance metric  learning,”  in
+ITML+. Extensive experiments are conducted on the real-         Proc. 23rd Int. Joint Conf.  Artif.  Intell., Beijing, China, Aug. 2013,                                                                                      pp. 1806–1812.
+world EUROCOM, CurtinFaces, and BIWI RGBD-ID data    [20] Z. Cui, W. Li, D. Xu, S. Shan, and X. Chen, “Fusing robust face region
+sets. The results demonstrate the effectiveness of our newly          descriptors via multiple metric learning for face recognition in the wild,”
+proposed ITML+ algorithm for learning the distance metric          in Proc. IEEE Conf. Comput. Vis. Pattern Recognit., Portland, OR, USA,
+                                                                                       Jun. 2013, pp. 3554–3561.
+from RGB-D data for the face veriﬁcation and person re-    [21] B. McFee and G. Lanckriet, “Learning multi-modal similarity,” J. Mach.
+identiﬁcation tasks in the RGB images. It is worth mentioning         Learn. Res., vol. 12, pp. 491–523, Feb. 2011.
+that our proposed (partial) ITML+ is a general distance-metric    [22] D. Pechyony and V. Vapnik, “On the theory of learnining with privileged
+                                                                                       information,” in Proc. Adv. Neural Inf. Process. Syst., Vancouver, BC,
+learning method using privileged information. It can be used                                                                             Canada, Dec. 2010, pp. 1894–1902.
+for more real-world applications, which will be studied in    [23] W. Li, L. Duan, I. W.-H. Tsang, and D. Xu, “Co-labeling: A new multi-
+the future. Moreover,  it  is also interesting to consider the        view learning approach for ambiguous problems,” in Proc. IEEE 12th
+                                                                                                         Int. Conf. Data Mining, Dec. 2012, pp. 419–428.kernelization [48] of the proposed ITML+ algorithm.
+                                                                                [24] W. Li, L. Niu, and D. Xu, “Exploiting privileged information from web
+                                                                                      data for image categorization,” in Proc. 13th Eur. Conf. Comput. Vis.,
+                                                                                     Zürich, Switzerland, Sep. 2014, pp. 437–452.
+                  REFERENCES                                                                                [25] L. Chen, W. Li, and D. Xu, “Recognizing RGB images by learning
+                                                                         from RGB-D data,” in Proc. IEEE Conf. Comput. Vis. Pattern Recognit.,
+  [1]  S. Chopra, R. Hadsell, and Y. LeCun, “Learning a similarity metric                                                                          Columbus, OH, USA, Jun. 2014, pp. 1418–1425.
+      discriminatively, with application to face veriﬁcation,” in Proc. IEEE
+                                                                                [26]  S. Fouad, P. Tino, S. Raychaudhury, and P. Schneider, “Incorporating
+     Comput. Soc. Conf. Comput. Vis. Pattern Recognit., San Diego, CA,
+                                                                                         privileged information through metric learning,” IEEE Trans. Neural
+    USA, Jun. 2005, pp. 539–546.
+                                                                                Netw. Learn. Syst., vol. 24, no. 7, pp. 1086–1098, Jul. 2013.
+  [2]  T. Ahonen, A. Hadid, and M. Pietikäinen, “Face description with local
+                                                                                [27] L. Wolf, T. Hassner, and Y. Taigman, “Descriptor based methods in the      binary patterns: Application to face recognition,” IEEE Trans. Pattern
+                                                                                         wild,” in Proc. Faces Real-Life Images Workshop Eur. Conf. Comput.      Anal. Mach. Intell., vol. 28, no. 12, pp. 2037–2041, Dec. 2006.
+                                                                                                        Vis., Marseille, France, Oct. 2008, pp. 1–14.
+  [3] M. Kan, D. Xu, S. Shan, W. Li, and X. Chen, “Learning prototype
+                                                                                [28] N. Kumar, A. C. Berg, P. N. Belhumeur, and S. K. Nayar, “Attribute      hyperplanes  for  face  veriﬁcation  in  the  wild,” IEEE Trans. Image
+                                                                          and simile classiﬁers for face veriﬁcation,” in Proc. IEEE 12th Int. Conf.      Process., vol. 22, no. 8, pp. 3310–3316, Aug. 2013.
+                                                                         Comput. Vis., Kyoto, Japan, Sep./Oct. 2009, pp. 365–372.  [4] M. Guillaumin,  J. Verbeek, and C. Schmid,  “Is  that you? Metric
+      learning approaches for face identiﬁcation,” in Proc. IEEE 12th  Int.    [29] D. G. Lowe, “Distinctive image features from scale-invariant keypoints,”
+      Conf. Comput. Vis., Kyoto, Japan, Sep./Oct. 2009, pp. 498–505.                    Int. J. Comput. Vis., vol. 60, no. 2, pp. 91–110, 2004.
+  [5] L. Wolf, T. Hassner, and Y. Taigman, “Similarity scores based on    [30] N. Dalal and B. Triggs, “Histograms of oriented gradients for human
+     background samples,” in Proc. 9th Asian Conf. Comput. Vis., Xi’an,          detection,”  in Proc. IEEE Comput. Soc. Conf. Comput.  Vis. Pattern
+      China, Sep. 2009, pp. 88–97.                                                    Recognit., San Diego, CA, USA, Jun. 2005, pp. 886–893.
+  [6]  J. Han, L. Shao, D. Xu, and J. Shotton, “Enhanced computer vision    [31] G. B. Huang, M. Ramesh, T. Berg, and E. Learned-Miller, “Labeled
+      with microsoft Kinect sensor: A review,” IEEE Trans. Cybern., vol. 43,         faces  in  the  wild: A  database  for  studying  face  recognition  in
+      no. 5, pp. 1318–1334, Oct. 2013.                                             unconstrained environments,” Dept. Comput. Sci., Univ. Massachusetts
+  [7] K. Lai, L. Bo, X. Ren, and D. Fox, “A large-scale hierarchical multi-        Amherst, Amherst, MA, USA, Tech. Rep. 07-49, Oct. 2007.
+     view RGB-D object dataset,” in Proc. IEEE Int. Conf. Robot. Autom.,    [32] D. S. Cheng, M. Cristani, M. Stoppa, L. Bazzani, and V. Murino,
+      Shanghai, China, May 2011, pp. 1817–1824.                             “Custom pictorial structures for re-identiﬁcation,” in Proc. Brit. Mach.
+  [8] B. Y. L. Li, A. S. Mian, W. Liu, and A. Krishna, “Using Kinect for face          Vis. Conf., Dundee, U.K., Sep. 2011, pp. 68.1–68.11.
+      recognition under varying poses, expressions, illumination and disguise,”    [33] R. Layne, T. M. Hospedales, and S. Gong, “Person re-identiﬁcation by
+      in Proc. IEEE Workshop Appl. Comput.  Vis., Clearwater, FL, USA,           attributes,” in Proc. Brit. Mach. Vis. Conf., Surrey, U.K., Sep. 2012,
+      Jan. 2013, pp. 186–192.                                                        pp. 1–11.
+  [9]  T. Huynh, R. Min, and J.-L. Dugelay, “An efﬁcient LBP-based descriptor    [34]  S.  Bak,  E.  Corvée,   F.  Brémond,  and  M.  Thonnat,  “Person
+      for facial depth images applied to gender recognition using RGB-D          re-identiﬁcation using spatial covariance regions of human body parts,”
+      face data,” in Proc. Workshops 11th Asian Conf. Comput. Vis., Daejeon,          in Proc. 7th IEEE Int. Conf. Adv. Video Signal-Based Surveill., Boston,
+      Korea, Nov. 2012, pp. 133–145.                                MA, USA, Aug./Sep. 2010, pp. 435–440.
+[10]  J. V. Davis, B. Kulis, P. Jain, S. Sra, and I. S. Dhillon, “Information-    [35] R. Zhao, W. Ouyang, and X. Wang, “Unsupervised salience learning
+      theoretic metric learning,” in Proc. 24th Annu. Int. Conf. Mach. Learn.,          for person re-identiﬁcation,” in Proc. IEEE Conf. Comput. Vis. Pattern
+      Corvallis, OR, USA, Jun. 2007, pp. 209–216.                                   Recognit., Portland, OR, USA, Jun. 2013, pp. 3586–3593.
+
+Authorized licensed use limited to: The University of Hong Kong Libraries. Downloaded on September 16,2026 at 08:09:09 UTC from IEEE Xplore. Restrictions apply.
+
+===== PDF PAGE 13 =====
+3162                                      IEEE TRANSACTIONS ON NEURAL NETWORKS AND LEARNING SYSTEMS, VOL. 26, NO. 12, DECEMBER 2015
+
+
+
+[36] N. Gheissari, T. B. Sebastian, and R. Hartley, “Person reidentiﬁcation                         Xinxing Xu  received  the B.E. degree from  the
+      using spatiotemporal appearance,” in Proc. IEEE Comput. Soc. Conf.                             University of Science and Technology of China,
+     Comput.  Vis. Pattern  Recognit., New York, NY, USA, Jun. 2006,                             Hefei, China, in 2009. He is currently pursuing the
+      pp. 1528–1535.                                                                            Ph.D. degree with the School of Computer Engineer-
+[37] W.-S. Zheng, S. Gong, and T. Xiang, “Reidentiﬁcation by  relative                               ing, Nanyang Technological University, Singapore.
+      distance comparison,” IEEE Trans. Pattern Anal. Mach. Intell., vol. 35,                           His  current  research  interests  include  kernel
+      no. 3, pp. 653–668, Mar. 2013.                                                                      learning and its applications to computer vision.
+[38] B. Prosser, W.-S. Zheng, S. Gong, and T. Xiang, “Person re-identiﬁcation
+     by support vector ranking,” in Proc. Brit. Mach. Vis. Conf., Aberystwyth,
+      U.K., Sep. 2010, pp. 21.1–21.11.
+[39] M. Köstinger, M. Hirzer, P. Wohlhart, P. M. Roth, and H. Bischof, “Large
+      scale metric learning from equivalence  constraints,”  in Proc. IEEE                                                                    Wen   Li   (M’12)   received   the   B.S.   and
+      Conf. Comput. Vis. Pattern Recognit., Providence, RI, USA, Jun. 2012,                                                                                       M.Eng.    degrees    from    Beijing    Normal
+      pp. 2288–2295.                                                                                                              University,     Beijing,     China,     in    2007
+[40] B. Kulis, M. Sustik, and I. Dhillon, “Learning low-rank kernel matrices,”                                                                                           and   2010,    respectively.   He    is    currently
+      in Proc. 23rd Int. Conf. Mach. Learn., Pittsburgh, PA, USA, Jun. 2006,                                                                                                    pursuing  the  Ph.D.  degree  with  the  School  of
+      pp. 505–512.                                                                                       Computer  Engineering,  Nanyang  Technological
+[41]  Y.  Censor  and  S.  A.  Zenios,  Parallel  Optimization:  Theory,                                                                                                              University, Singapore.
+      Algorithms and Applications. Oxford, U.K.: Oxford Univ. Press, 1997.                                                                                                His  current  research  interests  include  weakly
+[42]  J. Sherman and W.  J. Morrison, “Adjustment of an inverse matrix                                                                                                      supervised   learning,  domain   adaptation,   and
+      corresponding to a change in one element of a given matrix,” Ann.                                                                                                         multiple kernel learning.
+     Math. Statist., vol. 21, no. 1, pp. 124–127, 1950.
+[43]  F. Deutsch and H. Hundal, “The rate of convergence for the cyclic
+      projections algorithm I: Angles between convex sets,” J. Approx. Theory,
+       vol. 142, no. 1, pp. 36–55, 2006.                                                Dong Xu (M’07–SM’13) received  the B.E. and
+[44] C.  J. C. Burges, “A  tutorial on support  vector machines  for  pat-                          Ph.D. degrees from the University of Science and
+      tern  recognition,” Data Mining Knowl.  Discovery,  vol.  2,  no.  2,                         Technology  of  China,  Hefei,  China,  in  2001
+      pp. 121–167, 1998.                                                                     and 2005, respectively.
+[45]  P.  Dago-Casas,  D.  Gonzalez-Jimenez,  L.  L.  Yu,  and   J.  Alba-                      He was with Microsoft Research Asia, Beijing,
+      Castro,  “Single-  and   cross-  database  benchmarks   for  gender                           China, and the Chinese University of Hong Kong,
+      classiﬁcation under unconstrained settings,” in Proc. IEEE Int. Conf.                     Hong Kong, for over two years, while pursuing
+     Comput.    Vis.   Workshops,   Barcelona,    Spain,   Nov.   2011,                             the Ph.D. degree. He was a Post-Doctoral Research
+      pp. 2152–2159.                                                                                            Scientist with Columbia University, New York, NY,
+[46] M. Munaro, A. Basso, A. Fossati, L. Van Gool, and E. Menegatti,                     USA, for one year. He also worked as a faculty
+    “3D reconstruction of freely moving persons for re-identiﬁcation with                      member in the School of Computer Engineering,
+      a depth sensor,” in Proc. IEEE Int. Conf. Robot. Autom., Hong Kong,   Nanyang Technological University, Singapore. He is currently a faculty mem-
+     May/Jun. 2014, pp. 4512–4519.                                          ber in the School of Electrical and Information Engineering, The University
+[47] L. Bo, X. Ren, and D. Fox, “Kernel descriptors for visual recognition,” in    of Sydney, Australia.. His current research interests include computer vision,
+      Proc. Adv. Neural Inf. Process. Syst., Vancouver, BC, Canada, Dec. 2010,    statistical learning, and multimedia content analysis.
+      pp. 244–252.                                                               Dr. Xu co-authored a paper that received the Best Student Paper Award in the
+[48] X. Xu, I. W. Tsang, and D. Xu, “Soft margin multiple kernel learning,”   IEEE International Conference on Computer Vision and Pattern Recognition
+     IEEE Trans. Neural Netw. Learn. Syst., vol. 24, no. 5, pp. 749–761,    in 2010. His another coauthored paper also won the IEEE Transactions on
+    May 2013.                                                         Multimedia (T-MM) prize paper award in 2014.
+
+
+
+
+
+Authorized licensed use limited to: The University of Hong Kong Libraries. Downloaded on September 16,2026 at 08:09:09 UTC from IEEE Xplore. Restrictions apply.

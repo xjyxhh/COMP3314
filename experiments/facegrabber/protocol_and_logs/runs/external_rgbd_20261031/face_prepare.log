@@ -1,0 +1,14 @@
+Face features 1 / 560
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/itml_repro/facegrabber.py", line 156, in <module>
+    a=p.parse_args();prepare(a.source,a.output)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/itml_repro/facegrabber.py", line 117, in prepare
+    eye,eye_method=rgb_eyes(gray);ordinary=align_face(gray,eye,TARGET)
+                   ^^^^^^^^^^^^^^
+  File "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/itml_repro/facegrabber.py", line 34, in rgb_eyes
+    if len(faces)==0:raise ValueError('No RGB-only face detection; record failure rather than consult depth')
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: No RGB-only face detection; record failure rather than consult depth

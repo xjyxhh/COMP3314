@@ -1,0 +1,39 @@
+{
+  "result": {
+    "round": 0,
+    "method": "euclidean",
+    "selected": {
+      "gamma": null,
+      "lam": null,
+      "validation": {
+        "AP": 0.8301190476190476,
+        "AUC": 0.79
+      },
+      "fit_seconds": 5.292240530252457e-06,
+      "sweeps": 0,
+      "stop": "fixed_metric",
+      "diagnostics": {}
+    },
+    "test": {
+      "AP": 0.9532467532467532,
+      "AUC": 0.9400000000000001
+    },
+    "stop": "fixed_metric",
+    "method_seconds": 0.00027070799842476845
+  },
+  "search": [
+    {
+      "gamma": null,
+      "lam": null,
+      "validation": {
+        "AP": 0.8301190476190476,
+        "AUC": 0.79
+      },
+      "fit_seconds": 5.292240530252457e-06,
+      "sweeps": 0,
+      "stop": "fixed_metric",
+      "diagnostics": {}
+    }
+  ],
+  "history": []
+}

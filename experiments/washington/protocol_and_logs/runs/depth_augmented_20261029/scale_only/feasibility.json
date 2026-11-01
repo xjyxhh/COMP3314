@@ -1,0 +1,30 @@
+[
+  {
+    "round": "round_00",
+    "result": {
+      "status": "optimal_inaccurate",
+      "classification": "numerically_spd_feasible",
+      "normalized_spd_margin": 0.0026221310339743327,
+      "conservative_dual_upper_bound": 0.0026221474670346037,
+      "dual_psd_min": 1.0000000770776864e-10,
+      "primal_min_eigenvalue": 0.0013110649324294878,
+      "normalized_pair_violation": 0.0,
+      "trace_error": 1.1102230246251565e-16,
+      "strict_witness_pair_slack": 0.0008756360105466937
+    }
+  },
+  {
+    "round": "round_01",
+    "result": {
+      "status": "optimal_inaccurate",
+      "classification": "numerically_spd_feasible",
+      "normalized_spd_margin": 0.00281366983652859,
+      "conservative_dual_upper_bound": 0.002813670986668178,
+      "dual_psd_min": 1.0000001608766417e-10,
+      "primal_min_eigenvalue": 0.001406832770226086,
+      "normalized_pair_violation": 0.0,
+      "trace_error": 0.0,
+      "strict_witness_pair_slack": 0.00094688136095935
+    }
+  }
+]

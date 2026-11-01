@@ -1,0 +1,177 @@
+{
+  "checkpoints": [
+    {
+      "split": 0,
+      "method": "itml",
+      "sweeps": 100,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 0,
+      "method": "itml",
+      "sweeps": 500,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 0,
+      "method": "itml",
+      "sweeps": 1000,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 0,
+      "method": "itml_plus",
+      "sweeps": 100,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 0,
+      "method": "itml_plus",
+      "sweeps": 500,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 0,
+      "method": "itml_plus",
+      "sweeps": 1000,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 0,
+      "method": "itml_plus_corrected",
+      "sweeps": 100,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 0,
+      "method": "itml_plus_corrected",
+      "sweeps": 500,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 0,
+      "method": "itml_plus_corrected",
+      "sweeps": 1000,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 1,
+      "method": "itml",
+      "sweeps": 100,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 1,
+      "method": "itml",
+      "sweeps": 500,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 1,
+      "method": "itml",
+      "sweeps": 1000,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 1,
+      "method": "itml_plus",
+      "sweeps": 100,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 1,
+      "method": "itml_plus",
+      "sweeps": 500,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 1,
+      "method": "itml_plus",
+      "sweeps": 1000,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 1,
+      "method": "itml_plus_corrected",
+      "sweeps": 100,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 1,
+      "method": "itml_plus_corrected",
+      "sweeps": 500,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 1,
+      "method": "itml_plus_corrected",
+      "sweeps": 1000,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 2,
+      "method": "itml",
+      "sweeps": 100,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 2,
+      "method": "itml",
+      "sweeps": 500,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 2,
+      "method": "itml",
+      "sweeps": 1000,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 2,
+      "method": "itml_plus",
+      "sweeps": 100,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 2,
+      "method": "itml_plus",
+      "sweeps": 500,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 2,
+      "method": "itml_plus",
+      "sweeps": 1000,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 2,
+      "method": "itml_plus_corrected",
+      "sweeps": 100,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 2,
+      "method": "itml_plus_corrected",
+      "sweeps": 500,
+      "validation_objective_residuals_recomputed": true
+    },
+    {
+      "split": 2,
+      "method": "itml_plus_corrected",
+      "sweeps": 1000,
+      "validation_objective_residuals_recomputed": true
+    }
+  ],
+  "original_100_sweep_models_matched": 9,
+  "source_unchanged": true,
+  "test_metrics_used": false,
+  "tests_passed": 16,
+  "code_sha256": {
+    "diagnose_olivetti.py": "025fa445932465d85a62077a69bed2ee2c932d92ba3e46767e68559c73ac8eb9",
+    "metrics.py": "5319361e96dbc738a936744431ba0b5764466755456868c6f91f1d9169197dbb",
+    "corrected.py": "fb9ab9e5467a2c6c047a67354b833609b09d807394ae0d7dd8a153b719c35520",
+    "evaluation.py": "e1d7f495d4af944569501d8c918eb38fadb910906bfb517ca45083f9d14ac065",
+    "pca.py": "074690f01e65bfb999682e7a31ac7d9d41669f109ab6547f241c90e4b479178f"
+  }
+}

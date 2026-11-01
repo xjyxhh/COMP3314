@@ -1,0 +1,10 @@
+{
+  "identity_split": [25,25],
+  "test_identities": 28,
+  "shots": 20,
+  "pca_dimension": 150,
+  "rounds": 5,
+  "pair_counts": [4750,4750],
+  "seed": 2026
+  ,"require_kdes": true
+}

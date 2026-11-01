@@ -1,0 +1,12 @@
+extracting_frozen_RGB_crops_and_training_display_depth
+Traceback (most recent call last):
+  File "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/external_rgbd_20261031/run_weight_study.py", line 58, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/external_rgbd_20261031/run_weight_study.py", line 22, in main
+    crops=HERE/'weight_crops';extract(SOURCE,HERE/'weight_selection',crops)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/itml_repro/weightgait.py", line 86, in extract
+    if max(image.size)>300:raise ValueError('Unexpected crop size')
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Unexpected crop size

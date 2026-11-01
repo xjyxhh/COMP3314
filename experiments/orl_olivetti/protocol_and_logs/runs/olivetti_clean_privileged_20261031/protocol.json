@@ -1,0 +1,51 @@
+{
+  "dataset": "ORL/Olivetti",
+  "source": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/orl_faces",
+  "scope": "clean-to-degraded privileged-information extension; not RGB-D or original paper numerical reproduction",
+  "identities": 40,
+  "images": 400,
+  "seeds": [
+    3314,
+    3315,
+    3316
+  ],
+  "split_counts": [
+    20,
+    10,
+    10
+  ],
+  "pairs_per_split": {
+    "positive": 90,
+    "negative": 180
+  },
+  "pca_dimensions": [
+    16,
+    16
+  ],
+  "degradation": {
+    "resolution": [
+      8,
+      8
+    ],
+    "noise_std": 0.05
+  },
+  "privileged_resolution": [
+    32,
+    32
+  ],
+  "gamma_grid": [
+    0.01,
+    0.1,
+    1.0
+  ],
+  "lambda_grid": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "max_sweeps": 100,
+  "selection": "validation AP only, first candidate on ties; no test until all searches complete",
+  "primary_metric": "mean test AP across all 3 predefined identity splits",
+  "controls": "Euclidean, ordinary-only ITML, literal ITML+, corrected ITML+; shuffled clean training rows at selected hyperparameters",
+  "limitations": "small dataset; splits overlap across repeats; no guarantee of improvement; finite training budget"
+}

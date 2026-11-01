@@ -1,0 +1,24 @@
+{
+  "input": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/olivetti_clean_privileged_20261031/split_01/input",
+  "sha256": {
+    "features_pca.npz": "a2607631934e71d48fec81b0bbe11e00465ae29f8603b1c157da7b53f8a2ff84",
+    "split.npz": "89f0309928de866ee00636837a28607c3be81a9d89c28cdf64e1c3a6e3bd5d70",
+    "round_00/feasibility_certificate.npz": "81d4de4c4dac73ac4d9755f59f315ee833904fe9568a4e85286929451e503a86",
+    "round_00/pairs.npz": "becb864fd7af58108084fe6bae6cd11080f24caca6b610f3e33add8ca1139eae",
+    "round_00/xi0.npy": "e01b1cfd34c80fc67c50ad1e99c31b75e2b5de007daf6869e43dac3dec178358"
+  },
+  "gamma_grid": [
+    0.01,
+    0.1,
+    1.0
+  ],
+  "lambda_grid": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "max_sweeps": 100,
+  "selection": "validation AP, first candidate on ties; test only selected model",
+  "test_deferred": true,
+  "scope": "Privileged-information diagnostic; see input feature_definition.json; not original paper benchmark"
+}

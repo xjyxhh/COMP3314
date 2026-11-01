@@ -1,0 +1,24 @@
+[
+  {
+    "dataset": "face",
+    "status": "completed",
+    "diagnostics": {
+      "filter_rule": "shared_xi0",
+      "retained_positive": 705,
+      "retained_negative": 5107,
+      "removed": 1880,
+      "depth_stop": "dual_norm_tolerance"
+    }
+  },
+  {
+    "dataset": "body",
+    "status": "completed",
+    "diagnostics": {
+      "filter_rule": "shared_xi0",
+      "retained_positive": 913,
+      "retained_negative": 848,
+      "removed": 3939,
+      "depth_stop": "dual_norm_tolerance"
+    }
+  }
+]

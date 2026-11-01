@@ -1,0 +1,24 @@
+round_00 euclidean completed
+round_00 itml completed
+round_00 lmnn completed
+round_00 svm completed
+round_00 svm_plus completed
+round_00 itml_s completed
+round_00 itml_plus completed
+round_01 euclidean completed
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/itml_repro/baseline_compare.py", line 148, in <module>
+    if __name__=='__main__':
+        ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/itml_repro/baseline_compare.py", line 110, in run
+    search,best = [],None
+                    ^^^^^^
+  File "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/itml_repro/baseline_compare.py", line 61, in train
+    return fit(X,pairs,xi0,**params,Z=Z if method=='itml_plus' else None,**budget)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/itml_repro/metrics.py", line 130, in fit
+    dual[k] -= a  # essential dual correction, Davis Algorithm 1
+    ~~~~^^^
+KeyboardInterrupt

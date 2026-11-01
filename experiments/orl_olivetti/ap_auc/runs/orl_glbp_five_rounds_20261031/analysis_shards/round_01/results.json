@@ -1,0 +1,35 @@
+[
+  {
+    "kind": "partial",
+    "fraction": 0.0,
+    "method": "itml_plus",
+    "round": "round_01",
+    "status": "completed",
+    "cached_from": "itml",
+    "selected": {
+      "parameters": {
+        "gamma": 1.0
+      },
+      "status": "completed",
+      "validation": {
+        "AP": 0.8198005235012847,
+        "AUC": 0.9243327211509029
+      },
+      "diagnostics": {},
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 8,
+        "objective": 148.03982991267276,
+        "max_inequality_violation": 0.005636320985354715,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 0.04095015993574092,
+        "dual_norm_change": 0.000725783431046985
+      },
+      "depth_final": {},
+      "seconds": 1.3156483336351812
+    },
+    "folder": "round_01/partial_000_itml_plus",
+    "selected_fraction_positive": 0,
+    "selected_fraction_negative": 0
+  }
+]

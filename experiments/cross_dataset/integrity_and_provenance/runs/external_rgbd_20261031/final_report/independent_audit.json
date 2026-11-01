@@ -1,0 +1,17 @@
+{
+  "previous_result_files_unchanged": 11,
+  "face": {
+    "models": 110,
+    "max_metric_error": 3.3306690738754696e-16
+  },
+  "body": {
+    "evaluations": 70,
+    "max_CMC_error": 0.0,
+    "cross_clip_evaluations": 70
+  },
+  "extra_actions": {
+    "frozen_condition_evaluations": 70,
+    "max_CMC_error": 0.0,
+    "new_training": false
+  }
+}

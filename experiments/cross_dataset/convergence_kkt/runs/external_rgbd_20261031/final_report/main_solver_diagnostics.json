@@ -1,0 +1,1525 @@
+{
+  "records": [
+    {
+      "dataset": "face",
+      "round": "round_00",
+      "method": "euclidean",
+      "parameters": {},
+      "stop": "fixed_metric",
+      "final": {},
+      "diagnostics": {}
+    },
+    {
+      "dataset": "face",
+      "round": "round_00",
+      "method": "itml",
+      "parameters": {
+        "gamma": 1.0
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 10,
+        "objective": 68.76550555667878,
+        "max_inequality_violation": 0.032268320089243296,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 0.01311242601509375,
+        "dual_norm_change": 0.0007322017783726837
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "face",
+      "round": "round_00",
+      "method": "lmnn",
+      "parameters": {
+        "mu": 0.9
+      },
+      "stop": "objective_tolerance",
+      "final": {
+        "iteration": 86,
+        "objective": 2.7245006454165366,
+        "relative_objective_change": 2.8095336595323272e-08,
+        "step": 2.1541143991628898e-07,
+        "projected_step_norm": 1.5902995442154757e-06
+      },
+      "diagnostics": {
+        "objective": 2.7245006454165366,
+        "iterations": 86,
+        "backend": "exact_loss_projected_subgradient",
+        "min_eigenvalue": -5.327085073345694e-16,
+        "global_optimum_certified": false,
+        "triplets": 372400
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_00",
+      "method": "svm",
+      "parameters": {
+        "C": 0.01
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 20.959850595105074,
+        "primal_violation": 3.494430555626578e-10,
+        "stationarity_w": 1.0617316022145124e-08,
+        "stationarity_b": 1.7442021355007498e-08,
+        "complementarity": 5.443796706304012e-10,
+        "dual_violation": 0.0,
+        "stationarity_slack": 8.609769147627233e-12,
+        "relative_objective_recheck": 0.0
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_00",
+      "method": "svm_plus",
+      "parameters": {
+        "C": 0.1,
+        "gamma": 100.0
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 768.4646056950177,
+        "primal_violation": 0.0,
+        "stationarity_w": 7.657220343866588e-07,
+        "stationarity_b": 4.3852704045832525e-07,
+        "complementarity": 5.280867064122763e-09,
+        "dual_violation": 0.0,
+        "stationarity_privileged": 2.5529694168151306e-07,
+        "stationarity_privileged_bias": 1.6757040803838663e-06,
+        "relative_objective_recheck": 1.4794023938004923e-16
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_00",
+      "method": "itml_s",
+      "parameters": {
+        "gamma": 1.0
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 5,
+        "objective": 21.406974791927553,
+        "max_inequality_violation": 0.045185958870714416,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 0.08125981084480259,
+        "dual_norm_change": 0.0003404970287883089
+      },
+      "diagnostics": {
+        "filter_rule": "shared_xi0",
+        "retained_positive": 705,
+        "retained_negative": 5107,
+        "removed": 1880,
+        "depth_stop": "dual_norm_tolerance"
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_00",
+      "method": "itml_plus",
+      "parameters": {
+        "gamma": 1.0,
+        "lam": 1.0
+      },
+      "stop": "max_sweeps",
+      "final": {
+        "sweep": 10,
+        "objective": 217.12202781135994,
+        "max_inequality_violation": 0.05998486470530828,
+        "max_equality_residual": 1.2916301108137915,
+        "min_eigenvalue_M": 0.011629018290175451,
+        "dual_norm_change": 0.6311096742250676,
+        "min_eigenvalue_P": 0.0039038593485533762,
+        "beta_norm_change": 0.11925137150858944,
+        "max_eigenvalue_M": 2.5078628931487748,
+        "trace_M": 83.17472842704525,
+        "condition_number_M": 215.6555979680154,
+        "max_eigenvalue_P": 3.206639310327303,
+        "trace_P": 99.66361448391507,
+        "condition_number_P": 821.4023672537186,
+        "rgb_distance_min": 0.13367075378299337,
+        "rgb_distance_median": 11.290689073723781,
+        "rgb_distance_max": 23.091637650886383,
+        "depth_distance_min": 0.8581922005269551,
+        "depth_distance_median": 7.984327284819445,
+        "depth_distance_max": 9.842358021445023,
+        "relative_inequality_violation": 0.007310444427219205,
+        "relative_equality_residual": 0.15515942833882324
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "face",
+      "round": "round_01",
+      "method": "euclidean",
+      "parameters": {},
+      "stop": "fixed_metric",
+      "final": {},
+      "diagnostics": {}
+    },
+    {
+      "dataset": "face",
+      "round": "round_01",
+      "method": "itml",
+      "parameters": {
+        "gamma": 1.0
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 8,
+        "objective": 68.55991169773944,
+        "max_inequality_violation": 0.20116050382301154,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 0.01317704787665142,
+        "dual_norm_change": 0.0007293721988859712
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "face",
+      "round": "round_01",
+      "method": "lmnn",
+      "parameters": {
+        "mu": 0.9
+      },
+      "stop": "objective_tolerance",
+      "final": {
+        "iteration": 86,
+        "objective": 2.7245006454165366,
+        "relative_objective_change": 2.8095336595323272e-08,
+        "step": 2.1541143991628898e-07,
+        "projected_step_norm": 1.5902995442154757e-06
+      },
+      "diagnostics": {
+        "objective": 2.7245006454165366,
+        "iterations": 86,
+        "backend": "exact_loss_projected_subgradient",
+        "min_eigenvalue": -5.327085073345694e-16,
+        "global_optimum_certified": false,
+        "triplets": 372400
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_01",
+      "method": "svm",
+      "parameters": {
+        "C": 0.01
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 21.236340984778018,
+        "primal_violation": 2.2661216354417374e-10,
+        "stationarity_w": 4.893449688205824e-09,
+        "stationarity_b": 8.143205623700744e-09,
+        "complementarity": 4.880434110638212e-10,
+        "dual_violation": 0.0,
+        "stationarity_slack": 4.019645727382226e-12,
+        "relative_objective_recheck": 0.0
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_01",
+      "method": "svm_plus",
+      "parameters": {
+        "C": 0.1,
+        "gamma": 1.0
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 757.7031061002338,
+        "primal_violation": 0.0,
+        "stationarity_w": 3.3166818060286963e-07,
+        "stationarity_b": 6.573955459998615e-07,
+        "complementarity": 2.924835180396551e-08,
+        "dual_violation": 0.0,
+        "stationarity_privileged": 1.1989517887943305e-06,
+        "stationarity_privileged_bias": 2.537958593507028e-06,
+        "relative_objective_recheck": 0.0
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_01",
+      "method": "itml_s",
+      "parameters": {
+        "gamma": 1.0
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 5,
+        "objective": 21.498050198677202,
+        "max_inequality_violation": 0.06644374669460129,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 0.08174206380701576,
+        "dual_norm_change": 0.0008008407966501159
+      },
+      "diagnostics": {
+        "filter_rule": "shared_xi0",
+        "retained_positive": 708,
+        "retained_negative": 5119,
+        "removed": 1865,
+        "depth_stop": "dual_norm_tolerance"
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_01",
+      "method": "itml_plus",
+      "parameters": {
+        "gamma": 1.0,
+        "lam": 3.1622776601683795
+      },
+      "stop": "max_sweeps",
+      "final": {
+        "sweep": 10,
+        "objective": 390.236632552337,
+        "max_inequality_violation": 0.0,
+        "max_equality_residual": 1.1568619250418752,
+        "min_eigenvalue_M": 0.014996035093514933,
+        "dual_norm_change": 0.18487060654051554,
+        "min_eigenvalue_P": 0.005008611452946166,
+        "beta_norm_change": 0.10004013554762521,
+        "max_eigenvalue_M": 2.4574180431544344,
+        "trace_M": 87.54060758448017,
+        "condition_number_M": 163.87118513860707,
+        "max_eigenvalue_P": 2.1445648841499216,
+        "trace_P": 91.86440870097579,
+        "condition_number_P": 428.1755341370002,
+        "rgb_distance_min": 0.13544280410293869,
+        "rgb_distance_median": 11.870500939345789,
+        "rgb_distance_max": 24.32893788384473,
+        "depth_distance_min": 0.6655078115192118,
+        "depth_distance_median": 7.868205796651926,
+        "depth_distance_max": 9.95763168997184,
+        "relative_inequality_violation": 0.0,
+        "relative_equality_residual": 0.1222544812930706
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "face",
+      "round": "round_02",
+      "method": "euclidean",
+      "parameters": {},
+      "stop": "fixed_metric",
+      "final": {},
+      "diagnostics": {}
+    },
+    {
+      "dataset": "face",
+      "round": "round_02",
+      "method": "itml",
+      "parameters": {
+        "gamma": 1.0
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 7,
+        "objective": 68.45626478619462,
+        "max_inequality_violation": 0.270329898270508,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 0.013103364444545022,
+        "dual_norm_change": 0.0005678974923639045
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "face",
+      "round": "round_02",
+      "method": "lmnn",
+      "parameters": {
+        "mu": 0.9
+      },
+      "stop": "objective_tolerance",
+      "final": {
+        "iteration": 86,
+        "objective": 2.7245006454165366,
+        "relative_objective_change": 2.8095336595323272e-08,
+        "step": 2.1541143991628898e-07,
+        "projected_step_norm": 1.5902995442154757e-06
+      },
+      "diagnostics": {
+        "objective": 2.7245006454165366,
+        "iterations": 86,
+        "backend": "exact_loss_projected_subgradient",
+        "min_eigenvalue": -5.327085073345694e-16,
+        "global_optimum_certified": false,
+        "triplets": 372400
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_02",
+      "method": "svm",
+      "parameters": {
+        "C": 0.01
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 21.30173940789401,
+        "primal_violation": 5.463429708640888e-11,
+        "stationarity_w": 2.163407198312287e-09,
+        "stationarity_b": 3.6152941196299082e-09,
+        "complementarity": 7.221692163659262e-10,
+        "dual_violation": 0.0,
+        "stationarity_slack": 1.7845794286763805e-12,
+        "relative_objective_recheck": 0.0
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_02",
+      "method": "svm_plus",
+      "parameters": {
+        "C": 0.1,
+        "gamma": 10.0
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 766.4652579977839,
+        "primal_violation": 0.0,
+        "stationarity_w": 2.436566091303033e-07,
+        "stationarity_b": 1.9999766109890516e-07,
+        "complementarity": 1.059811909231328e-09,
+        "dual_violation": 0.0,
+        "stationarity_privileged": 2.0666875751378753e-07,
+        "stationarity_privileged_bias": 7.653363809367875e-07,
+        "relative_objective_recheck": 0.0
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_02",
+      "method": "itml_s",
+      "parameters": {
+        "gamma": 1.0
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 5,
+        "objective": 21.585155595945515,
+        "max_inequality_violation": 0.05241778996664159,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 0.08106967948146537,
+        "dual_norm_change": 0.00048820676165796373
+      },
+      "diagnostics": {
+        "filter_rule": "shared_xi0",
+        "retained_positive": 707,
+        "retained_negative": 5138,
+        "removed": 1847,
+        "depth_stop": "dual_norm_tolerance"
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_02",
+      "method": "itml_plus",
+      "parameters": {
+        "gamma": 1.0,
+        "lam": 0.01
+      },
+      "stop": "max_sweeps",
+      "final": {
+        "sweep": 10,
+        "objective": 123.32568563080657,
+        "max_inequality_violation": 2.5506526047981346,
+        "max_equality_residual": 3.3473997951595535,
+        "min_eigenvalue_M": 0.009985414138593178,
+        "dual_norm_change": 0.023985654236953657,
+        "min_eigenvalue_P": 0.0013300146395496797,
+        "beta_norm_change": 0.02558382203506269,
+        "max_eigenvalue_M": 2.3782206369654233,
+        "trace_M": 79.14360802922295,
+        "condition_number_M": 238.1694543618083,
+        "max_eigenvalue_P": 8.369669115862116,
+        "trace_P": 117.86524438403416,
+        "condition_number_P": 6292.915030390901,
+        "rgb_distance_min": 0.1268427973258389,
+        "rgb_distance_median": 10.544647368158909,
+        "rgb_distance_max": 22.19899110235019,
+        "depth_distance_min": 1.1620543338766738,
+        "depth_distance_median": 7.844137984857751,
+        "depth_distance_max": 11.626271161912474,
+        "relative_inequality_violation": 0.24011560736565582,
+        "relative_equality_residual": 0.6011099815950978
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "face",
+      "round": "round_03",
+      "method": "euclidean",
+      "parameters": {},
+      "stop": "fixed_metric",
+      "final": {},
+      "diagnostics": {}
+    },
+    {
+      "dataset": "face",
+      "round": "round_03",
+      "method": "itml",
+      "parameters": {
+        "gamma": 1.0
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 8,
+        "objective": 68.58859756874399,
+        "max_inequality_violation": 0.22526062166611904,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 0.013136101251163225,
+        "dual_norm_change": 0.0006962555767445802
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "face",
+      "round": "round_03",
+      "method": "lmnn",
+      "parameters": {
+        "mu": 0.9
+      },
+      "stop": "objective_tolerance",
+      "final": {
+        "iteration": 86,
+        "objective": 2.7245006454165366,
+        "relative_objective_change": 2.8095336595323272e-08,
+        "step": 2.1541143991628898e-07,
+        "projected_step_norm": 1.5902995442154757e-06
+      },
+      "diagnostics": {
+        "objective": 2.7245006454165366,
+        "iterations": 86,
+        "backend": "exact_loss_projected_subgradient",
+        "min_eigenvalue": -5.327085073345694e-16,
+        "global_optimum_certified": false,
+        "triplets": 372400
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_03",
+      "method": "svm",
+      "parameters": {
+        "C": 0.01
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 21.043530696267347,
+        "primal_violation": 1.5120169488755375e-10,
+        "stationarity_w": 5.543324466056647e-09,
+        "stationarity_b": 9.127161748612167e-09,
+        "complementarity": 1.0877255954922798e-09,
+        "dual_violation": 0.0,
+        "stationarity_slack": 4.5053561575914e-12,
+        "relative_objective_recheck": 0.0
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_03",
+      "method": "svm_plus",
+      "parameters": {
+        "C": 0.1,
+        "gamma": 0.1
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 746.4962705712428,
+        "primal_violation": 0.0,
+        "stationarity_w": 9.062535370584884e-08,
+        "stationarity_b": 2.906719558382065e-07,
+        "complementarity": 1.2887354524535114e-08,
+        "dual_violation": 0.0,
+        "stationarity_privileged": 1.5048394747845994e-06,
+        "stationarity_privileged_bias": 1.1247435551808849e-06,
+        "relative_objective_recheck": 0.0
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_03",
+      "method": "itml_s",
+      "parameters": {
+        "gamma": 1.0
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 5,
+        "objective": 21.425548521267437,
+        "max_inequality_violation": 0.0757112528929591,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 0.08120005014797804,
+        "dual_norm_change": 0.0003305800955446495
+      },
+      "diagnostics": {
+        "filter_rule": "shared_xi0",
+        "retained_positive": 702,
+        "retained_negative": 5152,
+        "removed": 1838,
+        "depth_stop": "dual_norm_tolerance"
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_03",
+      "method": "itml_plus",
+      "parameters": {
+        "gamma": 1.0,
+        "lam": 0.01
+      },
+      "stop": "max_sweeps",
+      "final": {
+        "sweep": 10,
+        "objective": 120.8368665656041,
+        "max_inequality_violation": 2.2818081322926727,
+        "max_equality_residual": 3.0314066952534375,
+        "min_eigenvalue_M": 0.010509452101716396,
+        "dual_norm_change": 0.008203482168921191,
+        "min_eigenvalue_P": 0.0012789048888251773,
+        "beta_norm_change": 0.02596410107651498,
+        "max_eigenvalue_M": 2.312969768519121,
+        "trace_M": 79.50434611418383,
+        "condition_number_M": 220.084714800819,
+        "max_eigenvalue_P": 8.524827300299734,
+        "trace_P": 116.80392661341493,
+        "condition_number_P": 6665.724226084379,
+        "rgb_distance_min": 0.12560289228096536,
+        "rgb_distance_median": 10.532296505046599,
+        "rgb_distance_max": 21.483677099519923,
+        "depth_distance_min": 1.2247482562039036,
+        "depth_distance_median": 7.876319732313821,
+        "depth_distance_max": 11.192675304444755,
+        "relative_inequality_violation": 0.22037461218518928,
+        "relative_equality_residual": 0.5484716181341774
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "face",
+      "round": "round_04",
+      "method": "euclidean",
+      "parameters": {},
+      "stop": "fixed_metric",
+      "final": {},
+      "diagnostics": {}
+    },
+    {
+      "dataset": "face",
+      "round": "round_04",
+      "method": "itml",
+      "parameters": {
+        "gamma": 1.0
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 8,
+        "objective": 68.54165128696611,
+        "max_inequality_violation": 0.17204177688667865,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 0.013145115400280155,
+        "dual_norm_change": 0.00038483322771841813
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "face",
+      "round": "round_04",
+      "method": "lmnn",
+      "parameters": {
+        "mu": 0.9
+      },
+      "stop": "objective_tolerance",
+      "final": {
+        "iteration": 86,
+        "objective": 2.7245006454165366,
+        "relative_objective_change": 2.8095336595323272e-08,
+        "step": 2.1541143991628898e-07,
+        "projected_step_norm": 1.5902995442154757e-06
+      },
+      "diagnostics": {
+        "objective": 2.7245006454165366,
+        "iterations": 86,
+        "backend": "exact_loss_projected_subgradient",
+        "min_eigenvalue": -5.327085073345694e-16,
+        "global_optimum_certified": false,
+        "triplets": 372400
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_04",
+      "method": "svm",
+      "parameters": {
+        "C": 0.01
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 21.156487996752325,
+        "primal_violation": 1.4468125981796934e-09,
+        "stationarity_w": 3.42919296516421e-08,
+        "stationarity_b": 5.680312886724437e-08,
+        "complementarity": 3.2785166466842706e-09,
+        "dual_violation": 0.0,
+        "stationarity_slack": 2.8039123106671227e-11,
+        "relative_objective_recheck": 0.0
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_04",
+      "method": "svm_plus",
+      "parameters": {
+        "C": 0.1,
+        "gamma": 1.0
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 758.0752491676132,
+        "primal_violation": 0.0,
+        "stationarity_w": 1.9048818312568706e-08,
+        "stationarity_b": 3.737371123690991e-08,
+        "complementarity": 2.2143907924858178e-09,
+        "dual_violation": 0.0,
+        "stationarity_privileged": 6.942766243817126e-08,
+        "stationarity_privileged_bias": 1.4432714579015737e-07,
+        "relative_objective_recheck": 0.0
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_04",
+      "method": "itml_s",
+      "parameters": {
+        "gamma": 1.0
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 5,
+        "objective": 21.444138869419053,
+        "max_inequality_violation": 0.053972347678871824,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 0.08052402135009262,
+        "dual_norm_change": 0.00045733263699192065
+      },
+      "diagnostics": {
+        "filter_rule": "shared_xi0",
+        "retained_positive": 703,
+        "retained_negative": 5116,
+        "removed": 1873,
+        "depth_stop": "dual_norm_tolerance"
+      }
+    },
+    {
+      "dataset": "face",
+      "round": "round_04",
+      "method": "itml_plus",
+      "parameters": {
+        "gamma": 1.0,
+        "lam": 1.0
+      },
+      "stop": "max_sweeps",
+      "final": {
+        "sweep": 10,
+        "objective": 216.96062796540804,
+        "max_inequality_violation": 0.014809849615168957,
+        "max_equality_residual": 1.0408485292472438,
+        "min_eigenvalue_M": 0.01154801753841736,
+        "dual_norm_change": 0.23404386514240272,
+        "min_eigenvalue_P": 0.003822885324126432,
+        "beta_norm_change": 0.1259645471451535,
+        "max_eigenvalue_M": 2.2989403221003846,
+        "trace_M": 83.08719959881967,
+        "condition_number_M": 199.07662197882766,
+        "max_eigenvalue_P": 3.0838915187390334,
+        "trace_P": 99.63800225282817,
+        "condition_number_P": 806.6921336291283,
+        "rgb_distance_min": 0.13206368354784734,
+        "rgb_distance_median": 11.156915496609273,
+        "rgb_distance_max": 22.737461573678154,
+        "depth_distance_min": 0.8690340599316693,
+        "depth_distance_median": 7.98380146202551,
+        "depth_distance_max": 9.809314965905816,
+        "relative_inequality_violation": 0.0016466948807478544,
+        "relative_equality_residual": 0.11766077227531249
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "weight",
+      "round": "round_00",
+      "method": "euclidean",
+      "parameters": {},
+      "stop": "fixed_metric",
+      "final": {},
+      "diagnostics": {}
+    },
+    {
+      "dataset": "weight",
+      "round": "round_00",
+      "method": "itml",
+      "parameters": {
+        "gamma": 0.0031622776601683794
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 5,
+        "objective": 9.890607619848593,
+        "max_inequality_violation": 5.773624723290349e-05,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 1.0017506661860924,
+        "dual_norm_change": 0.0002732425243873569
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "weight",
+      "round": "round_00",
+      "method": "lmnn",
+      "parameters": {
+        "mu": 0.7
+      },
+      "stop": "max_iterations",
+      "final": {
+        "iteration": 1000,
+        "objective": 549.3442084179471,
+        "relative_objective_change": 2.2146063031601424e-05,
+        "step": 0.1230152641010279,
+        "projected_step_norm": 0.04350712088606504
+      },
+      "diagnostics": {
+        "objective": 549.3442084179471,
+        "iterations": 1000,
+        "backend": "exact_loss_projected_subgradient",
+        "min_eigenvalue": -4.581631628355818e-13,
+        "global_optimum_certified": false,
+        "triplets": 480000
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_00",
+      "method": "svm",
+      "parameters": {
+        "C": 100.0
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 500997.67102875374,
+        "primal_violation": 5.154632276571647e-10,
+        "stationarity_w": 9.821207877767798e-09,
+        "stationarity_b": 4.547473508864641e-13,
+        "complementarity": 2.820525288387776e-05,
+        "dual_violation": 0.0,
+        "stationarity_slack": 1.9035898901620385e-07,
+        "relative_objective_recheck": 0.0
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_00",
+      "method": "svm_plus",
+      "parameters": {
+        "C": 0.01,
+        "gamma": 0.1
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 60.80000010385878,
+        "primal_violation": 0.0,
+        "stationarity_w": 3.959138375384387e-10,
+        "stationarity_b": 4.163336342344337e-16,
+        "complementarity": 5.562276580145101e-11,
+        "dual_violation": 0.0,
+        "stationarity_privileged": 1.9176901692691317e-08,
+        "stationarity_privileged_bias": 2.9235874288158215e-07,
+        "relative_objective_recheck": 0.0
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_00",
+      "method": "itml_s",
+      "parameters": {
+        "gamma": 0.03162277660168379
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 4,
+        "objective": 12.378480717979214,
+        "max_inequality_violation": 0.029738480415370055,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 0.9986915908291247,
+        "dual_norm_change": 0.0008663770628062138
+      },
+      "diagnostics": {
+        "filter_rule": "shared_xi0",
+        "retained_positive": 1583,
+        "retained_negative": 545,
+        "removed": 3952,
+        "depth_stop": "dual_norm_tolerance"
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_00",
+      "method": "itml_plus",
+      "parameters": {
+        "gamma": 0.0001,
+        "lam": 100.0
+      },
+      "stop": "max_sweeps",
+      "final": {
+        "sweep": 10,
+        "objective": 198.46201127765443,
+        "max_inequality_violation": 0.010958203765936994,
+        "max_equality_residual": 0.0002636584064714398,
+        "min_eigenvalue_M": 0.0394991139043124,
+        "dual_norm_change": 0.20370111352643597,
+        "min_eigenvalue_P": 0.5654251673362979,
+        "beta_norm_change": 0.20370119362722533,
+        "max_eigenvalue_M": 31.33170716546889,
+        "trace_M": 265.77284996721176,
+        "condition_number_M": 793.2255706133243,
+        "max_eigenvalue_P": 1.065110418997875,
+        "trace_P": 149.6672221938765,
+        "condition_number_P": 1.8837336583646964,
+        "rgb_distance_min": 0.0029314857296030656,
+        "rgb_distance_median": 0.03645763575354045,
+        "rgb_distance_max": 0.25365694633110736,
+        "depth_distance_min": 0.0031479631546435516,
+        "depth_distance_median": 0.030349564854957302,
+        "depth_distance_max": 0.19538245762471343,
+        "relative_inequality_violation": 0.11231679988830479,
+        "relative_equality_residual": 0.002389350382064847
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "weight",
+      "round": "round_01",
+      "method": "euclidean",
+      "parameters": {},
+      "stop": "fixed_metric",
+      "final": {},
+      "diagnostics": {}
+    },
+    {
+      "dataset": "weight",
+      "round": "round_01",
+      "method": "itml",
+      "parameters": {
+        "gamma": 0.0031622776601683794
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 5,
+        "objective": 9.836498654732864,
+        "max_inequality_violation": 6.848023499569922e-05,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 1.0025743181245164,
+        "dual_norm_change": 0.00029697497089915576
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "weight",
+      "round": "round_01",
+      "method": "lmnn",
+      "parameters": {
+        "mu": 0.7
+      },
+      "stop": "max_iterations",
+      "final": {
+        "iteration": 1000,
+        "objective": 549.3442084179471,
+        "relative_objective_change": 2.2146063031601424e-05,
+        "step": 0.1230152641010279,
+        "projected_step_norm": 0.04350712088606504
+      },
+      "diagnostics": {
+        "objective": 549.3442084179471,
+        "iterations": 1000,
+        "backend": "exact_loss_projected_subgradient",
+        "min_eigenvalue": -4.581631628355818e-13,
+        "global_optimum_certified": false,
+        "triplets": 480000
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_01",
+      "method": "svm",
+      "parameters": {
+        "C": 10.0
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 54079.88618183435,
+        "primal_violation": 1.585717113172791e-10,
+        "stationarity_w": 3.1859625676596447e-10,
+        "stationarity_b": 5.968558980384842e-13,
+        "complementarity": 3.16656865717089e-06,
+        "dual_violation": 0.0,
+        "stationarity_slack": 2.5157245175932985e-09,
+        "relative_objective_recheck": 0.0
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_01",
+      "method": "svm_plus",
+      "parameters": {
+        "C": 0.01,
+        "gamma": 0.01
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 60.80000009810549,
+        "primal_violation": 0.0,
+        "stationarity_w": 3.800663112470296e-10,
+        "stationarity_b": 1.1102230246251565e-16,
+        "complementarity": 8.993175092979434e-11,
+        "dual_violation": 0.0,
+        "stationarity_privileged": 1.791192051542236e-08,
+        "stationarity_privileged_bias": 2.7156278570306114e-07,
+        "relative_objective_recheck": 0.0
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_01",
+      "method": "itml_s",
+      "parameters": {
+        "gamma": 0.03162277660168379
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 7,
+        "objective": 11.927630922266165,
+        "max_inequality_violation": 0.0018824119418807406,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 1.000747904421535,
+        "dual_norm_change": 0.00013730193724564114
+      },
+      "diagnostics": {
+        "filter_rule": "shared_xi0",
+        "retained_positive": 1612,
+        "retained_negative": 540,
+        "removed": 3928,
+        "depth_stop": "dual_norm_tolerance"
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_01",
+      "method": "itml_plus",
+      "parameters": {
+        "gamma": 0.0001,
+        "lam": 3.1622776601683795
+      },
+      "stop": "max_sweeps",
+      "final": {
+        "sweep": 10,
+        "objective": 73.10816909019988,
+        "max_inequality_violation": 0.0007573591093383986,
+        "max_equality_residual": 0.0002908693863241246,
+        "min_eigenvalue_M": 0.0636550690959732,
+        "dual_norm_change": 0.3802996767912265,
+        "min_eigenvalue_P": 0.09512826385827976,
+        "beta_norm_change": 0.38030017813891065,
+        "max_eigenvalue_M": 12.446983569054428,
+        "trace_M": 163.36841381868948,
+        "condition_number_M": 195.5379790773304,
+        "max_eigenvalue_P": 1.8928219829429929,
+        "trace_P": 154.45126987225498,
+        "condition_number_P": 19.897577293777612,
+        "rgb_distance_min": 0.002873070978151637,
+        "rgb_distance_median": 0.023515163674629504,
+        "rgb_distance_max": 0.1106446510907175,
+        "depth_distance_min": 0.002177971398038529,
+        "depth_distance_median": 0.02137253101297137,
+        "depth_distance_max": 0.07722903618976715,
+        "relative_inequality_violation": 0.014904714331554603,
+        "relative_equality_residual": 0.004489411609658181
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "weight",
+      "round": "round_02",
+      "method": "euclidean",
+      "parameters": {},
+      "stop": "fixed_metric",
+      "final": {},
+      "diagnostics": {}
+    },
+    {
+      "dataset": "weight",
+      "round": "round_02",
+      "method": "itml",
+      "parameters": {
+        "gamma": 0.0031622776601683794
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 5,
+        "objective": 9.901352157245388,
+        "max_inequality_violation": 6.321695664965321e-05,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 1.0024824126338538,
+        "dual_norm_change": 0.00026666116502054087
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "weight",
+      "round": "round_02",
+      "method": "lmnn",
+      "parameters": {
+        "mu": 0.7
+      },
+      "stop": "max_iterations",
+      "final": {
+        "iteration": 1000,
+        "objective": 549.3442084179471,
+        "relative_objective_change": 2.2146063031601424e-05,
+        "step": 0.1230152641010279,
+        "projected_step_norm": 0.04350712088606504
+      },
+      "diagnostics": {
+        "objective": 549.3442084179471,
+        "iterations": 1000,
+        "backend": "exact_loss_projected_subgradient",
+        "min_eigenvalue": -4.581631628355818e-13,
+        "global_optimum_certified": false,
+        "triplets": 480000
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_02",
+      "method": "svm",
+      "parameters": {
+        "C": 100.0
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 500827.66318125196,
+        "primal_violation": 1.634533871607619e-09,
+        "stationarity_w": 3.3990664594543995e-08,
+        "stationarity_b": 2.319211489520967e-11,
+        "complementarity": 3.503346204552946e-05,
+        "dual_violation": 0.0,
+        "stationarity_slack": 6.422631457780881e-07,
+        "relative_objective_recheck": 0.0
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_02",
+      "method": "svm_plus",
+      "parameters": {
+        "C": 0.01,
+        "gamma": 0.01
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 60.80000006117372,
+        "primal_violation": 0.0,
+        "stationarity_w": 2.5361815324601144e-10,
+        "stationarity_b": 1.7208456881689926e-15,
+        "complementarity": 6.573223426000875e-11,
+        "dual_violation": 0.0,
+        "stationarity_privileged": 1.2040887066788151e-08,
+        "stationarity_privileged_bias": 1.8293417408665746e-07,
+        "relative_objective_recheck": 1.1686558142190622e-16
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_02",
+      "method": "itml_s",
+      "parameters": {
+        "gamma": 0.03162277660168379
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 4,
+        "objective": 11.055669336905373,
+        "max_inequality_violation": 0.018491570692199505,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 1.000086664975902,
+        "dual_norm_change": 0.0008904540334904133
+      },
+      "diagnostics": {
+        "filter_rule": "shared_xi0",
+        "retained_positive": 1721,
+        "retained_negative": 488,
+        "removed": 3871,
+        "depth_stop": "dual_norm_tolerance"
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_02",
+      "method": "itml_plus",
+      "parameters": {
+        "gamma": 0.0001,
+        "lam": 3.1622776601683795
+      },
+      "stop": "max_sweeps",
+      "final": {
+        "sweep": 10,
+        "objective": 72.42642943709542,
+        "max_inequality_violation": 0.0006647297921778539,
+        "max_equality_residual": 0.0002019126526663223,
+        "min_eigenvalue_M": 0.0637401226395898,
+        "dual_norm_change": 0.35861408807360623,
+        "min_eigenvalue_P": 0.10172701771451086,
+        "beta_norm_change": 0.358614221246055,
+        "max_eigenvalue_M": 11.651261114045916,
+        "trace_M": 162.8602627784521,
+        "condition_number_M": 182.79320201384692,
+        "max_eigenvalue_P": 1.8547661767666552,
+        "trace_P": 154.5455480554558,
+        "condition_number_P": 18.23277845391984,
+        "rgb_distance_min": 0.0029561538626015032,
+        "rgb_distance_median": 0.02352434139121407,
+        "rgb_distance_max": 0.1175035791476389,
+        "depth_distance_min": 0.001988934335013538,
+        "depth_distance_median": 0.021457082628568963,
+        "depth_distance_max": 0.07911130866729041,
+        "relative_inequality_violation": 0.015908745800727694,
+        "relative_equality_residual": 0.003719228374342222
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "weight",
+      "round": "round_03",
+      "method": "euclidean",
+      "parameters": {},
+      "stop": "fixed_metric",
+      "final": {},
+      "diagnostics": {}
+    },
+    {
+      "dataset": "weight",
+      "round": "round_03",
+      "method": "itml",
+      "parameters": {
+        "gamma": 0.0031622776601683794
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 5,
+        "objective": 9.695145764762824,
+        "max_inequality_violation": 6.55218300747995e-05,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 1.0021088570147758,
+        "dual_norm_change": 0.0003035911691702901
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "weight",
+      "round": "round_03",
+      "method": "lmnn",
+      "parameters": {
+        "mu": 0.7
+      },
+      "stop": "max_iterations",
+      "final": {
+        "iteration": 1000,
+        "objective": 549.3442084179471,
+        "relative_objective_change": 2.2146063031601424e-05,
+        "step": 0.1230152641010279,
+        "projected_step_norm": 0.04350712088606504
+      },
+      "diagnostics": {
+        "objective": 549.3442084179471,
+        "iterations": 1000,
+        "backend": "exact_loss_projected_subgradient",
+        "min_eigenvalue": -4.581631628355818e-13,
+        "global_optimum_certified": false,
+        "triplets": 480000
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_03",
+      "method": "svm",
+      "parameters": {
+        "C": 10.0
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 53334.84318643251,
+        "primal_violation": 2.569533474883201e-10,
+        "stationarity_w": 9.223374782712901e-10,
+        "stationarity_b": 2.2737367544323206e-13,
+        "complementarity": 1.847322152994638e-06,
+        "dual_violation": 0.0,
+        "stationarity_slack": 6.577140609920207e-09,
+        "relative_objective_recheck": 0.0
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_03",
+      "method": "svm_plus",
+      "parameters": {
+        "C": 0.01,
+        "gamma": 0.1
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 60.800000124523194,
+        "primal_violation": 0.0,
+        "stationarity_w": 5.481686970681235e-10,
+        "stationarity_b": 3.885780586188048e-16,
+        "complementarity": 1.0740984757463418e-10,
+        "dual_violation": 0.0,
+        "stationarity_privileged": 2.342724060540913e-08,
+        "stationarity_privileged_bias": 3.5469930204090616e-07,
+        "relative_objective_recheck": 1.1686558130014024e-16
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_03",
+      "method": "itml_s",
+      "parameters": {
+        "gamma": 0.03162277660168379
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 7,
+        "objective": 11.743167359746279,
+        "max_inequality_violation": 0.0014889606108974829,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 1.0005881794256228,
+        "dual_norm_change": 0.0008844749039808199
+      },
+      "diagnostics": {
+        "filter_rule": "shared_xi0",
+        "retained_positive": 1633,
+        "retained_negative": 527,
+        "removed": 3920,
+        "depth_stop": "dual_norm_tolerance"
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_03",
+      "method": "itml_plus",
+      "parameters": {
+        "gamma": 0.0001,
+        "lam": 10.0
+      },
+      "stop": "max_sweeps",
+      "final": {
+        "sweep": 10,
+        "objective": 107.79819606979532,
+        "max_inequality_violation": 0.002839444591015053,
+        "max_equality_residual": 0.0002831526779489002,
+        "min_eigenvalue_M": 0.051264715807513926,
+        "dual_norm_change": 0.33698091826164916,
+        "min_eigenvalue_P": 0.1788031733442286,
+        "beta_norm_change": 0.3369808763679292,
+        "max_eigenvalue_M": 16.64355588270005,
+        "trace_M": 186.45506799615146,
+        "condition_number_M": 324.6590880400547,
+        "max_eigenvalue_P": 1.3964188886756215,
+        "trace_P": 150.64711256759227,
+        "condition_number_P": 7.8098104332145235,
+        "rgb_distance_min": 0.0028631444334209486,
+        "rgb_distance_median": 0.026384327577193688,
+        "rgb_distance_max": 0.12939572477178807,
+        "depth_distance_min": 0.0028603034004734337,
+        "depth_distance_median": 0.023675634594297362,
+        "depth_distance_max": 0.0956000493659078,
+        "relative_inequality_violation": 0.039350714580489596,
+        "relative_equality_residual": 0.004056419715008836
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "weight",
+      "round": "round_04",
+      "method": "euclidean",
+      "parameters": {},
+      "stop": "fixed_metric",
+      "final": {},
+      "diagnostics": {}
+    },
+    {
+      "dataset": "weight",
+      "round": "round_04",
+      "method": "itml",
+      "parameters": {
+        "gamma": 0.0031622776601683794
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 5,
+        "objective": 9.792214844889331,
+        "max_inequality_violation": 5.676341094684734e-05,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 1.002162273652072,
+        "dual_norm_change": 0.00031722925838852887
+      },
+      "diagnostics": {}
+    },
+    {
+      "dataset": "weight",
+      "round": "round_04",
+      "method": "lmnn",
+      "parameters": {
+        "mu": 0.7
+      },
+      "stop": "max_iterations",
+      "final": {
+        "iteration": 1000,
+        "objective": 549.3442084179471,
+        "relative_objective_change": 2.2146063031601424e-05,
+        "step": 0.1230152641010279,
+        "projected_step_norm": 0.04350712088606504
+      },
+      "diagnostics": {
+        "objective": 549.3442084179471,
+        "iterations": 1000,
+        "backend": "exact_loss_projected_subgradient",
+        "min_eigenvalue": -4.581631628355818e-13,
+        "global_optimum_certified": false,
+        "triplets": 480000
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_04",
+      "method": "svm",
+      "parameters": {
+        "C": 10.0
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 53608.50241209616,
+        "primal_violation": 4.175876408823857e-10,
+        "stationarity_w": 1.142141649605711e-09,
+        "stationarity_b": 1.4495071809506044e-12,
+        "complementarity": 4.091440387571449e-07,
+        "dual_violation": 0.0,
+        "stationarity_slack": 8.45339097104114e-09,
+        "relative_objective_recheck": 0.0
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_04",
+      "method": "svm_plus",
+      "parameters": {
+        "C": 10.0,
+        "gamma": 100.0
+      },
+      "stop": "convex_optimal",
+      "final": {},
+      "diagnostics": {
+        "objective": 60800.00002392622,
+        "primal_violation": 0.0,
+        "stationarity_w": 1.0857039967331147e-07,
+        "stationarity_b": 6.252776074688882e-13,
+        "complementarity": 1.1891911825133147e-08,
+        "dual_violation": 0.0,
+        "stationarity_privileged": 4.855222114660209e-06,
+        "stationarity_privileged_bias": 7.342317164216183e-05,
+        "relative_objective_recheck": 0.0
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_04",
+      "method": "itml_s",
+      "parameters": {
+        "gamma": 0.03162277660168379
+      },
+      "stop": "dual_norm_tolerance",
+      "final": {
+        "sweep": 4,
+        "objective": 10.736340546907433,
+        "max_inequality_violation": 0.02484261054386494,
+        "max_equality_residual": 0.0,
+        "min_eigenvalue_M": 1.000423045519794,
+        "dual_norm_change": 0.0003891784221652886
+      },
+      "diagnostics": {
+        "filter_rule": "shared_xi0",
+        "retained_positive": 1666,
+        "retained_negative": 501,
+        "removed": 3913,
+        "depth_stop": "dual_norm_tolerance"
+      }
+    },
+    {
+      "dataset": "weight",
+      "round": "round_04",
+      "method": "itml_plus",
+      "parameters": {
+        "gamma": 0.0001,
+        "lam": 10.0
+      },
+      "stop": "max_sweeps",
+      "final": {
+        "sweep": 10,
+        "objective": 108.42640633220189,
+        "max_inequality_violation": 0.0010926666656121548,
+        "max_equality_residual": 0.00010790987897296711,
+        "min_eigenvalue_M": 0.050928360935859035,
+        "dual_norm_change": 0.3099019568993681,
+        "min_eigenvalue_P": 0.18277883315927038,
+        "beta_norm_change": 0.3099016079093843,
+        "max_eigenvalue_M": 17.373809470063158,
+        "trace_M": 185.3004160713109,
+        "condition_number_M": 341.14212888069073,
+        "max_eigenvalue_P": 1.387662576654767,
+        "trace_P": 150.7353335861102,
+        "condition_number_P": 7.5920310501467165,
+        "rgb_distance_min": 0.0030047806007911376,
+        "rgb_distance_median": 0.026096717563404072,
+        "rgb_distance_max": 0.12069990780592081,
+        "depth_distance_min": 0.002891277819884128,
+        "depth_distance_median": 0.023381818749190597,
+        "depth_distance_max": 0.11647916708751505,
+        "relative_inequality_violation": 0.0249093375037667,
+        "relative_equality_residual": 0.002025965388416808
+      },
+      "diagnostics": {}
+    }
+  ],
+  "scope": "Original stopping convention and finite iteration budget; stopping on norm change is not a constraint-feasibility or global-optimum certificate."
+}

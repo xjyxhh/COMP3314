@@ -1,0 +1,13 @@
+{
+  "gamma": 0.7,
+  "r": 4.0,
+  "xi0": 0.2,
+  "printed_step_alpha": -1.6249999999999998,
+  "printed_step_M": 0.13333333333333336,
+  "printed_step_xi": 0.3733333333333333,
+  "printed_step_constraint_violation": 0.16000000000000014,
+  "objective_consistent_M": 0.1133333333333334,
+  "objective_consistent_xi": 0.45333333333333337,
+  "analytic_optimum_M": 0.11333333333333334,
+  "interpretation": "Printed Davis Algorithm 1 line 3.4 is incompatible with its Eq.4.5 for this gamma; no claim of an author-issued erratum."
+}

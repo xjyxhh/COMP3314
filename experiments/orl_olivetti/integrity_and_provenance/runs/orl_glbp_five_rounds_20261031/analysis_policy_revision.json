@@ -1,0 +1,8 @@
+{
+  "recorded_unix": 1793440293.886614,
+  "policy": "fixed_main",
+  "reason": "Single-factor interpretation; paper V-D does not state per-fraction retuning",
+  "previous": "analysis_shards: retuning began, preserved incomplete; no test evaluation",
+  "alternative_available": "--parameter-policy retune_each_fraction",
+  "test_evaluated": false
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "parameters": {
+      "C": 1.0
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 1.0,
+      "AUC": 1.0
+    },
+    "diagnostics": {
+      "objective": 4.031956510892787,
+      "primal_violation": 3.233300240250687e-11,
+      "stationarity_w": 3.18306494511647e-09,
+      "stationarity_b": 3.7414515929867775e-14,
+      "complementarity": 4.676863039130068e-10,
+      "dual_violation": 0.0,
+      "stationarity_slack": 1.0256278323664615e-10,
+      "relative_objective_recheck": 0.0
+    },
+    "stop": "convex_optimal",
+    "final": {},
+    "depth_final": {},
+    "seconds": 0.01604316709563136
+  }
+]

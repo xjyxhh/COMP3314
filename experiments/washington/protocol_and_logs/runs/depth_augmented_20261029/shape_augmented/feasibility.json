@@ -1,0 +1,20 @@
+[
+  {
+    "round": "round_00",
+    "result": {
+      "classification": "numerically_spd_feasible",
+      "method": "embedded original strict witness",
+      "max_original_inequality": -0.0002111445896782905,
+      "min_eigenvalue": 2.082955737353103e-06
+    }
+  },
+  {
+    "round": "round_01",
+    "result": {
+      "classification": "numerically_spd_feasible",
+      "method": "embedded original strict witness",
+      "max_original_inequality": -0.00013375603215593987,
+      "min_eigenvalue": 4.996776353694929e-05
+    }
+  }
+]

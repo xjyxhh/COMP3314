@@ -1,0 +1,30 @@
+[
+  {
+    "parameters": {
+      "mu": 0.5
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 1.0,
+      "AUC": 1.0
+    },
+    "diagnostics": {
+      "objective": 0.04897815045213805,
+      "iterations": 15,
+      "backend": "exact_loss_projected_subgradient",
+      "min_eigenvalue": 0.25554266602293335,
+      "global_optimum_certified": false,
+      "triplets": 9720
+    },
+    "stop": "objective_tolerance",
+    "final": {
+      "iteration": 15,
+      "objective": 0.04897815045213805,
+      "relative_objective_change": 6.398378504801627e-08,
+      "step": 6.122200319999997e-06,
+      "projected_step_norm": 6.258766195893671e-07
+    },
+    "depth_final": {},
+    "seconds": 0.04253516625612974
+  }
+]

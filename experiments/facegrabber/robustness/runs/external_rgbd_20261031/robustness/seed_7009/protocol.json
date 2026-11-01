@@ -1,0 +1,6 @@
+{
+  "seed": 7009,
+  "raw_RGB_sha256": "a8b6841c7d5eb91534e73642ee8da8261d0bd278b778c9386431a7f9dc8a6ccf",
+  "raw_depth_sha256": "7234830499b9247d9a0c6aa9bb758cdc0a1e99bacd309a0877971c1b18bbad6c",
+  "scope": "Repeated overlapping identity partition; full validation tuning, one pair redraw per partition; exploratory robustness"
+}

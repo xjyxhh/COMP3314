@@ -1,0 +1,745 @@
+{
+  "active_limits": {
+    "face": 2,
+    "body": 1,
+    "robustness": 2
+  },
+  "suspended": [
+    5480,
+    64014,
+    64015
+  ],
+  "events": [
+    {
+      "unix": 1793454057.634092,
+      "pid": 71240,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454057.634125,
+      "pid": 64016,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454057.6341481,
+      "pid": 64017,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454178.8804321,
+      "pid": 71239,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454178.8805099,
+      "pid": 71240,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454178.8805408,
+      "pid": 64014,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454178.880573,
+      "pid": 64015,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454178.8805819,
+      "pid": 64016,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454178.880588,
+      "pid": 64017,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454300.2222311,
+      "pid": 71239,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454300.222271,
+      "pid": 71240,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454300.2222788,
+      "pid": 64014,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454300.222285,
+      "pid": 64015,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454300.222311,
+      "pid": 64016,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454300.2223418,
+      "pid": 64017,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454421.387577,
+      "pid": 71239,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454421.38759,
+      "pid": 71240,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454421.3876119,
+      "pid": 64014,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454421.3876271,
+      "pid": 64015,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454421.3876321,
+      "pid": 64016,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454421.387638,
+      "pid": 64017,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454542.6906261,
+      "pid": 71239,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454542.690675,
+      "pid": 71240,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454542.6906838,
+      "pid": 64014,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454542.6906922,
+      "pid": 64015,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454542.691971,
+      "pid": 64016,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454542.692011,
+      "pid": 64017,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454664.140106,
+      "pid": 71239,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454664.140137,
+      "pid": 71240,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454664.14016,
+      "pid": 64014,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454664.140189,
+      "pid": 64015,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454664.140206,
+      "pid": 64016,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454664.1402152,
+      "pid": 64017,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454785.688083,
+      "pid": 71239,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454785.688113,
+      "pid": 71240,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454785.6881258,
+      "pid": 64014,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454785.688133,
+      "pid": 64015,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454785.688144,
+      "pid": 64016,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454785.688172,
+      "pid": 64017,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454906.899688,
+      "pid": 71239,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454906.8997,
+      "pid": 71240,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454906.899733,
+      "pid": 64014,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454906.8997812,
+      "pid": 64015,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793454906.899791,
+      "pid": 64016,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793454906.899799,
+      "pid": 64017,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455018.423455,
+      "pid": 71239,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455018.423483,
+      "pid": 71240,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455018.4234948,
+      "pid": 64014,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455018.4235048,
+      "pid": 64015,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455018.4235148,
+      "pid": 64016,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455018.423543,
+      "pid": 64017,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455139.6258502,
+      "pid": 71239,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455139.6259,
+      "pid": 71240,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455139.625925,
+      "pid": 64014,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455139.6259542,
+      "pid": 64015,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455139.625964,
+      "pid": 64016,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455139.625972,
+      "pid": 64017,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455261.074122,
+      "pid": 71239,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455261.074136,
+      "pid": 71240,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455261.074143,
+      "pid": 64014,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455261.0741491,
+      "pid": 64015,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455261.075223,
+      "pid": 64016,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455261.0783732,
+      "pid": 64017,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455382.375419,
+      "pid": 64014,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455382.37544,
+      "pid": 64016,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455382.375458,
+      "pid": 64017,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455382.375474,
+      "pid": 64015,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455503.828507,
+      "pid": 64014,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455503.8285398,
+      "pid": 64016,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455503.828558,
+      "pid": 64017,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455503.828566,
+      "pid": 64015,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455625.2143118,
+      "pid": 64014,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455625.2143512,
+      "pid": 64016,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455625.214357,
+      "pid": 64017,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455625.214398,
+      "pid": 64015,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455746.528231,
+      "pid": 64014,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455746.5282528,
+      "pid": 64016,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455746.528262,
+      "pid": 64017,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455746.52827,
+      "pid": 64015,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455817.376532,
+      "pid": 5481,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455857.744107,
+      "pid": 5480,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455857.744132,
+      "pid": 5481,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455857.744153,
+      "pid": 64014,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455857.74416,
+      "pid": 64015,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455857.7441669,
+      "pid": 64016,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455857.744174,
+      "pid": 64017,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455978.9869921,
+      "pid": 5480,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455978.987068,
+      "pid": 5481,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455978.987088,
+      "pid": 64014,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455978.987097,
+      "pid": 64015,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793455978.987115,
+      "pid": 64016,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793455978.9871418,
+      "pid": 64017,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456100.2912939,
+      "pid": 5480,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456100.291543,
+      "pid": 5481,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456100.29158,
+      "pid": 64014,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456100.291584,
+      "pid": 64015,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456100.291606,
+      "pid": 64016,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456100.2916129,
+      "pid": 64017,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456221.769274,
+      "pid": 5480,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456221.7696,
+      "pid": 5481,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456221.76963,
+      "pid": 64014,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456221.76966,
+      "pid": 64015,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456221.769668,
+      "pid": 64016,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456221.770283,
+      "pid": 64017,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456343.5143192,
+      "pid": 5480,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456343.514357,
+      "pid": 5481,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456343.5143821,
+      "pid": 64014,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456343.514414,
+      "pid": 64015,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456343.514432,
+      "pid": 64016,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456343.5144792,
+      "pid": 64017,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456464.613461,
+      "pid": 5480,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456464.613506,
+      "pid": 5481,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456464.613516,
+      "pid": 64014,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456464.613523,
+      "pid": 64015,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456464.613539,
+      "pid": 64016,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456464.6135669,
+      "pid": 64017,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456585.751381,
+      "pid": 5480,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456585.751481,
+      "pid": 5481,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456585.751518,
+      "pid": 64014,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456585.751539,
+      "pid": 64015,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456585.7515469,
+      "pid": 64016,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456585.751555,
+      "pid": 64017,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456707.682861,
+      "pid": 5480,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456707.6828768,
+      "pid": 5481,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456707.682886,
+      "pid": 64014,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456707.682892,
+      "pid": 64015,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456707.6829598,
+      "pid": 64016,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456707.683008,
+      "pid": 64017,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456818.930814,
+      "pid": 5480,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456818.9308648,
+      "pid": 5481,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456818.931013,
+      "pid": 64014,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456818.931377,
+      "pid": 64015,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456818.931391,
+      "pid": 64016,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456818.931398,
+      "pid": 64017,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456940.022947,
+      "pid": 5480,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456940.0230038,
+      "pid": 5481,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456940.023018,
+      "pid": 64014,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456940.023024,
+      "pid": 64015,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793456940.023108,
+      "pid": 64016,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793456940.023133,
+      "pid": 64017,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793457061.3643808,
+      "pid": 5480,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793457061.364397,
+      "pid": 5481,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793457061.364418,
+      "pid": 64014,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793457061.364439,
+      "pid": 64015,
+      "action": "suspend_own_worker"
+    },
+    {
+      "unix": 1793457061.364449,
+      "pid": 64016,
+      "action": "resume_own_worker"
+    },
+    {
+      "unix": 1793457061.364457,
+      "pid": 64017,
+      "action": "resume_own_worker"
+    }
+  ],
+  "note": "Search elapsed times include explicit scheduling pauses. Model settings unchanged. Final training times measured after all work."
+}

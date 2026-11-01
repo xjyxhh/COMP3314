@@ -1,0 +1,11 @@
+{
+  "main_RGB": 1920,
+  "extra_RGB": 1280,
+  "extra_unique_RGB": 1280,
+  "shared_RGB_content": 0,
+  "shared_clips": 0,
+  "extra_frames_per_identity_condition": [
+    20
+  ],
+  "extra_depth_used": false
+}

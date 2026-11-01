@@ -1,0 +1,34 @@
+{
+  "methods": [
+    "euclidean",
+    "itml",
+    "lmnn",
+    "svm",
+    "svm_plus",
+    "itml_s",
+    "itml_plus"
+  ],
+  "gamma_grid": [
+    0.1
+  ],
+  "lambda_grid": [
+    1.0
+  ],
+  "C_grid": [
+    1.0
+  ],
+  "svm_plus_gamma_grid": [
+    1.0
+  ],
+  "svm_kernel": "linear",
+  "lmnn_mu_grid": [
+    0.5
+  ],
+  "lmnn_k": 5,
+  "lmnn_backend": "projected",
+  "lmnn_max_iterations": 100,
+  "itml_s_filter_rule": "shared_xi0",
+  "max_sweeps": 2,
+  "tolerance": 0.0,
+  "selection_metric": "AP"
+}

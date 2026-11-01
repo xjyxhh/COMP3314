@@ -1,0 +1,22 @@
+{
+  "facegrabber": {
+    "repository": "DanielMerget/FaceGrabber",
+    "commit": "9d5510bbacb9d7301585a9e7598144cbb319c649",
+    "source_file": "ColoredOutputStreamUpdater.cpp",
+    "blob_sha": "84903941bd88528f4c98f72af2563aa65f6def54",
+    "sensor_depth_evidence": "MapDepthPointToCameraSpace(depthPoint, depthOfCurrentPoint) supplies FaceRaw point.z; HD model vertices are separate."
+  },
+  "weightgait": {
+    "repository": "ChrisLochhead/GaitMonitor",
+    "commit": "1868c31ccf4ad53b2d543c5d8e820f59b3782e39",
+    "source_file": "Code/Programs/Data_Recording/Capture.py",
+    "blob_sha": "b929b108f88ab4011ec1e54e419cb1cd8c8a2637",
+    "depth_evidence": "rs.align(rs.stream.color); convertScaleAbs(depth_img, alpha=.03), applyColorMap(...COLORMAP_JET), save as JPEG. Observed released videos are uint8 MPEG4."
+  },
+  "yunet": {
+    "repository": "opencv/opencv_zoo",
+    "file": "models/face_detection_yunet/face_detection_yunet_2023mar.onnx",
+    "sha256": "8f2383e4dd3cfbb4553ea8718107fc0423210dc964f9f4280604804ed2552fa4",
+    "license": "MIT"
+  }
+}

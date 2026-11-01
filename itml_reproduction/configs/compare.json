@@ -1,0 +1,42 @@
+{
+  "seed": 2026,
+  "split_counts": [
+    4,
+    2,
+    2
+  ],
+  "pca_dimension": 3,
+  "rounds": 2,
+  "pair_counts": {
+    "train": [
+      10,
+      10
+    ],
+    "val": [
+      10,
+      10
+    ],
+    "test": [
+      10,
+      10
+    ]
+  },
+  "gamma_grid": [
+    0.1
+  ],
+  "lambda_grid": [
+    1.0
+  ],
+  "max_sweeps": 100,
+  "tolerance": 0.001,
+  "bound_distance": "euclidean",
+  "bound_assignment": "constraint_consistent",
+  "selection_metric": "AP",
+  "std_ddof": 0,
+  "methods": [
+    "euclidean",
+    "itml",
+    "itml_plus",
+    "itml_plus_corrected"
+  ]
+}

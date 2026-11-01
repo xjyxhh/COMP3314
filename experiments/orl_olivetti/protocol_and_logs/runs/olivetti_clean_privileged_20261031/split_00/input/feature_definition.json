@@ -1,0 +1,13 @@
+{
+  "dataset": "ORL/Olivetti, original PGM",
+  "seed": 3314,
+  "ordinary": "8x8 BOX downsample + fixed Gaussian noise std .05, clipped [0,1]",
+  "privileged": "32x32 BOX downsample of same original image, no added noise; not physical depth",
+  "pca": "16 dimensions per modality, training only, centered, no whitening",
+  "training_rms_privileged_scale": 0.2289859407874976,
+  "split_counts": [
+    20,
+    10,
+    10
+  ]
+}

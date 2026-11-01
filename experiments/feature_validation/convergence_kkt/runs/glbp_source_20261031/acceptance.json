@@ -1,0 +1,17 @@
+{
+  "checks": [
+    {
+      "case": 0,
+      "exact_match": true,
+      "dimensions": 6888
+    },
+    {
+      "case": 1,
+      "exact_match": true,
+      "dimensions": 6888
+    }
+  ],
+  "scope": "Independent scalar oracle for DECLARED grid/border convention, not an author-code fixture",
+  "paper_sha256": "09742e5bc7d71b2c4e0c16970f25e8aeca9e71afee813ea96c715c850267ec1e",
+  "code_sha256": "6a3ef7f329bbf195614ac3e35ba122aa93ecfc34ff2bec8f2a24cc1dcf662fab"
+}

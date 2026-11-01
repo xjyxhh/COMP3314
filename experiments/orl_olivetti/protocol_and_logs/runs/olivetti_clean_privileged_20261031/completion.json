@@ -1,0 +1,25 @@
+{
+  "source_unchanged": true,
+  "validation_candidates": 66,
+  "failed_candidates": 0,
+  "completed_test_models": 12,
+  "shuffle_controls_completed": 6,
+  "test_deferred_in_all_searches": true,
+  "python": "3.11.14 (main, Oct 21 2025, 18:27:30) [Clang 20.1.8 ]",
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "Pillow": "12.2.0",
+    "cvxpy": "1.9.3",
+    "clarabel": "0.11.1"
+  },
+  "code_sha256": {
+    "olivetti.py": "498758c429ff5e88a61b69a1054064b61ba8e16d56543a76e20156962c7dc27d",
+    "viewpoint.py": "293ac7ee7ac25164dcf86e88f8417d173ddd53ddfefaf82b71887d9efe6825a1",
+    "metrics.py": "f50c26a7c040466ca58d990deab46dd4b66d962c951ba054993bf0cf53a007eb",
+    "corrected.py": "0e68bd5f70db52f9d8fa76ae6c1713da768e6aa1f8f92efade1faefadf92c954",
+    "data.py": "8e0e2f6ca06de97eea0da1ab89f23de4fe2ef4f40999d8e6b9f782924b175368",
+    "pca.py": "074690f01e65bfb999682e7a31ac7d9d41669f109ab6547f241c90e4b479178f",
+    "evaluation.py": "e1d7f495d4af944569501d8c918eb38fadb910906bfb517ca45083f9d14ac065"
+  }
+}

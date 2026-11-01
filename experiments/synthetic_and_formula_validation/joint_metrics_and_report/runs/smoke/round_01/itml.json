@@ -1,0 +1,79 @@
+{
+  "result": {
+    "round": 1,
+    "method": "itml",
+    "selected": {
+      "gamma": 1.0,
+      "lam": null,
+      "validation": {
+        "AP": 0.8994981325863679,
+        "AUC": 0.8600000000000001
+      }
+    },
+    "test": {
+      "AP": 0.9833333333333333,
+      "AUC": 0.98
+    },
+    "stop": "dual_norm_tolerance"
+  },
+  "search": [
+    {
+      "gamma": 0.1,
+      "lam": null,
+      "validation": {
+        "AP": 0.8690508021390375,
+        "AUC": 0.83
+      }
+    },
+    {
+      "gamma": 1.0,
+      "lam": null,
+      "validation": {
+        "AP": 0.8994981325863679,
+        "AUC": 0.8600000000000001
+      }
+    }
+  ],
+  "history": [
+    {
+      "sweep": 1,
+      "objective": 2.6034484670639664,
+      "max_inequality_violation": 2.6321804601767975,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.3473266739694582,
+      "dual_norm_change": 6072731681564592.0
+    },
+    {
+      "sweep": 2,
+      "objective": 3.6137639222048903,
+      "max_inequality_violation": 0.7131562729028196,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.32944027210115584,
+      "dual_norm_change": 0.25984123767715644
+    },
+    {
+      "sweep": 3,
+      "objective": 4.01774363483622,
+      "max_inequality_violation": 0.1406037875581605,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.3187188038261549,
+      "dual_norm_change": 0.05482712174466228
+    },
+    {
+      "sweep": 4,
+      "objective": 4.113339334931399,
+      "max_inequality_violation": 0.013969657289327753,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.31406103043692846,
+      "dual_norm_change": 0.011242213503012693
+    },
+    {
+      "sweep": 5,
+      "objective": 4.120457694879631,
+      "max_inequality_violation": 0.001276770278534678,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.31275207071103256,
+      "dual_norm_change": 0.0005999274441357587
+    }
+  ]
+}

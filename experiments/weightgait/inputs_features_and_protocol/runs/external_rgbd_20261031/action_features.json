@@ -1,0 +1,8 @@
+{
+  "basis_sha256": "25e29e82fc2f7ef4328aadae7c22339762311bceb75361b2d87f706ea68b2a2b",
+  "codebook_sha256": "2774c783003f30f0c157781d4bdc4c38bb6ad560aa7b558c662e271d5da9c121",
+  "PCA_sha256": "96cec06a976c57ed80ab624184ce2711e4cf3ba13a066abb6d40d86e26be38b6",
+  "manifest_sha256": "a99d68b49a946e636df062e52f1f523a2e5d40befc61232b4259aa7850572009",
+  "no_refitting": true,
+  "no_test_depth": true
+}

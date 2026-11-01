@@ -1,0 +1,104 @@
+[
+  {
+    "file": "projection_00.npz",
+    "reference_feasible": true,
+    "min_eigenvalue": 1.0130849162366335,
+    "raw_residual": 1.1102230246251565e-16,
+    "eq27_active_residual": null
+  },
+  {
+    "file": "projection_01.npz",
+    "reference_feasible": true,
+    "min_eigenvalue": 1.1417029159788417,
+    "raw_residual": 2.886579864025407e-15,
+    "eq27_active_residual": 2.220446049250313e-16
+  },
+  {
+    "file": "projection_02.npz",
+    "reference_feasible": true,
+    "min_eigenvalue": 0.9390369944222,
+    "raw_residual": 6.894484982922222e-14,
+    "eq27_active_residual": 2.220446049250313e-16
+  },
+  {
+    "file": "projection_03.npz",
+    "reference_feasible": true,
+    "min_eigenvalue": 1.0375331653798217,
+    "raw_residual": 8.881784197001252e-16,
+    "eq27_active_residual": null
+  },
+  {
+    "file": "projection_04.npz",
+    "reference_feasible": true,
+    "min_eigenvalue": 0.5423248234458955,
+    "raw_residual": 3.980149543281186e-13,
+    "eq27_active_residual": null
+  },
+  {
+    "file": "projection_05.npz",
+    "reference_feasible": true,
+    "min_eigenvalue": 1.014005998268766,
+    "raw_residual": 7.172040739078511e-14,
+    "eq27_active_residual": 0.0
+  },
+  {
+    "file": "projection_06.npz",
+    "reference_feasible": true,
+    "min_eigenvalue": 0.6021615483841042,
+    "raw_residual": 4.063416270128073e-14,
+    "eq27_active_residual": 5.551115123125783e-17
+  },
+  {
+    "file": "projection_07.npz",
+    "reference_feasible": true,
+    "min_eigenvalue": 1.017000058841253,
+    "raw_residual": 5.706546346573305e-13,
+    "eq27_active_residual": null
+  },
+  {
+    "file": "projection_08.npz",
+    "reference_feasible": true,
+    "min_eigenvalue": 0.5980927266596993,
+    "raw_residual": 4.135580766728708e-15,
+    "eq27_active_residual": null
+  },
+  {
+    "file": "projection_09.npz",
+    "reference_feasible": true,
+    "min_eigenvalue": 1.0072352459423266,
+    "raw_residual": 2.4424906541753444e-14,
+    "eq27_active_residual": 8.881784197001252e-16
+  },
+  {
+    "file": "projection_10.npz",
+    "reference_feasible": true,
+    "min_eigenvalue": 0.5734986953127856,
+    "raw_residual": 9.96425164601078e-15,
+    "eq27_active_residual": 0.0
+  },
+  {
+    "file": "projection_11.npz",
+    "reference_feasible": true,
+    "min_eigenvalue": 1.0816148076555536,
+    "raw_residual": 1.9984014443252818e-14,
+    "eq27_active_residual": null
+  },
+  {
+    "file": "itml_17.npz",
+    "reference_feasible": true,
+    "min_eigenvalue": 0.8374256429871966,
+    "raw_residual": 0.0
+  },
+  {
+    "file": "itml_23.npz",
+    "reference_feasible": true,
+    "min_eigenvalue": 0.3203801488877977,
+    "raw_residual": 6.108199779308876e-10
+  },
+  {
+    "file": "itml_42.npz",
+    "reference_feasible": true,
+    "min_eigenvalue": 0.4229699795779185,
+    "raw_residual": 1.885369981663443e-09
+  }
+]

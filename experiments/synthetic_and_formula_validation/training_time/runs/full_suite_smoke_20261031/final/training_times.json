@@ -1,0 +1,31 @@
+{
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "python": "3.11.14",
+  "scope": "local backend timing, cannot reproduce author hardware/software seconds",
+  "records": [
+    {
+      "round": "round_00",
+      "method": "itml",
+      "fit_seconds": 0.010219749994575977,
+      "model_matches": true
+    },
+    {
+      "round": "round_00",
+      "method": "lmnn",
+      "fit_seconds": 0.04380483413115144,
+      "model_matches": true
+    },
+    {
+      "round": "round_00",
+      "method": "itml_s",
+      "fit_seconds": 0.015603875275701284,
+      "model_matches": true
+    },
+    {
+      "round": "round_00",
+      "method": "itml_plus",
+      "fit_seconds": 0.015933708753436804,
+      "model_matches": true
+    }
+  ]
+}

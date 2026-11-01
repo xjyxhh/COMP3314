@@ -1,0 +1,317 @@
+[
+  {
+    "parameters": {
+      "gamma": 0.0001
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 0.7375870429533743,
+      "AUC": 0.8792669115396389
+    },
+    "diagnostics": {
+      "filter_rule": "shared_xi0",
+      "retained_positive": 310,
+      "retained_negative": 2904,
+      "removed": 590,
+      "depth_stop": "dual_norm_tolerance"
+    },
+    "stop": "dual_norm_tolerance",
+    "final": {
+      "sweep": 2,
+      "objective": 0.13013126460272462,
+      "max_inequality_violation": 3.376450892744742e-05,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.9947026863380178,
+      "dual_norm_change": 0.0001427244518418663
+    },
+    "depth_final": {
+      "sweep": 2,
+      "objective": 0.012672875904330505,
+      "max_inequality_violation": 0.00010031428234924533,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.9940763174116072,
+      "dual_norm_change": 0.0008783848050344725
+    },
+    "seconds": 0.8336052908562124
+  },
+  {
+    "parameters": {
+      "gamma": 0.00031622776601683794
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 0.7378287819023267,
+      "AUC": 0.8794811753902663
+    },
+    "diagnostics": {
+      "filter_rule": "shared_xi0",
+      "retained_positive": 310,
+      "retained_negative": 2904,
+      "removed": 590,
+      "depth_stop": "dual_norm_tolerance"
+    },
+    "stop": "dual_norm_tolerance",
+    "final": {
+      "sweep": 2,
+      "objective": 0.40996438693461545,
+      "max_inequality_violation": 0.0003310711170101399,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.9834549860928046,
+      "dual_norm_change": 0.0004502554959503327
+    },
+    "depth_final": {
+      "sweep": 3,
+      "objective": 0.039807450624440806,
+      "max_inequality_violation": 5.403038016993378e-10,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.9815890690052925,
+      "dual_norm_change": 5.453751586561466e-06
+    },
+    "seconds": 0.9897184171713889
+  },
+  {
+    "parameters": {
+      "gamma": 0.001
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 0.7391754269762059,
+      "AUC": 0.8802173247627793
+    },
+    "diagnostics": {
+      "filter_rule": "shared_xi0",
+      "retained_positive": 314,
+      "retained_negative": 2904,
+      "removed": 586,
+      "depth_stop": "dual_norm_tolerance"
+    },
+    "stop": "dual_norm_tolerance",
+    "final": {
+      "sweep": 3,
+      "objective": 1.3023867743714006,
+      "max_inequality_violation": 1.4121397384769807e-09,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.9493314926529807,
+      "dual_norm_change": 1.421565274745595e-06
+    },
+    "depth_final": {
+      "sweep": 3,
+      "objective": 0.12331175356854232,
+      "max_inequality_violation": 6.451927880846142e-08,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.944764424861405,
+      "dual_norm_change": 5.0761376369632126e-05
+    },
+    "seconds": 1.0356784998439252
+  },
+  {
+    "parameters": {
+      "gamma": 0.0031622776601683794
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 0.7425897348629131,
+      "AUC": 0.8822007958371594
+    },
+    "diagnostics": {
+      "filter_rule": "shared_xi0",
+      "retained_positive": 317,
+      "retained_negative": 2904,
+      "removed": 583,
+      "depth_stop": "dual_norm_tolerance"
+    },
+    "stop": "dual_norm_tolerance",
+    "final": {
+      "sweep": 3,
+      "objective": 4.021083607523228,
+      "max_inequality_violation": 1.2398743365338305e-07,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.8558634629333445,
+      "dual_norm_change": 1.3447262940065061e-05
+    },
+    "depth_final": {
+      "sweep": 3,
+      "objective": 0.3671288080346166,
+      "max_inequality_violation": 8.042271321784256e-06,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.8494603815098453,
+      "dual_norm_change": 0.0004129909307273166
+    },
+    "seconds": 0.9381296671926975
+  },
+  {
+    "parameters": {
+      "gamma": 0.01
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 0.7514814879872705,
+      "AUC": 0.8874012855831037
+    },
+    "diagnostics": {
+      "filter_rule": "shared_xi0",
+      "retained_positive": 332,
+      "retained_negative": 2904,
+      "removed": 568,
+      "depth_stop": "dual_norm_tolerance"
+    },
+    "stop": "dual_norm_tolerance",
+    "final": {
+      "sweep": 3,
+      "objective": 12.04129168583991,
+      "max_inequality_violation": 1.0374602673834943e-05,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.646069804395229,
+      "dual_norm_change": 0.00012151605174079494
+    },
+    "depth_final": {
+      "sweep": 4,
+      "objective": 0.992795351958126,
+      "max_inequality_violation": 0.00016483988915894088,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.6662309822693887,
+      "dual_norm_change": 5.350113609309825e-05
+    },
+    "seconds": 1.2309407917782664
+  },
+  {
+    "parameters": {
+      "gamma": 0.03162277660168379
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 0.7680308588706819,
+      "AUC": 0.8967385981022344
+    },
+    "diagnostics": {
+      "filter_rule": "shared_xi0",
+      "retained_positive": 360,
+      "retained_negative": 2902,
+      "removed": 542,
+      "depth_stop": "dual_norm_tolerance"
+    },
+    "stop": "dual_norm_tolerance",
+    "final": {
+      "sweep": 3,
+      "objective": 31.77441599910065,
+      "max_inequality_violation": 0.0006947786395485878,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.3746420545232392,
+      "dual_norm_change": 0.0009740656215771451
+    },
+    "depth_final": {
+      "sweep": 4,
+      "objective": 2.25022122753803,
+      "max_inequality_violation": 0.00013848320879539244,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.44769108914563877,
+      "dual_norm_change": 8.006155193084827e-05
+    },
+    "seconds": 1.4228424588218331
+  },
+  {
+    "parameters": {
+      "gamma": 0.1
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 0.8011718099009167,
+      "AUC": 0.91407560453015
+    },
+    "diagnostics": {
+      "filter_rule": "shared_xi0",
+      "retained_positive": 416,
+      "retained_negative": 2900,
+      "removed": 488,
+      "depth_stop": "dual_norm_tolerance"
+    },
+    "stop": "dual_norm_tolerance",
+    "final": {
+      "sweep": 4,
+      "objective": 67.86030592125336,
+      "max_inequality_violation": 0.0016201967881492862,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.17795862221769637,
+      "dual_norm_change": 7.054494280625288e-05
+    },
+    "depth_final": {
+      "sweep": 5,
+      "objective": 4.037083925835891,
+      "max_inequality_violation": 0.0010295884319582171,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.28955403575125427,
+      "dual_norm_change": 2.8405809234369795e-05
+    },
+    "seconds": 1.9242364172823727
+  },
+  {
+    "parameters": {
+      "gamma": 0.31622776601683794
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 0.8196726751471565,
+      "AUC": 0.9238062442607897
+    },
+    "diagnostics": {
+      "filter_rule": "shared_xi0",
+      "retained_positive": 503,
+      "retained_negative": 2896,
+      "removed": 405,
+      "depth_stop": "dual_norm_tolerance"
+    },
+    "stop": "dual_norm_tolerance",
+    "final": {
+      "sweep": 5,
+      "objective": 109.11903984072009,
+      "max_inequality_violation": 0.0020342657352312443,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.09060114766130704,
+      "dual_norm_change": 0.00011311280676944476
+    },
+    "depth_final": {
+      "sweep": 7,
+      "objective": 5.774426734592176,
+      "max_inequality_violation": 0.0033125447568789212,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.208417541722371,
+      "dual_norm_change": 6.622348482615191e-05
+    },
+    "seconds": 2.5561554580926895
+  },
+  {
+    "parameters": {
+      "gamma": 1.0
+    },
+    "status": "completed",
+    "validation": {
+      "AP": 0.8248304409650505,
+      "AUC": 0.9253611876339148
+    },
+    "diagnostics": {
+      "filter_rule": "shared_xi0",
+      "retained_positive": 583,
+      "retained_negative": 2887,
+      "removed": 334,
+      "depth_stop": "dual_norm_tolerance"
+    },
+    "stop": "dual_norm_tolerance",
+    "final": {
+      "sweep": 7,
+      "objective": 134.562086474761,
+      "max_inequality_violation": 0.003639631564571033,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.057390520492292485,
+      "dual_norm_change": 3.978560876326773e-05
+    },
+    "depth_final": {
+      "sweep": 6,
+      "objective": 6.958524932768103,
+      "max_inequality_violation": 0.11418807078585047,
+      "max_equality_residual": 0.0,
+      "min_eigenvalue_M": 0.17293736591313516,
+      "dual_norm_change": 0.00036958915567534043
+    },
+    "seconds": 2.574057374615222
+  }
+]

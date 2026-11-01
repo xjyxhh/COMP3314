@@ -1,0 +1,11 @@
+{
+  "status": "optimal_inaccurate",
+  "classification": "numerically_spd_feasible",
+  "normalized_spd_margin": 0.012353979582700366,
+  "conservative_dual_upper_bound": 0.012353990666749802,
+  "dual_psd_min": 9.999992526632029e-11,
+  "primal_min_eigenvalue": 0.006176985477297055,
+  "normalized_pair_violation": 0.0,
+  "trace_error": 0.0,
+  "strict_witness_pair_slack": 0.0029702580666136364
+}

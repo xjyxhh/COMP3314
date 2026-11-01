@@ -1,0 +1,127 @@
+{
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "python": "3.11.14",
+  "scope": "local backend timing, cannot reproduce author hardware/software seconds",
+  "records": [
+    {
+      "round": "round_00",
+      "method": "itml",
+      "fit_seconds": 1.3310980410315096,
+      "model_matches": true
+    },
+    {
+      "round": "round_00",
+      "method": "lmnn",
+      "fit_seconds": 0.08074004203081131,
+      "model_matches": true
+    },
+    {
+      "round": "round_00",
+      "method": "itml_s",
+      "fit_seconds": 2.109619041904807,
+      "model_matches": true
+    },
+    {
+      "round": "round_00",
+      "method": "itml_plus",
+      "fit_seconds": 3.0573877501301467,
+      "model_matches": true
+    },
+    {
+      "round": "round_01",
+      "method": "itml",
+      "fit_seconds": 1.1612916658632457,
+      "model_matches": true
+    },
+    {
+      "round": "round_01",
+      "method": "lmnn",
+      "fit_seconds": 0.10634299973025918,
+      "model_matches": true
+    },
+    {
+      "round": "round_01",
+      "method": "itml_s",
+      "fit_seconds": 1.896427874919027,
+      "model_matches": true
+    },
+    {
+      "round": "round_01",
+      "method": "itml_plus",
+      "fit_seconds": 2.6003927499987185,
+      "model_matches": true
+    },
+    {
+      "round": "round_02",
+      "method": "itml",
+      "fit_seconds": 1.1743963328190148,
+      "model_matches": true
+    },
+    {
+      "round": "round_02",
+      "method": "lmnn",
+      "fit_seconds": 0.08116879221051931,
+      "model_matches": true
+    },
+    {
+      "round": "round_02",
+      "method": "itml_s",
+      "fit_seconds": 1.7848216672427952,
+      "model_matches": true
+    },
+    {
+      "round": "round_02",
+      "method": "itml_plus",
+      "fit_seconds": 2.928689916152507,
+      "model_matches": true
+    },
+    {
+      "round": "round_03",
+      "method": "itml",
+      "fit_seconds": 0.9253352079540491,
+      "model_matches": true
+    },
+    {
+      "round": "round_03",
+      "method": "lmnn",
+      "fit_seconds": 0.08440912514925003,
+      "model_matches": true
+    },
+    {
+      "round": "round_03",
+      "method": "itml_s",
+      "fit_seconds": 1.88926220824942,
+      "model_matches": true
+    },
+    {
+      "round": "round_03",
+      "method": "itml_plus",
+      "fit_seconds": 2.9109853748232126,
+      "model_matches": true
+    },
+    {
+      "round": "round_04",
+      "method": "itml",
+      "fit_seconds": 0.9092354997992516,
+      "model_matches": true
+    },
+    {
+      "round": "round_04",
+      "method": "lmnn",
+      "fit_seconds": 0.07977895811200142,
+      "model_matches": true
+    },
+    {
+      "round": "round_04",
+      "method": "itml_s",
+      "fit_seconds": 1.8939834581688046,
+      "model_matches": true
+    },
+    {
+      "round": "round_04",
+      "method": "itml_plus",
+      "fit_seconds": 3.3057572920806706,
+      "model_matches": true
+    }
+  ]
+}

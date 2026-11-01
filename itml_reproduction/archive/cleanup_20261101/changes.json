@@ -1,0 +1,38 @@
+{
+  "README.md": {
+    "before": "92cdb7c7363862904c4b872303271777c35b8678484ef3d3ffa050f6eb44b844",
+    "after": "37859de55299c1c24438530c12b571c6048727dbed0393786b74419cb1b14b5b"
+  },
+  "itml_repro/complete_pipeline.py": {
+    "before": "17522cd1508639b3b173581f05b9089a6d5e2142818301f1ed49b73aef57e5bd",
+    "after": "744c271dde696434a4c32bde1976372e787cf8ae0039d61b6d6cd2756dada79d"
+  },
+  "itml_repro/facegrabber.py": {
+    "before": "3f2e8452b9cb4faff7d5767cd8d9722ff48f341438317ae2a8c3bc25ebf672cf",
+    "after": "66bf1a8fbf047cf9f288612389fc1d831371a2c118f1b6302ca5a7c4ab8075a0"
+  },
+  "itml_repro/external_data.py": {
+    "before": "a299df769cd46d0330e226d4dfe29d37e23a2e9f2f9855ca2cb7bd2ea6704ec4",
+    "after": "3f1e4c6b4dc4099f023c68ba12db7b88cd9fcf7a3a1bd6ca4d8ee811536227c6"
+  },
+  "itml_repro/supplemental.py": {
+    "before": "e1fde204ee0bece7e77af0448d2aac647c5412f94b4e65c100308c039badbbff",
+    "after": "1baedcf5bcfec1dc9f9dfa0b7fdbeced77c22b338a52f1f312c435388e9da852"
+  },
+  "itml_repro/weightgait.py": {
+    "before": "c1119531ebc60ff50fe762086e1e8964e7818169f44366aa7fbf403d1b23f622",
+    "after": "660e4fcfc68d49bacbf3e15936296d584170e63e23c4f35cb8dc6cc955edab8f"
+  },
+  "itml_repro/kdes.py": {
+    "before": "c71939e99a4f970a6cfd83ac33cb9db6bd1601d4db68fd4fa2a084c5641b33bb",
+    "after": "e0b3074d6a18e7c42050c28560a14636dd655076d8c0f06b18eeb34011145606"
+  },
+  "requirements-full.txt": {
+    "before": "2acd610e335b33962243a8a79669592f0183eaf6b2ca3d88a45663eac6ecc30f",
+    "after": "43e310532d6735085dbbbbe4fdeeec5dc35785bdf5e5dc1d345d4bfa177b5d98"
+  },
+  "REMAINING_IMPLEMENTATION.md": {
+    "before": "be56d5f58411617b35e8c34b59a8ba549ed552f4a18e97f5e9f0382e792a400e",
+    "after": "9e8982b11060c173adc9bbf6e0ae4b447a9c38f32b0adb55a3fc1f193c9c354e"
+  }
+}

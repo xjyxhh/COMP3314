@@ -1,0 +1,113 @@
+{
+  "config": {
+    "methods": [
+      "euclidean",
+      "itml",
+      "lmnn",
+      "svm",
+      "svm_plus",
+      "itml_s",
+      "itml_plus"
+    ],
+    "gamma_grid": [
+      0.0001,
+      0.00031622776601683794,
+      0.001,
+      0.0031622776601683794,
+      0.01,
+      0.03162277660168379,
+      0.1,
+      0.31622776601683794,
+      1.0
+    ],
+    "lambda_grid": [
+      0.01,
+      0.03162277660168379,
+      0.1,
+      0.31622776601683794,
+      1.0,
+      3.1622776601683795,
+      10.0,
+      31.622776601683793,
+      100.0
+    ],
+    "C_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "svm_plus_gamma_grid": [
+      0.01,
+      0.1,
+      1.0,
+      10.0,
+      100.0
+    ],
+    "svm_kernel": "linear",
+    "lmnn_mu_grid": [
+      0.1,
+      0.2,
+      0.3,
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "lmnn_k": 5,
+    "lmnn_max_triplets": 1000000,
+    "itml_s_filter_rule": "shared_xi0",
+    "max_sweeps": 10,
+    "tolerance": 0.001,
+    "selection_metric": "AP",
+    "lmnn_backend": "projected",
+    "lmnn_max_iterations": 1000,
+    "lmnn_tolerance": 1e-07
+  },
+  "input_sha256": {
+    "features_pca.npz": "aa772a6329e4cf64472f829d212276e2ed8dcf6eeea7e497db402ac82f8a05a0",
+    "round_00/pairs.npz": "30c07fc2531136fc90709adc8c56c22a7add831103e613b64a4ee37d51738a70",
+    "round_00/xi0.npy": "8668f464b1266982635d8566cb3278245098effdce0ba3af71d4fe16a02a433c",
+    "round_01/pairs.npz": "8768297abe3ab7be1d736c81a5f273565afefd4fa5bbbd5602c701c0b36a576a",
+    "round_01/xi0.npy": "00080436434861bf8fc29cdef553c6648fde0fe82ca6e3d683bdb5ff513d498f",
+    "round_02/pairs.npz": "7005f2f83e0142f0e9c4df4386a262e2a9352aaf54397fd7328d4c0a1b8cdb3f",
+    "round_02/xi0.npy": "b303b8c13740138f816d4931233abcd43a2908aa48d350d8d31c7b071c281064",
+    "round_03/pairs.npz": "d84dc2c019f52e0bff3926e57662cb51312e41408edda0df8b0866abb3ffcdab",
+    "round_03/xi0.npy": "0ea26c4af952334307096d0ced769e3cd0ef897c642fb4e3c3ef3525319de05c",
+    "round_04/pairs.npz": "8623a575cd976ffc4421d010f767592f8392fc5f0fc697b3f2a41325519466f2",
+    "round_04/xi0.npy": "052483e447c3150585c52573ef0d342d2613fbbce457445e3d8fb1381a4998c3"
+  },
+  "shards": [
+    {
+      "path": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/external_rgbd_20261031/face_input_v2/analysis_fixed_shards/round_00",
+      "protocol_sha256": "e9c00505fbc567e606b1d395a039931021dcf69c34d08083c7b0c14bcae4ee49",
+      "results_sha256": "0cf4897c8e3985f4a570e66d57e515ad4a2cda5f564d50b5a2d1ddc434b95e0b"
+    },
+    {
+      "path": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/external_rgbd_20261031/face_input_v2/analysis_fixed_shards/round_01",
+      "protocol_sha256": "a247d005b2b8a161b0c200c8f88639f3fece5c796fecd43286aa21c30f9ecdd4",
+      "results_sha256": "b8cd14088078e6b45077840027ecd7667b482e14da91009238cf911f2f07ea1e"
+    },
+    {
+      "path": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/external_rgbd_20261031/face_input_v2/analysis_fixed_shards/round_02",
+      "protocol_sha256": "550555646b617ced99a926e6df57ef575a87f6b27f6c6be0f64c704f5f777a68",
+      "results_sha256": "0141f57107598e61d7f3b99dbd9fbd7bbb00d9507ba815113014ae9d1968fccd"
+    },
+    {
+      "path": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/external_rgbd_20261031/face_input_v2/analysis_fixed_shards/round_03",
+      "protocol_sha256": "e75898deed87ca00306b9a5668147cc3b3efe878c7f4438caae6d33e212dd0cf",
+      "results_sha256": "1f7772732f8edf2f64e366dcb512c434250fb03db2c77e9f6eca5ca3325bbcaf"
+    },
+    {
+      "path": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/external_rgbd_20261031/face_input_v2/analysis_fixed_shards/round_04",
+      "protocol_sha256": "bb8c3d8583b7a98e34904fc70e227774f0cec4ecb96e03f9848f27cc4e7b4889",
+      "results_sha256": "b13b2614dfb9a4687ca1da23c9854dc3888b9298b078ec5e7cead78acdfcb473"
+    }
+  ],
+  "parameter_policy": "fixed_main",
+  "test_evaluated": false
+}

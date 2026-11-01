@@ -1,0 +1,605 @@
+{
+  "records": [
+    {
+      "partition": "primary",
+      "round": "round_00",
+      "method": "itml",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8922313310272586,
+          "AUC": 0.9509697727340779
+        },
+        "test": {
+          "AP": 0.9001805785442195,
+          "AUC": 0.9508376500883312
+        }
+      },
+      "train_minus_test_AP_percentage_points": 9.98194214557805
+    },
+    {
+      "partition": "primary",
+      "round": "round_00",
+      "method": "itml_plus",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8991272877550364,
+          "AUC": 0.9564781267778542
+        },
+        "test": {
+          "AP": 0.9098393515321218,
+          "AUC": 0.9580145671766924
+        }
+      },
+      "train_minus_test_AP_percentage_points": 9.016064846787819
+    },
+    {
+      "partition": "primary",
+      "round": "round_01",
+      "method": "itml",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8844765878737922,
+          "AUC": 0.9493311524987273
+        },
+        "test": {
+          "AP": 0.901599633562396,
+          "AUC": 0.9509604156061922
+        }
+      },
+      "train_minus_test_AP_percentage_points": 9.840036643760397
+    },
+    {
+      "partition": "primary",
+      "round": "round_01",
+      "method": "itml_plus",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8940014443079363,
+          "AUC": 0.9557157079977243
+        },
+        "test": {
+          "AP": 0.9070965910264548,
+          "AUC": 0.9548159265802318
+        }
+      },
+      "train_minus_test_AP_percentage_points": 9.290340897354522
+    },
+    {
+      "partition": "primary",
+      "round": "round_02",
+      "method": "itml",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8930042704332164,
+          "AUC": 0.9517722400215589
+        },
+        "test": {
+          "AP": 0.8994759445063947,
+          "AUC": 0.9511599095727161
+        }
+      },
+      "train_minus_test_AP_percentage_points": 10.052405549360532
+    },
+    {
+      "partition": "primary",
+      "round": "round_02",
+      "method": "itml_plus",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.9001145857299753,
+          "AUC": 0.9571346228703177
+        },
+        "test": {
+          "AP": 0.9128040098856922,
+          "AUC": 0.9599421355211546
+        }
+      },
+      "train_minus_test_AP_percentage_points": 8.719599011430779
+    },
+    {
+      "partition": "primary",
+      "round": "round_03",
+      "method": "itml",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8851077104707104,
+          "AUC": 0.9500980627002426
+        },
+        "test": {
+          "AP": 0.9041799394910042,
+          "AUC": 0.9527008413929395
+        }
+      },
+      "train_minus_test_AP_percentage_points": 9.582006050899583
+    },
+    {
+      "partition": "primary",
+      "round": "round_03",
+      "method": "itml_plus",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8941229802693268,
+          "AUC": 0.9563950354822289
+        },
+        "test": {
+          "AP": 0.9156664813445997,
+          "AUC": 0.9599791897475821
+        }
+      },
+      "train_minus_test_AP_percentage_points": 8.433351865540029
+    },
+    {
+      "partition": "primary",
+      "round": "round_04",
+      "method": "itml",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8846459514434464,
+          "AUC": 0.9497211575890051
+        },
+        "test": {
+          "AP": 0.9054733647805469,
+          "AUC": 0.9535560828816958
+        }
+      },
+      "train_minus_test_AP_percentage_points": 9.452663521945315
+    },
+    {
+      "partition": "primary",
+      "round": "round_04",
+      "method": "itml_plus",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.891700495150018,
+          "AUC": 0.9553631314189898
+        },
+        "test": {
+          "AP": 0.914425189655855,
+          "AUC": 0.9597583615294787
+        }
+      },
+      "train_minus_test_AP_percentage_points": 8.557481034414504
+    },
+    {
+      "partition": "seed_7001",
+      "round": "round_00",
+      "method": "itml",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8837094376586353,
+          "AUC": 0.9359003054166543
+        },
+        "test": {
+          "AP": 0.9144364874446642,
+          "AUC": 0.9610904422552924
+        }
+      },
+      "train_minus_test_AP_percentage_points": 8.556351255533578
+    },
+    {
+      "partition": "seed_7001",
+      "round": "round_00",
+      "method": "itml_plus",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8913393854133758,
+          "AUC": 0.9421673353894062
+        },
+        "test": {
+          "AP": 0.9188829419089851,
+          "AUC": 0.9648314219840106
+        }
+      },
+      "train_minus_test_AP_percentage_points": 8.111705809101489
+    },
+    {
+      "partition": "seed_7002",
+      "round": "round_00",
+      "method": "itml",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8494499816934664,
+          "AUC": 0.9238812617899812
+        },
+        "test": {
+          "AP": 0.8847631980815511,
+          "AUC": 0.9423297751295027
+        }
+      },
+      "train_minus_test_AP_percentage_points": 11.523680191844887
+    },
+    {
+      "partition": "seed_7002",
+      "round": "round_00",
+      "method": "itml_plus",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8559664577064972,
+          "AUC": 0.9273636105039375
+        },
+        "test": {
+          "AP": 0.8898917581355605,
+          "AUC": 0.9449179567026977
+        }
+      },
+      "train_minus_test_AP_percentage_points": 11.010824186443946
+    },
+    {
+      "partition": "seed_7003",
+      "round": "round_00",
+      "method": "itml",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.9023259045884912,
+          "AUC": 0.9540059735904423
+        },
+        "test": {
+          "AP": 0.8579089742211271,
+          "AUC": 0.9228272749049315
+        }
+      },
+      "train_minus_test_AP_percentage_points": 14.20910257788729
+    },
+    {
+      "partition": "seed_7003",
+      "round": "round_00",
+      "method": "itml_plus",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.9101504534869463,
+          "AUC": 0.9599155612779591
+        },
+        "test": {
+          "AP": 0.862277277951786,
+          "AUC": 0.9255662933796449
+        }
+      },
+      "train_minus_test_AP_percentage_points": 13.772272204821402
+    },
+    {
+      "partition": "seed_7004",
+      "round": "round_00",
+      "method": "itml",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8587369439286296,
+          "AUC": 0.9276405814893552
+        },
+        "test": {
+          "AP": 0.8231466179754352,
+          "AUC": 0.9244891008174385
+        }
+      },
+      "train_minus_test_AP_percentage_points": 17.685338202456478
+    },
+    {
+      "partition": "seed_7004",
+      "round": "round_00",
+      "method": "itml_plus",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8720638032078221,
+          "AUC": 0.9366447585112436
+        },
+        "test": {
+          "AP": 0.8240084917180396,
+          "AUC": 0.9284273288019882
+        }
+      },
+      "train_minus_test_AP_percentage_points": 17.59915082819604
+    },
+    {
+      "partition": "seed_7005",
+      "round": "round_00",
+      "method": "itml",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8966662987164444,
+          "AUC": 0.9512897865077701
+        },
+        "test": {
+          "AP": 0.9003339597970748,
+          "AUC": 0.9469375991855555
+        }
+      },
+      "train_minus_test_AP_percentage_points": 9.966604020292525
+    },
+    {
+      "partition": "seed_7005",
+      "round": "round_00",
+      "method": "itml_plus",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.9002194757827973,
+          "AUC": 0.9537402311584873
+        },
+        "test": {
+          "AP": 0.9080419160416435,
+          "AUC": 0.9521730993801838
+        }
+      },
+      "train_minus_test_AP_percentage_points": 9.195808395835648
+    },
+    {
+      "partition": "seed_7006",
+      "round": "round_00",
+      "method": "itml",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8953348942975924,
+          "AUC": 0.9500681198910081
+        },
+        "test": {
+          "AP": 0.8929582724979157,
+          "AUC": 0.9385734497110518
+        }
+      },
+      "train_minus_test_AP_percentage_points": 10.704172750208429
+    },
+    {
+      "partition": "seed_7006",
+      "round": "round_00",
+      "method": "itml_plus",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.902072556058637,
+          "AUC": 0.9544131957960295
+        },
+        "test": {
+          "AP": 0.899381645090462,
+          "AUC": 0.9434825732850256
+        }
+      },
+      "train_minus_test_AP_percentage_points": 10.061835490953797
+    },
+    {
+      "partition": "seed_7007",
+      "round": "round_00",
+      "method": "itml",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.9169774086706433,
+          "AUC": 0.9545535527143155
+        },
+        "test": {
+          "AP": 0.8523071194258827,
+          "AUC": 0.9308642991885498
+        }
+      },
+      "train_minus_test_AP_percentage_points": 14.769288057411734
+    },
+    {
+      "partition": "seed_7007",
+      "round": "round_00",
+      "method": "itml_plus",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.9221691450436993,
+          "AUC": 0.9581957211725604
+        },
+        "test": {
+          "AP": 0.8573920959814867,
+          "AUC": 0.9338548372608317
+        }
+      },
+      "train_minus_test_AP_percentage_points": 14.260790401851331
+    },
+    {
+      "partition": "seed_7008",
+      "round": "round_00",
+      "method": "itml",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.853835818169464,
+          "AUC": 0.940795580441357
+        },
+        "test": {
+          "AP": 0.904482812802664,
+          "AUC": 0.9484051711231547
+        }
+      },
+      "train_minus_test_AP_percentage_points": 9.551718719733604
+    },
+    {
+      "partition": "seed_7008",
+      "round": "round_00",
+      "method": "itml_plus",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8676492614479167,
+          "AUC": 0.9489362817019493
+        },
+        "test": {
+          "AP": 0.9130737606050406,
+          "AUC": 0.9542204389615834
+        }
+      },
+      "train_minus_test_AP_percentage_points": 8.692623939495936
+    },
+    {
+      "partition": "seed_7009",
+      "round": "round_00",
+      "method": "itml",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8674483353153124,
+          "AUC": 0.9465936311644758
+        },
+        "test": {
+          "AP": 0.9115319030869213,
+          "AUC": 0.9519167140761147
+        }
+      },
+      "train_minus_test_AP_percentage_points": 8.846809691307866
+    },
+    {
+      "partition": "seed_7009",
+      "round": "round_00",
+      "method": "itml_plus",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8758083493643245,
+          "AUC": 0.9522352307093451
+        },
+        "test": {
+          "AP": 0.9185419612992547,
+          "AUC": 0.9569699374195286
+        }
+      },
+      "train_minus_test_AP_percentage_points": 8.14580387007453
+    },
+    {
+      "partition": "seed_7010",
+      "round": "round_00",
+      "method": "itml",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8676046216159139,
+          "AUC": 0.9299989520016767
+        },
+        "test": {
+          "AP": 0.924173741042815,
+          "AUC": 0.9646704793843759
+        }
+      },
+      "train_minus_test_AP_percentage_points": 7.582625895718498
+    },
+    {
+      "partition": "seed_7010",
+      "round": "round_00",
+      "method": "itml_plus",
+      "scores": {
+        "train": {
+          "AP": 1.0,
+          "AUC": 1.0
+        },
+        "val": {
+          "AP": 0.8698221467865425,
+          "AUC": 0.9340172770009283
+        },
+        "test": {
+          "AP": 0.9291927921446801,
+          "AUC": 0.9685615474443813
+        }
+      },
+      "train_minus_test_AP_percentage_points": 7.080720785531991
+    }
+  ],
+  "scope": "Descriptive, matched positive prevalence; smaller gap alone can mean underfitting. Shared people/partitions are dependent. No causal overfitting proof."
+}

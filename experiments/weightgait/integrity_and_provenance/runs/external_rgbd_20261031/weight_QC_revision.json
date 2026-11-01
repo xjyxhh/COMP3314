@@ -1,0 +1,7 @@
+{
+  "recorded_unix": 1793455287.31427,
+  "before_any_new_test_evaluation": true,
+  "reason": "Visual contact sheet revealed clipped people and background-dominated crops despite weak pose-count QC",
+  "action": "Preserve v1; enforce anatomical ordering and image-edge/span checks; pool20 valid frames from disjoint normal clip groups instead of forcing20 per clip",
+  "unchanged": "Face primary, ten-partition robustness, original formulas and grids; all previous ORL results"
+}

@@ -1,0 +1,238 @@
+{
+  "summary": {
+    "euclidean": {
+      "AP": {
+        "mean": 0.9600849150849151,
+        "std": 0.0068381618381618825
+      },
+      "AUC": {
+        "mean": 0.9500000000000001,
+        "std": 0.010000000000000009
+      }
+    },
+    "itml": {
+      "AP": {
+        "mean": 0.956996336996337,
+        "std": 0.016336996336996368
+      },
+      "AUC": {
+        "mean": 0.9450000000000001,
+        "std": 0.025000000000000022
+      }
+    },
+    "itml_plus": {
+      "AP": {
+        "mean": 0.8662739262371616,
+        "std": 0.010902777777777817
+      },
+      "AUC": {
+        "mean": 0.8250000000000001,
+        "std": 0.0050000000000000044
+      }
+    },
+    "itml_plus_corrected": {
+      "AP": {
+        "mean": 0.8626375626007979,
+        "std": 0.014539141414141477
+      },
+      "AUC": {
+        "mean": 0.8200000000000001,
+        "std": 0.010000000000000009
+      }
+    }
+  },
+  "rounds": [
+    {
+      "round": 0,
+      "method": "euclidean",
+      "selected": {
+        "gamma": null,
+        "lam": null,
+        "validation": {
+          "AP": 0.8301190476190476,
+          "AUC": 0.79
+        },
+        "fit_seconds": 5.292240530252457e-06,
+        "sweeps": 0,
+        "stop": "fixed_metric",
+        "diagnostics": {}
+      },
+      "test": {
+        "AP": 0.9532467532467532,
+        "AUC": 0.9400000000000001
+      },
+      "stop": "fixed_metric",
+      "method_seconds": 0.00027070799842476845
+    },
+    {
+      "round": 0,
+      "method": "itml",
+      "selected": {
+        "gamma": 0.1,
+        "lam": null,
+        "validation": {
+          "AP": 0.793452380952381,
+          "AUC": 0.77
+        },
+        "fit_seconds": 0.0007260828278958797,
+        "sweeps": 4,
+        "stop": "dual_norm_tolerance",
+        "diagnostics": {}
+      },
+      "test": {
+        "AP": 0.9406593406593406,
+        "AUC": 0.92
+      },
+      "stop": "dual_norm_tolerance",
+      "method_seconds": 0.0009705838747322559
+    },
+    {
+      "round": 0,
+      "method": "itml_plus",
+      "selected": {
+        "gamma": 0.1,
+        "lam": 1.0,
+        "validation": {
+          "AP": 0.7507815713698066,
+          "AUC": 0.77
+        },
+        "fit_seconds": 0.023739374708384275,
+        "sweeps": 100,
+        "stop": "max_sweeps",
+        "diagnostics": {
+          "relative_inequality_violation": 0.8274136997836357,
+          "relative_equality_residual": 0.6874382268441988,
+          "residuals_within_tolerance": false
+        }
+      },
+      "test": {
+        "AP": 0.8771767040149394,
+        "AUC": 0.8300000000000001
+      },
+      "stop": "max_sweeps",
+      "method_seconds": 0.024088791105896235
+    },
+    {
+      "round": 0,
+      "method": "itml_plus_corrected",
+      "selected": {
+        "gamma": 0.1,
+        "lam": 1.0,
+        "validation": {
+          "AP": 0.7507815713698066,
+          "AUC": 0.77
+        },
+        "fit_seconds": 0.5593577078543603,
+        "sweeps": 100,
+        "stop": "max_sweeps",
+        "diagnostics": {
+          "relative_inequality_violation": 0.8274137006611847,
+          "relative_equality_residual": 0.6874382273217403,
+          "residuals_within_tolerance": false
+        }
+      },
+      "test": {
+        "AP": 0.8771767040149394,
+        "AUC": 0.8300000000000001
+      },
+      "stop": "max_sweeps",
+      "method_seconds": 0.55992087488994
+    },
+    {
+      "round": 1,
+      "method": "euclidean",
+      "selected": {
+        "gamma": null,
+        "lam": null,
+        "validation": {
+          "AP": 0.8647650878533232,
+          "AUC": 0.8200000000000001
+        },
+        "fit_seconds": 1.5249941498041153e-05,
+        "sweeps": 0,
+        "stop": "fixed_metric",
+        "diagnostics": {}
+      },
+      "test": {
+        "AP": 0.966923076923077,
+        "AUC": 0.9600000000000001
+      },
+      "stop": "fixed_metric",
+      "method_seconds": 0.00022404082119464874
+    },
+    {
+      "round": 1,
+      "method": "itml",
+      "selected": {
+        "gamma": 0.1,
+        "lam": null,
+        "validation": {
+          "AP": 0.8629901960784314,
+          "AUC": 0.82
+        },
+        "fit_seconds": 0.0006254580803215504,
+        "sweeps": 4,
+        "stop": "dual_norm_tolerance",
+        "diagnostics": {}
+      },
+      "test": {
+        "AP": 0.9733333333333334,
+        "AUC": 0.9700000000000001
+      },
+      "stop": "dual_norm_tolerance",
+      "method_seconds": 0.0008742078207433224
+    },
+    {
+      "round": 1,
+      "method": "itml_plus",
+      "selected": {
+        "gamma": 0.1,
+        "lam": 1.0,
+        "validation": {
+          "AP": 0.895554298642534,
+          "AUC": 0.86
+        },
+        "fit_seconds": 0.008611333090811968,
+        "sweeps": 32,
+        "stop": "dual_norm_tolerance",
+        "diagnostics": {
+          "relative_inequality_violation": 0.2155365886438342,
+          "relative_equality_residual": 0.10308244517696427,
+          "residuals_within_tolerance": false
+        }
+      },
+      "test": {
+        "AP": 0.8553711484593838,
+        "AUC": 0.8200000000000001
+      },
+      "stop": "dual_norm_tolerance",
+      "method_seconds": 0.009105999954044819
+    },
+    {
+      "round": 1,
+      "method": "itml_plus_corrected",
+      "selected": {
+        "gamma": 0.1,
+        "lam": 1.0,
+        "validation": {
+          "AP": 0.8882815713698067,
+          "AUC": 0.8499999999999999
+        },
+        "fit_seconds": 0.4308866667561233,
+        "sweeps": 100,
+        "stop": "max_sweeps",
+        "diagnostics": {
+          "relative_inequality_violation": 0.18002398176411014,
+          "relative_equality_residual": 0.09213366241920562,
+          "residuals_within_tolerance": false
+        }
+      },
+      "test": {
+        "AP": 0.8480984211866565,
+        "AUC": 0.81
+      },
+      "stop": "max_sweeps",
+      "method_seconds": 0.43142433324828744
+    }
+  ]
+}

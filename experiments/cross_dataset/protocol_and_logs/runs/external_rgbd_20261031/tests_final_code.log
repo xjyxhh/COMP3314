@@ -1,0 +1,111 @@
+test_common_score_metrics_and_validation_runner_without_test_inputs (test_baselines.BaselineTests.test_common_score_metrics_and_validation_runner_without_test_inputs) ... round_00 euclidean completed
+round_00 itml completed
+round_00 lmnn completed
+round_00 svm completed
+round_00 svm_plus completed
+round_00 itml_s completed
+round_00 itml_plus completed
+ok
+test_itml_s_filter_preserves_order_and_shared_gamma (test_baselines.BaselineTests.test_itml_s_filter_preserves_order_and_shared_gamma) ... ok
+test_lmnn_scalar_optimum_targets_and_limit (test_baselines.BaselineTests.test_lmnn_scalar_optimum_targets_and_limit) ... ok
+test_pair_representation_and_inference_use_no_privileged_data (test_baselines.BaselineTests.test_pair_representation_and_inference_use_no_privileged_data) ... ok
+test_svm_and_svm_plus_against_independent_dual (test_baselines.BaselineTests.test_svm_and_svm_plus_against_independent_dual) ... ok
+test_corrected_multisweep_stationarity (test_core.CoreTests.test_corrected_multisweep_stationarity) ... ok
+test_evaluation_ties (test_core.CoreTests.test_evaluation_ties) ... ok
+test_feasibility_audit_known_cases (test_core.CoreTests.test_feasibility_audit_known_cases) ... ok
+test_itml_global_kkt (test_core.CoreTests.test_itml_global_kkt) ... ok
+test_itml_scalar_analytic_optimum (test_core.CoreTests.test_itml_scalar_analytic_optimum) ... ok
+test_plus_diagnostics_and_fixed_budget_prefix (test_core.CoreTests.test_plus_diagnostics_and_fixed_budget_prefix) ... ok
+test_plus_projection_kkt_and_inverse_updates (test_core.CoreTests.test_plus_projection_kkt_and_inverse_updates) ... ok
+test_shared_entry_matches_direct_solvers (test_core.CoreTests.test_shared_entry_matches_direct_solvers) ... round 0 euclidean: {'AP': 0.9532467532467532, 'AUC': 0.9400000000000001}
+round 0 itml: {'AP': 0.9406593406593406, 'AUC': 0.92}
+round 0 itml_plus: {'AP': 0.831184640522876, 'AUC': 0.79}
+round 0 itml_plus_corrected: {'AP': 0.831184640522876, 'AUC': 0.79}
+ok
+test_split_pairs_pca (test_core.CoreTests.test_split_pairs_pca) ... ok
+test_alternative_retrieval_names_are_not_walking_still (test_external_data.ExternalDataTests.test_alternative_retrieval_names_are_not_walking_still) ... ok
+test_body_crop_ignores_depth_and_source_coordinate_order (test_external_data.ExternalDataTests.test_body_crop_ignores_depth_and_source_coordinate_order) ... ok
+test_camera_holdout_and_sensor_depth_units (test_external_data.ExternalDataTests.test_camera_holdout_and_sensor_depth_units) ... ok
+test_pcd_padding_rgb_and_truncated_payload (test_external_data.ExternalDataTests.test_pcd_padding_rgb_and_truncated_payload) ... ok
+test_ap_auc_mixed_ties_and_distance_order (test_formula_audit.FormulaAuditTests.test_ap_auc_mixed_ties_and_distance_order) ... ok
+test_burg_positive_domain_and_nonfinite_parameters (test_formula_audit.FormulaAuditTests.test_burg_positive_domain_and_nonfinite_parameters) ... ok
+test_logdet_rejects_non_spd_domain (test_formula_audit.FormulaAuditTests.test_logdet_rejects_non_spd_domain) ... ok
+test_printed_davis_step_is_not_eq45_solution (test_formula_audit.FormulaAuditTests.test_printed_davis_step_is_not_eq45_solution) ... ok
+test_rank1_and_cmc_hand_computed (test_formula_audit.FormulaAuditTests.test_rank1_and_cmc_hand_computed) ... ok
+test_codebook_determinism_and_no_silent_word_reduction (test_kdes_native.KDESNativeTests.test_codebook_determinism_and_no_silent_word_reduction) ... ok
+test_emk_suppression_and_paper_output_dimensions (test_kdes_native.KDESNativeTests.test_emk_suppression_and_paper_output_dimensions) ... ok
+test_source_gradients_and_dense_against_scalar_oracle (test_kdes_native.KDESNativeTests.test_source_gradients_and_dense_against_scalar_oracle) ... ok
+test_checkpoints_preserve_solver_trajectory (test_olivetti.OlivettiTests.test_checkpoints_preserve_solver_trajectory) ... ok
+test_clean_privilege_and_fixed_noise (test_olivetti.OlivettiTests.test_clean_privilege_and_fixed_noise) ... ok
+test_feature_diagnostic_ignores_test_features (test_olivetti.OlivettiTests.test_feature_diagnostic_ignores_test_features) ... ok
+test_no_test_evaluation_before_all_searches_finish (test_olivetti.OlivettiTests.test_no_test_evaluation_before_all_searches_finish) ... ok
+test_endpoints_preserve_existing_multisweep_trajectories (test_partial.PartialTests.test_endpoints_preserve_existing_multisweep_trajectories) ... ok
+test_missing_depth_is_not_read_and_mixed_objective_is_eq5 (test_partial.PartialTests.test_missing_depth_is_not_read_and_mixed_objective_is_eq5) ... ok
+test_mixed_first_sweep_against_independent_primal_projections (test_partial.PartialTests.test_mixed_first_sweep_against_independent_primal_projections) ... ok
+test_prefix_is_label_stratified_nested_and_uses_saved_order (test_partial.PartialTests.test_prefix_is_label_stratified_nested_and_uses_saved_order) ... ok
+test_runner_ignores_test_arrays_and_persists_all_ratios (test_partial.PartialTests.test_runner_ignores_test_arrays_and_persists_all_ratios) ... round_00 0.0 completed
+round_00 0.25 completed
+round_00 0.5 completed
+round_00 0.75 completed
+round_00 1.0 completed
+ok
+test_full_analysis_searches_do_not_require_test_inputs (test_remaining.RemainingTests.test_full_analysis_searches_do_not_require_test_inputs) ... round_00 euclidean completed
+round_00 itml completed
+round_00 lmnn completed
+round_00 svm completed
+round_00 svm_plus completed
+round_00 itml_s completed
+round_00 itml_plus completed
+round_00 partial_000_itml_plus completed
+round_00 partial_025_itml_plus completed
+round_00 partial_050_itml_plus completed
+round_00 partial_075_itml_plus completed
+round_00 partial_100_itml_plus completed
+round_00 sample_count_020_itml completed
+round_00 sample_count_020_itml_plus completed
+round_00 sample_count_040_itml completed
+round_00 sample_count_040_itml_plus completed
+round_00 sample_count_060_itml completed
+round_00 sample_count_060_itml_plus completed
+round_00 sample_count_080_itml completed
+round_00 sample_count_080_itml_plus completed
+round_00 sample_count_100_itml completed
+round_00 sample_count_100_itml_plus completed
+round_00 partial_000_itml_plus completed
+round_00 partial_025_itml_plus completed
+round_00 partial_050_itml_plus completed
+round_00 partial_075_itml_plus completed
+round_00 partial_100_itml_plus completed
+round_00 sample_count_020_itml completed
+round_00 sample_count_020_itml_plus completed
+round_00 sample_count_040_itml completed
+round_00 sample_count_040_itml_plus completed
+round_00 sample_count_060_itml completed
+round_00 sample_count_060_itml_plus completed
+round_00 sample_count_080_itml completed
+round_00 sample_count_080_itml_plus completed
+round_00 sample_count_100_itml completed
+round_00 sample_count_100_itml_plus completed
+ok
+test_glbp_counts_and_clipped_signed_differences (test_remaining.RemainingTests.test_glbp_counts_and_clipped_signed_differences) ... ok
+test_identity_eye_alignment (test_remaining.RemainingTests.test_identity_eye_alignment) ... ok
+test_kdes_patch_against_direct_sum (test_remaining.RemainingTests.test_kdes_patch_against_direct_sum) ... ok
+test_memory_bounded_lmnn_gradient_and_reference (test_remaining.RemainingTests.test_memory_bounded_lmnn_gradient_and_reference) ... ok
+test_raw_reid_frame_selection_precedes_codebook_fitting (test_remaining.RemainingTests.test_raw_reid_frame_selection_precedes_codebook_fitting) ... ok
+test_reid_prepare_and_rank1_selection_without_test_access (test_remaining.RemainingTests.test_reid_prepare_and_rank1_selection_without_test_access) ... round_00 euclidean completed
+round_00 itml completed
+round_00 lmnn completed
+round_00 svm completed
+round_00 svm_plus completed
+round_00 itml_s completed
+round_00 itml_plus completed
+ok
+test_retrieval_protocol_and_classifier_direction (test_remaining.RemainingTests.test_retrieval_protocol_and_classifier_direction) ... ok
+test_augmented_feasible_witness (test_viewpoint.ViewpointTests.test_augmented_feasible_witness) ... ok
+test_depth_shape_validity_and_camera_offset (test_viewpoint.ViewpointTests.test_depth_shape_validity_and_camera_offset) ... ok
+test_saved_pairs_and_validation_selection (test_viewpoint.ViewpointTests.test_saved_pairs_and_validation_selection) ... ok
+
+----------------------------------------------------------------------
+Ran 46 tests in 13.774s
+
+OK

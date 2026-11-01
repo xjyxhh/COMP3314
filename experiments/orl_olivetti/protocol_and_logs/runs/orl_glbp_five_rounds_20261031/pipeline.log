@@ -1,0 +1,12 @@
+waiting_for_baseline_shards
+serial_round_00_preserved_duplicate_work_stopped
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/itml_repro/complete_pipeline.py", line 84, in <module>
+    ap=json.loads((shard/'protocol.json').read_text())
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/itml_repro/complete_pipeline.py", line 46, in complete
+    for folder in shards:
+                          
+KeyboardInterrupt

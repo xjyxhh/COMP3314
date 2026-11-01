@@ -1,0 +1,35 @@
+{
+  "independent_witness_check": [
+    {
+      "round": 0,
+      "max_original_inequality": -0.00013127997344127354,
+      "passed": true
+    },
+    {
+      "round": 1,
+      "max_original_inequality": -8.229844756383903e-05,
+      "passed": true
+    }
+  ],
+  "training_only_pca_recomputed": true,
+  "positive_pairs_fixed": true,
+  "negative_pairs_resampled": true,
+  "depth_quality": {
+    "valid_depth_fraction_quantiles": {
+      "min": 0.05193855157278712,
+      "q10": 0.7192475513441866,
+      "median": 0.9631359247501549,
+      "q90": 1.0,
+      "max": 1.0
+    },
+    "samples_below_10_percent": 1,
+    "samples_below_25_percent": 4,
+    "samples_below_50_percent": 11
+  },
+  "artifact_sha256": {
+    "manifest.csv": "a0df1eac391890e957dda6519a3d8007c49e85f1acae613464891d25ff389d4f",
+    "features.npz": "92e340f3883d444fc500ff0cdd565198b41dba6381699a0b44dfb8da75657c08",
+    "pca.npz": "667578d692f1407bc7b6784c5ef44b63d134b4bef216773e133588775ddb91a5",
+    "split.npz": "56b497916611dc2f1fb21429e7ef00f1e96c823b5c79b61c852544fb51bcde39"
+  }
+}

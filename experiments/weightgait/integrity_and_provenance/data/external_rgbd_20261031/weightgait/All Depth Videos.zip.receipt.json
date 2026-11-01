@@ -1,0 +1,8 @@
+{
+  "url": "https://datashare.ed.ac.uk/server/api/core/bitstreams/58bedc92-e7ad-4cd1-91c0-d07ffd99f469/content",
+  "file": "All Depth Videos.zip",
+  "started_unix": 1793450043.111088,
+  "source": "University of Edinburgh DataShare DOI 10.7488/ds/7897",
+  "status": "failed",
+  "error": "HTTPSConnectionPool(host='datashare.ed.ac.uk', port=443): Read timed out. (read timeout=20)"
+}

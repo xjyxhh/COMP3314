@@ -1,0 +1,20 @@
+{
+  "local_projection_cases_passed": 12,
+  "itml_global_cases_passed": 3,
+  "corrected_global_cases_passed": 3,
+  "regression_tests_passed": 21,
+  "olivetti_models_bitwise_unchanged": 9,
+  "production_formula_changes": false,
+  "fixes": "Burg/LogDet domain and finite parameter/label validation only",
+  "limitations": [
+    "Davis printed pseudocode vs Eq.4.5 conflict",
+    "partial models and other paper baselines not implemented",
+    "stopping and u/l/L2 interpretation not uniquely specified",
+    "Olivetti is an explicit extension"
+  ],
+  "final_code_sha256": {
+    "metrics.py": "ae8120b7d2cafee8f6e5fbc00ff9fa566495b9dfd712668652f20b10f058c4ce",
+    "corrected.py": "32ad21c585428a23817ca88b1b93499d3c30e1d6ea31a5d144f568c5a920da6c",
+    "audit_formulas.py": "a2d2a4847702953457060f5ea0b2f84775612a9eb26cf4e50750653247195dff"
+  }
+}

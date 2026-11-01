@@ -1,0 +1,4 @@
+{'solver': 'HIGHS', 'error': "Solver 'HIGHS' failed. Try another solver, or solve with verbose=True for more information.", 'seconds': 17.03210320789367}
+/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/external_rgbd_20261031/benchmark_qp.py:24: UserWarning: Solution may be inaccurate. Try another solver, adjusting the solver settings, or solve with verbose=True for more information.
+  problem.solve(solver=solver,**options)
+{'solver': 'OSQP', 'status': 'user_limit', 'objective': np.float64(76.55198727879662), 'iterations': 623, 'primal_violation': 4.1307071542928675e-05, 'stationarity_w': 0.035752385827160074, 'stationarity_wp': 0.045397696740571, 'complementarity': 1.843718199024596e-05, 'seconds': 65.67562204087153}

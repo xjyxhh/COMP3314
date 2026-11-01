@@ -1,0 +1,36 @@
+{
+  "identity_sample_splits_disjoint": true,
+  "training_only_pca_means_and_subspaces": true,
+  "dimensions": [
+    6888,
+    150
+  ],
+  "rounds": [
+    {
+      "round": 0,
+      "all_pair_labels_and_counts_valid": true,
+      "positive_sets_fixed": true
+    },
+    {
+      "round": 1,
+      "all_pair_labels_and_counts_valid": true,
+      "positive_sets_fixed": true
+    },
+    {
+      "round": 2,
+      "all_pair_labels_and_counts_valid": true,
+      "positive_sets_fixed": true
+    },
+    {
+      "round": 3,
+      "all_pair_labels_and_counts_valid": true,
+      "positive_sets_fixed": true
+    },
+    {
+      "round": 4,
+      "all_pair_labels_and_counts_valid": true,
+      "positive_sets_fixed": true
+    }
+  ],
+  "scope": "Input/PCA/pair audit; no test score computation"
+}

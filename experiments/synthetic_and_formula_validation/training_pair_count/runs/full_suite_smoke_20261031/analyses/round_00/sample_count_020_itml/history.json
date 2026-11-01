@@ -1,0 +1,18 @@
+[
+  {
+    "sweep": 1,
+    "objective": 0.0,
+    "max_inequality_violation": 0.0,
+    "max_equality_residual": 0.0,
+    "min_eigenvalue_M": 1.0,
+    "dual_norm_change": 0.0
+  },
+  {
+    "sweep": 2,
+    "objective": 0.0,
+    "max_inequality_violation": 0.0,
+    "max_equality_residual": 0.0,
+    "min_eigenvalue_M": 1.0,
+    "dual_norm_change": 0.0
+  }
+]

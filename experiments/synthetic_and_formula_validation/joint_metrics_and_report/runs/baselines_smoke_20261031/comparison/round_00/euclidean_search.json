@@ -1,0 +1,13 @@
+[
+  {
+    "parameters": {},
+    "status": "completed",
+    "validation": {
+      "AP": 1.0,
+      "AUC": 1.0
+    },
+    "diagnostics": {},
+    "stop": "fixed_metric",
+    "seconds": 0.000337124802172184
+  }
+]

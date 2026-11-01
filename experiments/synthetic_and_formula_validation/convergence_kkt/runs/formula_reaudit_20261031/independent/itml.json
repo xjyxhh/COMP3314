@@ -1,0 +1,47 @@
+[
+  {
+    "seed": 17,
+    "gamma": 0.01,
+    "objective": 0.29724708410598605,
+    "reference_objective": 0.2972470866314959,
+    "relative_objective_gap": 2.525509856798891e-09,
+    "residuals": {
+      "stationarity_M": 4.924170793121955e-16,
+      "stationarity_xi": 6.938893903907228e-18,
+      "primal_violation": 8.881784197001252e-16,
+      "complementarity": 1.0961069517783383e-17,
+      "dual_violation": 0.0
+    },
+    "passed": true
+  },
+  {
+    "seed": 23,
+    "gamma": 0.7,
+    "objective": 12.59846137363867,
+    "reference_objective": 12.598461399329974,
+    "relative_objective_gap": 2.0392413400854914e-09,
+    "residuals": {
+      "stationarity_M": 2.167998795866601e-13,
+      "stationarity_xi": 2.425837308805967e-14,
+      "primal_violation": 4.440892098500626e-16,
+      "complementarity": 7.684384903106965e-17,
+      "dual_violation": 0.0
+    },
+    "passed": true
+  },
+  {
+    "seed": 42,
+    "gamma": 2.0,
+    "objective": 59.994770441998874,
+    "reference_objective": 59.994770378668235,
+    "relative_objective_gap": 1.0556026485548282e-09,
+    "residuals": {
+      "stationarity_M": 2.0928372493233524e-13,
+      "stationarity_xi": 8.526512829121202e-14,
+      "primal_violation": 4.440892098500626e-16,
+      "complementarity": 9.46328495296274e-16,
+      "dual_violation": 0.0
+    },
+    "passed": true
+  }
+]

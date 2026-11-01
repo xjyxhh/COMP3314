@@ -1,0 +1,27 @@
+round_00 euclidean completed
+round_00 itml completed
+round_00 lmnn completed
+round_00 svm completed
+round_00 svm_plus completed
+round_00 itml_s completed
+round_00 itml_plus completed
+round_00 partial_000_itml_plus completed
+round_00 partial_025_itml_plus completed
+round_00 partial_050_itml_plus completed
+round_00 partial_075_itml_plus completed
+round_00 partial_100_itml_plus completed
+round_00 sample_count_020_itml completed
+round_00 sample_count_020_itml_plus completed
+round_00 sample_count_040_itml completed
+round_00 sample_count_040_itml_plus completed
+round_00 sample_count_060_itml completed
+round_00 sample_count_060_itml_plus completed
+round_00 sample_count_080_itml completed
+round_00 sample_count_080_itml_plus completed
+round_00 sample_count_100_itml completed
+round_00 sample_count_100_itml_plus completed
+timing round_00 itml 0.01
+timing round_00 lmnn 0.044
+timing round_00 itml_s 0.016
+timing round_00 itml_plus 0.016
+Full synthetic acceptance passed {'test_models': 22, 'all_timing_models_match': True, 'source_sha256': '39f9e062ff74cc2004c8cd03b15049f8e8d7885d1cb3c61d6311fa6878c4f41b', 'status': 'completed_extension', 'original_paper_reproduction': False}

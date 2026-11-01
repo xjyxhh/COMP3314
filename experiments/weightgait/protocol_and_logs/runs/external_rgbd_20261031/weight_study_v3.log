@@ -1,0 +1,98 @@
+extracting_frozen_RGB_crops_and_training_display_depth
+Extracted 20 / 320 clip contributions
+Extracted 40 / 320 clip contributions
+Extracted 60 / 320 clip contributions
+Extracted 80 / 320 clip contributions
+Extracted 100 / 320 clip contributions
+Extracted 120 / 320 clip contributions
+Extracted 140 / 320 clip contributions
+Extracted 160 / 320 clip contributions
+Extracted 180 / 320 clip contributions
+Extracted 200 / 320 clip contributions
+Extracted 220 / 320 clip contributions
+Extracted 240 / 320 clip contributions
+Extracted 260 / 320 clip contributions
+Extracted 280 / 320 clip contributions
+Extracted 300 / 320 clip contributions
+Extracted 320 / 320 clip contributions
+WeightGait crop extraction complete
+training_only_KDES_codebook_and_image_features
+KDES local rgb 100
+KDES local rgb 200
+KDES local rgb 300
+KDES local rgb 400
+KDES local rgb 500
+KDES local rgb 600
+KDES local rgb 700
+KDES local rgb 800
+KDES local rgb 900
+KDES local rgb 1000
+KDES local rgb 1100
+KDES local rgb 1200
+KDES local rgb 1300
+KDES local rgb 1400
+KDES local rgb 1500
+KDES local rgb 1600
+KDES local rgb 1700
+KDES local rgb 1800
+KDES local rgb 1900
+KDES codebook fitted rgb training images 320
+KDES encoded rgb 100
+KDES encoded rgb 200
+KDES encoded rgb 300
+KDES encoded rgb 400
+KDES encoded rgb 500
+KDES encoded rgb 600
+KDES encoded rgb 700
+KDES encoded rgb 800
+KDES encoded rgb 900
+KDES encoded rgb 1000
+KDES encoded rgb 1100
+KDES encoded rgb 1200
+KDES encoded rgb 1300
+KDES encoded rgb 1400
+KDES encoded rgb 1500
+KDES encoded rgb 1600
+KDES encoded rgb 1700
+KDES encoded rgb 1800
+KDES encoded rgb 1900
+KDES local depth 100
+KDES local depth 200
+KDES local depth 300
+KDES codebook fitted depth training images 320
+KDES encoded depth 100
+KDES encoded depth 200
+KDES encoded depth 300
+seven_method_full_grid_validation_Rank1_training
+round_00 euclidean completed
+round_01 euclidean completed
+round_00 itml completed
+round_01 itml completed
+round_00 lmnn completed
+round_01 lmnn completed
+round_01 svm completed
+round_00 svm completed
+round_01 svm_plus completed
+round_00 svm_plus completed
+round_01 itml_s completed
+round_00 itml_s completed
+round_01 itml_plus completed
+round_02 euclidean completed
+round_00 itml_plus completed
+round_03 euclidean completed
+round_02 itml completed
+round_03 itml completed
+round_02 lmnn completed
+round_03 lmnn completed
+round_02 svm completed
+round_03 svm completed
+round_02 svm_plus completed
+round_03 svm_plus completed
+round_02 itml_s completed
+round_03 itml_s completed
+round_03 itml_plus completed
+round_04 euclidean completed
+round_04 itml completed
+round_02 itml_plus completed
+/opt/miniconda3/lib/python3.11/multiprocessing/resource_tracker.py:254: UserWarning: resource_tracker: There appear to be 5 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

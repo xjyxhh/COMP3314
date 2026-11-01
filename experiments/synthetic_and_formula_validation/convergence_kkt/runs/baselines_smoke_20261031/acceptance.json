@@ -1,0 +1,95 @@
+{
+  "comparison_directory": "/Users/jinyuanzhuo/Desktop/作业/COMP3314/GP/itml_reproduction/runs/baselines_smoke_20261031/comparison_final",
+  "saved_models_checked": 14,
+  "checks": [
+    {
+      "round": "round_00",
+      "method": "euclidean",
+      "saved_model_scores_match": true
+    },
+    {
+      "round": "round_00",
+      "method": "itml",
+      "saved_model_scores_match": true
+    },
+    {
+      "round": "round_00",
+      "method": "lmnn",
+      "saved_model_scores_match": true
+    },
+    {
+      "round": "round_00",
+      "method": "svm",
+      "saved_model_scores_match": true
+    },
+    {
+      "round": "round_00",
+      "method": "svm_plus",
+      "saved_model_scores_match": true
+    },
+    {
+      "round": "round_00",
+      "method": "itml_s",
+      "saved_model_scores_match": true
+    },
+    {
+      "round": "round_00",
+      "method": "itml_plus",
+      "saved_model_scores_match": true
+    },
+    {
+      "round": "round_01",
+      "method": "euclidean",
+      "saved_model_scores_match": true
+    },
+    {
+      "round": "round_01",
+      "method": "itml",
+      "saved_model_scores_match": true
+    },
+    {
+      "round": "round_01",
+      "method": "lmnn",
+      "saved_model_scores_match": true
+    },
+    {
+      "round": "round_01",
+      "method": "svm",
+      "saved_model_scores_match": true
+    },
+    {
+      "round": "round_01",
+      "method": "svm_plus",
+      "saved_model_scores_match": true
+    },
+    {
+      "round": "round_01",
+      "method": "itml_s",
+      "saved_model_scores_match": true
+    },
+    {
+      "round": "round_01",
+      "method": "itml_plus",
+      "saved_model_scores_match": true
+    }
+  ],
+  "candidate_count": 50,
+  "failed_candidates": 0,
+  "test_inputs_absent": true,
+  "maximum_convex_diagnostics": {
+    "primal_violation": 1.3904500920268891e-09,
+    "stationarity_w": 6.7589677300097635e-09,
+    "stationarity_b": 5.293232741010456e-09,
+    "complementarity": 3.225004661810758e-09,
+    "stationarity_privileged": 6.543373076606934e-10,
+    "stationarity_privileged_bias": 1.559162687847504e-09,
+    "relative_objective_recheck": 3.806112494619818e-09,
+    "stationarity_slack": 2.6466220338394914e-09,
+    "stationarity_M": 2.8900543214976408e-08
+  },
+  "source_sha256": {
+    "baselines.py": "20130a528af5227e00d16f442645ec052bc26f3594bb133b66c86bab5857baf2",
+    "baseline_compare.py": "64c0ecb58c4511252b61d149b11c24d083af231d45311a1b6400c4e72b60a5ce",
+    "evaluation.py": "1725f7696d1b642008e04015062c995314aad015f15c14eff1f82f9ad6de4e91"
+  }
+}
